@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🧬 ZooLearn
+<img src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png" alt="ZooLearn Logo" width="200" />
+
+# ZooLearn
 
 **A modern biology learning platform that makes biological sciences easier to understand through interactive learning experiences.**
 
