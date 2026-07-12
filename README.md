@@ -204,12 +204,9 @@ npm run test
 
 ```
 docs/
-├── architecture.md       # System architecture overview
-├── api-reference.md      # API endpoints and usage
-├── database-schema.md    # PostgreSQL schema documentation
-├── deployment.md         # Deployment guide for AWS
-├── contributing.md       # Detailed contributing guidelines
-└── style-guide.md        # Code style and conventions
+├── ARCHITECTURE_zoolearn_v1.0.md   # System architecture overview
+├── PRD_ZooLearn_v1.0.md            # Product requirements document
+└── SRS_ZooLearn_v1.0.md            # Software requirements specification
 ```
 
 ---
