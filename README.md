@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png" width="200" />
+<img src="public/images/logo.png" alt="ZooLearn Logo" width="200" />
 
 # ZooLearn
 
