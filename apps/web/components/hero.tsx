@@ -59,14 +59,14 @@ export function Hero() {
   }
 
   return (
-    <section className="relative w-full min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-background pt-16 md:pt-0">
+    <section className="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-background">
       {/* Background industrial grid / subtle pattern */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       
       {/* Radial gradient for a spotlight effect */}
       <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
 
-      <div className="container relative z-10 px-4 md:px-6 py-12 md:py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container relative z-10 px-4 md:px-6 pt-6 pb-12 md:pt-8 md:pb-24 lg:pt-12 lg:pb-32 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
         <motion.div

@@ -5,7 +5,8 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen w-full bg-background flex">
+    <div className="min-h-screen w-full bg-background flex relative">
+
       {/* Left Column: Auth Form */}
       <div className="w-full lg:w-1/2 flex flex-col relative border-r border-border/40">
         
@@ -22,8 +23,8 @@ export default function LoginPage() {
         <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]"></div>
         
         {/* Spotlights */}
-        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-primary/20 blur-[100px] rounded-full mix-blend-screen pointer-events-none"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-blue-500/10 blur-[80px] rounded-full mix-blend-screen pointer-events-none"></div>
+        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-primary/20 blur-[100px] rounded-full mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-blue-500/10 blur-[80px] rounded-full mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
 
         {/* Lottie Animation Wrapper */}
         <div className="relative z-10 w-full max-w-[600px] aspect-square flex flex-col items-center justify-center">
