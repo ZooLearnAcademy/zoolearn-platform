@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The Living World",
+    "description": "Dive into the fundamental building blocks of animal life, cell biology, and core physiological structures.",
+    "icon": "magnifying-glass",
+    "link": "/modules/living-world"
+  },
+  {
+    "id": 2,
+    "title": "Complex Patterns",
+    "description": "A detailed exploration of internal organ systems, intricate anatomical structures, and physiological functions.",
+    "icon": "projector",
+    "link": "/modules/patterns"
+  },
+  {
+    "id": 3,
+    "title": "Kingdom Animalia",
+    "description": "Unravel taxonomy, phylogeny, biological hierarchies, and the ultimate organization of the animal kingdom.",
+    "icon": "globe",
+    "link": "/modules/kingdom"
+  }
+]

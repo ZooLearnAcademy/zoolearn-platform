@@ -1,9 +1,9 @@
-"use client"
-
 import React from "react"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { ConceptualLearning } from "@/components/conceptual-learning"
+
+import { DeepDive } from "@/components/deep-dive"
 
 export default function Page() {
   return (
@@ -12,6 +12,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <ConceptualLearning />
+      <DeepDive />
     </div>
   )
 }

@@ -181,7 +181,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             {data.navMain.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton
-                  render={<a href={item.url} className="font-medium" />}
+                  className="text-base py-5"
+                  render={<a href={item.url} className="font-semibold" />}
                 >
                   {item.title}
                 </SidebarMenuButton>
@@ -190,6 +191,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     {item.items.map((item) => (
                       <SidebarMenuSubItem key={item.title}>
                         <SidebarMenuSubButton
+                          className="text-[15px] py-4"
                           isActive={item.isActive}
                           render={<a href={item.url} />}
                         >

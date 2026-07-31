@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
-import { 
+import {
   Sun, 
   Moon, 
   MagnifyingGlass, 
@@ -14,7 +14,12 @@ import {
   House,
   TreeStructure,
   SquaresFour,
-  Binoculars
+  Binoculars,
+  IdentificationCard,
+  Gear,
+  CreditCard,
+  SignOut,
+  CaretRight
 } from "@phosphor-icons/react"
 import { cn } from "@workspace/ui/lib/utils"
 import { Button } from "@workspace/ui/components/button"
@@ -41,6 +46,7 @@ export function Navbar() {
   const [searchFocused, setSearchFocused] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [profileOpen, setProfileOpen] = useState(false)
 
   // Prevents hydration mismatch for theme toggle
   useEffect(() => {
@@ -118,8 +124,8 @@ export function Navbar() {
             })}
           </nav>
 
-          {/* Right Section (Theme, Support) */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* Right Section (Theme, Support, Profile) */}
+          <div className="hidden lg:flex items-center gap-4">
             {/* Theme Toggle */}
             {mounted && (
               <button
@@ -138,7 +144,7 @@ export function Navbar() {
             {/* Premium Support Button */}
             <Button
               className={cn(
-                "rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold hover:from-emerald-600 hover:to-teal-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-sm shadow-emerald-500/20",
+                "rounded-full bg-[#0D8F45] hover:bg-[#0a7237] text-white font-bold tracking-wide hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-sm shadow-[#0D8F45]/30",
                 "px-5 py-2 flex items-center gap-2 group"
               )}
             >
@@ -149,6 +155,60 @@ export function Navbar() {
               />
               Support Us
             </Button>
+
+            {/* Profile Popover */}
+            <div className="relative" onMouseLeave={() => setProfileOpen(false)}>
+              <button 
+                onMouseEnter={() => setProfileOpen(true)}
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border-2 border-transparent hover:border-emerald-500 transition-all overflow-hidden shadow-sm"
+              >
+                {/* User Avatar Placeholder */}
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=b6e3f4" alt="vijaisharathi" className="w-full h-full object-cover" />
+              </button>
+
+              {/* Popover Menu */}
+              <div 
+                className={cn(
+                  "absolute right-0 top-[calc(100%+0.5rem)] w-[280px] rounded-2xl bg-white/95 dark:bg-[#0a0a0a]/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-2xl transition-all duration-300 origin-top-right overflow-hidden",
+                  profileOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+                )}
+              >
+                {/* Header */}
+                <div className="flex items-center gap-4 p-5 bg-gradient-to-b from-slate-50/80 to-white/40 dark:from-slate-900/80 dark:to-[#0a0a0a]/40 border-b border-slate-100 dark:border-slate-800/60">
+                  <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden shrink-0 border-2 border-white dark:border-slate-700 shadow-md">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=b6e3f4" alt="vijaisharathi" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[1.1rem] font-extrabold text-slate-900 dark:text-white leading-tight mb-0.5">vijaisharathi</span>
+                    <span className="text-[0.8rem] font-bold text-emerald-600 dark:text-emerald-500">Zoolearn Learner</span>
+                  </div>
+                </div>
+
+                {/* Menu Items */}
+                <div className="p-2 flex flex-col gap-1">
+                  <Link href="/dashboard" className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-300 font-semibold hover:bg-slate-100/80 dark:hover:bg-slate-800/80 hover:text-slate-900 dark:hover:text-white transition-all group">
+                    <SquaresFour size={20} className="text-slate-400 dark:text-slate-500 group-hover:text-emerald-500 transition-colors" />
+                    Dashboard
+                  </Link>
+                  <button className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-300 font-semibold hover:bg-slate-100/80 dark:hover:bg-slate-800/80 hover:text-slate-900 dark:hover:text-white transition-all group">
+                    <Gear size={20} className="text-slate-400 dark:text-slate-500 group-hover:text-emerald-500 transition-colors" />
+                    Account Settings
+                  </button>
+                  <button className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-300 font-semibold hover:bg-slate-100/80 dark:hover:bg-slate-800/80 hover:text-slate-900 dark:hover:text-white transition-all group">
+                    <CreditCard size={20} className="text-slate-400 dark:text-slate-500 group-hover:text-emerald-500 transition-colors" />
+                    Subscription
+                  </button>
+                </div>
+
+                {/* Footer / Sign Out */}
+                <div className="p-2 border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-900/30">
+                  <button className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-rose-600 dark:text-rose-500 font-bold hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors">
+                    <SignOut size={20} />
+                    Sign Out
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Mobile Menu & Theme Toggle Actions */}
@@ -275,7 +335,7 @@ export function Navbar() {
 
           {/* Mobile Support Button */}
           <Button
-            className="w-full rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold flex items-center justify-center gap-2"
+            className="w-full rounded-xl bg-[#0D8F45] hover:bg-[#0a7237] text-white font-bold flex items-center justify-center gap-2 shadow-sm shadow-[#0D8F45]/20"
           >
             <Heart weight="fill" size={16} className="text-rose-200 animate-pulse" />
             Support Us
