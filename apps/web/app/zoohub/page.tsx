@@ -1,29 +1,12 @@
-import fs from "fs/promises"
-import path from "path"
 import Link from "next/link"
+import { getAllSpeciesPreview } from "@/lib/supabase/zoohub"
 
 export default async function ZoohubPage() {
-  const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-  let fileContents = "{}"
-  try {
-    fileContents = await fs.readFile(jsonPath, "utf8")
-  } catch (error) {
-    console.error("Failed to load animal data:", error)
-  }
-  
-  const allData = JSON.parse(fileContents)
-  
-  const allSpecies = Object.values(allData).flatMap((classes: any) => 
-    classes.flatMap((cls: any) => cls.species || [])
-  )
-  
-  // Pick random species for the marquee
-  const shuffled = allSpecies.sort(() => 0.5 - Math.random())
-  const selectedSpecies = shuffled.slice(0, 20)
+  const allSpecies = await getAllSpeciesPreview(20)
 
   // Split into two rows
-  const row1 = selectedSpecies.slice(0, 10)
-  const row2 = selectedSpecies.slice(10, 20)
+  const row1 = allSpecies.slice(0, 10)
+  const row2 = allSpecies.slice(10, 20)
 
   return (
     <div className="w-full max-w-[90rem] mx-auto py-8 px-4 sm:px-8 lg:px-12 xl:px-16 overflow-hidden">
@@ -69,7 +52,7 @@ export default async function ZoohubPage() {
                 className="w-64 h-72 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-6 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={species.image} alt={species.name} className="w-40 h-40 object-contain drop-shadow-md mb-4" />
+                <img src={species.image || ""} alt={species.name} className="w-40 h-40 object-contain drop-shadow-md mb-4" />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-lg text-center">{species.name}</h3>
               </div>
             ))}
@@ -83,7 +66,7 @@ export default async function ZoohubPage() {
                 className="w-64 h-72 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-6 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={species.image} alt={species.name} className="w-40 h-40 object-contain drop-shadow-md mb-4" />
+                <img src={species.image || ""} alt={species.name} className="w-40 h-40 object-contain drop-shadow-md mb-4" />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-lg text-center">{species.name}</h3>
               </div>
             ))}

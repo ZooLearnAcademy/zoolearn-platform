@@ -1,5 +1,3 @@
-import fs from "fs/promises"
-import path from "path"
 import {
   Sidebar,
   SidebarContent,
@@ -18,52 +16,15 @@ import {
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { ZoohubSearch, type SearchItem } from "@/components/zoohub-search"
-
-const phylumsList = [
-  { name: "Porifera", path: "/zoohub/porifera" },
-  { name: "Coelenterata", path: "/zoohub/coelenterata" },
-  { name: "Ctenophora", path: "/zoohub/ctenophora" },
-  { name: "Platyhelminthes", path: "/zoohub/platyhelminthes" },
-  { name: "Aschelminthes", path: "/zoohub/aschelminthes" },
-  { name: "Annelida", path: "/zoohub/annelida" },
-  { name: "Arthropoda", path: "/zoohub/arthropoda" },
-  { name: "Mollusca", path: "/zoohub/mollusca" },
-  { name: "Echinodermata", path: "/zoohub/echinodermata" },
-  { name: "Hemichordata", path: "/zoohub/hemichordata" },
-  { name: "Chordata", path: "/zoohub/chordata" },
-]
-
-async function fetchAllData() {
-  try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const fileContents = await fs.readFile(jsonPath, "utf8")
-    return JSON.parse(fileContents)
-  } catch (error) {
-    console.error("Error fetching data:", error)
-    return {}
-  }
-}
+import { getAllClassesForSidebar, getSearchIndex } from "@/lib/supabase/zoohub"
 
 export default async function ZoohubLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const allData = await fetchAllData()
-
-  // Generate a flattened search index for the ZoohubSearch component
-  const searchIndex: SearchItem[] = []
-  for (const phylum of phylumsList) {
-    searchIndex.push({ title: phylum.name, subtitle: "Phylum", url: phylum.path })
-    const classes = allData[phylum.name.toLowerCase()] || []
-    for (const cls of classes) {
-      searchIndex.push({ title: cls.className, subtitle: `Class in ${phylum.name}`, url: `${phylum.path}#${cls.id}` })
-      for (const species of cls.species || []) {
-        const speciesSlug = species.slug ?? species.name.toLowerCase().replace(/\s+/g, "-")
-        searchIndex.push({ title: species.name, subtitle: `Species (${species.scientificName})`, url: `${phylum.path}/${speciesSlug}` })
-      }
-    }
-  }
+  const phylaWithClasses = await getAllClassesForSidebar()
+  const searchIndex: SearchItem[] = await getSearchIndex()
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
@@ -98,20 +59,17 @@ export default async function ZoohubLayout({
                 </SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu className="gap-2 px-2 pb-6">
-                    {phylumsList.map((phylum) => {
-                      const phylumKey = phylum.name.toLowerCase()
-                      const classes = allData[phylumKey] || []
-
+                    {phylaWithClasses.map((phylum) => {
                       return (
-                        <SidebarMenuItem key={phylum.name}>
+                        <SidebarMenuItem key={phylum.slug}>
                           <details className="group [&_summary::-webkit-details-marker]:hidden">
                             <summary className="list-none cursor-pointer">
                               <SidebarMenuButton render={<div />} className="hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/50 py-5 transition-colors">
                                 <div className="flex items-center justify-between w-full pr-2">
-                                  <Link href={phylum.path} className="flex-1">
+                                  <Link href={`/zoohub/${phylum.slug}`} className="flex-1">
                                     <span className="font-bold text-base text-slate-800 dark:text-slate-200">{phylum.name}</span>
                                   </Link>
-                                  {classes.length > 0 && (
+                                  {phylum.classes.length > 0 && (
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" className="text-slate-500 transition-transform group-open:rotate-180">
                                       <path fill="currentColor" d="M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80A8 8 0 0 1 53.66 90.34L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32z"/>
                                     </svg>
@@ -120,12 +78,12 @@ export default async function ZoohubLayout({
                               </SidebarMenuButton>
                             </summary>
                             
-                            {classes.length > 0 && (
+                            {phylum.classes.length > 0 && (
                               <SidebarMenuSub className="mt-1 ml-3 border-l border-emerald-100 dark:border-slate-800 pl-3">
-                                {classes.map((cls: any) => (
-                                  <SidebarMenuSubItem key={cls.id}>
-                                    <SidebarMenuSubButton render={<Link href={`${phylum.path}#${cls.id}`} />} className="hover:bg-emerald-50 hover:text-emerald-700 h-8 text-sm font-medium text-slate-600 dark:text-slate-400">
-                                      {cls.className}
+                                {phylum.classes.map((cls) => (
+                                  <SidebarMenuSubItem key={cls.slug}>
+                                    <SidebarMenuSubButton render={<Link href={`/zoohub/${phylum.slug}#${cls.slug}`} />} className="hover:bg-emerald-50 hover:text-emerald-700 h-8 text-sm font-medium text-slate-600 dark:text-slate-400">
+                                      {cls.class_name}
                                     </SidebarMenuSubButton>
                                   </SidebarMenuSubItem>
                                 ))}

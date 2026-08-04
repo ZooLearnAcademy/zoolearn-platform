@@ -1,22 +1,19 @@
-import fs from "fs/promises"
-import path from "path"
-import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { getPhylumWithClasses } from "@/lib/supabase/zoohub"
 
-async function fetchPhylumData(phylumSlug: string) {
-  try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const fileContents = await fs.readFile(jsonPath, "utf8")
-    const allData = JSON.parse(fileContents)
-    const data = allData[phylumSlug.toLowerCase()]
-    
-    if (!data) return null
-    return data
-  } catch (error) {
-    console.error("Error fetching phylum data from node:", error)
-    return null
-  }
+const subtitleMap: Record<string, string> = {
+  porifera: "Discover the ancient, pore-bearing sponges that filter the ocean's depths.",
+  coelenterata: "Explore the mesmerizing world of stinging jellies and corals.",
+  ctenophora: "Witness the glowing bioluminescence of the beautiful comb jellies.",
+  platyhelminthes: "Uncover the fascinating biology of the unsegmented flatworms.",
+  aschelminthes: "Delve into the ubiquitous and diverse world of roundworms.",
+  annelida: "Study the complex segmentation of earthworms and leeches.",
+  arthropoda: "Venture into the largest phylum of joint-legged insects, spiders, and crustaceans.",
+  mollusca: "Discover the soft-bodied wonders from snails to the highly intelligent octopus.",
+  echinodermata: "Explore the spiny-skinned starfish and sea urchins of the ocean floor.",
+  hemichordata: "Learn about the evolutionary link presented by the intriguing acorn worms.",
+  chordata: "From fishes to mammals, explore the animals with a dorsal nerve cord.",
 }
 
 export default async function PhylumPage({
@@ -25,26 +22,12 @@ export default async function PhylumPage({
   params: { phylum: string }
 }) {
   const { phylum } = await params
-  const phylumData = await fetchPhylumData(phylum)
+  const phylumData = await getPhylumWithClasses(phylum)
   
   if (!phylumData) {
     notFound()
   }
 
-  // Generate a subtitle based on the phylum
-  const subtitleMap: Record<string, string> = {
-    porifera: "Discover the ancient, pore-bearing sponges that filter the ocean's depths.",
-    coelenterata: "Explore the mesmerizing world of stinging jellies and corals.",
-    ctenophora: "Witness the glowing bioluminescence of the beautiful comb jellies.",
-    platyhelminthes: "Uncover the fascinating biology of the unsegmented flatworms.",
-    aschelminthes: "Delve into the ubiquitous and diverse world of roundworms.",
-    annelida: "Study the complex segmentation of earthworms and leeches.",
-    arthropoda: "Venture into the largest phylum of joint-legged insects, spiders, and crustaceans.",
-    mollusca: "Discover the soft-bodied wonders from snails to the highly intelligent octopus.",
-    echinodermata: "Explore the spiny-skinned starfish and sea urchins of the ocean floor.",
-    hemichordata: "Learn about the evolutionary link presented by the intriguing acorn worms.",
-    chordata: "From fishes to mammals, explore the animals with a dorsal nerve cord.",
-  }
   const subtitle = subtitleMap[phylum.toLowerCase()] || "Exploring the fascinating diversity of the Animal Kingdom."
 
   return (
@@ -72,8 +55,8 @@ export default async function PhylumPage({
 
       {/* 🚀 Classes and Species List */}
       <div className="w-full space-y-32 pb-24">
-        {phylumData.map((cls: any, idx: number) => (
-          <div key={cls.id || idx} id={cls.id} className="w-full scroll-mt-32">
+        {phylumData.map((cls, idx) => (
+          <div key={cls.slug || idx} id={cls.slug} className="w-full scroll-mt-32">
             
             {/* Minimalist Class Header */}
             <div className="mb-16 group">
@@ -81,7 +64,7 @@ export default async function PhylumPage({
                 <div className="w-2 h-16 rounded-full bg-gradient-to-b from-emerald-400 to-teal-500" />
                 <div className="flex flex-col gap-3">
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                    {cls.className}
+                    {cls.class_name}
                   </h2>
                   <div className="flex items-center gap-3">
                     <span className="px-4 py-1.5 rounded-full bg-transparent border border-slate-200 dark:border-slate-700 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-widest">
@@ -97,18 +80,18 @@ export default async function PhylumPage({
 
             {/* 3D Pop-out Species Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-24 mt-16 px-4">
-              {cls.species.map((species: any, i: number) => (
+              {cls.species.map((species, i) => (
                 <Link 
                   key={species.id} 
-                  href={`/zoohub/${phylum}/${species.slug || species.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  id={species.id}
+                  href={`/zoohub/${phylum}/${species.slug}`}
+                  id={species.slug}
                   className="flex flex-col items-center justify-start group cursor-pointer h-full text-center scroll-mt-32"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
                   <div className="w-56 h-56 flex items-center justify-center mb-6 relative">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={species.image}
+                      src={species.image || ""}
                       alt={species.name}
                       className="relative z-10 w-full h-full object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] group-hover:drop-shadow-[0_15px_25px_rgba(16,185,129,0.15)] group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-300 ease-out"
                     />
@@ -123,7 +106,7 @@ export default async function PhylumPage({
                       <path fill="currentColor" d="M211.88,143.2l-21.78,41.9a32.06,32.06,0,0,1-30.82,18.9h-62.5A32.06,32.06,0,0,1,66,185.1l-21.78-41.9a32,32,0,0,1,0-29.47L66,71.84A32.06,32.06,0,0,1,96.76,52.94h62.5A32.06,32.06,0,0,1,190.08,71.84l21.8,41.89A32,32,0,0,1,211.88,143.2Zm-14.15-22.12L176,79.23a16,16,0,0,0-15.42-9.43h-62.5A16,16,0,0,0,82.68,79.23l-21.73,41.85a16,16,0,0,0,0,14.75L82.68,177.7A16,16,0,0,0,98.1,187.14h62.5a16,16,0,0,0,15.42-9.44l21.73-41.85A16,16,0,0,0,197.73,121.08Z"/>
                     </svg>
                     <span className="text-xs text-slate-600 dark:text-slate-300 font-bold group-hover:text-emerald-700">
-                      {species.scientificName}
+                      {species.scientific_name}
                     </span>
                   </div>
                 </Link>

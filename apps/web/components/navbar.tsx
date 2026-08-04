@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useTheme } from "next-themes"
 import {
   Sun, 
@@ -23,6 +23,7 @@ import {
 } from "@phosphor-icons/react"
 import { cn } from "@workspace/ui/lib/utils"
 import { Button } from "@workspace/ui/components/button"
+import { getSupabaseBrowserClient } from "@/lib/supabase/browser-client"
 
 interface NavItem {
   label: string
@@ -40,6 +41,7 @@ const navItems: NavItem[] = [
 
 export function Navbar() {
   const pathname = usePathname()
+  const router = useRouter()
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -47,11 +49,53 @@ export function Navbar() {
   const [searchQuery, setSearchQuery] = useState("")
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [profileOpen, setProfileOpen] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [userName, setUserName] = useState<string>("")
+  const [userEmail, setUserEmail] = useState<string>("")
+  const [userAvatarUrl, setUserAvatarUrl] = useState<string | null>(null)
 
   // Prevents hydration mismatch for theme toggle
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  // Fetch the logged-in user from Supabase
+  useEffect(() => {
+    const supabase = getSupabaseBrowserClient()
+    
+    async function loadUser() {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (!user) {
+        setIsLoggedIn(false)
+        return
+      }
+
+      setIsLoggedIn(true)
+      const { data } = await supabase
+        .from("profiles")
+        .select("full_name, email, avatar_url")
+        .eq("user_id", user.id)
+        .single()
+        
+      if (data) {
+        setUserName(data.full_name || user.user_metadata?.full_name || user.email?.split("@")[0] || "User")
+        setUserEmail(data.email || user.email || "")
+        setUserAvatarUrl(data.avatar_url)
+      } else {
+        setUserName(user.user_metadata?.full_name || user.email?.split("@")[0] || "User")
+        setUserEmail(user.email || "")
+        setUserAvatarUrl(user.user_metadata?.avatar_url || user.user_metadata?.picture || null)
+      }
+    }
+    
+    loadUser()
+  }, [])
+
+  const handleSignOut = async () => {
+    const supabase = getSupabaseBrowserClient()
+    await supabase.auth.signOut()
+    router.push("/login")
+  }
 
   return (
     <>
@@ -156,31 +200,35 @@ export function Navbar() {
               Support Us
             </Button>
 
-            {/* Profile Popover */}
-            <div className="relative" onMouseLeave={() => setProfileOpen(false)}>
+            {/* Profile Popover / Sign In */}
+            {isLoggedIn ? (
+              <div className="relative" onMouseLeave={() => setProfileOpen(false)}>
               <button 
                 onMouseEnter={() => setProfileOpen(true)}
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border-2 border-transparent hover:border-emerald-500 transition-all overflow-hidden shadow-sm"
               >
                 {/* User Avatar Placeholder */}
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=b6e3f4" alt="vijaisharathi" className="w-full h-full object-cover" />
+                <img src={userAvatarUrl || "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394a3b8'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E"} alt={userName || "User"} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </button>
+
+              {/* Invisible Hover Bridge */}
+              <div className="absolute top-full right-0 w-24 h-4 bg-transparent" />
 
               {/* Popover Menu */}
               <div 
                 className={cn(
-                  "absolute right-0 top-[calc(100%+0.5rem)] w-[280px] rounded-2xl bg-white/95 dark:bg-[#0a0a0a]/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-2xl transition-all duration-300 origin-top-right overflow-hidden",
+                  "absolute right-0 top-[calc(100%+0.5rem)] w-[280px] rounded-2xl bg-white/95 dark:bg-[#0a0a0a]/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-2xl transition-all duration-300 origin-top-right overflow-hidden z-50",
                   profileOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
                 )}
               >
                 {/* Header */}
                 <div className="flex items-center gap-4 p-5 bg-gradient-to-b from-slate-50/80 to-white/40 dark:from-slate-900/80 dark:to-[#0a0a0a]/40 border-b border-slate-100 dark:border-slate-800/60">
                   <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden shrink-0 border-2 border-white dark:border-slate-700 shadow-md">
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=b6e3f4" alt="vijaisharathi" className="w-full h-full object-cover" />
+                    <img src={userAvatarUrl || "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394a3b8'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E"} alt={userName || "User"} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[1.1rem] font-extrabold text-slate-900 dark:text-white leading-tight mb-0.5">vijaisharathi</span>
-                    <span className="text-[0.8rem] font-bold text-emerald-600 dark:text-emerald-500">Zoolearn Learner</span>
+                    <span className="text-[1.1rem] font-extrabold text-slate-900 dark:text-white leading-tight mb-0.5">{userName || "User"}</span>
+                    <span className="text-[0.8rem] font-bold text-emerald-600 dark:text-emerald-500">ZooLearn Learner</span>
                   </div>
                 </div>
 
@@ -202,13 +250,20 @@ export function Navbar() {
 
                 {/* Footer / Sign Out */}
                 <div className="p-2 border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-900/30">
-                  <button className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-rose-600 dark:text-rose-500 font-bold hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors">
+                  <button onClick={handleSignOut} className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-rose-600 dark:text-rose-500 font-bold hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors">
                     <SignOut size={20} />
                     Sign Out
                   </button>
                 </div>
               </div>
             </div>
+            ) : (
+              <Link href="/login">
+                <Button className="rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-2 shadow-sm shadow-emerald-500/20 hover:scale-[1.02] transition-all">
+                  Sign In
+                </Button>
+              </Link>
+            )}
           </div>
 
           {/* Mobile Menu & Theme Toggle Actions */}
@@ -330,6 +385,30 @@ export function Navbar() {
               )
             })}
           </nav>
+
+          <hr className="border-border/60 my-1" />
+
+          {/* Mobile Auth Links */}
+          <div className="flex flex-col gap-2 my-2">
+            {isLoggedIn ? (
+              <>
+                <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+                  <Button variant="outline" className="w-full rounded-xl font-semibold flex items-center justify-center gap-2">
+                    Dashboard
+                  </Button>
+                </Link>
+                <Button variant="ghost" onClick={handleSignOut} className="w-full rounded-xl text-rose-500 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/30 font-semibold">
+                  Sign Out
+                </Button>
+              </>
+            ) : (
+              <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold">
+                  Sign In
+                </Button>
+              </Link>
+            )}
+          </div>
 
           <hr className="border-border/60 my-1" />
 

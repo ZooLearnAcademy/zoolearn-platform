@@ -1,5 +1,7 @@
 "use client"
 
+import { useRouter } from "next/navigation"
+
 import { Navbar } from "@/components/navbar"
 import { 
   User,
@@ -13,15 +15,126 @@ import {
   CreditCard,
   Key,
   PencilSimple,
-  Camera
+  Camera,
+  SpinnerGap,
+  GoogleLogo
 } from "@phosphor-icons/react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@workspace/ui/components/button"
 import { cn } from "@workspace/ui/lib/utils"
+import { getSupabaseBrowserClient } from "@/lib/supabase/browser-client"
+
+interface UserProfile {
+  user_id: string
+  full_name: string | null
+  email: string | null
+  avatar_url: string | null
+  created_at: string
+  date_of_birth?: string
+  gender?: string
+  current_class?: string
+  institution?: string
+  location?: string
+}
 
 export default function DashboardPage() {
+  const router = useRouter()
+  const supabase = getSupabaseBrowserClient()
   const [activeTab, setActiveTab] = useState("general")
   const [isEditing, setIsEditing] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const [isSaving, setIsSaving] = useState(false)
+  const [profile, setProfile] = useState<UserProfile | null>(null)
+
+  // Editable form fields
+  const [editName, setEditName] = useState("")
+  const [editDob, setEditDob] = useState("")
+  const [editGender, setEditGender] = useState("")
+  const [editClass, setEditClass] = useState("")
+  const [editInstitution, setEditInstitution] = useState("")
+  const [editLocation, setEditLocation] = useState("")
+
+  // Fetch the user's profile from Supabase
+  useEffect(() => {
+    async function loadProfile() {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (!user) return
+
+      const { data, error } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("user_id", user.id)
+        .single()
+
+      if (data) {
+        const profile = data as UserProfile;
+        setProfile(profile)
+        setEditName(profile.full_name || "")
+        setEditDob(profile.date_of_birth || "")
+        setEditGender(profile.gender || "")
+        setEditClass(profile.current_class || "")
+        setEditInstitution(profile.institution || "")
+        setEditLocation(profile.location || "")
+        
+        if (!profile.gender || !profile.current_class || !profile.institution || !profile.location) {
+          router.push("/onboarding")
+          return
+        }
+      } else if (error) {
+        // Profile might not exist yet — use auth metadata as fallback
+        setProfile({
+          user_id: user.id,
+          full_name: user.user_metadata?.full_name || user.email?.split("@")[0] || "User",
+          email: user.email || null,
+          avatar_url: null,
+          created_at: user.created_at,
+        })
+        setEditName(user.user_metadata?.full_name || "")
+      }
+      setIsLoading(false)
+    }
+    loadProfile()
+  }, [supabase])
+
+  const handleSave = async () => {
+    if (!profile) return
+    setIsSaving(true)
+
+    const { error } = await supabase
+      .from("profiles")
+      // @ts-ignore - Supabase type for profiles might be missing
+      .update({ 
+        full_name: editName,
+        date_of_birth: editDob,
+        gender: editGender,
+        current_class: editClass,
+        institution: editInstitution,
+        location: editLocation
+      })
+      .eq("user_id", profile.user_id)
+
+    if (!error) {
+      setProfile({ 
+        ...profile, 
+        full_name: editName,
+        date_of_birth: editDob,
+        gender: editGender,
+        current_class: editClass,
+        institution: editInstitution,
+        location: editLocation
+      })
+      setIsEditing(false)
+    }
+    setIsSaving(false)
+  }
+
+  const displayName = profile?.full_name || "User"
+  const displayEmail = profile?.email || ""
+  const dummyAvatar = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394a3b8'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E"
+  const avatarUrl = profile?.avatar_url || dummyAvatar
+  const memberSince = profile?.created_at
+    ? new Date(profile.created_at).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })
+    : "—"
 
   const tabs = [
     { id: "general", label: "Overview", icon: User },
@@ -32,7 +145,12 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-slate-50/30 dark:bg-[#030303] flex flex-col font-sans selection:bg-emerald-500/30">
       <Navbar />
-      
+
+      {isLoading ? (
+        <div className="flex-1 flex items-center justify-center">
+          <SpinnerGap size={32} className="text-emerald-500 animate-spin" />
+        </div>
+      ) : (
       <main className="flex-1 w-full max-w-6xl mx-auto px-4 py-8 md:py-12 flex flex-col md:flex-row gap-8 lg:gap-16">
         {/* Sidebar Navigation */}
         <aside className="w-full md:w-56 shrink-0">
@@ -89,33 +207,25 @@ export default function DashboardPage() {
 
               {/* Avatar Section */}
               <div className="flex items-center gap-6 py-6 border-y border-slate-200/60 dark:border-slate-800/60">
-                <div className={cn("relative rounded-full border-2 border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-sm shrink-0", isEditing ? "w-20 h-20 group cursor-pointer" : "w-24 h-24")}>
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=e2e8f0" alt="vijaisharathi" className={cn("w-full h-full object-cover", isEditing && "group-hover:opacity-70 transition-opacity")} />
-                  {isEditing && (
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <Camera size={20} className="text-slate-900 drop-shadow-md" weight="fill" />
-                    </div>
-                  )}
+                <div className={cn("relative rounded-full border-2 border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-sm shrink-0", "w-24 h-24")}>
+                  <img src={avatarUrl} alt={displayName} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
-                {isEditing ? (
-                  <div>
-                    <h3 className="text-sm font-medium text-slate-900 dark:text-slate-200">Profile picture</h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 mb-3">PNG, JPG or GIF under 3MB.</p>
-                    <div className="flex gap-3">
-                      <Button variant="outline" size="sm" className="h-8 text-xs font-medium bg-white dark:bg-[#0a0a0a]">Upload new</Button>
-                      <Button variant="ghost" size="sm" className="h-8 text-xs font-medium text-red-600 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-950/30">Remove</Button>
-                    </div>
-                  </div>
-                ) : (
-                  <div>
-                    <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">Vijaisharathi</h2>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Zoolearn Learner</p>
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">{displayName}</h2>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">ZooLearn Learner</p>
+                  {!isEditing && (
                     <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-semibold border border-emerald-200/50 dark:border-emerald-500/20">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                       Active Student
                     </div>
-                  </div>
-                )}
+                  )}
+                  {profile?.avatar_url && (
+                    <p className="mt-2 flex items-center gap-1.5 text-xs text-slate-400 dark:text-slate-500">
+                      <GoogleLogo size={12} weight="bold" />
+                      Synced from Google
+                    </p>
+                  )}
+                </div>
               </div>
 
               {isEditing ? (
@@ -126,7 +236,7 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Full Name</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <User className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="text" defaultValue="Vijaisharathi" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
+                        <input type="text" value={editName} onChange={(e) => setEditName(e.target.value)} className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
                       </div>
                     </div>
                     
@@ -134,7 +244,7 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Email Address</label>
                       <div className="flex px-3 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md shadow-sm cursor-not-allowed opacity-70">
                         <EnvelopeSimple className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="email" defaultValue="vijaisharathi@zoolearn.edu" disabled className="bg-transparent border-none outline-none text-sm w-full text-slate-600 dark:text-slate-400 cursor-not-allowed" />
+                        <input type="email" defaultValue={displayEmail} disabled className="bg-transparent border-none outline-none text-sm w-full text-slate-600 dark:text-slate-400 cursor-not-allowed" />
                       </div>
                     </div>
 
@@ -142,7 +252,7 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Date of Birth</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <CalendarBlank className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="text" defaultValue="14 August 2005" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
+                        <input type="date" value={editDob} onChange={(e) => setEditDob(e.target.value)} className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
                       </div>
                     </div>
 
@@ -150,11 +260,11 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Gender</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <GenderIntersex className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <select className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100 appearance-none">
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                          <option value="other">Other</option>
-                          <option value="prefer_not">Prefer not to say</option>
+                        <select value={editGender} onChange={(e) => setEditGender(e.target.value)} className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100 appearance-none">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Other">Other</option>
+                          <option value="Prefer not to say">Prefer not to say</option>
                         </select>
                       </div>
                     </div>
@@ -165,7 +275,7 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Current Class</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <GraduationCap className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="text" defaultValue="12th Grade - Biology" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
+                        <input type="text" value={editClass} onChange={(e) => setEditClass(e.target.value)} placeholder="12th Grade - Biology" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
                       </div>
                     </div>
 
@@ -173,7 +283,7 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Institution</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <Buildings className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="text" defaultValue="Zoolearn Academy" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
+                        <input type="text" value={editInstitution} onChange={(e) => setEditInstitution(e.target.value)} placeholder="Zoolearn Academy" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
                       </div>
                     </div>
                     
@@ -181,14 +291,16 @@ export default function DashboardPage() {
                       <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Location</label>
                       <div className="flex px-3 py-2 bg-white dark:bg-[#0a0a0a] border border-slate-300 dark:border-slate-700 rounded-md shadow-sm focus-within:ring-1 focus-within:ring-emerald-500 focus-within:border-emerald-500 transition-all">
                         <MapPin className="text-slate-400 mr-2 mt-0.5" size={16} />
-                        <input type="text" defaultValue="Chennai, India" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
+                        <input type="text" value={editLocation} onChange={(e) => setEditLocation(e.target.value)} placeholder="Chennai, India" className="bg-transparent border-none outline-none text-sm w-full text-slate-900 dark:text-slate-100" />
                       </div>
                     </div>
                   </div>
 
                   <div className="flex items-center justify-end gap-3 pt-6 border-t border-slate-200/60 dark:border-slate-800/60">
-                    <Button variant="outline" onClick={() => setIsEditing(false)} className="text-sm font-medium bg-white dark:bg-[#0a0a0a]">Cancel</Button>
-                    <Button onClick={() => setIsEditing(false)} className="bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 text-sm font-medium px-6 shadow-sm">Save Changes</Button>
+                    <Button variant="outline" onClick={() => { setIsEditing(false); setEditName(displayName); }} className="text-sm font-medium bg-white dark:bg-[#0a0a0a]">Cancel</Button>
+                    <Button onClick={handleSave} disabled={isSaving} className="bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 text-sm font-medium px-6 shadow-sm">
+                      {isSaving ? "Saving..." : "Save Changes"}
+                    </Button>
                   </div>
                 </div>
               ) : (
@@ -203,7 +315,7 @@ export default function DashboardPage() {
                           <User size={16} />
                           Full Name
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">Vijaisharathi</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{displayName}</dd>
                       </div>
                       
                       <div>
@@ -211,7 +323,7 @@ export default function DashboardPage() {
                           <EnvelopeSimple size={16} />
                           Email Address
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">vijaisharathi@zoolearn.edu</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{displayEmail}</dd>
                       </div>
 
                       <div>
@@ -219,7 +331,7 @@ export default function DashboardPage() {
                           <CalendarBlank size={16} />
                           Date of Birth
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">14 August 2005</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{profile?.date_of_birth || "—"}</dd>
                       </div>
 
                       <div>
@@ -227,7 +339,7 @@ export default function DashboardPage() {
                           <GenderIntersex size={16} />
                           Gender
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">Male</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{profile?.gender || "—"}</dd>
                       </div>
                     </dl>
                   </div>
@@ -241,7 +353,7 @@ export default function DashboardPage() {
                           <GraduationCap size={16} />
                           Current Class
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">12th Grade - Biology</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{profile?.current_class || "—"}</dd>
                       </div>
 
                       <div>
@@ -249,7 +361,7 @@ export default function DashboardPage() {
                           <Buildings size={16} />
                           Institution
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">Zoolearn Academy</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{profile?.institution || "—"}</dd>
                       </div>
                       
                       <div className="sm:col-span-2">
@@ -257,7 +369,7 @@ export default function DashboardPage() {
                           <MapPin size={16} />
                           Location
                         </dt>
-                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">Chennai, India</dd>
+                        <dd className="text-base font-medium text-slate-900 dark:text-slate-100">{profile?.location || "—"}</dd>
                       </div>
                     </dl>
                   </div>
@@ -275,6 +387,7 @@ export default function DashboardPage() {
           )}
         </div>
       </main>
+      )}
     </div>
   )
 }

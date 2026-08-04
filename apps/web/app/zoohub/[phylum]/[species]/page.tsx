@@ -1,5 +1,3 @@
-import fs from "fs/promises"
-import path from "path"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import {
@@ -15,88 +13,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr"
 import { Card, CardHeader, CardTitle, CardContent } from "@workspace/ui/components/card"
 import { Badge } from "@workspace/ui/components/badge"
-
-/* ─────────────────────────────────────────────
-   Types
-   ───────────────────────────────────────────── */
-
-interface SpeciesData {
-  id: number
-  slug: string
-  name: string
-  scientificName: string
-  description: string
-  image: string
-  "3d": string
-  introduction: string[]
-  features: Record<string, string>
-  classification: Record<string, string>
-  sizeStructure: string[]
-  ecology: string[]
-  economy: string[]
-  phylum_source: string
-}
-
-interface NeighborSpecies {
-  name: string
-  slug: string
-  phylum: string
-}
-
-/* ─────────────────────────────────────────────
-   Data Fetching (unchanged)
-   ───────────────────────────────────────────── */
-
-async function fetchSpeciesData(speciesSlug: string): Promise<SpeciesData | null> {
-  try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "AllPhylumData.json")
-    const raw = await fs.readFile(jsonPath, "utf8")
-    const allData: Record<string, SpeciesData> = JSON.parse(raw)
-    return allData[speciesSlug.toLowerCase()] ?? null
-  } catch {
-    return null
-  }
-}
-
-async function fetchNeighbors(
-  phylumSlug: string,
-  speciesSlug: string
-): Promise<{ prev: NeighborSpecies | null; next: NeighborSpecies | null }> {
-  try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const raw = await fs.readFile(jsonPath, "utf8")
-    const allData = JSON.parse(raw)
-    const classes = allData[phylumSlug.toLowerCase()] ?? []
-
-    // Flatten all species in this phylum
-    const allSpecies: { name: string; slug: string }[] = []
-    for (const cls of classes) {
-      for (const sp of cls.species ?? []) {
-        allSpecies.push({
-          name: sp.name,
-          slug: sp.slug ?? sp.name.toLowerCase().replace(/\s+/g, "-"),
-        })
-      }
-    }
-
-    const idx = allSpecies.findIndex(
-      (s) => s.slug.toLowerCase() === speciesSlug.toLowerCase()
-    )
-    if (idx === -1) return { prev: null, next: null }
-
-    const prev = idx > 0 ? { ...allSpecies[idx - 1], phylum: phylumSlug } : null
-    const next =
-      idx < allSpecies.length - 1
-        ? { ...allSpecies[idx + 1], phylum: phylumSlug }
-        : null
-
-    return { prev, next }
-  } catch {
-    return { prev: null, next: null }
-  }
-}
-
-
+import { getSpeciesDetail, getSpeciesNeighbors } from "@/lib/supabase/zoohub"
 
 /* ─────────────────────────────────────────────
    Page Component
@@ -108,12 +25,12 @@ export default async function SpeciesDetailPage({
   params: { phylum: string; species: string }
 }) {
   const { phylum, species } = await params
-  const data = await fetchSpeciesData(species)
+  const data = await getSpeciesDetail(species)
 
   if (!data) notFound()
 
-  const { prev, next } = await fetchNeighbors(phylum, species)
-  const descriptionLines = data.description.split("\n")
+  const { prev, next } = await getSpeciesNeighbors(phylum, species)
+  const descriptionLines = (data.description || "").split("\n")
 
   // Quick facts from classification
   const quickFacts = ["Kingdom", "Phylum", "Class", "Order", "Family"]
@@ -193,7 +110,7 @@ export default async function SpeciesDetailPage({
               </h1>
 
               <p className="text-lg sm:text-xl text-teal-600/80 dark:text-teal-400/70 italic font-medium mb-4">
-                {data.scientificName}
+                {data.scientific_name}
               </p>
 
               <div className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -210,7 +127,7 @@ export default async function SpeciesDetailPage({
               <div className="absolute inset-6 rounded-full bg-emerald-100/50 dark:bg-emerald-900/20 blur-2xl" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={data.image}
+                src={data.image || ""}
                 alt={data.name}
                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-[1.03] transition-transform duration-500 ease-out"
               />
@@ -271,7 +188,7 @@ export default async function SpeciesDetailPage({
           )}
 
           {/* ── Size & Structure + 3D Model (full width) ── */}
-          {data.sizeStructure?.length > 0 && (
+          {data.size_structure?.length > 0 && (
             <Card className="lg:col-span-2">
               <CardHeader className="bg-muted/30 border-b pb-5">
                 <div className="flex items-center gap-3">
@@ -285,7 +202,7 @@ export default async function SpeciesDetailPage({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Points */}
                   <div className="flex flex-col gap-3.5">
-                    {data.sizeStructure.map((point, i) => (
+                    {data.size_structure.map((point, i) => (
                       <div
                         key={i}
                         className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border hover:bg-muted/50 hover:border-amber-500/50 hover:shadow-md transition-all duration-300 group"
@@ -311,10 +228,10 @@ export default async function SpeciesDetailPage({
                       </span>
                     </div>
                     <div className="aspect-[4/3] w-full bg-slate-50 dark:bg-slate-800/30">
-                      {data["3d"] ? (
+                      {data.model_3d ? (
                         <iframe
                           title={`${data.name} 3D Model`}
-                          src={data["3d"]}
+                          src={data.model_3d}
                           className="w-full h-full border-0"
                           allow="autoplay; fullscreen; xr-spatial-tracking"
                           sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
@@ -415,8 +332,6 @@ export default async function SpeciesDetailPage({
               </CardContent>
             </Card>
           )}
-
-
 
         </div>
 
