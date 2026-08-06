@@ -1,8 +1,7 @@
 import React from "react"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
-import { ConceptualLearning } from "@/components/conceptual-learning"
-
+import { LearningModules } from "@/components/learning-modules"
 import { DeepDive } from "@/components/deep-dive"
 
 export default function Page() {
@@ -11,7 +10,7 @@ export default function Page() {
       {/* Premium Floating Navbar */}
       <Navbar />
       <Hero />
-      <ConceptualLearning />
+      <LearningModules />
       <DeepDive />
     </div>
   )

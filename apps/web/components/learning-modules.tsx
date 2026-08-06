@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 import { motion, Variants } from "framer-motion";
 import { ArrowUpRight, MagnifyingGlass, ProjectorScreenChart, GlobeHemisphereWest, GitBranch } from "@phosphor-icons/react";
+import Link from "next/link";
 import learningModulesData from "../data/learning-modules.json";
 
 export interface LearningModule {
@@ -17,7 +18,7 @@ const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2 }
+    transition: { staggerChildren: 0.15 }
   }
 };
 
@@ -26,7 +27,7 @@ const cardVariants: Variants = {
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] }
   }
 };
 
@@ -38,8 +39,6 @@ const getIcon = (name: string) => {
     default: return <GitBranch className="w-8 h-8 text-primary" weight="duotone" />;
   }
 };
-
-import Link from "next/link";
 
 function LearningCard({ mod, index }: { mod: LearningModule, index: number }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -62,7 +61,7 @@ function LearningCard({ mod, index }: { mod: LearningModule, index: number }) {
         href={mod.link}
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className="group relative flex flex-col justify-between p-8 lg:p-10 rounded-[2rem] bg-card border border-border/40 shadow-sm hover:shadow-2xl transition-all duration-700 overflow-hidden cursor-pointer h-full block"
+        className="group relative flex flex-col justify-between p-[clamp(1.5rem,3vw,2.5rem)] rounded-[2rem] bg-card border border-border/40 shadow-sm hover:shadow-2xl transition-all duration-700 overflow-hidden cursor-pointer h-full block"
       >
         {/* Spotlight Effect */}
         <div 
@@ -73,7 +72,7 @@ function LearningCard({ mod, index }: { mod: LearningModule, index: number }) {
         />
         
         {/* Background watermark number */}
-        <div className="absolute -bottom-6 -right-4 text-[10rem] font-black text-muted/20 z-0 select-none group-hover:scale-110 transition-transform duration-700 group-hover:text-primary/5">
+        <div className="absolute -bottom-6 -right-4 text-[clamp(6rem,12vw,10rem)] font-black text-muted/15 z-0 select-none group-hover:scale-110 transition-transform duration-700 group-hover:text-primary/10 pointer-events-none leading-none">
           {paddedNumber}
         </div>
 
@@ -94,10 +93,10 @@ function LearningCard({ mod, index }: { mod: LearningModule, index: number }) {
             <div className="inline-block px-3 py-1 rounded-full border border-border/50 bg-muted/30 text-xs font-semibold tracking-wider uppercase text-muted-foreground">
               Module {paddedNumber}
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight group-hover:text-primary transition-colors duration-500">
+            <h3 className="text-[clamp(1.25rem,2vw,1.75rem)] font-bold text-foreground tracking-tight group-hover:text-primary transition-colors duration-500">
               {mod.title}
             </h3>
-            <p className="text-muted-foreground leading-relaxed md:text-lg">
+            <p className="text-muted-foreground leading-relaxed text-[clamp(0.875rem,1.1vw,1.05rem)]">
               {mod.description}
             </p>
           </div>
@@ -110,9 +109,9 @@ function LearningCard({ mod, index }: { mod: LearningModule, index: number }) {
   );
 }
 
-export function ConceptualLearning({ modules = learningModulesData as LearningModule[] }: { modules?: LearningModule[] }) {
+export function LearningModules({ modules = learningModulesData as LearningModule[] }: { modules?: LearningModule[] }) {
   return (
-    <section className="relative w-full py-32 bg-background border-t border-border/40 overflow-hidden">
+    <section className="relative w-full py-[clamp(4rem,8vw,8rem)] bg-background border-t border-border/40 overflow-hidden">
       {/* Premium Dark Grid Background */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
       
@@ -120,8 +119,8 @@ export function ConceptualLearning({ modules = learningModulesData as LearningMo
       <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-primary/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
       
       <div className="container relative z-10 px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
-          <div className="flex flex-col space-y-6 max-w-2xl">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-[clamp(2.5rem,5vw,5rem)]">
+          <div className="flex flex-col space-y-4 max-w-2xl">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -129,8 +128,8 @@ export function ConceptualLearning({ modules = learningModulesData as LearningMo
               className="inline-flex items-center gap-2"
             >
               <span className="h-px w-8 bg-primary"></span>
-              <span className="text-sm font-bold tracking-[0.2em] text-primary uppercase">
-                Core Fundamentals
+              <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
+                Learning Modules
               </span>
             </motion.div>
             
@@ -139,7 +138,7 @@ export function ConceptualLearning({ modules = learningModulesData as LearningMo
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground leading-tight"
+              className="text-[clamp(1.875rem,4vw,3.5rem)] font-extrabold tracking-tight text-foreground leading-[1.15]"
             >
               Master the concepts, <br />
               <span className="text-muted-foreground font-light">understand the animal.</span>
@@ -153,8 +152,8 @@ export function ConceptualLearning({ modules = learningModulesData as LearningMo
             transition={{ delay: 0.2 }}
             className="md:max-w-sm"
           >
-            <p className="text-lg text-muted-foreground border-l-2 border-primary/30 pl-4">
-              We&apos;ve distilled complex biological structures into highly visual, easy-to-digest modules designed for absolute clarity.
+            <p className="text-[clamp(0.95rem,1.2vw,1.125rem)] text-muted-foreground border-l-2 border-primary/30 pl-4">
+              We&apos;ve distilled complex biological structures into highly visual, easy-to-digest learning modules designed for absolute clarity.
             </p>
           </motion.div>
         </div>

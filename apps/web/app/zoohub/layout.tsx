@@ -75,8 +75,8 @@ export default async function ZoohubLayout({
       {/* Sidebar and Main Content Area */}
       <div className="flex-1 relative overflow-hidden">
         <SidebarProvider className="absolute inset-0 min-h-0 h-full w-full">
-          {/* Note: Added !top-20 and !h-[calc(100svh-5rem)] because Navbar is h-20 (5rem) and Shadcn Sidebar uses fixed inset-y-0 relative to viewport */}
-          <Sidebar className="!top-20 !h-[calc(100svh-5rem)] border-r border-slate-200 dark:border-slate-800">
+          {/* Note: Added responsive top and height because Navbar is h-16 (4rem) on mobile and h-20 (5rem) on desktop */}
+          <Sidebar className="!top-16 md:!top-20 !h-[calc(100svh-4rem)] md:!h-[calc(100svh-5rem)] border-r border-slate-200 dark:border-slate-800">
             <SidebarContent>
               <div className="px-2 pt-4">
                 <ZoohubSearch searchIndex={searchIndex} />
