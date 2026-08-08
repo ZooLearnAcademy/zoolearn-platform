@@ -82,7 +82,7 @@ export function Hero() {
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1]">
-              Build strong <span className="text-primary bg-clip-text text-transparent bg-linear-to-r from-primary to-primary/60">zoology concepts</span> through interactive 3D models.
+              Build strong <span className="text-primary bg-clip-text text-transparent bg-linear-to-r from-primary to-primary/60">Biology concepts</span> through interactive 3D models.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-[600px] border-l-4 border-primary/50 pl-4">
               Designed exclusively for students and researchers to explore the animal kingdom like never before.

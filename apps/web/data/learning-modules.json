@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title": "The Living World",
-    "description": "Dive into the fundamental building blocks of animal life, cell biology, and core physiological structures.",
+    "title": "11th Module",
+    "description": "Master the foundational concepts of biology. Perfect for starting your advanced learning journey.",
     "icon": "magnifying-glass",
-    "link": "/modules/living-world"
+    "link": "/modules/11th"
   },
   {
     "id": 2,
-    "title": "Complex Patterns",
-    "description": "A detailed exploration of internal organ systems, intricate anatomical structures, and physiological functions.",
+    "title": "12th Module",
+    "description": "Deep dive into complex biological systems, genetics, and board exam focused preparation.",
     "icon": "projector",
-    "link": "/modules/patterns"
+    "link": "/modules/12th"
   },
   {
     "id": 3,
-    "title": "Kingdom Animalia",
-    "description": "Unravel taxonomy, phylogeny, biological hierarchies, and the ultimate organization of the animal kingdom.",
+    "title": "Neet Module",
+    "description": "High-yield topics, competitive strategies, and extensive mock tests for medical entrance exams.",
     "icon": "globe",
-    "link": "/modules/kingdom"
+    "link": "/modules/neet"
   }
 ]

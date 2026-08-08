@@ -19,7 +19,8 @@ import {
   Gear,
   CreditCard,
   SignOut,
-  CaretRight
+  CaretRight,
+  User
 } from "@phosphor-icons/react"
 import { cn } from "@workspace/ui/lib/utils"
 import { Button } from "@workspace/ui/components/button"
@@ -30,7 +31,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "/" },
+  { label: "Learn", href: "/" },
   { label: "Taxonomy Tree", href: "/taxonomy" },
   { label: "ZooHub", href: "/zoohub" },
   { label: "Scopes", href: "/scopes" },
@@ -47,6 +48,7 @@ export function Navbar() {
   const [searchQuery, setSearchQuery] = useState("")
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [profileOpen, setProfileOpen] = useState(false)
+  const [mobileProfileOpen, setMobileProfileOpen] = useState(false)
 
   // Prevents hydration mismatch for theme toggle
   useEffect(() => {
@@ -67,7 +69,7 @@ export function Navbar() {
           "hover:shadow-emerald-500/5 hover:border-emerald-500/20"
         )}
       >
-        <div className="relative flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 md:h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
           
           {/* Logo & Search Section */}
           <div className="flex items-center gap-6">
@@ -75,15 +77,15 @@ export function Navbar() {
               <img 
                 src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png" 
                 alt="ZooLearn Logo" 
-                className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
             </Link>
 
             {/* Expandable Search Input */}
             <div 
               className={cn(
-                "hidden lg:flex relative items-center rounded-full border border-border bg-muted/30 px-4 py-2 transition-all duration-300",
-                searchFocused ? "w-80 border-emerald-500/50 bg-background shadow-md shadow-emerald-500/5" : "w-56"
+                "flex relative items-center rounded-full border border-border bg-muted/30 px-3 sm:px-4 py-1.5 sm:py-2 transition-all duration-300",
+                searchFocused ? "w-40 sm:w-60 lg:w-80 border-emerald-500/50 bg-background shadow-md shadow-emerald-500/5" : "w-28 sm:w-48 lg:w-56"
               )}
             >
               <MagnifyingGlass 
@@ -92,12 +94,12 @@ export function Navbar() {
               />
               <input
                 type="text"
-                placeholder="Search taxonomy..."
+                placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setSearchFocused(true)}
                 onBlur={() => setSearchFocused(false)}
-                className="ml-2 w-full bg-transparent text-base text-foreground placeholder-muted-foreground outline-none border-none p-0 focus:ring-0 focus:outline-none"
+                className="ml-2 w-full bg-transparent text-sm sm:text-base text-foreground placeholder-muted-foreground outline-none border-none p-0 focus:ring-0 focus:outline-none"
               />
             </div>
           </div>
@@ -157,7 +159,7 @@ export function Navbar() {
             </Button>
 
             {/* Profile Popover */}
-            <div className="relative" onMouseLeave={() => setProfileOpen(false)}>
+            <div className="hidden md:block relative" onMouseLeave={() => setProfileOpen(false)}>
               <button 
                 onMouseEnter={() => setProfileOpen(true)}
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border-2 border-transparent hover:border-emerald-500 transition-all overflow-hidden shadow-sm"
@@ -242,7 +244,7 @@ export function Navbar() {
       {/* ZooHub Mega Menu Dropdown */}
       <div
         className={cn(
-          "absolute left-0 right-0 top-20 border-b border-white/20 dark:border-white/10 shadow-xl bg-white/95 dark:bg-black/95 backdrop-blur-xl overflow-hidden transition-all duration-500 z-30 hidden md:block",
+          "absolute left-0 right-0 top-16 md:top-20 border-b border-white/20 dark:border-white/10 shadow-xl bg-white/95 dark:bg-black/95 backdrop-blur-xl overflow-hidden transition-all duration-500 z-30 hidden md:block",
           activeDropdown === "ZooHub" ? "max-h-[600px] opacity-100 py-10" : "max-h-0 opacity-0 pointer-events-none"
         )}
       >
@@ -302,7 +304,7 @@ export function Navbar() {
             <MagnifyingGlass size={18} className="text-muted-foreground" />
             <input
               type="text"
-              placeholder="Search taxonomy..."
+              placeholder="Search..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="ml-2 w-full bg-transparent text-sm text-foreground outline-none"
@@ -352,15 +354,13 @@ export function Navbar() {
             { label: "Taxonomy", href: "/taxonomy", icon: TreeStructure },
             { label: "ZooHub", href: "/zoohub", icon: SquaresFour },
             { label: "Scopes", href: "/scopes", icon: Binoculars },
+            { label: "Profile", action: () => setMobileProfileOpen(true), icon: User },
           ].map((item) => {
             const isActive = pathname === item.href
             const Icon = item.icon
-            return (
-              <Link 
-                key={item.href} 
-                href={item.href}
-                className="flex flex-col items-center justify-center w-[72px] h-full gap-1 transition-all group"
-              >
+            
+            const content = (
+              <>
                 <div className={cn(
                   "flex items-center justify-center rounded-2xl p-1.5 transition-all duration-300",
                   isActive ? "bg-emerald-500/15" : "bg-transparent group-hover:bg-muted/50"
@@ -380,11 +380,86 @@ export function Navbar() {
                 )}>
                   {item.label}
                 </span>
+              </>
+            )
+
+            if (item.action) {
+              return (
+                <button 
+                  key={item.label}
+                  onClick={item.action}
+                  className="flex flex-col items-center justify-center w-[60px] sm:w-[72px] h-full gap-1 transition-all group"
+                >
+                  {content}
+                </button>
+              )
+            }
+
+            return (
+              <Link 
+                key={item.href} 
+                href={item.href!}
+                className="flex flex-col items-center justify-center w-[60px] sm:w-[72px] h-full gap-1 transition-all group"
+              >
+                {content}
               </Link>
             )
           })}
         </div>
       </nav>
+
+      {/* Mobile Profile Bottom Sheet Overlay */}
+      {mobileProfileOpen && (
+        <div 
+          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm md:hidden"
+          onClick={() => setMobileProfileOpen(false)}
+        />
+      )}
+      
+      {/* Mobile Profile Bottom Sheet */}
+      <div 
+        className={cn(
+          "fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-[#111] rounded-t-3xl shadow-2xl transition-transform duration-300 md:hidden",
+          mobileProfileOpen ? "translate-y-0" : "translate-y-full"
+        )}
+      >
+        <div className="w-12 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full mx-auto my-3" />
+        
+        {/* Header */}
+        <div className="flex items-center gap-4 p-5 bg-gradient-to-b from-slate-50/80 to-white/40 dark:from-slate-900/80 dark:to-[#111]/40 border-b border-slate-100 dark:border-slate-800/60">
+          <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden shrink-0 border-2 border-white dark:border-slate-700 shadow-md">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=vijaisharathi&backgroundColor=b6e3f4" alt="vijaisharathi" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[1.1rem] font-extrabold text-slate-900 dark:text-white leading-tight mb-0.5">vijaisharathi</span>
+            <span className="text-[0.8rem] font-bold text-emerald-600 dark:text-emerald-500">Zoolearn Learner</span>
+          </div>
+        </div>
+
+        {/* Menu Items */}
+        <div className="p-4 flex flex-col gap-2">
+          <Link href="/dashboard" onClick={() => setMobileProfileOpen(false)} className="flex items-center gap-4 w-full p-4 rounded-xl text-slate-600 dark:text-slate-300 font-semibold bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+            <div className="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm"><SquaresFour size={20} className="text-emerald-600 dark:text-emerald-400" /></div>
+            Dashboard
+          </Link>
+          <button onClick={() => setMobileProfileOpen(false)} className="flex items-center gap-4 w-full p-4 rounded-xl text-slate-600 dark:text-slate-300 font-semibold bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+            <div className="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm"><Gear size={20} className="text-emerald-600 dark:text-emerald-400" /></div>
+            Account Settings
+          </button>
+          <button onClick={() => setMobileProfileOpen(false)} className="flex items-center gap-4 w-full p-4 rounded-xl text-slate-600 dark:text-slate-300 font-semibold bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+            <div className="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm"><CreditCard size={20} className="text-emerald-600 dark:text-emerald-400" /></div>
+            Subscription
+          </button>
+        </div>
+
+        {/* Footer / Sign Out */}
+        <div className="p-4 mt-2 pb-8">
+          <button onClick={() => setMobileProfileOpen(false)} className="flex items-center justify-center gap-3 w-full p-4 rounded-xl text-rose-600 dark:text-rose-500 font-bold bg-rose-50 dark:bg-rose-900/20 hover:bg-rose-100 dark:hover:bg-rose-900/40 transition-colors">
+            <SignOut size={20} />
+            Sign Out
+          </button>
+        </div>
+      </div>
     </>
   )
 }
