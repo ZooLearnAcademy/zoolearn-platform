@@ -1,0 +1,27 @@
+{
+  "structuralOrganisation": {
+    "title": "Structural Organisation in Animals",
+    "subtitle": "Animal Tissues, Epithelial, Connective, Muscular & Neural Systems",
+    "tagline": "Master the cellular hierarchy of animal life, simple and compound epithelia, intercellular junctions, connective tissue matrices, muscle contraction types, and neural signal conduction.",
+    "seo": {
+      "title": "Structural Organisation in Animals - Class 11 Biology NCERT Notes & Visual Guide",
+      "description": "Comprehensive NCERT guide to Animal Tissues: Epithelial (Squamous, Cuboidal, Columnar, Ciliated, Glandular, Compound, Junctions), Connective (Areolar, Adipose, Tendons, Ligaments, Cartilage, Bone, Blood), Muscular (Skeletal, Smooth, Cardiac), and Neural Tissue.",
+      "keywords": "Structural Organisation in Animals, Animal Tissues, Epithelial Tissue, Connective Tissue, Muscular Tissue, Neural Tissue, Tight Junctions, Gap Junctions, Tendons, Ligaments, Cartilage, Osteocytes, Chondrocytes, Neurons, Neuroglia, Class 11 Biology, NEET Zoology"
+    },
+    "hero": {
+      "title": "Structural Organisation in Animals",
+      "introParagraphs": [
+        "In multicellular organisms, cells do not function in isolation. Similar cells work with intercellular substances to form tissues, which combine to create organs and organ systems.",
+        "From the diffusion boundary of lung alveoli to the electrical impulses coursing down motor axons, animal life operates through an exquisite division of labour across four primary tissue lineages."
+      ],
+      "heroImage": "/images/structural-organisation/hierarchy_of_animal_life.jpg",
+      "altText": "The Hierarchy of Animal Life: Cells to Systems"
+    },
+    "stats": {
+      "totalTopics": 5,
+      "tissuesCovered": 4,
+      "neetQuestions": "2-3 Qs",
+      "curriculum": "NCERT Class 11 Chapter 7"
+    }
+  }
+}

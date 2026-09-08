@@ -37,15 +37,18 @@ export async function fetchNeighbors(
     const idx = allSpecies.findIndex(
       (s) => s.slug.toLowerCase() === speciesSlug.toLowerCase()
     )
-    if (idx === -1) return { prev: null, next: null }
+    const prevItem = idx > 0 ? allSpecies[idx - 1] : undefined
+    const prev: NeighborSpecies | null = prevItem
+      ? { name: prevItem.name, slug: prevItem.slug, phylum: phylumSlug }
+      : null
 
-    const prev = idx > 0 ? { ...allSpecies[idx - 1], phylum: phylumSlug } : null
-    const next =
-      idx < allSpecies.length - 1
-        ? { ...allSpecies[idx + 1], phylum: phylumSlug }
-        : null
+    const nextItem = idx < allSpecies.length - 1 ? allSpecies[idx + 1] : undefined
+    const next: NeighborSpecies | null = nextItem
+      ? { name: nextItem.name, slug: nextItem.slug, phylum: phylumSlug }
+      : null
 
     return { prev, next }
+
   } catch {
     return { prev: null, next: null }
   }

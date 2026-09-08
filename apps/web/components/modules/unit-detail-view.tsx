@@ -245,85 +245,101 @@ export function UnitDetailView({ gradeData, unit }: UnitDetailViewProps) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filteredChapters.map((chapter) => (
-              <div
-                key={chapter.id}
-                onClick={() => setSelectedChapter({ unit, chapter })}
-                className="group relative rounded-xl border border-slate-300 dark:border-slate-700/90 bg-card hover:border-slate-400 dark:hover:border-slate-500 hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between cursor-pointer space-y-4 overflow-hidden"
-              >
-                {/* Top Inset Highlight Line */}
-                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-400/50 dark:via-slate-600/50 to-transparent" />
+            {filteredChapters.map((chapter) => {
+              const chapterHref =
+                chapter.id === "the-living-world" || chapter.id === "living-world"
+                  ? "/living-world"
+                  : chapter.id === "structural-organisation-in-animals"
+                  ? "/structural-organisation-in-animals"
+                  : chapter.link || `/modules/${gradeData.grade.toLowerCase()}/${unit.id}/${chapter.id}`;
 
-                {/* Subtle Hover Ambient Glow */}
-                <div className={cn(
-                  "absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none bg-gradient-to-br",
-                  theme.glow
-                )} />
+              return (
+                <div
+                  key={chapter.id}
+                  onClick={() => {
+                    if (chapter.id === "the-living-world" || chapter.id === "living-world") {
+                      window.location.href = "/living-world";
+                    } else if (chapter.id === "structural-organisation-in-animals") {
+                      window.location.href = "/structural-organisation-in-animals";
+                    } else {
+                      setSelectedChapter({ unit, chapter });
+                    }
+                  }}
+                  className="group relative rounded-xl border border-slate-300 dark:border-slate-700/90 bg-card hover:border-slate-400 dark:hover:border-slate-500 hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between cursor-pointer space-y-4 overflow-hidden"
+                >
+                  {/* Top Inset Highlight Line */}
+                  <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-400/50 dark:via-slate-600/50 to-transparent" />
 
-                <div className="space-y-4 relative z-10">
-                  {/* Monospace Metadata Row with Large Professional Icon */}
-                  <div className="flex items-center gap-3.5">
-                    <div className={cn(
-                      "w-12 h-12 rounded-xl flex items-center justify-center border shadow-xs shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:shadow-md",
-                      theme.tag
-                    )}>
-                      <IconComponent className="w-6 h-6" weight="duotone" />
+                  {/* Subtle Hover Ambient Glow */}
+                  <div className={cn(
+                    "absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none bg-gradient-to-br",
+                    theme.glow
+                  )} />
+
+                  <div className="space-y-4 relative z-10">
+                    {/* Monospace Metadata Row with Large Professional Icon */}
+                    <div className="flex items-center gap-3.5">
+                      <div className={cn(
+                        "w-12 h-12 rounded-xl flex items-center justify-center border shadow-xs shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:shadow-md",
+                        theme.tag
+                      )}>
+                        <IconComponent className="w-6 h-6" weight="duotone" />
+                      </div>
+                      <span className="text-base sm:text-lg font-mono font-bold uppercase tracking-wider text-foreground">
+                        CHAPTER {chapter.number}
+                      </span>
                     </div>
-                    <span className="text-base sm:text-lg font-mono font-bold uppercase tracking-wider text-foreground">
-                      CHAPTER {chapter.number}
-                    </span>
+
+                    {/* Title */}
+                    <div className="space-y-1">
+                      <h3 className="text-base sm:text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+                        {chapter.title}
+                      </h3>
+                    </div>
+
+                    {/* Key Topics as a single clean paragraph */}
+                    <p className="text-xs sm:text-[13px] text-muted-foreground leading-relaxed">
+                      {chapter.keyTopics.join(", ")}.
+                    </p>
                   </div>
 
-                  {/* Title */}
-                  <div className="space-y-1">
-                    <h3 className="text-base sm:text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
-                      {chapter.title}
-                    </h3>
-                  </div>
+                  {/* Bottom Action Footer */}
+                  <div className="pt-5 mt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 relative z-10">
+                    <div className="text-[11px] font-mono text-muted-foreground">
+                      Chapter {chapter.number} • NCERT
+                    </div>
 
-                  {/* Key Topics as a single clean paragraph */}
-                  <p className="text-xs sm:text-[13px] text-muted-foreground leading-relaxed">
-                    {chapter.keyTopics.join(", ")}.
-                  </p>
-                </div>
+                    <div className="flex items-center gap-1.5">
+                      {chapter.id === "animal-kingdom" && (
+                        <Link
+                          href="/zoohub"
+                          onClick={(e) => e.stopPropagation()}
+                          className={cn(
+                            buttonVariants({ variant: "outline", size: "sm" }),
+                            "h-7 px-2.5 text-[11px] font-mono rounded-md border-emerald-500/40 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 flex items-center gap-1 shadow-xs"
+                          )}
+                        >
+                          <span>ZooHub 3D</span>
+                          <ArrowUpRight className="w-3 h-3" />
+                        </Link>
+                      )}
 
-                {/* Bottom Action Footer */}
-                <div className="pt-5 mt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 relative z-10">
-                  <div className="text-[11px] font-mono text-muted-foreground">
-                    Chapter {chapter.number} • NCERT
-                  </div>
-
-                  <div className="flex items-center gap-1.5">
-                    {chapter.id === "animal-kingdom" && (
                       <Link
-                        href="/zoohub"
+                        href={chapterHref}
                         onClick={(e) => e.stopPropagation()}
                         className={cn(
-                          buttonVariants({ variant: "outline", size: "sm" }),
-                          "h-7 px-2.5 text-[11px] font-mono rounded-md border-emerald-500/40 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 flex items-center gap-1 shadow-xs"
+                          buttonVariants({ variant: "secondary", size: "sm" }),
+                          "h-7 px-3 text-[11px] font-mono rounded-md font-semibold flex items-center gap-1.5 shadow-xs hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/50"
                         )}
                       >
-                        <span>ZooHub 3D</span>
-                        <ArrowUpRight className="w-3 h-3" />
+                        <span>Learn</span>
+                        <ArrowRight className="w-3 h-3" />
                       </Link>
-                    )}
-
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedChapter({ unit, chapter });
-                      }}
-                      className="h-7 px-2.5 text-[11px] font-mono rounded-md font-semibold flex items-center gap-1 shadow-xs"
-                    >
-                      <span>Explore Chapter</span>
-                      <ArrowRight className="w-3 h-3" />
-                    </Button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
 

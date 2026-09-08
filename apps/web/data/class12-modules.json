@@ -15,8 +15,8 @@
       "id": "reproduction",
       "unitNumber": "Unit VI",
       "title": "Reproduction",
-      "tagline": "Gametogenesis, Embryogenesis & Reproductive Physiology",
-      "description": "In-depth exploration of human reproductive anatomy, hormonal regulation, menstrual cycle, fertilization, embryonic development, contraceptive mechanisms, and reproductive health standards.",
+      "tagline": "Angiosperm Embryology, Gametogenesis & Reproductive Physiology",
+      "description": "In-depth exploration of floral reproductive morphology, pollination dynamics, double fertilization, human reproductive systems, gametogenesis, menstrual cycle, embryonic development, and reproductive health standards.",
       "accentColor": "rose",
       "icon": "heartbeat",
       "neetWeightage": "14-16% (9-10 Qs)",
@@ -25,13 +25,13 @@
       "route": "/modules/12th/reproduction",
       "chapters": [
         {
-          "id": "chemical-coordination-and-integration",
+          "id": "sexual-reproduction-in-flowering-plants",
           "number": 1,
-          "title": "Chemical Coordination and Integration",
-          "description": "Endocrine glands and hormones, pituitary-gonadal axis, hormonal control of gametogenesis, feedback loops, and secondary sexual characteristics.",
-          "keyTopics": ["Hypothalamus-Pituitary Axis", "GnRH, LH & FSH Feedback", "Estrogen & Progesterone Regulation", "Testosterone & Androgens"],
-          "neetWeightage": "2-3 Qs",
-          "link": "/modules/12th/chemical-coordination",
+          "title": "Sexual Reproduction in Flowering Plants",
+          "description": "Flower structure, development of male and female gametophytes, pollination types, agents and outbreeding devices, pollen-pistil interaction, double fertilization, post-fertilization events, endosperm and embryo development, seed and fruit formation, apomixis, and polyembryony.",
+          "keyTopics": ["Microsporogenesis & Pollen Morphology", "Megasporogenesis & Embryo Sac (7-Celled 8-Nucleate)", "Pollination & Outbreeding Devices", "Double Fertilization (Syngamy + Triple Fusion)", "Endosperm & Dicot/Monocot Embryo", "Apomixis & Polyembryony"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/sexual-reproduction-in-flowering-plants",
           "isAvailable": true
         },
         {

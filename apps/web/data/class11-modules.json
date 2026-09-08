@@ -6,7 +6,7 @@
   "heroDescription": "Master the fundamental principles of life sciences, botanical structures, cellular mechanisms, and integrated human physiology with complete high-yield NEET blueprints.",
   "stats": {
     "totalUnits": 5,
-    "totalChapters": 21,
+    "totalChapters": 22,
     "neetQuestions": "45-50",
     "syllabusStandard": "100% NCERT"
   },
@@ -225,12 +225,12 @@
       "id": "human-physiology",
       "unitNumber": "Unit V",
       "title": "Human Physiology",
-      "tagline": "Integrated Organ Systems, Homeostasis & Neural Coordination",
-      "description": "The ultimate organ system deep-dive: Gastrointestinal digestion, pulmonary gas transport, cardiac cycle & ECG, nephron counter-current mechanism, sliding filament theory, and neural action potentials.",
+      "tagline": "Integrated Organ Systems, Homeostasis & Chemical Coordination",
+      "description": "The ultimate organ system deep-dive: Gastrointestinal digestion, pulmonary gas transport, cardiac cycle & ECG, nephron counter-current mechanism, sliding filament theory, neural impulse transmission, and endocrine hormonal integration.",
       "accentColor": "rose",
       "icon": "heartbeat",
       "neetWeightage": "18-20% (10-12 Qs)",
-      "totalChapters": 6,
+      "totalChapters": 7,
       "category": "Physiology",
       "route": "/modules/11th/human-physiology",
       "chapters": [
@@ -292,6 +292,16 @@
           "keyTopics": ["Polarised Resting State (Na+/K+ ATPase Pump)", "Depolarisation & Action Potential Generation (Na+ Influx)", "Synaptic Cleft & Neurotransmitter Release (Acetylcholine)", "Brain Anatomy (Forebrain, Midbrain, Hindbrain & Limbic System)", "Reflex Arc Neural Pathway"],
           "neetWeightage": "2-3 Qs",
           "link": "/modules/11th/neural-control-and-coordination",
+          "isAvailable": true
+        },
+        {
+          "id": "chemical-coordination-and-integration",
+          "number": 7,
+          "title": "Chemical Coordination and Integration",
+          "description": "Endocrine glands and hormones, human endocrine system (Hypothalamus, Pituitary, Pineal, Thyroid, Parathyroid, Adrenal, Pancreas, Gonads), hormones of heart, kidney and GI tract, mechanism of hormone action.",
+          "keyTopics": ["Hypothalamus & Pituitary Hormones", "Thyroid & Parathyroid (T3, T4, TSH, PTH)", "Adrenal Cortex & Medulla (Corticoids & Epinephrine)", "Pancreatic Insulin & Glucagon Regulation", "Peptide vs Steroid Hormone Action (cAMP Second Messenger)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/chemical-coordination-and-integration",
           "isAvailable": true
         }
       ]

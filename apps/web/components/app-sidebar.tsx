@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-
 import {
   Sidebar,
   SidebarContent,
@@ -10,199 +9,76 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
   SidebarRail,
 } from "@workspace/ui/components/sidebar"
-import { RowsIcon } from "@phosphor-icons/react"
+import { BookOpen, Compass } from "@phosphor-icons/react"
+import { livingWorldTopics } from "@/data/the-living-world-topics"
 
-// This is sample data.
-const data = {
-  navMain: [
-    {
-      title: "Getting Started",
-      url: "#",
-      items: [
-        {
-          title: "Installation",
-          url: "#",
-        },
-        {
-          title: "Project Structure",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Build Your Application",
-      url: "#",
-      items: [
-        {
-          title: "Routing",
-          url: "#",
-        },
-        {
-          title: "Data Fetching",
-          url: "#",
-          isActive: true,
-        },
-        {
-          title: "Rendering",
-          url: "#",
-        },
-        {
-          title: "Caching",
-          url: "#",
-        },
-        {
-          title: "Styling",
-          url: "#",
-        },
-        {
-          title: "Optimizing",
-          url: "#",
-        },
-        {
-          title: "Configuring",
-          url: "#",
-        },
-        {
-          title: "Testing",
-          url: "#",
-        },
-        {
-          title: "Authentication",
-          url: "#",
-        },
-        {
-          title: "Deploying",
-          url: "#",
-        },
-        {
-          title: "Upgrading",
-          url: "#",
-        },
-        {
-          title: "Examples",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "API Reference",
-      url: "#",
-      items: [
-        {
-          title: "Components",
-          url: "#",
-        },
-        {
-          title: "File Conventions",
-          url: "#",
-        },
-        {
-          title: "Functions",
-          url: "#",
-        },
-        {
-          title: "next.config.js Options",
-          url: "#",
-        },
-        {
-          title: "CLI",
-          url: "#",
-        },
-        {
-          title: "Edge Runtime",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Architecture",
-      url: "#",
-      items: [
-        {
-          title: "Accessibility",
-          url: "#",
-        },
-        {
-          title: "Fast Refresh",
-          url: "#",
-        },
-        {
-          title: "Next.js Compiler",
-          url: "#",
-        },
-        {
-          title: "Supported Browsers",
-          url: "#",
-        },
-        {
-          title: "Turbopack",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Community",
-      url: "#",
-      items: [
-        {
-          title: "Contribution Guide",
-          url: "#",
-        },
-      ],
-    },
-  ],
+interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
+  activeTopicId?: string
+  onSelectTopic?: (topicId: string) => void
+  onSelectCard?: (topicId: string, cardId: string) => void
 }
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+
+export function AppSidebar({
+  activeTopicId = "introduction",
+  onSelectTopic,
+  onSelectCard,
+  ...props
+}: AppSidebarProps) {
+  const handleCardClick = (topicId: string, cardId: string) => {
+    onSelectTopic?.(topicId)
+    if (onSelectCard) {
+      onSelectCard(topicId, cardId)
+    } else {
+      setTimeout(() => {
+        const el = document.getElementById(cardId)
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+      }, 100)
+    }
+  }
+
   return (
-    <Sidebar {...props}>
+    <Sidebar {...props} className="border-r border-slate-200/90 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 font-sans">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" render={<a href="#" />}>
-              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                <RowsIcon className="size-4" />
+            <SidebarMenuButton size="lg" render={<div />} className="hover:bg-emerald-50 dark:hover:bg-emerald-950/40 py-4">
+              <div className="flex aspect-square size-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#00897b] to-[#00bfa5] text-white shadow-xs">
+                <BookOpen className="size-4" weight="bold" />
               </div>
               <div className="flex flex-col gap-0.5 leading-none">
-                <span className="font-medium">Documentation</span>
-                <span className="">v1.0.0</span>
+                <span className="font-extrabold text-sm text-slate-800 dark:text-slate-100">The Living World</span>
+                <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Class 11 Biology • Ch 1</span>
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+
       <SidebarContent>
         <SidebarGroup>
-          <SidebarMenu>
-            {data.navMain.map((item) => (
-              <SidebarMenuItem key={item.title}>
-                <SidebarMenuButton
-                  className="text-base py-5"
-                  render={<a href={item.url} className="font-semibold" />}
-                >
-                  {item.title}
-                </SidebarMenuButton>
-                {item.items?.length ? (
-                  <SidebarMenuSub>
-                    {item.items.map((item) => (
-                      <SidebarMenuSubItem key={item.title}>
-                        <SidebarMenuSubButton
-                          className="text-[15px] py-4"
-                          isActive={item.isActive}
-                          render={<a href={item.url} />}
-                        >
-                          {item.title}
-                        </SidebarMenuSubButton>
-                      </SidebarMenuSubItem>
-                    ))}
-                  </SidebarMenuSub>
-                ) : null}
-              </SidebarMenuItem>
-            ))}
+          <SidebarMenu className="gap-1.5 px-2">
+            {livingWorldTopics.map((topic) => {
+              const isTopicActive = activeTopicId === topic.id
+
+              return (
+                <SidebarMenuItem key={topic.id}>
+                  <SidebarMenuButton
+                    isActive={isTopicActive}
+                    onClick={() => onSelectTopic?.(topic.id)}
+                    className="text-sm font-bold py-3.5 px-3 rounded-xl transition-all hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-slate-800/60 dark:hover:text-emerald-300"
+                  >
+                    <span className="truncate">{topic.title}</span>
+                    {isTopicActive && (
+                      <span className="ml-auto h-2 w-2 rounded-full bg-emerald-600 dark:bg-emerald-400 shrink-0" />
+                    )}
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              )
+            })}
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
@@ -210,3 +86,4 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     </Sidebar>
   )
 }
+

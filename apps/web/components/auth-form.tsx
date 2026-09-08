@@ -443,9 +443,4 @@ export function AuthForm() {
     </div>
   );
 }
-        and{" "}
-        <a href="#" className="underline underline-offset-4 hover:text-primary transition-colors">Privacy Policy</a>.
-      </p>
-    </div>
-  );
-}
+

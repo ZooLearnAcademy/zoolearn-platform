@@ -445,10 +445,25 @@ export function ClassModuleView({ data }: ClassModuleViewProps) {
               {allChaptersList.map(({ unit, chapter }) => {
                 const theme = getUnitTheme(unit.id);
 
+                const chapterHref =
+                  chapter.id === "the-living-world" || chapter.id === "living-world"
+                    ? "/living-world"
+                    : chapter.id === "structural-organisation-in-animals"
+                    ? "/structural-organisation-in-animals"
+                    : chapter.link || `/modules/${data.grade.toLowerCase()}/${unit.id}/${chapter.id}`;
+
                 return (
                   <div
                     key={`${unit.id}-${chapter.id}`}
-                    onClick={() => setSelectedChapter({ unit, chapter })}
+                    onClick={() => {
+                      if (chapter.id === "the-living-world" || chapter.id === "living-world") {
+                        window.location.href = "/living-world";
+                      } else if (chapter.id === "structural-organisation-in-animals") {
+                        window.location.href = "/structural-organisation-in-animals";
+                      } else {
+                        setSelectedChapter({ unit, chapter });
+                      }
+                    }}
                     className="group relative rounded-xl border border-slate-300 dark:border-slate-700/90 bg-card hover:border-slate-400 dark:hover:border-slate-500 hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between cursor-pointer space-y-4 overflow-hidden"
                   >
                     <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-400/50 dark:via-slate-600/50 to-transparent" />
@@ -506,18 +521,17 @@ export function ClassModuleView({ data }: ClassModuleViewProps) {
                           </Link>
                         )}
 
-                        <Button
-                          variant="secondary"
-                          size="sm"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedChapter({ unit, chapter });
-                          }}
-                          className="h-7 px-2.5 text-[11px] font-mono rounded-md font-semibold flex items-center gap-1 shadow-xs"
+                        <Link
+                          href={chapterHref}
+                          onClick={(e) => e.stopPropagation()}
+                          className={cn(
+                            buttonVariants({ variant: "secondary", size: "sm" }),
+                            "h-7 px-3 text-[11px] font-mono rounded-md font-semibold flex items-center gap-1.5 shadow-xs hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/50"
+                          )}
                         >
-                          <span>Explore Chapter</span>
+                          <span>Learn</span>
                           <ArrowRight className="w-3 h-3" />
-                        </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
