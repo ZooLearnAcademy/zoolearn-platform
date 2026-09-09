@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* =========================================
+   ZOOLEARN FOOTER – Premium Seamless Transition
+========================================= */
+
+.foo-zl-footer {
+  font-family: 'Inter', var(--font-sans, system-ui, sans-serif);
+  position: relative;
+  overflow: hidden;
+  /* Ensure a minimum height to show the beautiful landscape */
+  min-height: 600px;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to bottom */
+}
+
+/* ─────────────────────────────────────
+   BACKGROUND LAYERS
+───────────────────────────────────── */
+.foo-zl-bg-light,
+.foo-zl-bg-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 0;
+  /* Optional: subtle parallax effect */
+  background-attachment: scroll;
+}
+
+/* Light Mode Background */
+.foo-zl-bg-light {
+  background-image: url('https://res.cloudinary.com/duibfmcw1/image/upload/v1786003018/Untitled_design_1_mfllw3.png');
+  opacity: 1;
+  filter: brightness(0.45);
+}
+.dark .foo-zl-bg-light {
+  opacity: 0;
+}
+
+/* Dark Mode Background */
+.foo-zl-bg-dark {
+  background-image: url('https://res.cloudinary.com/duibfmcw1/image/upload/v1786003018/Untitled_design_3_sar7ib.png');
+  opacity: 0;
+}
+.dark .foo-zl-bg-dark {
+  opacity: 1;
+}
+
+/* Dark Mode Stars */
+.foo-zl-stars {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  height: 45%; 
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  z-index: 2; 
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 15% 25%, #ffffff 1.5px, transparent 2px),
+    radial-gradient(circle at 35% 45%, #ffffff 2px, transparent 2.5px),
+    radial-gradient(circle at 55% 15%, #ffffff 1px, transparent 1.5px),
+    radial-gradient(circle at 75% 35%, #ffffff 1.5px, transparent 2px),
+    radial-gradient(circle at 95% 10%, #ffffff 2px, transparent 2.5px),
+    radial-gradient(circle at 25% 65%, #ffffff 1.5px, transparent 2px),
+    radial-gradient(circle at 65% 75%, #ffffff 1px, transparent 1.5px),
+    radial-gradient(circle at 85% 55%, #ffffff 2px, transparent 2.5px);
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.dark .foo-zl-stars {
+  opacity: 1; 
+}
+
+/* Dark Mode Deer Overlay */
+.foo-zl-bg-deer {
+  position: absolute;
+  bottom: 8%; 
+  right: 3%; 
+  width: 140px; 
+  height: auto;
+  opacity: 0;
+  z-index: 1; 
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.dark .foo-zl-bg-deer {
+  opacity: 0.25; 
+}
+
+/* ─────────────────────────────────────
+   ATMOSPHERIC MIST
+───────────────────────────────────── */
+.foo-zl-mist-light,
+.foo-zl-mist-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Soft white/blue atmospheric haze */
+.foo-zl-mist-light {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(224, 242, 254, 0.1) 40%, transparent 100%);
+  opacity: 1;
+}
+.dark .foo-zl-mist-light {
+  opacity: 0;
+}
+
+/* Dark navy mist to preserve moon/sun glow but feel connected */
+.foo-zl-mist-dark {
+  background: linear-gradient(to bottom, rgba(11, 18, 32, 0.6) 0%, rgba(15, 23, 42, 0.2) 40%, transparent 100%);
+  opacity: 0;
+}
+.dark .foo-zl-mist-dark {
+  opacity: 1;
+}
+
+/* ─────────────────────────────────────
+   SEAMLESS TRANSITION OVERLAY
+───────────────────────────────────── */
+.foo-zl-seamless-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px; /* 400px vertical fade */
+  z-index: 2;
+  pointer-events: none;
+  /* Fades perfectly from the main page background to transparent */
+  background: linear-gradient(to bottom, var(--background) 0%, transparent 100%);
+  /* Ensure the background variable handles the transition nicely */
+  transition: background 0.8s ease-in-out;
+}
+
+/* ─────────────────────────────────────
+   FOOTER CONTENT & GLASSMORPHISM
+───────────────────────────────────── */
+.foo-zl-footer-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 24px 60px; /* Space for the fade at the top */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  position: relative;
+  z-index: 10;
+}
+
+.foo-zl-glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.foo-zl-glass:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dark .foo-zl-glass {
+  background: rgba(15, 23, 42, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dark .foo-zl-glass:hover {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+/* ─────────────────────────────────────
+   BRAND SECTION
+───────────────────────────────────── */
+.foo-zl-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foo-zl-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.foo-zl-logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(1.15) contrast(1.1) saturate(1.8) drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.foo-zl-logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0;
+  line-height: 1.2;
+  display: flex;
+  align-items: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+
+.foo-zl-logo-zoo {
+  font-weight: 900;
+  background: linear-gradient(135deg, #a6ffea 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(12, 56, 102, 0.4);
+  padding-bottom: 0.1em;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+}
+.dark .foo-zl-logo-zoo {
+  background: linear-gradient(135deg, #37c858 0%, #248b3b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0 transparent;
+  text-shadow: 0 2px 8px rgba(55, 200, 88, 0.3);
+}
+
+.foo-zl-logo-learn {
+  font-weight: 500;
+  background: linear-gradient(135deg, #7dd3fc 0%, #99f6e4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(12, 56, 102, 0.4);
+  padding-bottom: 0.1em;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+}
+.dark .foo-zl-logo-learn {
+  background: linear-gradient(135deg, #51d0ff 0%, #2cb0df 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0 transparent;
+  text-shadow: 0 2px 8px rgba(81, 208, 255, 0.3);
+}
+
+.foo-zl-tagline {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  max-width: 480px;
+}
+.dark .foo-zl-tagline {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* ─────────────────────────────────────
+   LINKS GRID
+───────────────────────────────────── */
+.foo-zl-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.foo-zl-col h3 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+  text-shadow: none;
+}
+.dark .foo-zl-col h3 {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.foo-zl-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(90deg, #0f172a, #475569);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+.dark .foo-zl-col h3::after {
+  background: linear-gradient(90deg, #ffffff, #cbd5e1);
+}
+
+.foo-zl-col:hover h3::after {
+  width: 100%;
+}
+
+.foo-zl-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.foo-zl-col li a,
+.foo-zl-col li span {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+.dark .foo-zl-col li a,
+.dark .foo-zl-col li span {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.foo-zl-col li a:hover,
+.foo-zl-col li span.contact-toggle:hover {
+  color: #ffffff;
+  transform: translateX(6px);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+.dark .foo-zl-col li a:hover,
+.dark .foo-zl-col li span.contact-toggle:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+/* ─────────────────────────────────────
+   CONTACT DROPDOWN
+───────────────────────────────────── */
+.contact-dropdown-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contact-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  margin: 0 !important;
+  padding: 16px !important;
+  background: rgba(255, 255, 255, 0.95); /* Bright dialogue box for light mode */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  min-width: 180px;
+  animation: slideDownFade 0.3s ease forwards;
+}
+.dark .contact-dropdown {
+  background: rgba(15, 23, 42, 0.95); /* Dark dialogue box for dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes slideDownFade {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.contact-dropdown-link {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  color: #0f172a !important; /* Dark text for light mode dialogue box */
+  text-shadow: none !important;
+  font-weight: 600 !important;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+.contact-dropdown-link:hover {
+  color: #2563eb !important;
+  transform: translateX(4px);
+}
+
+.dark .contact-dropdown-link {
+  color: #f8fafc !important; /* White text for dark mode */
+}
+
+.dark .contact-dropdown-link:hover {
+  color: #60a5fa !important;
+}
+
+.contact-icon { flex-shrink: 0; }
+
+/* ─────────────────────────────────────
+   COPYRIGHT BAR
+───────────────────────────────────── */
+.foo-zl-copyright {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.foo-zl-copyright-content {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ─────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────── */
+@media (max-width: 1024px) {
+  .foo-zl-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 80px 24px 40px;
+  }
+  .foo-zl-tagline { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .foo-zl-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .foo-zl-glass {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foo-zl-footer-inner {
+    padding: 60px 16px 32px;
+  }
+  .foo-zl-links {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .foo-zl-logo h1 { font-size: 1.8rem; }
+  .foo-zl-glass { padding: 24px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foo-zl-footer, .foo-zl-footer * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
