@@ -1,0 +1,1 @@
+export default () => (<section><h3>Habit and Habitat</h3><p>Found in freshwater bodies; ectoparasitic and sanguivorous.</p></section>);

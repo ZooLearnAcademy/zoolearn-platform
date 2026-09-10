@@ -46,11 +46,11 @@
   },
   {
     "id": "human-evolution",
-    "name": "Human Evolution",
-    "scientificName": "Homo sapiens",
+    "name": "Horse Evolution",
+    "scientificName": "Equus lineage",
     "categoryType": "Class",
     "category": "Mammalia",
-    "icon": "🚶",
+    "icon": "🐴",
     "link": "/organisms/human-evolution"
   }
 ]

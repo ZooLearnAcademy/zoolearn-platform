@@ -1,0 +1,216 @@
+/* SECTION BACKGROUND */
+.bd-divisions-section {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #ffffff, #f0fdfa);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.bd-divisions-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.bd-divisions-header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: bd-fadeInDown 0.8s ease-out;
+}
+
+.bd-divisions-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin-bottom: 12px;
+}
+
+.bd-divisions-underline {
+  width: 80px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* INTRO TEXT */
+.bd-divisions-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  animation: bd-fadeIn 1s ease-out;
+}
+
+/* GRID LAYOUT */
+.bd-divisions-grid {
+  display: grid;
+  /* Creates 3 columns automatically */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* CARD STYLES */
+.bd-division-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* Animation setup */
+  opacity: 0; 
+  animation: bd-slideUpCard 0.6s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bd-division-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+  border-color: #34d399;
+}
+
+/* Decorative top bar on card hover */
+.bd-division-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #10b981;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.bd-division-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* BADGE */
+.bd-segment-badge {
+  display: inline-block;
+  background: #ecfdf5;
+  color: #059669;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid #a7f3d0;
+  margin-bottom: 15px;
+}
+
+/* TEXT STYLES */
+.bd-region-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 10px;
+}
+
+.bd-arrow-divider {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin: 5px 0 10px 0;
+  font-weight: bold;
+}
+
+.bd-region-desc {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* FOOTER BOX */
+.bd-divisions-footer-box {
+  background: #064e3b; /* Dark Green block */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(6, 78, 59, 0.2);
+  animation: bd-fadeIn 1.2s ease-out;
+}
+
+.bd-footer-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* ANIMATIONS */
+@keyframes bd-fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bd-slideUpCard {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bd-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* =========================================
+   LAPTOP VIEW ADJUSTMENTS (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .bd-divisions-section {
+    padding: 60px 5%; /* Less padding */
+  }
+
+  .bd-divisions-title {
+    font-size: 2rem; /* Smaller Title */
+  }
+
+  .bd-divisions-grid {
+    gap: 20px; /* Tighter grid */
+  }
+
+  .bd-division-card {
+    padding: 20px 15px; /* Compact cards */
+  }
+
+  .bd-region-name {
+    font-size: 1.1rem;
+  }
+
+  .bd-region-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 900px) {
+  .bd-divisions-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .bd-divisions-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+  
+  .bd-divisions-title {
+    font-size: 1.8rem;
+  }
+  
+  .bd-divisions-intro {
+    font-size: 1rem;
+  }
+}

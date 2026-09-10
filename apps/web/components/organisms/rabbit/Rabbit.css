@@ -1,0 +1,1182 @@
+/* =========================================
+   Rabbit.css - SCOPED STYLES
+   Premium EdTech Design - Matching Patterns of Complexity
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* =========================================
+   PAGE WRAPPER - Full Width Layout
+   ========================================= */
+.rab-zoo-page {
+    /* -- Scoped CSS Variables -- */
+    /* Main Teal Theme for Rabbit (Matching "Patterns") */
+    --rab-primary: #0d9488;
+    /* Teal 600 */
+    --rab-primary-light: #f0fdfa;
+    /* Teal 50 */
+    --rab-primary-dark: #0f766e;
+    /* Teal 700 */
+    --rab-primary-hover: #14b8a6;
+    /* Teal 500 */
+
+    /* Standard Neutrals */
+    --rab-text-main: #1e293b;
+    --rab-text-secondary: #475569;
+    --rab-text-muted: #94a3b8;
+    --rab-bg-app: #f8fafc;
+    --rab-bg-panel: #ffffff;
+    --rab-border-color: #e2e8f0;
+
+    /* Shadows - Soft & Premium */
+    --rab-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --rab-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --rab-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    /* Layout */
+    --rab-header-height: 80px;
+    --rab-sidebar-width: 280px;
+    --rab-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Design Tokens */
+    --rab-radius-lg: 1rem;
+    --rab-radius-xl: 1.5rem;
+
+    min-height: 100vh;
+    background-color: var(--rab-bg-app);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Prevent Header Overlap (assuming global header ~80px) */
+    padding-top: var(--rab-header-height);
+}
+
+/* =========================================
+   FULL PAGE HERO BANNER
+   ========================================= */
+.rab-hero-banner {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - var(--rab-header-height));
+    margin-top: calc(-1 * var(--rab-header-height));
+    padding-top: var(--rab-header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+
+    /* Vibrant Background matching Patterns style */
+    background:
+        radial-gradient(circle at 10% 20%, rgba(13, 148, 136, 0.12) 0%, transparent 40%),
+        /* Teal Top-Left */
+        radial-gradient(circle at 90% 10%, rgba(245, 158, 11, 0.12) 0%, transparent 40%),
+        /* Amber Top-Right */
+        radial-gradient(circle at 30% 80%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
+        /* Indigo Bottom-Left */
+        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 60%),
+        /* Pink Bottom-Right */
+        linear-gradient(180deg, #f0fdfa 0%, #ffffff 80%, #f0fdfa 100%);
+    font-family: "Merriweather", serif;
+}
+
+/* Smooth fade at bottom */
+.rab-hero-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #f0fdfa);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.rab-hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.rab-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: rabFadeUp 1s ease-out forwards;
+}
+
+.rab-taxonomy-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(13, 148, 136, 0.1);
+    color: var(--rab-primary-dark);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(13, 148, 136, 0.2);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+.rab-hero-title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #115e59 0%, #0f766e 50%, #14b8a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: rabTitleShine 3s ease-in-out infinite;
+}
+
+.rab-hero-subtitle {
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--rab-text-secondary);
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+/* Taxonomy Grid similar to patterns hero actions area */
+.rab-taxonomy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.rab-tax-item {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rab-tax-item:hover {
+    transform: translateY(-4px);
+    background: white;
+    box-shadow: 0 8px 20px rgba(13, 148, 136, 0.15);
+    border-color: var(--rab-primary);
+}
+
+.rab-tax-label {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--rab-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+.rab-tax-value {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--rab-text-main);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Visual */
+.rab-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rab-hero-image-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+        0 25px 60px rgba(13, 148, 136, 0.25),
+        0 0 0 8px rgba(255, 255, 255, 0.5),
+        0 0 0 1px rgba(13, 148, 136, 0.1);
+    animation: rabImageFloat 6s ease-in-out infinite;
+}
+
+.rab-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rab-hero-image-wrapper:hover .rab-hero-img {
+    transform: scale(1.1);
+}
+
+/* Scroll Ind */
+.rab-scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    z-index: 10;
+    animation: rabFadeUp 1s ease forwards 1s;
+}
+
+.rab-scroll-indicator:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(2px);
+}
+
+.rab-mouse {
+    width: 24px;
+    height: 38px;
+    border: 2px solid var(--rab-primary);
+    border-radius: 20px;
+    position: relative;
+}
+
+.rab-wheel {
+    width: 4px;
+    height: 6px;
+    background: var(--rab-primary);
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rabScrollWheel 2s infinite;
+}
+
+.rab-arrow-down {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--rab-primary);
+    border-bottom: 2px solid var(--rab-primary);
+    transform: rotate(45deg);
+    animation: rabScrollArrow 2s infinite;
+}
+
+/* =========================================
+   SIDEBAR + CONTENT LAYOUT
+   ========================================= */
+.rab-zoo-app-container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+    padding-top: 2rem;
+    background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100px, #ffffff 100%);
+    position: relative;
+}
+
+/* Sidebar */
+.rab-zoo-sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--rab-header-height);
+    height: calc(100vh - var(--rab-header-height));
+    width: var(--rab-sidebar-width);
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    transition: transform var(--rab-transition), opacity 0.3s ease;
+}
+
+.rab-zoo-sidebar.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+
+.rab-sidebar-header {
+    padding: 1.5rem 1.25rem;
+    border-bottom: 1px solid var(--rab-border-color);
+    background: linear-gradient(135deg, var(--rab-primary-light) 0%, #fff 100%);
+}
+
+.rab-progress-bar {
+    margin-top: 0.5rem;
+}
+
+.rab-progress-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--rab-primary-dark);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.rab-progress-track {
+    width: 100%;
+    height: 6px;
+    background: rgba(13, 148, 136, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rab-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--rab-primary) 0%, var(--rab-primary-hover) 100%);
+    border-radius: 10px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rab-sidebar-nav {
+    flex: 1;
+    padding: 1rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+}
+
+.rab-nav-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--rab-text-secondary);
+    text-align: left;
+}
+
+.rab-nav-btn:hover {
+    background-color: var(--rab-primary-light);
+    color: var(--rab-primary-dark);
+}
+
+.rab-nav-btn.active {
+    background: linear-gradient(90deg, var(--rab-primary-light) 0%, rgba(204, 251, 241, 0.4) 100%);
+    color: var(--rab-primary-dark);
+    font-weight: 600;
+    box-shadow: var(--rab-shadow-sm);
+    border-color: rgba(13, 148, 136, 0.1);
+}
+
+.rab-nav-icon {
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   MAIN CONTENT AREA
+   ========================================= */
+.rab-zoo-main-content {
+    flex: 1;
+    margin-left: var(--rab-sidebar-width);
+    padding: 1.5rem 2rem 3rem;
+    min-height: calc(100vh - var(--rab-header-height));
+    background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%, #f0fdf4 100%);
+}
+
+.rab-content-card {
+    max-width: 64rem;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    min-height: 80vh;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    /* Ensure content stays above background */
+}
+
+/* Content Header */
+.rab-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rab-border-color);
+}
+
+.rab-header-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--rab-primary-dark);
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.rab-header-nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.rab-nav-action-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+.rab-prev-btn {
+    background: white;
+    border-color: var(--rab-border-color);
+    color: var(--rab-text-secondary);
+}
+
+.rab-prev-btn:hover {
+    background: var(--rab-primary-light);
+    color: var(--rab-primary-dark);
+    border-color: var(--rab-primary);
+}
+
+.rab-next-btn {
+    background: var(--rab-primary);
+    color: white;
+    box-shadow: 0 4px 10px rgba(13, 148, 136, 0.2);
+}
+
+.rab-next-btn:hover {
+    background: var(--rab-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 148, 136, 0.3);
+}
+
+/* Sections */
+.rab-content-section {
+    animation: rabSlideUp 0.5s ease-out;
+}
+
+.rab-section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--rab-text-main);
+    margin-bottom: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--rab-primary-light);
+    padding-bottom: 0.5rem;
+}
+
+.rab-section-marker {
+    width: 5px;
+    height: 20px;
+    background: var(--rab-primary);
+    border-radius: 4px;
+}
+
+/* Info Cards (Standard Blocks) */
+.rab-info-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rab-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-color: var(--rab-primary-light);
+}
+
+.rab-highlight-card {
+    background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+    border-left: 4px solid var(--rab-primary);
+    border-color: rgba(13, 148, 136, 0.2);
+    border-left: 4px solid var(--rab-primary);
+}
+
+.rab-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--rab-primary-dark);
+    margin-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--rab-border-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Lists */
+.rab-point-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rab-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--rab-text-secondary);
+}
+
+.rab-list-item strong {
+    color: var(--rab-primary-dark);
+    font-weight: 600;
+}
+
+.rab-bullet {
+    margin-top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    background: var(--rab-primary);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.2);
+}
+
+/* =========================================
+   SPECIAL RABBIT COMPONENTS (3D, Toggles)
+   ========================================= */
+
+/* Split View with 3D Model */
+.rab-split-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.rab-model-container {
+    position: sticky;
+    top: 120px;
+    height: 450px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 3px solid var(--rab-primary);
+    box-shadow:
+        0 20px 50px rgba(13, 148, 136, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rab-model-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(13, 148, 136, 0.35);
+}
+
+.rab-sketchfab-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.rab-sketchfab-embed.hidden {
+    opacity: 0.5;
+    /* Keep it barely visible or hide completely if needed */
+}
+
+.rab-model-loader {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    gap: 12px;
+    z-index: 10;
+}
+
+.rab-spinner {
+    animation: spin 1s linear infinite;
+    color: var(--rab-primary);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Facts Grid */
+.rab-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0;
+}
+
+.rab-fact-card {
+    background: linear-gradient(135deg, #f0fdfa, #ffffff);
+    border: 1px solid #ccfbf1;
+    border-radius: 0.875rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+}
+
+.rab-fact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(13, 148, 136, 0.1);
+    border-color: var(--rab-primary);
+}
+
+.rab-fact-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.rab-fact-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--rab-primary);
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+}
+
+.rab-fact-val {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--rab-text-main);
+}
+
+/* Flow Charts */
+.rab-flow-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 1.5rem;
+    background: var(--rab-bg-app);
+    border-radius: 1rem;
+    border: 1px solid var(--rab-border-color);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+/* Connecting Line */
+.rab-flow-container::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: var(--rab-border-color);
+    z-index: 0;
+}
+
+.rab-flow-step {
+    background: white;
+    border: 1px solid var(--rab-border-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--rab-text-main);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rab-flow-step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(13, 148, 136, 0.15);
+    border-color: var(--rab-primary-light);
+}
+
+.rab-flow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rab-primary);
+    font-weight: 800;
+    margin: 8px 0;
+    z-index: 1;
+    background: var(--rab-primary-light);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+}
+
+/* Horizontal Flow Variant */
+.rab-flow-horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 1.5rem 1rem;
+}
+
+.rab-flow-horizontal::before {
+    display: none;
+}
+
+.rab-flow-horizontal .rab-flow-arrow-h {
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+}
+
+/* Gender Toggle */
+.rab-toggle-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 6px;
+    background: var(--rab-bg-app);
+    border-radius: 50px;
+    width: fit-content;
+    border: 1px solid var(--rab-border-color);
+}
+
+.rab-toggle-btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: var(--rab-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rab-toggle-btn.active {
+    background: var(--rab-primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+/* Dentition Formula */
+.rab-formula-box {
+    background: #1e293b;
+    color: white;
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.rab-fraction {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.rab-fraction span:first-child {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    padding-bottom: 2px;
+}
+
+/* Animations */
+@keyframes rabFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rabTitleShine {
+
+    0%,
+    100% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
+}
+
+@keyframes rabImageFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rabScrollWheel {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: translate(-50%, 8px);
+    }
+}
+
+@keyframes rabScrollArrow {
+
+    0%,
+    100% {
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    50% {
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+}
+
+@keyframes rabSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Toggle - Hidden on Desktop */
+.rab-mobile-toggle {
+    display: none;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+@media (max-width: 1024px) {
+    .rab-hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+        padding-top: 2rem;
+    }
+
+    .rab-hero-content {
+        align-items: center;
+    }
+
+    .rab-hero-title {
+        font-size: 3.5rem;
+        /* Optical sizing for tablet */
+    }
+
+    .rab-hero-visual {
+        order: -1;
+    }
+
+    .rab-split-view {
+        grid-template-columns: 1fr;
+    }
+
+    .rab-model-container {
+        position: relative;
+        top: 0;
+        height: 400px;
+        /* Slightly taller for better tablet view */
+        order: -1;
+    }
+
+    .rab-facts-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Keep 3 cols on tablet if space permits */
+    }
+}
+
+@media (max-width: 768px) {
+    .rab-zoo-app-container {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .rab-zoo-sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh !important;
+        width: 85%;
+        max-width: 320px;
+        z-index: 1200;
+        background: white;
+        padding-top: 0;
+        box-shadow: none;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .rab-zoo-sidebar.open {
+        left: 0;
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .rab-zoo-main-content {
+        margin-left: 0;
+        padding: 1rem;
+        /* comfortable padding */
+        padding-bottom: 90px;
+    }
+
+    .rab-content-card {
+        padding: 1.5rem;
+        min-height: auto;
+        margin-top: 1rem;
+    }
+
+    .rab-facts-grid {
+        grid-template-columns: 1fr;
+        /* Stack facts on mobile */
+        gap: 0.75rem;
+    }
+
+    .rab-taxonomy-grid {
+        grid-template-columns: 1fr;
+        /* Stack taxonomy on mobile */
+        max-width: 100%;
+    }
+
+    .rab-hero-title {
+        font-size: 2.5rem;
+        /* Readable on mobile */
+        line-height: 1.2;
+    }
+
+    .rab-hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .rab-content-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .rab-header-nav-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .rab-mobile-toggle {
+        display: flex;
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: var(--rab-primary);
+        color: white;
+        border: none;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(13, 148, 136, 0.4);
+        z-index: 150;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .rab-mobile-toggle:active {
+        transform: scale(0.95);
+        opacity: 1;
+    }
+
+    .rab-mobile-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        z-index: 1100;
+        animation: rabFadeIn 0.3s ease;
+    }
+
+    .rab-mobile-overlay.open {
+        display: block;
+    }
+
+    /* Adjust 3D model height for mobile */
+    .rab-model-container {
+        height: 300px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE BREAKPOINT (480px)
+   ========================================= */
+@media (max-width: 480px) {
+    .rab-hero-title {
+        font-size: 2rem;
+    }
+
+    .rab-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .rab-zoo-main-content {
+        padding: 0.75rem;
+        padding-bottom: 80px;
+    }
+
+    .rab-content-card {
+        padding: 1rem;
+    }
+
+    .rab-content-header {
+        gap: 0.75rem;
+    }
+
+    .rab-header-title {
+        font-size: 1.4rem;
+    }
+
+    .rab-nav-action-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .rab-facts-grid {
+        gap: 0.5rem;
+    }
+
+    .rab-fact-card {
+        padding: 0.75rem;
+    }
+
+    .rab-taxonomy-grid {
+        gap: 0.5rem;
+    }
+
+    .rab-model-container {
+        height: 250px;
+    }
+
+    .rab-mobile-toggle {
+        width: 50px;
+        height: 50px;
+        bottom: 18px;
+        right: 18px;
+    }
+}
+
+/* =========================================
+   ULTRA-SMALL MOBILE BREAKPOINT (359px)
+   ========================================= */
+@media (max-width: 359px) {
+    .rab-hero-title {
+        font-size: 1.6rem;
+    }
+
+    .rab-hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .rab-content-card {
+        padding: 0.75rem;
+        border-radius: 10px;
+    }
+
+    .rab-header-title {
+        font-size: 1.2rem;
+    }
+
+    .rab-nav-action-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .rab-model-container {
+        height: 200px;
+    }
+
+    .rab-zoo-sidebar {
+        width: 90%;
+    }
+
+    .rab-mobile-toggle {
+        width: 46px;
+        height: 46px;
+        bottom: 14px;
+        right: 14px;
+    }
+}
+
+@keyframes rabFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
