@@ -24,5 +24,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "modules": "^0.4.0"
+  }
 }

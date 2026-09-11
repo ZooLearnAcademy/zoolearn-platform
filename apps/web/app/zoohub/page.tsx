@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import Link from "next/link"
+import { optimizeCloudinaryUrl } from "@/lib/cloudinary"
 
 export default async function ZoohubPage() {
   const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
@@ -69,7 +70,7 @@ export default async function ZoohubPage() {
                 className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={species.image} alt={species.name} className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
+                <img src={optimizeCloudinaryUrl(species.image, 300)} alt={species.name} className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-[clamp(1rem,1.5vw,1.125rem)] text-center">{species.name}</h3>
               </div>
             ))}
@@ -83,7 +84,7 @@ export default async function ZoohubPage() {
                 className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={species.image} alt={species.name} className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
+                <img src={optimizeCloudinaryUrl(species.image, 300)} alt={species.name} loading="lazy" className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-[clamp(1rem,1.5vw,1.125rem)] text-center">{species.name}</h3>
               </div>
             ))}

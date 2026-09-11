@@ -13,7 +13,7 @@ It was small, about the size of a fox or terrier dog, around 40 cm tall at the s
 The forelimbs had four functional toes (2, 3, 4, 5) and a splint of the first toe. The hind limbs had three functional toes (2, 3, 4) and a splint of the fifth toe.
 The low-crowned molar teeth were adapted for browsing soft vegetation.`,
     facts: ["4 Toes (Front) / 3 Toes (Hind)", "~40 cm tall", "Size of a fox", "Browsing diet"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340466/Hyracotherium_%EF%B8%8E_mi78ms.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340466/Hyracotherium_%EF%B8%8E_mi78ms.png",
     extraImage: "https://res.cloudinary.com/duibfmcw1/image/upload/q_auto/f_auto/v1775118956/56ace581-cf31-4522-968f-0ed751393f3b.png"
   },
   {
@@ -25,7 +25,7 @@ The low-crowned molar teeth were adapted for browsing soft vegetation.`,
 • Subtle shift toward harder foods.
 • Represents early diversification of the horse lineage.`,
     facts: ["4 Toes (Front)", "Sharper Molars", "Forest Habitat"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340398/Orohippus_%EF%B8%8E_moxn95.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340398/Orohippus_%EF%B8%8E_moxn95.png",
     extraImage: ""
   },
   {
@@ -37,7 +37,7 @@ It appeared during the Oligocene epoch, about 3 crore years ago. It was about th
 The forefeet had three functional digits (2, 3, 4) and a splint of the fifth digit. The hind feet had three toes. The middle toe was longer and supported most of the body weight.
 The molar teeth showed the beginning of enamel ridges.`,
     facts: ["3 Toes", "~60 cm tall", "Size of a sheep", "Enamel ridges on molars"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340493/Mesohippus_%EF%B8%8E_hld5dm.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340493/Mesohippus_%EF%B8%8E_hld5dm.png",
     extraImage: "https://res.cloudinary.com/duibfmcw1/image/upload/q_auto/f_auto/v1775118977/8a87726a-a941-489b-9ce3-669e590ce66e.png"
   },
   {
@@ -49,7 +49,7 @@ The molar teeth showed the beginning of enamel ridges.`,
 • Teeth began to transition for abrasive grass diet.
 • An evolutionary bridge between browsers and grazers.`,
     facts: ["3 Toes", "Grazing Teeth", "Grassland Transition"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340521/Miohippus_%EF%B8%8E_cq5med.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340521/Miohippus_%EF%B8%8E_cq5med.png",
     extraImage: ""
   },
   {
@@ -61,7 +61,7 @@ The molar teeth showed the beginning of enamel ridges.`,
 • Longer limbs for running across open grasslands.
 • Represents the shift from forest browser to grassland grazer.`,
     facts: ["Higher Crowns", "Running Limbs", "Cement-Coated Teeth"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340564/Parahippus_%EF%B8%8E_vcq6jw.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340564/Parahippus_%EF%B8%8E_vcq6jw.png",
     extraImage: ""
   },
   {
@@ -73,7 +73,7 @@ The molar teeth showed the beginning of enamel ridges.`,
 • Represents evolutionary diversification.
 • Eventually went extinct without direct descendants.`,
     facts: ["Side-Branch", "Grassland Specialist", "Extinct Lineage"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340615/Callippus_%EF%B8%8E_rz4br6.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340615/Callippus_%EF%B8%8E_rz4br6.png",
     extraImage: ""
   },
   {
@@ -85,7 +85,7 @@ It appeared during the Miocene epoch, about 2 crore years ago. It was about the 
 It had a longer neck. The forelimbs and hind limbs had three fingers/toes each. The middle finger and toe were longer and supported most of the body weight. The side toes were reduced.
 The teeth were longer and covered with cement, with well-developed enamel ridges.`,
     facts: ["3 Toes (Side toes reduced)", "~100 cm tall", "Size of a small pony", "Teeth covered with cement"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774340595/Merychippus_%EF%B8%8E_ry9izt.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774340595/Merychippus_%EF%B8%8E_ry9izt.png",
     extraImage: "https://res.cloudinary.com/duibfmcw1/image/upload/q_auto/f_auto/v1775119684/14478513-2745-435f-89cd-dac8fdfdf9db.png"
   },
   {
@@ -97,7 +97,7 @@ It lived during the late Miocene epoch (~12–6 million years ago). It was about
 Each limb had one functional toe (digit III). Digits II and IV were reduced to splint bones beneath the skin. It is considered one of the earliest one-toed horses.
 Molars were high-crowned with cement and serrations, adapted for grazing grasses.`,
     facts: ["1 Toe (Digit III)", "~120 cm tall", "Size of a modern pony", "Grazing molars"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774341033/Pliohippus_%EF%B8%8E_u0clzq.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774341033/Pliohippus_%EF%B8%8E_u0clzq.png",
     extraImage: "https://res.cloudinary.com/duibfmcw1/image/upload/q_auto/f_auto/v1775119801/807bf458-d4a8-47cf-be1e-e2b427e0f735.png"
   },
   {
@@ -109,7 +109,7 @@ It first appeared in North America and later spread to other parts of the world 
 It has a long head and long neck. Each forelimb and hind limb has one functional digit (third digit) forming a single hoof. The other digits are reduced and present as two splint bones.
 The highly elongated crowns with enamel ridges are perfectly suited for grinding grass.`,
     facts: ["1 Hoof", "~150 cm tall", "Global spread (except Australia)", "Grinding teeth"],
-    img: "https://res.cloudinary.com/duibfmcw1/image/upload/v1774341098/Equus_ferus_vk3fio.png",
+    img: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1774341098/Equus_ferus_vk3fio.png",
     extraImage: "https://res.cloudinary.com/duibfmcw1/image/upload/q_auto/f_auto/v1775119878/8e422c6a-f5c7-4ab7-b1e3-4853a7882ce7.png"
   }
 ];
@@ -263,7 +263,7 @@ const HorseEvolution = () => {
 
             <div className="horse-detail-top">
               <div className="horse-detail-img-wrap">
-                <img src={selectedHorse.img} alt={selectedHorse.name} />
+                <img loading="lazy" src={selectedHorse.img} alt={selectedHorse.name} />
               </div>
               <div className="horse-detail-header">
                 <span className="horse-detail-era">{selectedHorse.era}</span>
@@ -307,7 +307,7 @@ const HorseEvolution = () => {
       {zoomedImage && (
         <div className="horse-zoomed-overlay" onClick={() => setZoomedImage(null)}>
           <button className="horse-zoomed-close" onClick={() => setZoomedImage(null)}>✕</button>
-          <img src={zoomedImage} alt="Zoomed detailed view" className="horse-zoomed-img" onClick={(e) => e.stopPropagation()} />
+          <img loading="lazy" src={zoomedImage} alt="Zoomed detailed view" className="horse-zoomed-img" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </>

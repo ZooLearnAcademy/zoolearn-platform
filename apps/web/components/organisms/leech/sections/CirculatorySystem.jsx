@@ -84,8 +84,8 @@ const CirculatorySystem = () => {
           {/* RIGHT: IMAGE */}
           <div className="cs-circulatory-image-col">
             <div className="cs-image-frame">
-              <img 
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1769586113/circulatory_system_npfsym.jpg"
+              <img loading="lazy" 
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1769586113/circulatory_system_npfsym.jpg"
                 alt="Circulatory System of Leech" 
                 className="cs-circulatory-img"
               />

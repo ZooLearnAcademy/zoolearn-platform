@@ -8,7 +8,7 @@ const Locomotion = () => {
   const mediaSources = {
     looping: "https://res.cloudinary.com/duibfmcw1/video/upload/v1768903630/WhatsApp_Video_2026-01-19_at_14.26.01_jhzt2o.mp4",
     swimming: "https://res.cloudinary.com/duibfmcw1/video/upload/v1768986635/Video_Project_1_rcyiik.mp4",
-    defaultImage: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810794/leech_imk2bj.jpg"
+    defaultImage: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810794/leech_imk2bj.jpg"
   };
 
   return (
@@ -62,7 +62,7 @@ const Locomotion = () => {
           <div className="locomotion-image-col">
             <div className="image-frame video-frame">
               {activeMedia === "image" ? (
-                <img src={mediaSources.defaultImage} alt="Leech" className="locomotion-img" />
+                <img loading="lazy" src={mediaSources.defaultImage} alt="Leech" className="locomotion-img" />
               ) : (
                 <video
                   key={activeMedia} // Key ensures React reloads the video when source changes

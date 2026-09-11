@@ -146,6 +146,7 @@ export function QuestionPalette({
   const handleNextUnanswered = () => {
     for (let i = currentQuestionIndex + 1; i < questions.length; i++) {
       const q = questions[i];
+      if (!q) continue;
       const s = userResponses[q.id]?.status || "not_visited";
       if (s === "not_visited" || s === "not_answered") {
         onSelectQuestion(i);
@@ -154,6 +155,7 @@ export function QuestionPalette({
     }
     for (let i = 0; i <= currentQuestionIndex; i++) {
       const q = questions[i];
+      if (!q) continue;
       const s = userResponses[q.id]?.status || "not_visited";
       if (s === "not_visited" || s === "not_answered") {
         onSelectQuestion(i);
@@ -166,6 +168,7 @@ export function QuestionPalette({
   const handleNextFlagged = () => {
     for (let i = currentQuestionIndex + 1; i < questions.length; i++) {
       const q = questions[i];
+      if (!q) continue;
       const s = userResponses[q.id]?.status;
       if (s === "marked_for_review" || s === "answered_marked_for_review") {
         onSelectQuestion(i);
@@ -174,6 +177,7 @@ export function QuestionPalette({
     }
     for (let i = 0; i <= currentQuestionIndex; i++) {
       const q = questions[i];
+      if (!q) continue;
       const s = userResponses[q.id]?.status;
       if (s === "marked_for_review" || s === "answered_marked_for_review") {
         onSelectQuestion(i);

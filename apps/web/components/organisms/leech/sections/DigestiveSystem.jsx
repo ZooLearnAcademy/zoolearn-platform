@@ -39,8 +39,8 @@ const DigestiveSystem = () => {
           {/* IMAGE & QUICK FACTS */}
           <div className="dig-right-col">
             <div className="dig-image-frame">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810737/digestivesystem_osipqw.png"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810737/digestivesystem_osipqw.png"
                 alt="Digestive System of Leech"
                 className="dig-img"
               />

@@ -28,7 +28,7 @@ export default function CoatSpecies() {
               className={`mk-card mk-species-card overflow-hidden text-left ${active===s.id ? 'active' : ''}`}
               style={{borderColor: active===s.id ? s.color : undefined}}>
               <div className="aspect-[4/3] overflow-hidden">
-                <img src={s.img} alt={s.common} className="w-full h-full object-cover" style={{transition:'transform 1s cubic-bezier(.2,.7,.2,1)'}} onMouseEnter={(e)=>e.currentTarget.style.transform='scale(1.05)'} onMouseLeave={(e)=>e.currentTarget.style.transform='scale(1)'} />
+                <img loading="lazy" src={s.img} alt={s.common} className="w-full h-full object-cover" style={{transition:'transform 1s cubic-bezier(.2,.7,.2,1)'}} onMouseEnter={(e)=>e.currentTarget.style.transform='scale(1.05)'} onMouseLeave={(e)=>e.currentTarget.style.transform='scale(1)'} />
               </div>
               <div className="p-5">
                 <div className="mk-stat-label" style={{color:s.color}}>{s.year}</div>
@@ -42,7 +42,7 @@ export default function CoatSpecies() {
         <div className="grid md:grid-cols-2 gap-12 mt-14 items-start">
           <div className="mk-image-frame">
             <div className="mk-image aspect-[4/3]">
-              <img src={current.img} alt={current.common} />
+              <img loading="lazy" src={current.img} alt={current.common} />
             </div>
           </div>
           <div>

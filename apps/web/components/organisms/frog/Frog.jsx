@@ -167,7 +167,7 @@ const FrogImage = ({ src, label, className = '', style = {} }) => {
     return (
         <div className={`frog-image-card ${className}`} style={style}>
             <div className="frog-image-container">
-                <img src={src} alt={label} className="frog-content-img" />
+                <img loading="lazy" src={src} alt={label} className="frog-content-img" />
             </div>
             <div className="frog-image-caption">
                 <span className="frog-image-caption-prefix">Figure: </span>
@@ -181,7 +181,7 @@ const CardImage = ({ src, alt }) => {
     if (!src) return null;
     return (
         <div className="frog-card-image-container">
-            <img src={src} alt={alt} className="frog-card-content-img" />
+            <img loading="lazy" src={src} alt={alt} className="frog-card-content-img" />
             <div className="frog-card-image-caption">
                 <span className="frog-card-image-caption-prefix">Figure: </span>
                 <span className="frog-card-image-caption-text">{alt}</span>
@@ -999,7 +999,7 @@ const Frog = () => {
 
                     <div className="frog-hero-visual">
                         <div className="frog-hero-image-wrapper">
-                            <img
+                            <img loading="lazy"
                                 src={hero.image || "https://img.icons8.com/fluency/96/frog.png"}
                                 alt="Frog"
                                 className="frog-hero-img"

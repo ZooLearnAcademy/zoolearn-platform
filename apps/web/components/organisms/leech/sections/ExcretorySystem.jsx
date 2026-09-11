@@ -60,8 +60,8 @@ const ExcretorySystem = () => {
           {/* RIGHT: IMAGE */}
           <div className="es-excretory-image-col">
             <div className="es-image-frame">
-              <img 
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810762/excretorysystem_w85798.png" 
+              <img loading="lazy" 
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810762/excretorysystem_w85798.png" 
                 alt="Excretory System of Leech" 
                 className="es-excretory-img"
               />

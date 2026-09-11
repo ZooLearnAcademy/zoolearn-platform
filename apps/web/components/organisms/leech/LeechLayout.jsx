@@ -155,8 +155,8 @@ export default function LeechLayout() {
           {/* RIGHT: Hero Image */}
           <div className="leech-hero-visual">
             <div className="leech-hero-image-wrapper">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810091/image_yibxxk.jpg"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810091/image_yibxxk.jpg"
                 alt="Indian Cattle Leech - Hirudinaria granulosa"
                 className="leech-hero-img"
               />

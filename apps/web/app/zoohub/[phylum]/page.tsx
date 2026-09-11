@@ -1,9 +1,9 @@
 import fs from "fs/promises"
 import path from "path"
-import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ArrowRight, SquaresFour } from "@phosphor-icons/react/dist/ssr"
+import { SpeciesGrid } from "./species-grid"
 
 const phylumsList = [
   { name: "Porifera", slug: "porifera" },
@@ -172,40 +172,8 @@ export default async function PhylumPage({
               </div>
             </div>
 
-            {/* 3D Pop-out Species Cards Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[clamp(1rem,3vw,2rem)] gap-y-[clamp(4rem,10vw,6rem)] mt-16 px-2 sm:px-4">
-              {cls.species.map((species: any, i: number) => (
-                <Link 
-                  key={species.id} 
-                  href={`/zoohub/${phylum}/${species.slug || species.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  id={species.id}
-                  className="flex flex-col items-center justify-start group cursor-pointer h-full text-center scroll-mt-32"
-                  style={{ animationDelay: `${i * 100}ms` }}
-                >
-                  <div className="w-full max-w-[14rem] aspect-square flex items-center justify-center mb-4 relative mx-auto">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={species.image}
-                      alt={species.name}
-                      className="relative z-10 w-full h-full object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] group-hover:drop-shadow-[0_15px_25px_rgba(16,185,129,0.15)] group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-300 ease-out"
-                    />
-                  </div>
-
-                  <h3 className="text-[clamp(1.125rem,3vw,1.5rem)] font-extrabold italic text-slate-800 dark:text-slate-100 mb-3 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors duration-300">
-                    {species.name}
-                  </h3>
-                  
-                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/50 mt-auto group-hover:border-emerald-200 group-hover:bg-emerald-50 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" className="text-emerald-500 shrink-0">
-                      <path fill="currentColor" d="M211.88,143.2l-21.78,41.9a32.06,32.06,0,0,1-30.82,18.9h-62.5A32.06,32.06,0,0,1,66,185.1l-21.78-41.9a32,32,0,0,1,0-29.47L66,71.84A32.06,32.06,0,0,1,96.76,52.94h62.5A32.06,32.06,0,0,1,190.08,71.84l21.8,41.89A32,32,0,0,1,211.88,143.2Zm-14.15-22.12L176,79.23a16,16,0,0,0-15.42-9.43h-62.5A16,16,0,0,0,82.68,79.23l-21.73,41.85a16,16,0,0,0,0,14.75L82.68,177.7A16,16,0,0,0,98.1,187.14h62.5a16,16,0,0,0,15.42-9.44l21.73-41.85A16,16,0,0,0,197.73,121.08Z"/>
-                    </svg>
-                    <span className="text-[clamp(0.65rem,1.5vw,0.75rem)] text-slate-600 dark:text-slate-300 font-bold group-hover:text-emerald-700 truncate">
-                      {species.scientificName}
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            {/* Progressive Species Cards Grid */}
+            <SpeciesGrid species={cls.species} phylum={phylum} />
             
           </div>
         ))}

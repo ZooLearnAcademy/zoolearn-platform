@@ -4,7 +4,7 @@ import BodyDivisions from "./BodyDivisions";
 
 // Image URL
 const LEECH_IMAGE_URL =
-  "https://res.cloudinary.com/duibfmcw1/image/upload/v1768818886/Screenshot_2026-01-19_155027_hmjpry.png";
+  "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1768818886/Screenshot_2026-01-19_155027_hmjpry.png";
 
 // Generate 33 segments
 const segmentDefs = Array.from({ length: 33 }, (_, i) => {
@@ -118,7 +118,7 @@ export default function LeechAnatomyInteractive() {
           {/* Image & Overlays */}
           <div className="leech-image-wrapper">
             
-            <img src={LEECH_IMAGE_URL} alt="Leech Anatomy" className="leech-img" />
+            <img loading="lazy" src={LEECH_IMAGE_URL} alt="Leech Anatomy" className="leech-img" />
             
             {segmentDefs.map((seg) => {
                const isRegionActive = activeId && getRegion(activeId) === getRegion(seg.id);

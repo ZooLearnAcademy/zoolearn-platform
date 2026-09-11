@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import {
@@ -24,6 +25,7 @@ import {
 } from "@phosphor-icons/react"
 import { cn } from "@workspace/ui/lib/utils"
 import { Button } from "@workspace/ui/components/button"
+import { cloudinaryLoader } from "@/lib/cloudinary"
 
 interface NavItem {
   label: string
@@ -74,9 +76,13 @@ export function Navbar() {
           {/* Logo & Search Section */}
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <img 
+              <Image 
+                loader={cloudinaryLoader}
                 src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png" 
                 alt="ZooLearn Logo" 
+                width={56}
+                height={56}
+                priority
                 className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
             </Link>

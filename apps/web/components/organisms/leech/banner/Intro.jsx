@@ -42,8 +42,8 @@ const LeechIntro = () => {
 
         {/* RIGHT IMAGE */}
         <div className="intro-hero-image">
-          <img
-            src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810091/image_yibxxk.jpg"
+          <img loading="lazy"
+            src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810091/image_yibxxk.jpg"
             alt="Indian Cattle Leech"
           />
         </div>

@@ -52,7 +52,7 @@ const cockroachContent = {
           "The body of cockroach is divided into three regions: Head, Thorax, Abdomen.",
           "Each region performs specific functions."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508120/cockroach_qzolle.jpg",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508120/cockroach_qzolle.jpg",
         imageCaption: "Body regions of cockroach"
       },
       {
@@ -87,7 +87,7 @@ const cockroachContent = {
           "Each eye is made up of numerous ommatidia.",
           "They produce mosaic vision."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508128/cockroach_head_y9fyez.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508128/cockroach_head_y9fyez.png",
         imageCaption: "Compound eye"
       },
       {
@@ -103,7 +103,7 @@ const cockroachContent = {
           "  - Labium (lower lip)",
           "  - Hypopharynx (tongue‑like structure)"
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508156/labeled_mouth_parts_qq31am.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508156/labeled_mouth_parts_qq31am.png",
         imageCaption: "Mandibulate mouth parts"
       },
       {
@@ -122,7 +122,7 @@ const cockroachContent = {
           "Each leg has five segments: Coxa, Trochanter, Femur, Tibia, Tarsus.",
           "Legs are adapted for walking and running."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508137/cockroach_leg_rp6cvi.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508137/cockroach_leg_rp6cvi.png",
         imageCaption: "Thoracic legs"
       },
       {
@@ -133,7 +133,7 @@ const cockroachContent = {
           "Forewings (tegmina): Thick and leathery, protect hindwings and body.",
           "Hindwings: Thin and membranous, used for flight."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508290/wings.5_smkuv2.jpg",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508290/wings.5_smkuv2.jpg",
         imageCaption: "Wings"
       },
       {
@@ -173,7 +173,7 @@ const cockroachContent = {
           "The digestive system consists of mouth and mouthparts, alimentary canal, and salivary glands.",
           "Cockroach is omnivorous, feeding on both plant and animal matter."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508152/Cockroach-Digestive-System_ate4r1.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508152/Cockroach-Digestive-System_ate4r1.png",
         imageCaption: "Digestive system"
       },
       {
@@ -259,7 +259,7 @@ const cockroachContent = {
           "Taenidia prevent the tracheae from collapsing and keep them open for airflow.",
           "Tracheae branch into finer tracheoles, which deliver oxygen directly to cells."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508278/tracheal_system_kjxoxm.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508278/tracheal_system_kjxoxm.png",
         imageCaption: "Tracheal tubes with taenidia"
       },
       {
@@ -313,7 +313,7 @@ const cockroachContent = {
           "  2. Perivisceral sinus (middle) – contains the digestive organs",
           "  3. Perineural sinus (ventral) – contains the ventral nerve cord"
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771507996/Circulation_system_fye7ui.jpg",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771507996/Circulation_system_fye7ui.jpg",
         imageCaption: "Body sinuses"
       },
       {
@@ -352,7 +352,7 @@ const cockroachContent = {
           "They float freely in the haemolymph.",
           "The tubules open into the junction of the midgut and hindgut."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508200/Malpighian_tubules_t2uthi.png",
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508200/Malpighian_tubules_t2uthi.png",
         imageCaption: "Malpighian tubules"
       },
       {
@@ -427,7 +427,7 @@ const cockroachContent = {
           "Thoracic ganglia control movements of legs and wings.",
           "Abdominal ganglia control abdominal movements and anal cerci."
         ],
-        image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1771508218/nervous_non_labled_jk54rx.png"
+        image: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508218/nervous_non_labled_jk54rx.png"
       },
       {
         heading: "Functions of the Nervous System",
@@ -730,8 +730,8 @@ const Cockroach = () => {
 
           <div className="coc-hero-visual">
             <div className="coc-hero-image-wrapper">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1771508120/cockroach_qzolle.jpg"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771508120/cockroach_qzolle.jpg"
                 alt="Cockroach"
                 className="coc-hero-img"
               />

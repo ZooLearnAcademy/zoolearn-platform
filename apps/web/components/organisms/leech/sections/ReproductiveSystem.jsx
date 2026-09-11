@@ -111,8 +111,8 @@ const ReproductiveSystem = () => {
           {/* RIGHT: IMAGE (Stays on the far right) */}
           <div className="reproductive-image-col">
             <div className="image-frame">
-              <img 
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810909/reproductivesystem_gctgvg.png"
+              <img loading="lazy" 
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810909/reproductivesystem_gctgvg.png"
                 alt="Reproductive System of Leech" 
                 className="reproductive-img"
               />

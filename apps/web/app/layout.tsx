@@ -6,7 +6,7 @@ import { cn } from "@workspace/ui/lib/utils";
 
 const sourceSans3Heading = Source_Sans_3({subsets:['latin'],variable:'--font-heading'});
 
-const ibmPlexSans = IBM_Plex_Sans({subsets:['latin'],variable:'--font-sans'})
+const ibmPlexSans = IBM_Plex_Sans({subsets:['latin'],weight: ['400', '500', '600', '700'],variable:'--font-sans'})
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],

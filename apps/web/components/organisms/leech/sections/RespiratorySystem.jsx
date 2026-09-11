@@ -59,8 +59,8 @@ const RespiratorySystem = () => {
           {/* RIGHT: IMAGE */}
           <div className="rs-respiratory-image-col">
             <div className="rs-image-frame">
-              <img 
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1769585037/repiratory_system_pie2fn.jpg"
+              <img loading="lazy" 
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1769585037/repiratory_system_pie2fn.jpg"
                 alt="Leech Respiration" 
                 className="rs-respiratory-img"
               />

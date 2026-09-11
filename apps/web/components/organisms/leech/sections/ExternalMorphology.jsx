@@ -48,8 +48,8 @@ const ExternalMorphology = () => {
         <div className="em-top-section-grid">
           <div className="em-morphology-card em-image-card">
             <div className="em-image-wrapper">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810830/morphology_sf7xd1.png"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810830/morphology_sf7xd1.png"
                 alt="External Morphology of Leech"
                 className="em-morphology-img"
               />
@@ -97,8 +97,8 @@ const ExternalMorphology = () => {
                 <li>Ventral, occupies first 5 segments</li>
                 <li>Used for feeding & attachment</li>
               </ul>
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1769585515/anterior_kbxsua.jpg"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1769585515/anterior_kbxsua.jpg"
                 alt="anterior sucker"
                 className="em-sucker-img"
               />
@@ -110,8 +110,8 @@ const ExternalMorphology = () => {
                 <li>Fusion of last 7 segments</li>
                 <li>Firm attachment & locomotion</li>
               </ul>
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1769585506/posterior_pe2qow.png"
+              <img loading="lazy"
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1769585506/posterior_pe2qow.png"
                 alt="posterior sucker"
                 className="em-sucker-img"
               />

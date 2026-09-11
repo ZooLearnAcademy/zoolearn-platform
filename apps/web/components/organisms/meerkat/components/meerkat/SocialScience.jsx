@@ -27,7 +27,7 @@ export default function SocialScience() {
           </div>
           <div className="mk-image-frame">
             <div className="mk-image aspect-[4/3]">
-              <img src={IMAGES.gathering} alt="A gathering of meerkats"/>
+              <img loading="lazy" src={IMAGES.gathering} alt="A gathering of meerkats"/>
             </div>
           </div>
         </div>

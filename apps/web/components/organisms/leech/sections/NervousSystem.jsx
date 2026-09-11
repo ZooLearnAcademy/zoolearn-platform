@@ -83,8 +83,8 @@ const NervousSystem = () => {
           <div className="nerv-nervous-image-col">
             <div className="nerv-image-frame">
               
-              <img 
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810860/nervoussystem_utggdl.png"
+              <img loading="lazy" 
+                src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810860/nervoussystem_utggdl.png"
                 alt="Nervous System of Leech" 
                 className="nerv-nervous-img"
               />

@@ -41,8 +41,8 @@ const HoneyBeePage = () => {
           </div>
 
           <div className="honey-hero-visual">
-            <img
-              src="https://res.cloudinary.com/duibfmcw1/image/upload/v1771315768/WhatsApp_Image_2026-02-17_at_13.38.32_wwed7p.jpg"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771315768/WhatsApp_Image_2026-02-17_at_13.38.32_wwed7p.jpg"
               alt="Honey Bee"
               className="honey-hero-img"
             />
@@ -87,8 +87,8 @@ const HoneyBeePage = () => {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <div className="card-img-wrapper">
-                    <img
-                      src="https://res.cloudinary.com/duibfmcw1/image/upload/v1771313870/WhatsApp_Image_2026-02-17_at_13.01.26_jon4qf.jpg"
+                    <img loading="lazy"
+                      src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771313870/WhatsApp_Image_2026-02-17_at_13.01.26_jon4qf.jpg"
                       alt="Queen Bee"
                       className="card-img"
                     />
@@ -113,8 +113,8 @@ const HoneyBeePage = () => {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <div className="card-img-wrapper">
-                    <img
-                      src="https://res.cloudinary.com/duibfmcw1/image/upload/v1771313870/WhatsApp_Image_2026-02-17_at_13.00.44_myuf1c.jpg"
+                    <img loading="lazy"
+                      src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771313870/WhatsApp_Image_2026-02-17_at_13.00.44_myuf1c.jpg"
                       alt="Worker Bee"
                       className="card-img"
                     />
@@ -146,8 +146,8 @@ const HoneyBeePage = () => {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <div className="card-img-wrapper">
-                    <img
-                      src="https://res.cloudinary.com/duibfmcw1/image/upload/v1771313874/WhatsApp_Image_2026-02-17_at_13.01.07_eez7i6.jpg"
+                    <img loading="lazy"
+                      src="https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1771313874/WhatsApp_Image_2026-02-17_at_13.01.07_eez7i6.jpg"
                       alt="Drone Bee"
                       className="card-img"
                     />

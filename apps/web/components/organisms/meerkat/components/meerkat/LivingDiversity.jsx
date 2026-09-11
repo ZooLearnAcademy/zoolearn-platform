@@ -30,7 +30,7 @@ export default function LivingDiversity() {
           {SPECIES.map((s, i) => (
             <div key={i} className="mk-card overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src={s.img} alt={s.name} className="w-full h-full object-cover" style={{transition:'transform 1.2s cubic-bezier(.2,.7,.2,1)'}} onMouseEnter={(e)=>e.currentTarget.style.transform='scale(1.06)'} onMouseLeave={(e)=>e.currentTarget.style.transform='scale(1)'} />
+                <img loading="lazy" src={s.img} alt={s.name} className="w-full h-full object-cover" style={{transition:'transform 1.2s cubic-bezier(.2,.7,.2,1)'}} onMouseEnter={(e)=>e.currentTarget.style.transform='scale(1.06)'} onMouseLeave={(e)=>e.currentTarget.style.transform='scale(1)'} />
               </div>
               <div className="p-5">
                 <span className="mk-badge-status" style={{background:`${s.color}18`, color:s.color, border:`1px solid ${s.color}55`}}>{s.tag}</span>

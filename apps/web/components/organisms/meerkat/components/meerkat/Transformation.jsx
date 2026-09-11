@@ -23,7 +23,7 @@ export default function Transformation() {
         <div className="grid md:grid-cols-2 gap-12 mt-14 items-center">
           <div className="mk-image-frame">
             <div className="mk-image aspect-[4/3]">
-              <img src={t.img} alt={t.title} />
+              <img loading="lazy" src={t.img} alt={t.title} />
             </div>
           </div>
           <div key={t.era} className="mk-fade-in">

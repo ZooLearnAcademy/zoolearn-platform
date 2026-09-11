@@ -17,7 +17,7 @@ function Row({ a, i }) {
     <div ref={ref} className={`mk-reveal grid md:grid-cols-2 gap-10 items-center ${i%2? 'md:[direction:rtl]':''}`}>
       <div className="mk-image-frame md:[direction:ltr]">
         <div className="mk-image aspect-[4/3]">
-          <img src={a.img} alt={a.name}/>
+          <img loading="lazy" src={a.img} alt={a.name}/>
         </div>
       </div>
       <div className="md:[direction:ltr]">

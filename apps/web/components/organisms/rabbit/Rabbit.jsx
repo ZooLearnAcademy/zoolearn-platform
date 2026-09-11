@@ -181,7 +181,7 @@ const Rabbit = () => {
 
                     <div className="rab-hero-visual">
                         <div className="rab-hero-image-wrapper">
-                            <img
+                            <img loading="lazy"
                                 src={hero.image}
                                 alt="Rabbit"
                                 className="rab-hero-img"

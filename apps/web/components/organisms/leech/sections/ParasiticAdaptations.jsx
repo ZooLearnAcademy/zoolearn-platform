@@ -9,13 +9,13 @@ const ParasiticAdaptations = () => {
   const slides = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810858/parasitic_cdkchf.png",
+      src: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810858/parasitic_cdkchf.png",
       alt: "Parasitic Adaptations",
       caption: "Parasitic Mode"
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810737/digestivesystem_osipqw.png",
+      src: "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767810737/digestivesystem_osipqw.png",
       alt: "Digestive System of Leech",
       caption: "Digestive System"
     }
@@ -133,7 +133,7 @@ const ParasiticAdaptations = () => {
                 <button className="slider-btn next-btn" onClick={handleNext}>❯</button>
 
                 {/* Active Image */}
-                <img
+                <img loading="lazy"
                   src={slides[activeSlide].src}
                   alt={slides[activeSlide].alt}
                   className="parasitic-img"

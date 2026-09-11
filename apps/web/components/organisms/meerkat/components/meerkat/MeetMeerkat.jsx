@@ -13,7 +13,7 @@ export default function MeetMeerkat() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div ref={left} className="mk-reveal mk-image-frame">
             <div className="mk-image aspect-[4/5]">
-              <img src={IMAGES.portrait} alt="Meerkat portrait" />
+              <img loading="lazy" src={IMAGES.portrait} alt="Meerkat portrait" />
             </div>
           </div>
           <div ref={right} className="mk-reveal">
