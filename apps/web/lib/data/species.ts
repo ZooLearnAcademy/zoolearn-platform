@@ -2,11 +2,38 @@ import fs from "fs/promises"
 import path from "path"
 import { SpeciesData, NeighborSpecies } from "@/types/species"
 
-export async function fetchSpeciesData(speciesSlug: string): Promise<SpeciesData | null> {
+let cachedAnimalData: any = null
+let cachedPhylumData: Record<string, SpeciesData> | null = null
+
+export async function getAllAnimalData(): Promise<any> {
+  if (cachedAnimalData) return cachedAnimalData
+  try {
+    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
+    const raw = await fs.readFile(jsonPath, "utf8")
+    cachedAnimalData = JSON.parse(raw)
+    return cachedAnimalData
+  } catch (error) {
+    console.error("Error reading allAnimalData.json:", error)
+    return {}
+  }
+}
+
+export async function getAllPhylumData(): Promise<Record<string, SpeciesData>> {
+  if (cachedPhylumData) return cachedPhylumData
   try {
     const jsonPath = path.join(process.cwd(), "..", "..", "AllPhylumData.json")
     const raw = await fs.readFile(jsonPath, "utf8")
-    const allData: Record<string, SpeciesData> = JSON.parse(raw)
+    cachedPhylumData = JSON.parse(raw)
+    return cachedPhylumData || {}
+  } catch (error) {
+    console.error("Error reading AllPhylumData.json:", error)
+    return {}
+  }
+}
+
+export async function fetchSpeciesData(speciesSlug: string): Promise<SpeciesData | null> {
+  try {
+    const allData = await getAllPhylumData()
     return allData[speciesSlug.toLowerCase()] ?? null
   } catch {
     return null
@@ -18,9 +45,7 @@ export async function fetchNeighbors(
   speciesSlug: string
 ): Promise<{ prev: NeighborSpecies | null; next: NeighborSpecies | null }> {
   try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const raw = await fs.readFile(jsonPath, "utf8")
-    const allData = JSON.parse(raw)
+    const allData = await getAllAnimalData()
     const classes = allData[phylumSlug.toLowerCase()] ?? []
 
     // Flatten all species in this phylum

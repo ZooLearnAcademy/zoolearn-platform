@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react"
+import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr"
 import { SpeciesData, NeighborSpecies } from "@/types/species"
 import { cloudinaryLoader } from "@/lib/cloudinary"
 

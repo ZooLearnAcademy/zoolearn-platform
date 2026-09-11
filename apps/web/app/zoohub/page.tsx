@@ -1,26 +1,16 @@
-import fs from "fs/promises"
-import path from "path"
 import Link from "next/link"
 import { optimizeCloudinaryUrl } from "@/lib/cloudinary"
+import { getAllAnimalData } from "@/lib/data/species"
 
 export default async function ZoohubPage() {
-  const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-  let fileContents = "{}"
-  try {
-    fileContents = await fs.readFile(jsonPath, "utf8")
-  } catch (error) {
-    console.error("Failed to load animal data:", error)
-  }
-  
-  const allData = JSON.parse(fileContents)
+  const allData = await getAllAnimalData()
   
   const allSpecies = Object.values(allData).flatMap((classes: any) => 
     classes.flatMap((cls: any) => cls.species || [])
   )
   
-  // Pick random species for the marquee
-  const shuffled = allSpecies.sort(() => 0.5 - Math.random())
-  const selectedSpecies = shuffled.slice(0, 20)
+  // Select a balanced preview of species across phylums
+  const selectedSpecies = allSpecies.slice(0, 20)
 
   // Split into two rows
   const row1 = selectedSpecies.slice(0, 10)
@@ -59,32 +49,48 @@ export default async function ZoohubPage() {
         <div className="absolute inset-y-0 right-0 w-[clamp(4rem,10vw,8rem)] bg-gradient-to-l from-white dark:from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
         
         <div 
-          className="flex flex-col gap-[clamp(1rem,2vw,2rem)] w-full"
+          className="flex flex-col gap-[clamp(1rem,2vw,2rem)] w-full will-change-transform transform-gpu"
           style={{ transform: "rotateX(20deg) rotateZ(-5deg)", transformStyle: "preserve-3d" }}
         >
           {/* Row 1 */}
-          <div className="flex w-max animate-marquee-3d hover:[animation-play-state:paused] gap-[clamp(1rem,2vw,2rem)]">
+          <div className="flex w-max animate-marquee-3d hover:[animation-play-state:paused] gap-[clamp(1rem,2vw,2rem)] will-change-transform">
             {[...row1, ...row1].map((species, i) => (
               <div 
                 key={`${species.id}-${i}`}
-                className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
+                className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={optimizeCloudinaryUrl(species.image, 300)} alt={species.name} className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
+                <img 
+                  src={optimizeCloudinaryUrl(species.image, 300)} 
+                  alt={species.name} 
+                  width={150} 
+                  height={150} 
+                  loading="lazy" 
+                  decoding="async" 
+                  className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" 
+                />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-[clamp(1rem,1.5vw,1.125rem)] text-center">{species.name}</h3>
               </div>
             ))}
           </div>
 
           {/* Row 2 - Reverse */}
-          <div className="flex w-max animate-marquee-3d-reverse hover:[animation-play-state:paused] gap-[clamp(1rem,2vw,2rem)]">
+          <div className="flex w-max animate-marquee-3d-reverse hover:[animation-play-state:paused] gap-[clamp(1rem,2vw,2rem)] will-change-transform">
             {[...row2, ...row2].map((species, i) => (
               <div 
                 key={`${species.id}-${i}`}
-                className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
+                className="w-[clamp(14rem,20vw,16rem)] aspect-[4/5] rounded-[clamp(1rem,2vw,1.5rem)] bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200/60 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center justify-center p-[clamp(1rem,3vw,1.5rem)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(16,185,129,0.15)] hover:-translate-y-2 hover:border-emerald-200 dark:hover:border-emerald-800/50"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={optimizeCloudinaryUrl(species.image, 300)} alt={species.name} loading="lazy" className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" />
+                <img 
+                  src={optimizeCloudinaryUrl(species.image, 300)} 
+                  alt={species.name} 
+                  width={150} 
+                  height={150} 
+                  loading="lazy" 
+                  decoding="async" 
+                  className="w-[60%] aspect-square object-contain drop-shadow-md mb-[clamp(0.5rem,2vw,1rem)]" 
+                />
                 <h3 className="font-extrabold italic text-slate-800 dark:text-slate-200 text-[clamp(1rem,1.5vw,1.125rem)] text-center">{species.name}</h3>
               </div>
             ))}

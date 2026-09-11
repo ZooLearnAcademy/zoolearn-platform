@@ -1,5 +1,3 @@
-import fs from "fs/promises"
-import path from "path"
 import {
   Sidebar,
   SidebarContent,
@@ -17,7 +15,8 @@ import {
 } from "@workspace/ui/components/sidebar"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
-import { ZoohubSearch, type SearchItem } from "@/components/zoohub-search"
+import { ZoohubSearch } from "@/components/zoohub-search"
+import { getAllAnimalData } from "@/lib/data/species"
 
 const phylumsList = [
   { name: "Porifera", path: "/zoohub/porifera" },
@@ -33,40 +32,19 @@ const phylumsList = [
   { name: "Chordata", path: "/zoohub/chordata" },
 ]
 
-async function fetchAllData() {
-  try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const fileContents = await fs.readFile(jsonPath, "utf8")
-    return JSON.parse(fileContents)
-  } catch (error) {
-    console.error("Error fetching data:", error)
-    return {}
-  }
-}
-
 export default async function ZoohubLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const allData = await fetchAllData()
-
-  // Generate a flattened search index for the ZoohubSearch component
-  const searchIndex: SearchItem[] = []
-  for (const phylum of phylumsList) {
-    searchIndex.push({ title: phylum.name, subtitle: "Phylum", url: phylum.path })
-    const classes = allData[phylum.name.toLowerCase()] || []
-    for (const cls of classes) {
-      searchIndex.push({ title: cls.className, subtitle: `Class in ${phylum.name}`, url: `${phylum.path}#${cls.id}` })
-      for (const species of cls.species || []) {
-        const speciesSlug = species.slug ?? species.name.toLowerCase().replace(/\s+/g, "-")
-        searchIndex.push({ title: species.name, subtitle: `Species (${species.scientificName})`, url: `${phylum.path}/${speciesSlug}` })
-      }
-    }
-  }
+  const allData = await getAllAnimalData()
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
+      {/* Preconnect to Cloudinary for faster image TLS/TCP handshake */}
+      <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+      <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+
       {/* Global Navbar at the very top */}
       <div className="shrink-0 z-50">
         <Navbar />
@@ -79,7 +57,7 @@ export default async function ZoohubLayout({
           <Sidebar className="!top-16 md:!top-20 !h-[calc(100svh-4rem)] md:!h-[calc(100svh-5rem)] border-r border-slate-200 dark:border-slate-800">
             <SidebarContent>
               <div className="px-2 pt-4">
-                <ZoohubSearch searchIndex={searchIndex} />
+                <ZoohubSearch />
               </div>
               <SidebarGroup>
                 <SidebarGroupContent>

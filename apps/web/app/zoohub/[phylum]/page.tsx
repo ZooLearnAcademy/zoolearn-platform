@@ -1,9 +1,8 @@
-import fs from "fs/promises"
-import path from "path"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ArrowRight, SquaresFour } from "@phosphor-icons/react/dist/ssr"
-import { SpeciesGrid } from "./species-grid"
+import { PhylumClassesList } from "./phylum-classes-list"
+import { getAllAnimalData } from "@/lib/data/species"
 
 const phylumsList = [
   { name: "Porifera", slug: "porifera" },
@@ -19,17 +18,21 @@ const phylumsList = [
   { name: "Chordata", slug: "chordata" },
 ]
 
+export function generateStaticParams() {
+  return phylumsList.map((p) => ({
+    phylum: p.slug,
+  }))
+}
+
 async function fetchPhylumData(phylumSlug: string) {
   try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
-    const fileContents = await fs.readFile(jsonPath, "utf8")
-    const allData = JSON.parse(fileContents)
+    const allData = await getAllAnimalData()
     const data = allData[phylumSlug.toLowerCase()]
     
     if (!data) return null
     return data
   } catch (error) {
-    console.error("Error fetching phylum data from node:", error)
+    console.error("Error fetching phylum data:", error)
     return null
   }
 }
@@ -147,37 +150,8 @@ export default async function PhylumPage({
         </div>
       </div>
 
-      {/* 🚀 Classes and Species List */}
-      <div className="w-full space-y-32 pb-24">
-        {phylumData.map((cls: any, idx: number) => (
-          <div key={cls.id || idx} id={cls.id} className="w-full scroll-mt-32">
-            
-            {/* Minimalist Class Header */}
-            <div className="mb-16 group">
-              <div className="flex items-start gap-4 pb-6 border-b border-slate-200/60 dark:border-slate-800/60">
-                <div className="w-2 h-16 rounded-full bg-gradient-to-b from-emerald-400 to-teal-500" />
-                <div className="flex flex-col gap-3">
-                  <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                    {cls.className}
-                  </h2>
-                  <div className="flex items-center gap-3">
-                    <span className="px-4 py-1.5 rounded-full bg-transparent border border-slate-200 dark:border-slate-700 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-widest">
-                      Class
-                    </span>
-                    <span className="px-4 py-1.5 rounded-full bg-emerald-50/50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-sm font-bold border border-emerald-100/80 dark:border-emerald-800/40">
-                      {cls.species.length} Species
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Progressive Species Cards Grid */}
-            <SpeciesGrid species={cls.species} phylum={phylum} />
-            
-          </div>
-        ))}
-      </div>
+      {/* 🚀 Progressive Classes and Species List */}
+      <PhylumClassesList classes={phylumData} phylum={phylum} />
     </div>
   )
 }

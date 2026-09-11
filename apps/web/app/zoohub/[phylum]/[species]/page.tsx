@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { fetchSpeciesData, fetchNeighbors } from "@/lib/data/species"
+import { fetchSpeciesData, fetchNeighbors, getAllAnimalData } from "@/lib/data/species"
 
 import { HeroSection } from "@/components/species/hero-section"
 import { IntroductionCard } from "@/components/species/introduction-card"
@@ -8,6 +8,24 @@ import { GeneralFeaturesCard } from "@/components/species/general-features-card"
 import { EcologyCard } from "@/components/species/ecology-card"
 import { EconomicImportanceCard } from "@/components/species/economic-importance-card"
 import { BottomNavigation } from "@/components/species/bottom-navigation"
+
+export async function generateStaticParams() {
+  try {
+    const allData = await getAllAnimalData()
+    const params: { phylum: string; species: string }[] = []
+    for (const [phylum, classes] of Object.entries(allData)) {
+      for (const cls of classes as any[]) {
+        for (const sp of cls.species || []) {
+          const speciesSlug = sp.slug ?? sp.name.toLowerCase().replace(/\s+/g, "-")
+          params.push({ phylum: phylum.toLowerCase(), species: speciesSlug })
+        }
+      }
+    }
+    return params
+  } catch {
+    return []
+  }
+}
 
 export default async function SpeciesDetailPage({
   params,

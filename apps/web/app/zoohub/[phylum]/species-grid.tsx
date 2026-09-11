@@ -47,6 +47,7 @@ function SpeciesCard({
           sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 14rem"
           className="relative z-10 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)] group-hover:drop-shadow-[0_15px_25px_rgba(16,185,129,0.15)] group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-300 ease-out"
           loading="lazy"
+          decoding="async"
         />
       </div>
 
