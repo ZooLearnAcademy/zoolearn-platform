@@ -1,0 +1,3726 @@
+{
+  "_meta": {
+    "description": "Scopes Data - Career pathways, academic courses, and professional opportunities in Zoology for ZooLearn",
+    "totalCourses": 127,
+    "totalCareerCategories": 18,
+    "totalCareers": 165,
+    "generatedAt": "2026-08-18T07:38:06.217Z"
+  },
+  "courseDetails": {
+    "B.Sc. Zoology": {
+      "explanation": "Scientific study of animals covering structure, physiology, behaviour, evolution, genetics and ecology.",
+      "duration": "3 years",
+      "importance": "This course forms the foundation of animal sciences. It prepares students for higher studies and careers in wildlife biology, ecology, conservation, veterinary research, zoological studies and teaching."
+    },
+    "B.Sc. Biotechnology": {
+      "explanation": "Integration of biology with modern technology including genetics, molecular biology and bioinformatics.",
+      "duration": "3 years",
+      "importance": "This course is central to modern science and industry. It enables careers in biotechnology firms, pharmaceuticals, diagnostics, agriculture and advanced molecular research."
+    },
+    "B.Sc. Life Sciences": {
+      "explanation": "Interdisciplinary study of biology at molecular, cellular, organismal and ecological levels.",
+      "duration": "3 years",
+      "importance": "It provides academic flexibility and a broad base, allowing students to specialize later in diverse biological fields such as ecology, genetics or biotechnology."
+    },
+    "B.Sc. Animal Science": {
+      "explanation": "Study of animal nutrition, breeding, physiology, and management.",
+      "duration": "4 years",
+      "importance": "Prepares for careers in livestock management, animal research, and agriculture."
+    },
+    "B.Sc. Genetics": {
+      "explanation": "Study of genes, heredity, genetic variation, and molecular genetics.",
+      "duration": "3 years",
+      "importance": "Foundation for careers in genetic counseling, research, biotechnology, and medicine."
+    },
+    "B.Sc. Bioinformatics": {
+      "explanation": "Integration of biology, computer science, and information technology.",
+      "duration": "3 years",
+      "importance": "Crucial for genomic research, drug discovery, and biological data analysis."
+    },
+    "B.Sc. Environmental Science": {
+      "explanation": "Study of environmental systems, conservation, pollution control, and sustainable development.",
+      "duration": "3 years",
+      "importance": "Essential for careers in environmental consulting, conservation, policy-making, and sustainability management."
+    },
+    "B.Sc. Physiology": {
+      "explanation": "Study of biological functions and processes in living organisms.",
+      "duration": "3 years",
+      "importance": "Important for understanding how organisms function at cellular and systemic levels."
+    },
+    "B.Sc. Botany": {
+      "explanation": "Study of plant biology, classification, and ecology.",
+      "duration": "3 years",
+      "importance": "Foundation for plant sciences and botanical research."
+    },
+    "B.Sc. Medical Lab Tech": {
+      "explanation": "Training in laboratory techniques for medical diagnosis and research.",
+      "duration": "3 years",
+      "importance": "Prepares for careers in diagnostic laboratories and healthcare facilities."
+    },
+    "M.Sc. Zoology": {
+      "explanation": "Advanced animal biology covering physiology, ecology, evolution, and genetics.",
+      "duration": "2 years",
+      "importance": "Strong foundation for research, teaching, and specialized biological careers."
+    },
+    "M.Sc. Animal Science": {
+      "explanation": "Advanced animal physiology, nutrition, breeding, and management.",
+      "duration": "2 years",
+      "importance": "Supports livestock industry, animal welfare, and agricultural research."
+    },
+    "M.Sc. Wildlife Biology": {
+      "explanation": "Advanced study of wildlife species, behavior, and conservation.",
+      "duration": "2 years",
+      "importance": "Essential for wildlife research, conservation projects, and doctoral studies."
+    },
+    "M.Sc. Experimental Biology": {
+      "explanation": "Design and execution of biological experiments and research methodologies.",
+      "duration": "2 years",
+      "importance": "Important for research-oriented careers in biological sciences."
+    },
+    "M.Sc. Research Methodology": {
+      "explanation": "Scientific research methods, experimental design, and statistical analysis.",
+      "duration": "2 years",
+      "importance": "Fundamental for all scientific research careers."
+    },
+    "M.Sc. Systems Biology": {
+      "explanation": "Study of complex biological systems using computational models.",
+      "duration": "2 years",
+      "importance": "Cutting-edge field for understanding biological networks and interactions."
+    },
+    "M.Sc. Evolutionary Biology": {
+      "explanation": "Study of evolutionary processes, adaptation, and speciation.",
+      "duration": "2 years",
+      "importance": "Fundamental for understanding biodiversity and biological relationships."
+    },
+    "M.Sc. Comparative Anatomy": {
+      "explanation": "Comparative study of anatomical structures across different species.",
+      "duration": "2 years",
+      "importance": "Important for evolutionary studies and medical research."
+    },
+    "M.Sc. Animal Physiology": {
+      "explanation": "Advanced study of animal functions and biological processes.",
+      "duration": "2 years",
+      "importance": "Essential for medical research, pharmacology, and animal science."
+    },
+    "M.Sc. Taxonomy": {
+      "explanation": "Scientific classification and naming of organisms.",
+      "duration": "2 years",
+      "importance": "Crucial for biodiversity documentation and conservation planning."
+    },
+    "M.Sc. Systematics": {
+      "explanation": "Study of evolutionary relationships and classification systems.",
+      "duration": "2 years",
+      "importance": "Important for understanding biodiversity and evolutionary patterns."
+    },
+    "M.Sc. Morphology": {
+      "explanation": "Study of form and structure of organisms.",
+      "duration": "2 years",
+      "importance": "Fundamental for anatomical and evolutionary research."
+    },
+    "M.Sc. Histology": {
+      "explanation": "Microscopic study of tissues and cellular organization.",
+      "duration": "2 years",
+      "importance": "Essential for medical diagnosis and biological research."
+    },
+    "M.Sc. Cytology": {
+      "explanation": "Study of cell structure, function, and chemistry.",
+      "duration": "2 years",
+      "importance": "Foundation for cell biology, genetics, and medical research."
+    },
+    "M.Sc. Developmental Biology": {
+      "explanation": "Study of growth and development from embryo to adult.",
+      "duration": "2 years",
+      "importance": "Important for medical research, genetics, and biotechnology."
+    },
+    "M.Sc. Cell Biology": {
+      "explanation": "Advanced study of cell structure, function, and interactions.",
+      "duration": "2 years",
+      "importance": "Essential for biomedical research and understanding disease mechanisms."
+    },
+    "M.Sc. Epigenetics": {
+      "explanation": "Study of heritable changes in gene expression without DNA sequence changes.",
+      "duration": "2 years",
+      "importance": "Cutting-edge field for understanding disease, development, and evolution."
+    },
+    "Ph.D. Zoology": {
+      "explanation": "Doctoral research in animal biology, ecology, physiology, or evolution.",
+      "duration": "3–6 years",
+      "importance": "Academic leadership and advanced research positions in animal sciences."
+    },
+    "Ph.D. Animal Biology": {
+      "explanation": "Doctoral research focusing specifically on animal biology.",
+      "duration": "3–6 years",
+      "importance": "Advanced animal science research and academic leadership."
+    },
+    "Ph.D. Ecology": {
+      "explanation": "Advanced ecosystem research and ecological theory development.",
+      "duration": "3–5 years",
+      "importance": "Climate change research, conservation planning, and sustainability science leadership."
+    },
+    "Ph.D. Wildlife Biology": {
+      "explanation": "Doctoral research on wildlife species, behavior, and conservation.",
+      "duration": "3–5 years",
+      "importance": "Leadership roles in wildlife research, conservation, and policy-making."
+    },
+    "Ph.D. Experimental Biology": {
+      "explanation": "Advanced research on experimental methods and biological investigations.",
+      "duration": "3–5 years",
+      "importance": "Research methodology development and experimental science leadership."
+    },
+    "Ph.D. Systems Biology": {
+      "explanation": "Doctoral research on complex biological systems modeling.",
+      "duration": "3–6 years",
+      "importance": "Biological systems research and computational biology leadership."
+    },
+    "Ph.D. Evolutionary Biology": {
+      "explanation": "Advanced research on evolutionary processes and mechanisms.",
+      "duration": "3–6 years",
+      "importance": "Evolutionary theory development and biodiversity research leadership."
+    },
+    "Ph.D. Comparative Anatomy": {
+      "explanation": "Doctoral research comparing anatomical structures across species.",
+      "duration": "3–5 years",
+      "importance": "Evolutionary anatomy research and medical comparative studies."
+    },
+    "Ph.D. Animal Physiology": {
+      "explanation": "Advanced research on animal biological functions and processes.",
+      "duration": "3–6 years",
+      "importance": "Physiological research leadership and medical applications."
+    },
+    "Ph.D. Taxonomy": {
+      "explanation": "Doctoral research on organism classification and systematics.",
+      "duration": "3–5 years",
+      "importance": "Biodiversity documentation and conservation planning leadership."
+    },
+    "Ph.D. Systematics": {
+      "explanation": "Advanced research on evolutionary relationships and classification.",
+      "duration": "3–5 years",
+      "importance": "Evolutionary biology and biodiversity research leadership."
+    },
+    "Ph.D. Morphology": {
+      "explanation": "Doctoral research on organism form and structure.",
+      "duration": "3–5 years",
+      "importance": "Anatomical research and evolutionary morphology leadership."
+    },
+    "Ph.D. Histology": {
+      "explanation": "Advanced tissue research and microscopic anatomy studies.",
+      "duration": "3–5 years",
+      "importance": "Medical research and diagnostic science leadership."
+    },
+    "Ph.D. Cytology": {
+      "explanation": "Doctoral research on cell structure, function, and biology.",
+      "duration": "3–5 years",
+      "importance": "Cell biology research and medical cytology leadership."
+    },
+    "Ph.D. Developmental Biology": {
+      "explanation": "Advanced research on organism growth and development.",
+      "duration": "3–6 years",
+      "importance": "Developmental genetics and regenerative medicine leadership."
+    },
+    "Ph.D. Cell Biology": {
+      "explanation": "Doctoral research on cellular processes and mechanisms.",
+      "duration": "3–6 years",
+      "importance": "Cellular research and disease mechanism leadership."
+    },
+    "Ph.D. Epigenetics": {
+      "explanation": "Advanced research on heritable gene expression changes.",
+      "duration": "3–6 years",
+      "importance": "Cutting-edge genetic research and disease mechanism leadership."
+    },
+    "B.Sc. Forestry": {
+      "explanation": "Study of forest management, conservation, silviculture, and wildlife habitat management.",
+      "duration": "4 years",
+      "importance": "Prepares for forest services, conservation organizations, and sustainable forest management careers."
+    },
+    "B.Sc. Political Science": {
+      "explanation": "Study of political systems, governance, and public policy.",
+      "duration": "3 years",
+      "importance": "Useful for policy-making, environmental law, and governance careers."
+    },
+    "B.V.Sc & AH": {
+      "explanation": "Bachelor of Veterinary Science and Animal Husbandry - professional degree for veterinarians.",
+      "duration": "5 years",
+      "importance": "Mandatory for practicing veterinary medicine and surgery in India."
+    },
+    "M.Sc. Wildlife Science": {
+      "explanation": "Applied wildlife management, conservation techniques, and field research.",
+      "duration": "2 years",
+      "importance": "Important for forest services, NGOs, and conservation management roles."
+    },
+    "M.Sc. Conservation Biology": {
+      "explanation": "Study of biodiversity conservation, endangered species, and habitat protection.",
+      "duration": "2 years",
+      "importance": "Critical for global and national conservation strategy development."
+    },
+    "M.Sc. Ecology": {
+      "explanation": "Study of ecosystems, species interactions, and environmental relationships.",
+      "duration": "2 years",
+      "importance": "Backbone of environmental research, conservation, and sustainability studies."
+    },
+    "M.Sc. Environmental Science": {
+      "explanation": "Interdisciplinary environmental studies including pollution, conservation, and sustainability.",
+      "duration": "2 years",
+      "importance": "Key for environmental consulting, impact assessment, and policy development."
+    },
+    "M.Sc. Wildlife Ecology": {
+      "explanation": "Study of wildlife interactions with ecosystems and habitats.",
+      "duration": "2 years",
+      "importance": "Important for conservation planning and wildlife management."
+    },
+    "M.Sc. Wildlife Management": {
+      "explanation": "Applied techniques for wildlife population and habitat management.",
+      "duration": "2 years",
+      "importance": "Crucial for protected area management and conservation programs."
+    },
+    "M.Sc. Forestry": {
+      "explanation": "Advanced forest management, conservation, and silviculture.",
+      "duration": "2 years",
+      "importance": "Essential for forest department careers and sustainable forestry."
+    },
+    "M.Sc. Biodiversity": {
+      "explanation": "Study of biological diversity, conservation, and sustainable use.",
+      "duration": "2 years",
+      "importance": "Critical for conservation planning and environmental policy."
+    },
+    "M.Sc. Conservation Science": {
+      "explanation": "Scientific approaches to biodiversity conservation and management.",
+      "duration": "2 years",
+      "importance": "Important for conservation organizations and environmental agencies."
+    },
+    "M.Sc. Restoration Ecology": {
+      "explanation": "Study of ecosystem restoration and rehabilitation techniques.",
+      "duration": "2 years",
+      "importance": "Vital for habitat restoration projects and environmental recovery."
+    },
+    "M.Sc. Environmental Management": {
+      "explanation": "Management of environmental resources and sustainable development.",
+      "duration": "2 years",
+      "importance": "Key for environmental consulting and corporate sustainability roles."
+    },
+    "M.Sc. EIA": {
+      "explanation": "Environmental Impact Assessment methodologies and applications.",
+      "duration": "2 years",
+      "importance": "Essential for development project planning and regulatory compliance."
+    },
+    "M.Sc. Environmental Policy": {
+      "explanation": "Study of environmental laws, regulations, and governance.",
+      "duration": "2 years",
+      "importance": "Essential for policy-making and environmental advocacy."
+    },
+    "M.Sc. Conflict Resolution": {
+      "explanation": "Study of conflict management and resolution strategies.",
+      "duration": "2 years",
+      "importance": "Important for managing human-wildlife conflicts."
+    },
+    "Ph.D. Wildlife Conservation": {
+      "explanation": "Advanced research on conservation strategies and protected area management.",
+      "duration": "3–5 years",
+      "importance": "Senior positions in conservation organizations and government agencies."
+    },
+    "Ph.D. Conservation Biology": {
+      "explanation": "Doctoral research on biodiversity conservation and ecosystem management.",
+      "duration": "3–5 years",
+      "importance": "Global conservation impact through research and policy development."
+    },
+    "Ph.D. Environmental Science": {
+      "explanation": "Doctoral research on environmental systems, pollution, and sustainability.",
+      "duration": "3–6 years",
+      "importance": "Environmental governance, policy development, and research leadership."
+    },
+    "Ph.D. Wildlife Ecology": {
+      "explanation": "Doctoral research on wildlife-ecosystem interactions.",
+      "duration": "3–5 years",
+      "importance": "Wildlife conservation research and ecosystem management leadership."
+    },
+    "Ph.D. Wildlife Management": {
+      "explanation": "Advanced research on wildlife population and habitat management.",
+      "duration": "3–5 years",
+      "importance": "Protected area management and conservation policy leadership."
+    },
+    "Ph.D. Biodiversity": {
+      "explanation": "Advanced research on biological diversity and conservation.",
+      "duration": "3–5 years",
+      "importance": "Global biodiversity conservation and policy leadership."
+    },
+    "Ph.D. Conservation Science": {
+      "explanation": "Doctoral research on conservation strategies and techniques.",
+      "duration": "3–5 years",
+      "importance": "Conservation science innovation and implementation leadership."
+    },
+    "Ph.D. Restoration Ecology": {
+      "explanation": "Advanced research on ecosystem restoration techniques.",
+      "duration": "3–5 years",
+      "importance": "Habitat restoration research and environmental recovery leadership."
+    },
+    "Ph.D. Environmental Management": {
+      "explanation": "Doctoral research on environmental resource management.",
+      "duration": "3–6 years",
+      "importance": "Environmental governance and sustainability leadership."
+    },
+    "Ph.D. Environmental Policy": {
+      "explanation": "Advanced research on environmental governance and policy.",
+      "duration": "3–5 years",
+      "importance": "Environmental law and policy development leadership."
+    },
+    "Ph.D. Human-Wildlife Conflict": {
+      "explanation": "Research on conflicts between humans and wildlife and mitigation strategies.",
+      "duration": "3–5 years",
+      "importance": "Conflict resolution and conservation management leadership."
+    },
+    "B.Sc. Marine Biology": {
+      "explanation": "Study of marine organisms, ocean ecosystems, and marine conservation.",
+      "duration": "3 years",
+      "importance": "Foundation for careers in marine research, conservation, fisheries, and oceanography."
+    },
+    "B.Sc. Fisheries Science": {
+      "explanation": "Study of fish biology, aquaculture, fisheries management, and aquatic ecosystems.",
+      "duration": "4 years",
+      "importance": "Crucial for careers in fisheries departments, aquaculture industries, and marine resource management."
+    },
+    "B.Sc. Veterinary Science": {
+      "explanation": "Study of animal health, diseases, surgery, and animal husbandry.",
+      "duration": "5 years",
+      "importance": "Essential for becoming a veterinarian and for careers in animal healthcare, research, and public health."
+    },
+    "B.Sc. Oceanography": {
+      "explanation": "Study of oceans, their physical, chemical, and biological properties.",
+      "duration": "3 years",
+      "importance": "Essential for marine research, conservation, and ocean resource management."
+    },
+    "B.Sc. Aquaculture": {
+      "explanation": "Study of aquatic organism farming, breeding, and management.",
+      "duration": "3 years",
+      "importance": "Important for sustainable seafood production and aquatic resource management."
+    },
+    "B.Sc. Geography": {
+      "explanation": "Study of Earth's landscapes, environments, and human-environment interactions.",
+      "duration": "3 years",
+      "importance": "Important for environmental planning, conservation, and resource management."
+    },
+    "M.Sc. Marine Biology": {
+      "explanation": "Advanced study of marine organisms, ecosystems, and ocean conservation.",
+      "duration": "2 years",
+      "importance": "Vital for marine research institutions, conservation, and fisheries management."
+    },
+    "M.Sc. Oceanography": {
+      "explanation": "Study of physical, chemical, and biological ocean processes.",
+      "duration": "2 years",
+      "importance": "Important for climate research, marine policy, and ocean resource management."
+    },
+    "M.Sc. Marine Ecology": {
+      "explanation": "Specialized study of marine ecosystems and organism-environment interactions.",
+      "duration": "2 years",
+      "importance": "Supports marine conservation, fisheries, and coastal management."
+    },
+    "M.Sc. Fisheries Science": {
+      "explanation": "Advanced fish biology, aquatic resource management, and fisheries technology.",
+      "duration": "2 years",
+      "importance": "Crucial for sustainable fisheries management and aquaculture development."
+    },
+    "M.Sc. Aquaculture": {
+      "explanation": "Advanced aquatic farming techniques, breeding, and management systems.",
+      "duration": "2 years",
+      "importance": "Supports sustainable seafood production and aquatic resource development."
+    },
+    "M.Sc. Marine Conservation": {
+      "explanation": "Study of marine ecosystem protection and conservation strategies.",
+      "duration": "2 years",
+      "importance": "Important for marine protected area management and conservation."
+    },
+    "M.Sc. Coral Reef Ecology": {
+      "explanation": "Study of coral reef ecosystems and conservation.",
+      "duration": "2 years",
+      "importance": "Important for marine conservation in tropical regions."
+    },
+    "M.Sc. Coastal Management": {
+      "explanation": "Management of coastal resources and environments.",
+      "duration": "2 years",
+      "importance": "Essential for sustainable coastal development."
+    },
+    "M.Sc. Inland Fisheries": {
+      "explanation": "Management of freshwater fisheries resources.",
+      "duration": "2 years",
+      "importance": "Important for sustainable freshwater fisheries."
+    },
+    "M.Sc. Fish Pathology": {
+      "explanation": "Study of fish diseases and health management.",
+      "duration": "2 years",
+      "importance": "Crucial for aquaculture and fisheries health."
+    },
+    "M.Sc. Ichthyology": {
+      "explanation": "Specialized study of fish biology and classification.",
+      "duration": "2 years",
+      "importance": "Important for fisheries management and aquatic research."
+    },
+    "Ph.D. Marine Biology": {
+      "explanation": "Advanced marine organism research and ocean ecosystem studies.",
+      "duration": "3–5 years",
+      "importance": "Ocean conservation leadership and marine research direction."
+    },
+    "Ph.D. Oceanography": {
+      "explanation": "Doctoral research on ocean systems, processes, and resources.",
+      "duration": "3–6 years",
+      "importance": "Climate research, ocean policy, and marine resource management leadership."
+    },
+    "Ph.D. Marine Ecology": {
+      "explanation": "Advanced research on marine ecosystems and species interactions.",
+      "duration": "3–5 years",
+      "importance": "Marine sustainability and conservation research leadership."
+    },
+    "Ph.D. Fisheries Science": {
+      "explanation": "Doctoral research on fish biology, fisheries management, and aquaculture.",
+      "duration": "3–5 years",
+      "importance": "Food security research and fisheries policy development."
+    },
+    "Ph.D. Aquaculture": {
+      "explanation": "Advanced research on aquatic farming systems and technologies.",
+      "duration": "3–5 years",
+      "importance": "Sustainable aquaculture innovation and industry leadership."
+    },
+    "Ph.D. Marine Conservation": {
+      "explanation": "Doctoral research on marine ecosystem protection and management.",
+      "duration": "3–5 years",
+      "importance": "Marine conservation policy and management leadership."
+    },
+    "Ph.D. Coastal Management": {
+      "explanation": "Doctoral research on coastal resource management.",
+      "duration": "3–5 years",
+      "importance": "Coastal conservation and sustainable development leadership."
+    },
+    "Ph.D. Ichthyology": {
+      "explanation": "Advanced research on fish biology and classification.",
+      "duration": "3–5 years",
+      "importance": "Fisheries science and aquatic research leadership."
+    },
+    "Ph.D. Fish Pathology": {
+      "explanation": "Doctoral research on fish diseases and health.",
+      "duration": "3–5 years",
+      "importance": "Aquatic animal health and fisheries management leadership."
+    },
+    "Ph.D. Coral Reef Studies": {
+      "explanation": "Advanced research on coral reef ecosystems.",
+      "duration": "3–5 years",
+      "importance": "Marine conservation and reef management leadership."
+    },
+    "B.Sc. Microbiology": {
+      "explanation": "Study of microorganisms including bacteria, viruses, fungi, and their applications.",
+      "duration": "3 years",
+      "importance": "Important for healthcare, pharmaceutical, food, and environmental industries."
+    },
+    "B.Sc. Pharmacology": {
+      "explanation": "Study of drugs, their composition, effects, and therapeutic uses.",
+      "duration": "4 years",
+      "importance": "Important for pharmaceutical research, drug development, and healthcare."
+    },
+    "B.Sc. Toxicology": {
+      "explanation": "Study of chemical effects on living organisms and ecosystems.",
+      "duration": "3 years",
+      "importance": "Critical for environmental safety, pharmaceutical testing, and forensic science."
+    },
+    "B.Sc. Medical Lab Technology": {
+      "explanation": "Training in laboratory techniques for medical diagnosis and research.",
+      "duration": "3 years",
+      "importance": "Prepares for careers in diagnostic laboratories and healthcare facilities."
+    },
+    "B.Sc. Pharmacy": {
+      "explanation": "Study of drugs, their composition, effects, and therapeutic uses.",
+      "duration": "4 years",
+      "importance": "Important for pharmaceutical research, drug development, and healthcare."
+    },
+    "B.Sc. Clinical Research": {
+      "explanation": "Study of clinical trial design, management, and regulatory affairs.",
+      "duration": "3 years",
+      "importance": "Prepares for careers in pharmaceutical research and clinical trial management."
+    },
+    "B.Sc. Biomedical Science": {
+      "explanation": "Study of human biology, diseases, and medical laboratory techniques.",
+      "duration": "3 years",
+      "importance": "Prepares for careers in medical laboratories, research institutions, and healthcare."
+    },
+    "M.V.Sc Pathology": {
+      "explanation": "Veterinary pathology specialization for disease diagnosis.",
+      "duration": "2 years",
+      "importance": "Essential for veterinary diagnostic laboratories and research."
+    },
+    "M.V.Sc Microbiology": {
+      "explanation": "Veterinary microbiology for animal pathogen studies.",
+      "duration": "2 years",
+      "importance": "Important for animal disease research and control."
+    },
+    "M.V.Sc Parasitology": {
+      "explanation": "Veterinary parasitology for parasite studies.",
+      "duration": "2 years",
+      "importance": "Crucial for livestock health and parasite control."
+    },
+    "M.V.Sc Epidemiology": {
+      "explanation": "Veterinary epidemiology for disease pattern studies.",
+      "duration": "2 years",
+      "importance": "Important for disease surveillance in animal populations."
+    },
+    "M.Sc. Veterinary Science": {
+      "explanation": "Advanced animal health studies, diseases, and treatment methods.",
+      "duration": "2 years",
+      "importance": "Essential for veterinary research, specialization, and advanced practice."
+    },
+    "M.Sc. Pathology": {
+      "explanation": "Study of diseases through tissue examination and diagnosis.",
+      "duration": "2 years",
+      "importance": "Important for medical and veterinary diagnostics."
+    },
+    "M.Sc. Pharmacology": {
+      "explanation": "Study of drug actions, effects, and development.",
+      "duration": "2 years",
+      "importance": "Important for pharmaceutical research and drug development."
+    },
+    "M.Sc. Toxicology": {
+      "explanation": "Advanced study of chemical toxicity, risk assessment, and safety evaluation.",
+      "duration": "2 years",
+      "importance": "Key for environmental safety, pharmaceutical testing, and forensic applications."
+    },
+    "M.Sc. Clinical Research": {
+      "explanation": "Design and management of clinical trials and research studies.",
+      "duration": "2 years",
+      "importance": "Crucial for pharmaceutical industry and medical research."
+    },
+    "M.Sc. Biomedical Science": {
+      "explanation": "Advanced study of human biology and disease mechanisms.",
+      "duration": "2 years",
+      "importance": "Important for medical research and diagnostic laboratories."
+    },
+    "M.Sc. Medical Lab Science": {
+      "explanation": "Advanced laboratory techniques for medical diagnosis.",
+      "duration": "2 years",
+      "importance": "Essential for hospital laboratories and diagnostic centers."
+    },
+    "M.Sc. Laboratory Animal Science": {
+      "explanation": "Management and care of laboratory animals in research.",
+      "duration": "2 years",
+      "importance": "Essential for biomedical research institutions and pharmaceutical companies."
+    },
+    "Ph.D. Veterinary Sciences": {
+      "explanation": "Doctoral research on animal health, diseases, and treatments.",
+      "duration": "3–6 years",
+      "importance": "Animal health advancement and veterinary research leadership."
+    },
+    "Ph.D. Veterinary Pathology": {
+      "explanation": "Advanced research on animal diseases and diagnostics.",
+      "duration": "3–6 years",
+      "importance": "Veterinary diagnostic science and disease research leadership."
+    },
+    "Ph.D. Veterinary Microbiology": {
+      "explanation": "Doctoral research on animal pathogens and diseases.",
+      "duration": "3–6 years",
+      "importance": "Animal disease control and vaccine research leadership."
+    },
+    "Ph.D. Veterinary Parasitology": {
+      "explanation": "Advanced research on animal parasites and control.",
+      "duration": "3–6 years",
+      "importance": "Parasitic disease research and control leadership."
+    },
+    "Ph.D. Veterinary Epidemiology": {
+      "explanation": "Doctoral research on animal disease patterns and outbreaks.",
+      "duration": "3–6 years",
+      "importance": "Disease surveillance and control program leadership."
+    },
+    "Ph.D. Pharmacology": {
+      "explanation": "Doctoral research on drug actions and development.",
+      "duration": "3–6 years",
+      "importance": "Pharmaceutical research and drug development leadership."
+    },
+    "Ph.D. Biomedical Science": {
+      "explanation": "Advanced research on human biology and diseases.",
+      "duration": "3–6 years",
+      "importance": "Medical research and diagnostic science leadership."
+    },
+    "Ph.D. Animal Toxicology": {
+      "explanation": "Advanced research on chemical effects on animals.",
+      "duration": "3–5 years",
+      "importance": "Environmental safety and toxicology research leadership."
+    },
+    "Ph.D. Laboratory Animal Science": {
+      "explanation": "Advanced research on laboratory animal care and science.",
+      "duration": "3–5 years",
+      "importance": "Biomedical research animal science leadership."
+    }
+  },
+  "careerCategories": [
+    {
+      "id": "general-zoology",
+      "name": "General Zoology & Biology Research",
+      "description": "Explore professional careers and academic pathways in General Zoology & Biology Research.",
+      "icon": "Microscope",
+      "theme": {
+        "primary": "#1faa59",
+        "secondary": "#14532d",
+        "accent": "#ecfdf5",
+        "gradient": "linear-gradient(135deg, #1faa59 0%, #14532d 100%)"
+      },
+      "careers": [
+        {
+          "title": "Zoologist",
+          "description": "Studies animal biology, behavior, classification, and evolution across all animal groups.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Biotechnology"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Animal Science",
+            "M.Sc. Wildlife Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology",
+            "Ph.D. Animal Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Animal Biologist",
+          "description": "Focuses on animal structure, function, genetics, and physiology across species.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Animal Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Animal Biology",
+            "M.Sc. Comparative Physiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Biology",
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Field Biologist",
+          "description": "Conducts biological research in natural habitats, studying organisms in their environment.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Ecology",
+            "M.Sc. Wildlife Biology",
+            "M.Sc. Field Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Ecology",
+            "Ph.D. Wildlife Biology"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Research Biologist",
+          "description": "Conducts scientific research in labs or field settings to advance biological knowledge.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Biotechnology",
+            "M.Sc. Research Methodology"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology",
+            "Ph.D. Life Sciences"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Experimental Biologist",
+          "description": "Designs and conducts experiments to understand biological processes and mechanisms.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Experimental Biology",
+            "M.Sc. Research Methods"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology",
+            "Ph.D. Experimental Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Systems Biologist",
+          "description": "Studies complex biological systems using computational and mathematical models.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Bioinformatics"
+          ],
+          "mscCourses": [
+            "M.Sc. Systems Biology",
+            "M.Sc. Bioinformatics"
+          ],
+          "phdCourses": [
+            "Ph.D. Systems Biology",
+            "Ph.D. Computational Biology"
+          ],
+          "salaryRange": "6–12 LPA"
+        },
+        {
+          "title": "Evolutionary Biologist",
+          "description": "Studies evolution, adaptation, and genetic changes in populations over time.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Genetics"
+          ],
+          "mscCourses": [
+            "M.Sc. Evolutionary Biology",
+            "M.Sc. Genetics"
+          ],
+          "phdCourses": [
+            "Ph.D. Evolutionary Biology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Comparative Anatomist",
+          "description": "Compares anatomical structures across different animal species.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Anatomy",
+            "M.Sc. Comparative Anatomy"
+          ],
+          "phdCourses": [
+            "Ph.D. Comparative Anatomy",
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Physiologist (Animal Physiology)",
+          "description": "Studies functions and mechanisms in living animals at organ/system levels.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Physiology"
+          ],
+          "mscCourses": [
+            "M.Sc. Animal Physiology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Physiology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Taxonomist",
+          "description": "Classifies, names, and describes organisms based on their characteristics.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Botany",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Taxonomy",
+            "M.Sc. Zoology/Botany"
+          ],
+          "phdCourses": [
+            "Ph.D. Taxonomy",
+            "Ph.D. Systematics"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Systematist",
+          "description": "Studies evolutionary relationships and phylogeny among organisms.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Systematics",
+            "M.Sc. Evolutionary Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Systematics",
+            "Ph.D. Evolutionary Biology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Morphologist",
+          "description": "Studies form and structure of organisms and their specific structural features.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Morphology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Morphology",
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Histologist",
+          "description": "Studies microscopic structure of tissues and cells in animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Medical Lab Tech"
+          ],
+          "mscCourses": [
+            "M.Sc. Histology",
+            "M.Sc. Pathology"
+          ],
+          "phdCourses": [
+            "Ph.D. Histology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Cytologist",
+          "description": "Studies structure, function, and chemistry of animal and plant cells.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Biotechnology"
+          ],
+          "mscCourses": [
+            "M.Sc. Cytology",
+            "M.Sc. Cell Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Cytology",
+            "Ph.D. Cell Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Developmental Biologist",
+          "description": "Studies growth and development processes from embryo to adult organisms.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Developmental Biology",
+            "M.Sc. Embryology"
+          ],
+          "phdCourses": [
+            "Ph.D. Developmental Biology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Molecular Biologist",
+          "description": "Studies biological activity at molecular level, focusing on DNA, RNA, proteins.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Molecular Biology",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Molecular Biology"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Cell Biologist",
+          "description": "Studies cell structure, function, and interactions at cellular level.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Cell Biology",
+            "M.Sc. Molecular Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Cell Biology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Epigeneticist",
+          "description": "Studies heritable changes in gene expression not involving DNA sequence changes.",
+          "bscCourses": [
+            "B.Sc. Genetics",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Genetics",
+            "M.Sc. Epigenetics"
+          ],
+          "phdCourses": [
+            "Ph.D. Epigenetics"
+          ],
+          "salaryRange": "6–12 LPA"
+        }
+      ]
+    },
+    {
+      "id": "wildlife-ecology",
+      "name": "Wildlife, Ecology & Environmental Careers",
+      "description": "Explore professional careers and academic pathways in Wildlife, Ecology & Environmental Careers.",
+      "icon": "Trees",
+      "theme": {
+        "primary": "#ea580c",
+        "secondary": "#7c2d12",
+        "accent": "#fff7ed",
+        "gradient": "linear-gradient(135deg, #ea580c 0%, #7c2d12 100%)"
+      },
+      "careers": [
+        {
+          "title": "Wildlife Biologist / Wildlife Conservationist",
+          "description": "Study wild animals and protect endangered species.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Biology",
+            "M.Sc. Wildlife Science",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Biology",
+            "Ph.D. Wildlife Conservation"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Ecologist / Environmental Consultant",
+          "description": "Study ecosystems and biodiversity impacts.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Ecology",
+            "M.Sc. Environmental Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Ecology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Wildlife Ecologist",
+          "description": "Studies interactions between wildlife and their ecosystems, focusing on ecological relationships.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Ecology",
+            "M.Sc. Ecology"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Ecology",
+            "Ph.D. Ecology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Wildlife Research Scientist",
+          "description": "Conducts scientific research on wildlife species, behavior, and conservation.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Science",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Biology",
+            "Ph.D. Conservation Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Wildlife Manager",
+          "description": "Manages wildlife populations and habitats in protected areas and reserves.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Forestry",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Management",
+            "M.Sc. Forestry"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Management"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Forest Officer (IFS / State Forest Services)",
+          "description": "Government officer managing forests, wildlife, and natural resources.",
+          "bscCourses": [
+            "B.Sc. Forestry",
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Forestry",
+            "M.Sc. Wildlife Science"
+          ],
+          "phdCourses": [
+            "Optional for specialization"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "Range Forest Officer (RFO)",
+          "description": "Manages forest ranges, implements conservation programs, prevents illegal activities.",
+          "bscCourses": [
+            "B.Sc. Forestry",
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Forestry",
+            "Diploma in Forest Management"
+          ],
+          "phdCourses": [
+            "Not required"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Wildlife Inspector",
+          "description": "Enforces wildlife protection laws, prevents smuggling and illegal trade.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Science",
+            "M.Sc. Environmental Law"
+          ],
+          "phdCourses": [
+            "Not required"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Biodiversity Officer",
+          "description": "Monitors and conserves biodiversity in regions, implements conservation plans.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Biodiversity",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biodiversity Studies"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Conservation Scientist",
+          "description": "Develops and implements strategies to protect ecosystems and species.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Conservation Science",
+            "M.Sc. Environmental Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Conservation Science",
+            "Ph.D. Conservation Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Habitat Restoration Specialist",
+          "description": "Restores degraded ecosystems and wildlife habitats to natural conditions.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Forestry"
+          ],
+          "mscCourses": [
+            "M.Sc. Restoration Ecology",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Restoration Ecology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Wildlife Rehabilitator",
+          "description": "Cares for injured, orphaned, or sick wildlife for release back to wild.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Veterinary Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Rehabilitation",
+            "Certification courses"
+          ],
+          "phdCourses": [
+            "Not typically required"
+          ],
+          "salaryRange": "3–5 LPA"
+        },
+        {
+          "title": "Anti-Poaching Officer",
+          "description": "Prevents poaching and illegal wildlife trade through patrols and investigations.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Forestry",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Protection",
+            "Law enforcement training"
+          ],
+          "phdCourses": [
+            "Not required"
+          ],
+          "salaryRange": "4–6 LPA"
+        },
+        {
+          "title": "Environmental Impact Assessment (EIA) Specialist",
+          "description": "Assesses environmental impacts of development projects on wildlife.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Science",
+            "M.Sc. EIA"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Impact Assessment"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Human–Wildlife Conflict Specialist",
+          "description": "Manages conflicts between humans and wildlife, develops mitigation strategies.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Forestry"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Management",
+            "M.Sc. Conflict Resolution"
+          ],
+          "phdCourses": [
+            "Ph.D. Human-Wildlife Conflict"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Wildlife Policy Advisor",
+          "description": "Advises governments and organizations on wildlife conservation policies.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Political Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Policy",
+            "M.Sc. Wildlife Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Policy"
+          ],
+          "salaryRange": "6–11 LPA"
+        }
+      ]
+    },
+    {
+      "id": "marine-fisheries",
+      "name": "Marine, Aquatic & Fisheries Sciences",
+      "description": "Explore professional careers and academic pathways in Marine, Aquatic & Fisheries Sciences.",
+      "icon": "Waves",
+      "theme": {
+        "primary": "#0284c7",
+        "secondary": "#0c4a6e",
+        "accent": "#f0f9ff",
+        "gradient": "linear-gradient(135deg, #0284c7 0%, #0c4a6e 100%)"
+      },
+      "careers": [
+        {
+          "title": "Marine Biologist",
+          "description": "Research marine organisms and ecosystems.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Marine Biology",
+            "M.Sc. Oceanography"
+          ],
+          "phdCourses": [
+            "Ph.D. Marine Biology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Fisheries Scientist",
+          "description": "Manage aquatic resources.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Fisheries Science",
+            "M.Sc. Aquaculture"
+          ],
+          "phdCourses": [
+            "Ph.D. Fisheries Science"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Marine Ecologist",
+          "description": "Studies interactions among marine organisms and their environment.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Marine Biology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Marine Ecology",
+            "M.Sc. Oceanography"
+          ],
+          "phdCourses": [
+            "Ph.D. Marine Ecology",
+            "Ph.D. Marine Biology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Oceanographer (Biological)",
+          "description": "Studies biological aspects of oceans, marine life, and ecosystems.",
+          "bscCourses": [
+            "B.Sc. Marine Science",
+            "B.Sc. Zoology",
+            "B.Sc. Oceanography"
+          ],
+          "mscCourses": [
+            "M.Sc. Oceanography",
+            "M.Sc. Marine Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biological Oceanography",
+            "Ph.D. Oceanography"
+          ],
+          "salaryRange": "6–12 LPA"
+        },
+        {
+          "title": "Aquaculture Specialist",
+          "description": "Manages farming of aquatic organisms like fish, shrimp, and algae.",
+          "bscCourses": [
+            "B.Sc. Fisheries Science",
+            "B.Sc. Zoology",
+            "B.Sc. Aquaculture"
+          ],
+          "mscCourses": [
+            "M.Sc. Aquaculture",
+            "M.Sc. Fisheries Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Aquaculture"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Fish Pathologist",
+          "description": "Diagnoses and treats diseases in fish and aquatic animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Fisheries",
+            "B.Sc. Veterinary Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Fish Pathology",
+            "M.Sc. Aquatic Animal Health"
+          ],
+          "phdCourses": [
+            "Ph.D. Fish Pathology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Ichthyologist",
+          "description": "Specializes in study of fish species, their biology and classification.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Fisheries",
+            "B.Sc. Marine Biology"
+          ],
+          "mscCourses": [
+            "M.Sc. Ichthyology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Ichthyology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Coral Reef Researcher",
+          "description": "Studies coral reef ecosystems, their conservation and restoration.",
+          "bscCourses": [
+            "B.Sc. Marine Biology",
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Marine Science",
+            "M.Sc. Coral Reef Ecology"
+          ],
+          "phdCourses": [
+            "Ph.D. Coral Reef Studies"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Marine Conservationist",
+          "description": "Works to protect marine ecosystems and species from threats.",
+          "bscCourses": [
+            "B.Sc. Marine Biology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Marine Conservation",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Marine Conservation"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Coastal Zone Manager",
+          "description": "Manages coastal areas balancing development with environmental protection.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Marine Science",
+            "B.Sc. Geography"
+          ],
+          "mscCourses": [
+            "M.Sc. Coastal Management",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Coastal Zone Management"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Inland Fisheries Officer",
+          "description": "Manages freshwater fisheries resources in rivers, lakes, and reservoirs.",
+          "bscCourses": [
+            "B.Sc. Fisheries Science",
+            "B.Sc. Zoology",
+            "B.Sc. Aquaculture"
+          ],
+          "mscCourses": [
+            "M.Sc. Fisheries Management",
+            "M.Sc. Inland Fisheries"
+          ],
+          "phdCourses": [
+            "Optional for research"
+          ],
+          "salaryRange": "4–7 LPA"
+        }
+      ]
+    },
+    {
+      "id": "animal-health",
+      "name": "Animal Health & Medical Sciences",
+      "description": "Explore professional careers and academic pathways in Animal Health & Medical Sciences.",
+      "icon": "Stethoscope",
+      "theme": {
+        "primary": "#059669",
+        "secondary": "#064e3b",
+        "accent": "#ecfdf5",
+        "gradient": "linear-gradient(135deg, #059669 0%, #064e3b 100%)"
+      },
+      "careers": [
+        {
+          "title": "Veterinarian (with further qualification)",
+          "description": "Diagnoses and treats animal diseases, performs surgeries, advises on animal care.",
+          "bscCourses": [
+            "B.V.Sc & AH",
+            "B.Sc. Zoology",
+            "B.Sc. Animal Science"
+          ],
+          "mscCourses": [
+            "M.V.Sc in specialization",
+            "M.Sc. Veterinary Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Veterinary Sciences"
+          ],
+          "salaryRange": "6–12 LPA"
+        },
+        {
+          "title": "Veterinary Pathologist",
+          "description": "Studies animal diseases through tissue examination and lab analysis.",
+          "bscCourses": [
+            "B.V.Sc & AH",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.V.Sc Pathology",
+            "M.Sc. Pathology"
+          ],
+          "phdCourses": [
+            "Ph.D. Veterinary Pathology"
+          ],
+          "salaryRange": "6–10 LPA"
+        },
+        {
+          "title": "Veterinary Microbiologist",
+          "description": "Studies microorganisms affecting animal health, develops diagnostics and vaccines.",
+          "bscCourses": [
+            "B.V.Sc & AH",
+            "B.Sc. Microbiology"
+          ],
+          "mscCourses": [
+            "M.V.Sc Microbiology",
+            "M.Sc. Veterinary Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Veterinary Microbiology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Veterinary Parasitologist",
+          "description": "Studies parasites affecting animals and develops control measures.",
+          "bscCourses": [
+            "B.V.Sc & AH",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.V.Sc Parasitology",
+            "M.Sc. Parasitology"
+          ],
+          "phdCourses": [
+            "Ph.D. Veterinary Parasitology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Veterinary Epidemiologist",
+          "description": "Studies disease patterns and outbreaks in animal populations.",
+          "bscCourses": [
+            "B.V.Sc & AH",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.V.Sc Epidemiology",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Veterinary Epidemiology"
+          ],
+          "salaryRange": "6–11 LPA"
+        },
+        {
+          "title": "Laboratory Animal Scientist",
+          "description": "Manages and cares for laboratory animals used in biomedical research.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.V.Sc"
+          ],
+          "mscCourses": [
+            "M.Sc. Laboratory Animal Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Laboratory Animal Science"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Animal Toxicologist",
+          "description": "Studies effects of chemicals and toxins on animals and ecosystems.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Toxicology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Toxicology",
+            "M.Sc. Environmental Toxicology"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Toxicology",
+            "Ph.D. Toxicology"
+          ],
+          "salaryRange": "5–9 LPA"
+        },
+        {
+          "title": "Pharmacologist (Animal-based research)",
+          "description": "Studies drug effects and develops medications for animal use.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Pharmacology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Pharmacology",
+            "M.Sc. Veterinary Pharmacology"
+          ],
+          "phdCourses": [
+            "Ph.D. Pharmacology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Clinical Research Associate (CRA)",
+          "description": "Manages clinical trials of veterinary drugs and treatments.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Pharmacy"
+          ],
+          "mscCourses": [
+            "M.Sc. Clinical Research",
+            "Certification in Clinical Research"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Clinical Trial Coordinator",
+          "description": "Coordinates all aspects of veterinary clinical trials.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Clinical Research Management"
+          ],
+          "phdCourses": [
+            "Not required"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Biomedical Scientist",
+          "description": "Conducts research to understand diseases and develop treatments.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Biomedical Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Biomedical Science",
+            "M.Sc. Medical Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biomedical Science"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Medical Laboratory Scientist",
+          "description": "Performs diagnostic tests on animal samples in medical labs.",
+          "bscCourses": [
+            "B.Sc. Medical Lab Technology",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Medical Lab Science"
+          ],
+          "phdCourses": [
+            "Optional for research roles"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Diagnostic Lab Scientist",
+          "description": "Works in diagnostic labs analyzing animal samples for diseases.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Microbiology",
+            "B.Sc. Medical Lab Tech"
+          ],
+          "mscCourses": [
+            "M.Sc. Diagnostic Microbiology",
+            "M.Sc. Pathology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–7 LPA"
+        }
+      ]
+    },
+    {
+      "id": "biotechnology",
+      "name": "Biotechnology & Modern Technology Careers",
+      "description": "Explore professional careers and academic pathways in Biotechnology & Modern Technology Careers.",
+      "icon": "Dna",
+      "theme": {
+        "primary": "#7c3aed",
+        "secondary": "#4c1d95",
+        "accent": "#f5f3ff",
+        "gradient": "linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%)"
+      },
+      "careers": [
+        {
+          "title": "Biotechnologist",
+          "description": "Develop biotech products.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biotechnology"
+          ],
+          "salaryRange": "4–10 LPA"
+        },
+        {
+          "title": "Geneticist",
+          "description": "Work on genes and heredity.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Genetics",
+            "M.Sc. Molecular Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Genetics"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Genetic Engineer",
+          "description": "Modifies genetic material of organisms for research, medicine, or agriculture.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Genetics",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Genetic Engineering",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Genetic Engineering"
+          ],
+          "salaryRange": "6–13 LPA"
+        },
+        {
+          "title": "Genomics Scientist",
+          "description": "Studies entire genomes of organisms, analyzing DNA sequences and genetic variations.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Genetics",
+            "B.Sc. Bioinformatics"
+          ],
+          "mscCourses": [
+            "M.Sc. Genomics",
+            "M.Sc. Bioinformatics"
+          ],
+          "phdCourses": [
+            "Ph.D. Genomics"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "Proteomics Scientist",
+          "description": "Studies proteins, their structures, functions, and interactions in biological systems.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Biochemistry",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Proteomics",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Proteomics"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Bioinformatics Analyst",
+          "description": "Uses computational tools to analyze biological data like DNA sequences.",
+          "bscCourses": [
+            "B.Sc. Bioinformatics",
+            "B.Sc. Biotechnology",
+            "B.Sc. Computer Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Bioinformatics",
+            "M.Sc. Computational Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Bioinformatics"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Computational Biologist",
+          "description": "Develops mathematical models and computational tools for biological research.",
+          "bscCourses": [
+            "B.Sc. Bioinformatics",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Computational Biology",
+            "M.Sc. Bioinformatics"
+          ],
+          "phdCourses": [
+            "Ph.D. Computational Biology"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Synthetic Biology Researcher",
+          "description": "Designs and constructs new biological parts, devices, and systems.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Genetic Engineering",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Synthetic Biology",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Synthetic Biology"
+          ],
+          "salaryRange": "7–16 LPA"
+        },
+        {
+          "title": "CRISPR Research Scientist",
+          "description": "Specializes in CRISPR gene-editing technology for genetic modifications.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Genetics",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Genetic Engineering",
+            "M.Sc. Molecular Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. in Gene Editing/CRISPR Technology"
+          ],
+          "salaryRange": "8–18 LPA"
+        },
+        {
+          "title": "Stem Cell Researcher",
+          "description": "Studies stem cells for regenerative medicine and disease treatment.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Stem Cell Biology",
+            "M.Sc. Regenerative Medicine"
+          ],
+          "phdCourses": [
+            "Ph.D. Stem Cell Biology"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Regenerative Medicine Scientist",
+          "description": "Develops therapies to regenerate damaged tissues and organs.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Biomedical Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Regenerative Medicine",
+            "M.Sc. Tissue Engineering"
+          ],
+          "phdCourses": [
+            "Ph.D. Regenerative Medicine"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "Translational Research Scientist",
+          "description": "Bridges laboratory discoveries to clinical applications and treatments.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Biomedical Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Translational Research",
+            "M.Sc. Clinical Research"
+          ],
+          "phdCourses": [
+            "Ph.D. Translational Medicine"
+          ],
+          "salaryRange": "6–13 LPA"
+        }
+      ]
+    },
+    {
+      "id": "microbiology",
+      "name": "Microbiology, Immunology & Parasitology",
+      "description": "Explore professional careers and academic pathways in Microbiology, Immunology & Parasitology.",
+      "icon": "MicroIcon",
+      "theme": {
+        "primary": "#8b5cf6",
+        "secondary": "#4c1d95",
+        "accent": "#f5f3ff",
+        "gradient": "linear-gradient(135deg, #8b5cf6 0%, #4c1d95 100%)"
+      },
+      "careers": [
+        {
+          "title": "Microbiologist",
+          "description": "Study microorganisms.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Microbiology"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Parasitologist",
+          "description": "Study parasites.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Parasitology"
+          ],
+          "phdCourses": [
+            "Ph.D. Parasitology"
+          ],
+          "salaryRange": "3–5 LPA"
+        },
+        {
+          "title": "Immunologist",
+          "description": "Studies immune system responses, allergies, and autoimmune diseases.",
+          "bscCourses": [
+            "B.Sc. Microbiology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Immunology",
+            "M.Sc. Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Immunology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Medical Entomologist",
+          "description": "Studies insects that transmit diseases to humans and animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Microbiology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Entomology",
+            "M.Sc. Medical Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Medical Entomology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Virologist",
+          "description": "Studies viruses, their structure, classification, and disease mechanisms.",
+          "bscCourses": [
+            "B.Sc. Microbiology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Virology",
+            "M.Sc. Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Virology"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Bacteriologist",
+          "description": "Specializes in study of bacteria, their genetics, and interactions.",
+          "bscCourses": [
+            "B.Sc. Microbiology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Bacteriology",
+            "M.Sc. Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Bacteriology"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Mycologist",
+          "description": "Studies fungi, including mushrooms, yeasts, and molds.",
+          "bscCourses": [
+            "B.Sc. Microbiology",
+            "B.Sc. Botany",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Mycology",
+            "M.Sc. Microbiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Mycology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Infection Control Scientist",
+          "description": "Develops strategies to prevent and control infections in healthcare settings.",
+          "bscCourses": [
+            "B.Sc. Microbiology",
+            "B.Sc. Public Health",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Infection Control",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Infection Control"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Zoonotic Disease Researcher",
+          "description": "Studies diseases that transfer between animals and humans.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Microbiology",
+            "B.Sc. Veterinary Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoonoses",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoonotic Diseases"
+          ],
+          "salaryRange": "5–10 LPA"
+        }
+      ]
+    },
+    {
+      "id": "entomology",
+      "name": "Entomology & Invertebrate Specializations",
+      "description": "Explore professional careers and academic pathways in Entomology & Invertebrate Specializations.",
+      "icon": "Search",
+      "theme": {
+        "primary": "#b45309",
+        "secondary": "#78350f",
+        "accent": "#fffbeb",
+        "gradient": "linear-gradient(135deg, #b45309 0%, #78350f 100%)"
+      },
+      "careers": [
+        {
+          "title": "Entomologist",
+          "description": "Study insects.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Entomology"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Agricultural Entomologist",
+          "description": "Studies insects affecting crops and develops pest management strategies.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Agriculture",
+            "B.Sc. Entomology"
+          ],
+          "mscCourses": [
+            "M.Sc. Agricultural Entomology",
+            "M.Sc. Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Agricultural Entomology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Forensic Entomologist",
+          "description": "Uses insect evidence to help solve crimes and estimate time of death.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Forensic Science",
+            "B.Sc. Entomology"
+          ],
+          "mscCourses": [
+            "M.Sc. Forensic Entomology",
+            "M.Sc. Forensic Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Forensic Entomology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Insect Taxonomist",
+          "description": "Classifies and identifies insect species, discovers new species.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Entomology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Entomology",
+            "M.Sc. Taxonomy"
+          ],
+          "phdCourses": [
+            "Ph.D. Insect Taxonomy",
+            "Ph.D. Entomology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Apiculturist (Bee Scientist)",
+          "description": "Studies bees, manages beekeeping, researches bee behavior and products.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Agriculture",
+            "B.Sc. Entomology"
+          ],
+          "mscCourses": [
+            "M.Sc. Apiculture",
+            "M.Sc. Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Apiculture"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Sericulturist (Silkworm Expert)",
+          "description": "Manages silk production through silkworm rearing and research.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Agriculture",
+            "B.Sc. Sericulture"
+          ],
+          "mscCourses": [
+            "M.Sc. Sericulture",
+            "M.Sc. Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Sericulture"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Nematologist",
+          "description": "Studies nematodes (roundworms) in agriculture, medicine, and ecology.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Agriculture",
+            "B.Sc. Plant Pathology"
+          ],
+          "mscCourses": [
+            "M.Sc. Nematology",
+            "M.Sc. Entomology"
+          ],
+          "phdCourses": [
+            "Ph.D. Nematology"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Malacologist (Molluscs)",
+          "description": "Studies mollusks like snails, clams, octopuses, and squids.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Marine Biology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Malacology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Malacology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Carcinologist (Crustaceans)",
+          "description": "Studies crustaceans like crabs, lobsters, shrimp, and barnacles.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Marine Biology",
+            "B.Sc. Fisheries"
+          ],
+          "mscCourses": [
+            "M.Sc. Carcinology",
+            "M.Sc. Marine Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Carcinology"
+          ],
+          "salaryRange": "4–8 LPA"
+        }
+      ]
+    },
+    {
+      "id": "paleontology",
+      "name": "Paleontology & Evolution Careers",
+      "description": "Explore professional careers and academic pathways in Paleontology & Evolution Careers.",
+      "icon": "Search",
+      "theme": {
+        "primary": "#78350f",
+        "secondary": "#451a03",
+        "accent": "#fffbeb",
+        "gradient": "linear-gradient(135deg, #78350f 0%, #451a03 100%)"
+      },
+      "careers": [
+        {
+          "title": "Paleontologist",
+          "description": "Studies fossils to understand ancient life and evolutionary history.",
+          "bscCourses": [
+            "B.Sc. Geology",
+            "B.Sc. Zoology",
+            "B.Sc. Earth Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Paleontology",
+            "M.Sc. Geology"
+          ],
+          "phdCourses": [
+            "Ph.D. Paleontology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Vertebrate Paleontologist",
+          "description": "Specializes in fossilized remains of animals with backbones.",
+          "bscCourses": [
+            "B.Sc. Geology",
+            "B.Sc. Zoology",
+            "B.Sc. Earth Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Paleontology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Paleontology",
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Invertebrate Paleontologist",
+          "description": "Studies fossils of invertebrates like mollusks, corals, and arthropods.",
+          "bscCourses": [
+            "B.Sc. Geology",
+            "B.Sc. Zoology",
+            "B.Sc. Earth Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Paleontology",
+            "M.Sc. Geology"
+          ],
+          "phdCourses": [
+            "Ph.D. Paleontology"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Evolutionary Paleobiologist",
+          "description": "Studies evolutionary history through fossil records.",
+          "bscCourses": [
+            "B.Sc. Geology",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Paleontology",
+            "M.Sc. Evolutionary Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Paleontology",
+            "Ph.D. Evolutionary Biology"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Fossil Conservation Specialist",
+          "description": "Preserves and conserves fossil specimens for research and display.",
+          "bscCourses": [
+            "B.Sc. Geology",
+            "B.Sc. Zoology",
+            "B.Sc. Conservation Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Museum Studies",
+            "M.Sc. Conservation"
+          ],
+          "phdCourses": [
+            "Ph.D. Museum Science"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Museum Curator (Natural History)",
+          "description": "Manages natural history collections, conducts research, and organizes exhibits.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Geology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Museum Studies",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Ph.D. Museum Science",
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "4–9 LPA"
+        }
+      ]
+    },
+    {
+      "id": "neuroscience",
+      "name": "Neuroscience & Behavior Careers",
+      "description": "Explore professional careers and academic pathways in Neuroscience & Behavior Careers.",
+      "icon": "Brain",
+      "theme": {
+        "primary": "#f59e0b",
+        "secondary": "#92400e",
+        "accent": "#fffbeb",
+        "gradient": "linear-gradient(135deg, #f59e0b 0%, #92400e 100%)"
+      },
+      "careers": [
+        {
+          "title": "Animal Behaviourist (Ethologist)",
+          "description": "Study animal behaviour.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Animal Behaviour",
+            "M.Sc. Ethology"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Behaviour"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Neurobiologist",
+          "description": "Studies nervous system structure, function, and development in animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Neuroscience"
+          ],
+          "mscCourses": [
+            "M.Sc. Neurobiology",
+            "M.Sc. Neuroscience"
+          ],
+          "phdCourses": [
+            "Ph.D. Neurobiology"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Behavioral Neuroscientist",
+          "description": "Studies biological bases of behavior, brain-behavior relationships.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Psychology",
+            "B.Sc. Neuroscience"
+          ],
+          "mscCourses": [
+            "M.Sc. Behavioral Neuroscience",
+            "M.Sc. Neurobiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Behavioral Neuroscience"
+          ],
+          "salaryRange": "6–13 LPA"
+        },
+        {
+          "title": "Cognitive Ethologist",
+          "description": "Studies animal cognition, intelligence, and mental processes.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Psychology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Ethology",
+            "M.Sc. Animal Cognition"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Behaviour",
+            "Ph.D. Cognitive Science"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Neurogenetics Researcher",
+          "description": "Studies genetic basis of neurological traits and disorders in animals.",
+          "bscCourses": [
+            "B.Sc. Genetics",
+            "B.Sc. Neuroscience",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Neurogenetics",
+            "M.Sc. Genetics"
+          ],
+          "phdCourses": [
+            "Ph.D. Neurogenetics"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "Psychobiologist",
+          "description": "Studies biological bases of psychological processes in animals.",
+          "bscCourses": [
+            "B.Sc. Psychology",
+            "B.Sc. Zoology",
+            "B.Sc. Neuroscience"
+          ],
+          "mscCourses": [
+            "M.Sc. Psychobiology",
+            "M.Sc. Behavioral Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Psychobiology"
+          ],
+          "salaryRange": "5–11 LPA"
+        }
+      ]
+    },
+    {
+      "id": "forensic",
+      "name": "Forensic & Applied Sciences",
+      "description": "Explore professional careers and academic pathways in Forensic & Applied Sciences.",
+      "icon": "Fingerprint",
+      "theme": {
+        "primary": "#475569",
+        "secondary": "#1e293b",
+        "accent": "#f8fafc",
+        "gradient": "linear-gradient(135deg, #475569 0%, #1e293b 100%)"
+      },
+      "careers": [
+        {
+          "title": "Forensic Biologist",
+          "description": "Use biology in crime investigation.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Forensic Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Forensic Science"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Toxicologist",
+          "description": "Study chemical effects.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Toxicology"
+          ],
+          "phdCourses": [
+            "Ph.D. Toxicology"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Wildlife Forensic Expert",
+          "description": "Investigates wildlife crimes using forensic techniques.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Forensic Science",
+            "B.Sc. Wildlife Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Forensic Science",
+            "M.Sc. Forensic Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Forensics"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "DNA Fingerprinting Analyst",
+          "description": "Analyzes DNA evidence for identification and crime solving.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Genetics",
+            "B.Sc. Forensic Science"
+          ],
+          "mscCourses": [
+            "M.Sc. DNA Fingerprinting",
+            "M.Sc. Forensic Genetics"
+          ],
+          "phdCourses": [
+            "Ph.D. DNA Analysis"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Crime Lab Analyst",
+          "description": "Works in crime laboratories analyzing biological evidence.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Forensic Science",
+            "B.Sc. Chemistry"
+          ],
+          "mscCourses": [
+            "M.Sc. Forensic Science",
+            "M.Sc. Analytical Chemistry"
+          ],
+          "phdCourses": [
+            "Ph.D. Forensic Science"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Environmental Forensic Scientist",
+          "description": "Investigates environmental crimes and pollution cases.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Forensic Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Forensics",
+            "M.Sc. Environmental Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Forensics"
+          ],
+          "salaryRange": "5–11 LPA"
+        }
+      ]
+    },
+    {
+      "id": "environmental",
+      "name": "Environmental & Ecological Specializations",
+      "description": "Explore professional careers and academic pathways in Environmental & Ecological Specializations.",
+      "icon": "Globe",
+      "theme": {
+        "primary": "#16a34a",
+        "secondary": "#14532d",
+        "accent": "#f0fdf4",
+        "gradient": "linear-gradient(135deg, #16a34a 0%, #14532d 100%)"
+      },
+      "careers": [
+        {
+          "title": "Environmental Scientist",
+          "description": "Studies environmental systems, pollution, and conservation.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Science",
+            "M.Sc. Ecology"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Science"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Environmental Consultant",
+          "description": "Advises on environmental compliance, impact assessment, and sustainability.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Science",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Science"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Climate Change Biologist",
+          "description": "Studies biological impacts of climate change on species and ecosystems.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Climate Change Biology",
+            "M.Sc. Environmental Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Climate Change Biology"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Conservation Planner",
+          "description": "Develops systematic plans for biodiversity conservation and protected areas.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Geography"
+          ],
+          "mscCourses": [
+            "M.Sc. Conservation Planning",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Conservation Planning"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Sustainability Consultant",
+          "description": "Advises organizations on sustainable practices and environmental management.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Business"
+          ],
+          "mscCourses": [
+            "M.Sc. Sustainability Science",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Ph.D. Sustainability Science"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Carbon Footprint Analyst",
+          "description": "Calculates and analyzes carbon emissions for organizations and projects.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Chemistry"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Science",
+            "M.Sc. Climate Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Climate Science"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Environmental Policy Analyst",
+          "description": "Analyzes and develops environmental policies and regulations.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Political Science",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Policy",
+            "M.Sc. Public Policy"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Policy"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "NGO Program Officer",
+          "description": "Manages conservation and environmental programs for non-governmental organizations.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Social Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. NGO Management",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–8 LPA"
+        }
+      ]
+    },
+    {
+      "id": "lab-industrial",
+      "name": "Lab-Based & Industrial Careers",
+      "description": "Explore professional careers and academic pathways in Lab-Based & Industrial Careers.",
+      "icon": "Beaker",
+      "theme": {
+        "primary": "#0891b2",
+        "secondary": "#164e63",
+        "accent": "#ecfeff",
+        "gradient": "linear-gradient(135deg, #0891b2 0%, #164e63 100%)"
+      },
+      "careers": [
+        {
+          "title": "Research Associate",
+          "description": "Conducts research in academic, government, or industrial laboratories.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Biotechnology",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional",
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Lab Manager",
+          "description": "Manages laboratory operations, equipment, and personnel.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Lab Management",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Quality Control Analyst",
+          "description": "Ensures quality standards in pharmaceutical and biological product manufacturing.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Microbiology"
+          ],
+          "mscCourses": [
+            "M.Sc. Quality Control",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Quality Assurance Scientist",
+          "description": "Develops and implements quality assurance systems for biological products.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Quality Assurance",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Biopharma Scientist",
+          "description": "Researches and develops biological pharmaceuticals and therapies.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Biopharmaceutical Science",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biotechnology",
+            "Ph.D. Biomedical Science"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Vaccine Development Scientist",
+          "description": "Researches and develops vaccines for human and animal diseases.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Microbiology",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Vaccine Development",
+            "M.Sc. Biotechnology"
+          ],
+          "phdCourses": [
+            "Ph.D. Biotechnology",
+            "Ph.D. Microbiology"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "Drug Discovery Scientist",
+          "description": "Discovers and develops new therapeutic drugs and compounds.",
+          "bscCourses": [
+            "B.Sc. Biotechnology",
+            "B.Sc. Chemistry",
+            "B.Sc. Zoology"
+          ],
+          "mscCourses": [
+            "M.Sc. Drug Discovery",
+            "M.Sc. Pharmacology"
+          ],
+          "phdCourses": [
+            "Ph.D. Pharmacology",
+            "Ph.D. Biotechnology"
+          ],
+          "salaryRange": "6–16 LPA"
+        },
+        {
+          "title": "CRO Scientist",
+          "description": "Works in Contract Research Organizations conducting clinical and preclinical studies.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Clinical Research",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Regulatory Affairs Officer",
+          "description": "Ensures compliance with regulatory requirements for biological products.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Pharmacy"
+          ],
+          "mscCourses": [
+            "M.Sc. Regulatory Affairs",
+            "M.Sc. Quality Assurance"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–12 LPA"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education & Science Communication",
+      "description": "Explore professional careers and academic pathways in Education & Science Communication.",
+      "icon": "GraduationCap",
+      "theme": {
+        "primary": "#4f46e5",
+        "secondary": "#312e81",
+        "accent": "#eef2ff",
+        "gradient": "linear-gradient(135deg, #4f46e5 0%, #312e81 100%)"
+      },
+      "careers": [
+        {
+          "title": "Academician / Professor / Research Scientist",
+          "description": "Teaching and research.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology",
+            "Ph.D. Life Sciences"
+          ],
+          "salaryRange": "6–10 LPA"
+        },
+        {
+          "title": "School Biology Teacher",
+          "description": "Teaches biology at school level with specialization in life sciences.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Education"
+          ],
+          "mscCourses": [
+            "M.Ed.",
+            "M.Sc. Education",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "3–6 LPA"
+        },
+        {
+          "title": "Science Communicator",
+          "description": "Communicates scientific concepts to public through various media.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Journalism"
+          ],
+          "mscCourses": [
+            "M.Sc. Science Communication",
+            "M.Sc. Journalism"
+          ],
+          "phdCourses": [
+            "Optional",
+            "Ph.D. Science Communication"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Science Writer",
+          "description": "Writes articles, books, and content about biological sciences.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. English"
+          ],
+          "mscCourses": [
+            "M.Sc. Science Writing",
+            "M.A. English"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Scientific Editor",
+          "description": "Edits scientific manuscripts, journals, and publications.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. English"
+          ],
+          "mscCourses": [
+            "M.Sc. Scientific Editing",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Journal Reviewer",
+          "description": "Peer-reviews scientific papers for academic journals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "Additional income 1-3 LPA"
+        },
+        {
+          "title": "Educational Content Developer",
+          "description": "Develops educational materials and curricula for biology education.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Education",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Education Technology",
+            "M.Ed."
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "EdTech Biology Specialist",
+          "description": "Develops biology content for educational technology platforms.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Computer Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Educational Technology",
+            "M.Sc. Zoology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Wildlife Documentary Researcher",
+          "description": "Researches content for wildlife documentaries and nature films.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Wildlife Science",
+            "B.Sc. Mass Communication"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Science",
+            "M.Sc. Film Studies"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–9 LPA"
+        }
+      ]
+    },
+    {
+      "id": "government",
+      "name": "Government & Policy Careers",
+      "description": "Explore professional careers and academic pathways in Government & Policy Careers.",
+      "icon": "Landmark",
+      "theme": {
+        "primary": "#1d4ed8",
+        "secondary": "#1e3a8a",
+        "accent": "#eff6ff",
+        "gradient": "linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%)"
+      },
+      "careers": [
+        {
+          "title": "Indian Forest Service (IFS)",
+          "description": "Elite government service for forest and wildlife management.",
+          "bscCourses": [
+            "B.Sc. Forestry",
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Forestry",
+            "M.Sc. Wildlife Science"
+          ],
+          "phdCourses": [
+            "Optional for specialization"
+          ],
+          "salaryRange": "8–18 LPA"
+        },
+        {
+          "title": "State Forest Services",
+          "description": "State-level forest department officers managing wildlife and forests.",
+          "bscCourses": [
+            "B.Sc. Forestry",
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Forestry",
+            "M.Sc. Wildlife Management"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "6–12 LPA"
+        },
+        {
+          "title": "Wildlife Institute Scientist",
+          "description": "Scientist at Wildlife Institute of India conducting research and training.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Wildlife Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Science",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Wildlife Biology",
+            "Ph.D. Conservation Biology"
+          ],
+          "salaryRange": "7–15 LPA"
+        },
+        {
+          "title": "ICAR / CSIR / ICMR Scientist",
+          "description": "Research scientist in national research organizations.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "8–16 LPA"
+        },
+        {
+          "title": "DRDO / ISRO Life Science Scientist",
+          "description": "Life science research in defense and space organizations.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "9–18 LPA"
+        },
+        {
+          "title": "Environmental Officer",
+          "description": "Government officer enforcing environmental laws and regulations.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Law"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Science",
+            "M.Sc. Environmental Law"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–10 LPA"
+        },
+        {
+          "title": "Biodiversity Board Officer",
+          "description": "Officer in State Biodiversity Boards documenting and conserving biodiversity.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Botany"
+          ],
+          "mscCourses": [
+            "M.Sc. Biodiversity",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Policy Advisor (Environment & Wildlife)",
+          "description": "Advises government on environmental and wildlife policy development.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Political Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Environmental Policy",
+            "M.Sc. Public Policy"
+          ],
+          "phdCourses": [
+            "Ph.D. Environmental Policy"
+          ],
+          "salaryRange": "7–15 LPA"
+        }
+      ]
+    },
+    {
+      "id": "public-health",
+      "name": "Public Health & Epidemiology",
+      "description": "Explore professional careers and academic pathways in Public Health & Epidemiology.",
+      "icon": "HeartPulse",
+      "theme": {
+        "primary": "#dc2626",
+        "secondary": "#7f1d1d",
+        "accent": "#fef2f2",
+        "gradient": "linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%)"
+      },
+      "careers": [
+        {
+          "title": "Public Health Researcher",
+          "description": "Conducts research on population health, diseases, and healthcare systems.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Public Health",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Public Health",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Public Health",
+            "Ph.D. Epidemiology"
+          ],
+          "salaryRange": "5–11 LPA"
+        },
+        {
+          "title": "Disease Surveillance Officer",
+          "description": "Monitors and tracks disease outbreaks and patterns in populations.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Public Health",
+            "B.Sc. Microbiology"
+          ],
+          "mscCourses": [
+            "M.Sc. Epidemiology",
+            "M.Sc. Public Health"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Epidemiologist",
+          "description": "Studies disease distribution, determinants, and control in populations.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Public Health",
+            "B.Sc. Statistics"
+          ],
+          "mscCourses": [
+            "M.Sc. Epidemiology",
+            "M.Sc. Public Health"
+          ],
+          "phdCourses": [
+            "Ph.D. Epidemiology"
+          ],
+          "salaryRange": "6–13 LPA"
+        },
+        {
+          "title": "One Health Specialist",
+          "description": "Works on integrated approach to human, animal, and environmental health.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Veterinary Science",
+            "B.Sc. Public Health"
+          ],
+          "mscCourses": [
+            "M.Sc. One Health",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. One Health"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Zoonosis Control Officer",
+          "description": "Controls diseases transmitted between animals and humans.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Veterinary Science",
+            "B.Sc. Public Health"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoonoses",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoonotic Diseases"
+          ],
+          "salaryRange": "5–11 LPA"
+        }
+      ]
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate & Business Careers",
+      "description": "Explore professional careers and academic pathways in Corporate & Business Careers.",
+      "icon": "Building2",
+      "theme": {
+        "primary": "#2563eb",
+        "secondary": "#1e3a8a",
+        "accent": "#f1f5f9",
+        "gradient": "linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%)"
+      },
+      "careers": [
+        {
+          "title": "Life Science Consultant",
+          "description": "Consultant for pharmaceutical, biotech, and healthcare companies.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Business"
+          ],
+          "mscCourses": [
+            "M.Sc. Business Administration",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional",
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "6–15 LPA"
+        },
+        {
+          "title": "Pharma Product Specialist",
+          "description": "Specialist for pharmaceutical products and medical devices.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Pharmacy",
+            "B.Sc. Biotechnology"
+          ],
+          "mscCourses": [
+            "M.Sc. Business Administration",
+            "M.Sc. Marketing"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–12 LPA"
+        },
+        {
+          "title": "Medical Science Liaison",
+          "description": "Scientific expert linking pharmaceutical companies with healthcare professionals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Pharmacy",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Specialization",
+            "M.Sc. Business"
+          ],
+          "phdCourses": [
+            "Ph.D. in specialization"
+          ],
+          "salaryRange": "8–20 LPA"
+        },
+        {
+          "title": "Scientific Sales Manager",
+          "description": "Manages sales of scientific equipment and laboratory products.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Business"
+          ],
+          "mscCourses": [
+            "M.Sc. Business Administration",
+            "M.Sc. Marketing"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "6–14 LPA"
+        },
+        {
+          "title": "Bio-Startup Founder",
+          "description": "Entrepreneur starting biotechnology or life science company.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Business"
+          ],
+          "mscCourses": [
+            "M.Sc. Entrepreneurship",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "Variable (5–50+ LPA)"
+        },
+        {
+          "title": "Research Project Manager",
+          "description": "Manages research projects in academic or industrial settings.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Life Sciences",
+            "B.Sc. Management"
+          ],
+          "mscCourses": [
+            "M.Sc. Project Management",
+            "M.Sc. Specialization"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "6–13 LPA"
+        },
+        {
+          "title": "CSR Environmental Manager",
+          "description": "Manages corporate social responsibility programs in environment sector.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Business"
+          ],
+          "mscCourses": [
+            "M.Sc. Corporate Social Responsibility",
+            "M.Sc. Environmental Management"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "5–12 LPA"
+        }
+      ]
+    },
+    {
+      "id": "animal-welfare",
+      "name": "Animal Care, Welfare & Zoo Careers",
+      "description": "Explore professional careers and academic pathways in Animal Care, Welfare & Zoo Careers.",
+      "icon": "Heart",
+      "theme": {
+        "primary": "#d97706",
+        "secondary": "#78350f",
+        "accent": "#fffbeb",
+        "gradient": "linear-gradient(135deg, #d97706 0%, #78350f 100%)"
+      },
+      "careers": [
+        {
+          "title": "Zoo Curator / Zoo Educator",
+          "description": "Zoo management and education.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Wildlife Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology"
+          ],
+          "salaryRange": "3–5 LPA"
+        },
+        {
+          "title": "Zoo Biologist",
+          "description": "Conducts research on zoo animals and their management.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Animal Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Zoology",
+            "M.Sc. Animal Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Zoology",
+            "Ph.D. Animal Science"
+          ],
+          "salaryRange": "4–7 LPA"
+        },
+        {
+          "title": "Animal Welfare Officer",
+          "description": "Ensures proper care and ethical treatment of animals in various settings.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Animal Science",
+            "B.Sc. Veterinary Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Animal Welfare",
+            "M.Sc. Animal Science"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Welfare"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Animal Behavior Trainer",
+          "description": "Trains animals for specific behaviors using positive reinforcement.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Animal Science",
+            "B.Sc. Psychology"
+          ],
+          "mscCourses": [
+            "M.Sc. Animal Behaviour",
+            "M.Sc. Ethology"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "3–7 LPA"
+        },
+        {
+          "title": "Pet Nutrition Consultant",
+          "description": "Advises on proper nutrition for companion animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Animal Nutrition",
+            "B.Sc. Veterinary Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Pet Nutrition",
+            "M.Sc. Animal Nutrition"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–9 LPA"
+        },
+        {
+          "title": "Animal Breeding Specialist",
+          "description": "Specializes in selective breeding programs for animals.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Animal Science",
+            "B.Sc. Genetics"
+          ],
+          "mscCourses": [
+            "M.Sc. Animal Breeding",
+            "M.Sc. Genetics"
+          ],
+          "phdCourses": [
+            "Ph.D. Animal Breeding"
+          ],
+          "salaryRange": "4–8 LPA"
+        },
+        {
+          "title": "Wildlife Rescue Center Manager",
+          "description": "Manages wildlife rescue and rehabilitation centers.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Wildlife Science",
+            "B.Sc. Veterinary Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Wildlife Rehabilitation",
+            "M.Sc. Wildlife Management"
+          ],
+          "phdCourses": [
+            "Optional"
+          ],
+          "salaryRange": "4–7 LPA"
+        }
+      ]
+    },
+    {
+      "id": "international",
+      "name": "International & Future-Oriented Roles",
+      "description": "Explore professional careers and academic pathways in International & Future-Oriented Roles.",
+      "icon": "World",
+      "theme": {
+        "primary": "#0d9488",
+        "secondary": "#134e4a",
+        "accent": "#f0fdfa",
+        "gradient": "linear-gradient(135deg, #0d9488 0%, #134e4a 100%)"
+      },
+      "careers": [
+        {
+          "title": "UN Biodiversity Consultant",
+          "description": "Consultant for United Nations biodiversity programs and conventions.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. International Relations"
+          ],
+          "mscCourses": [
+            "M.Sc. International Development",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Conservation Biology",
+            "Ph.D. International Relations"
+          ],
+          "salaryRange": "10–25 LPA"
+        },
+        {
+          "title": "WHO Research Associate",
+          "description": "Research associate with World Health Organization on health issues.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Public Health",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Public Health",
+            "M.Sc. Epidemiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Public Health",
+            "Ph.D. Epidemiology"
+          ],
+          "salaryRange": "12–30 LPA"
+        },
+        {
+          "title": "FAO Fisheries Officer",
+          "description": "Officer with Food and Agriculture Organization on fisheries management.",
+          "bscCourses": [
+            "B.Sc. Fisheries Science",
+            "B.Sc. Zoology",
+            "B.Sc. Marine Biology"
+          ],
+          "mscCourses": [
+            "M.Sc. Fisheries Management",
+            "M.Sc. International Development"
+          ],
+          "phdCourses": [
+            "Ph.D. Fisheries Science"
+          ],
+          "salaryRange": "10–28 LPA"
+        },
+        {
+          "title": "Global Conservation Scientist",
+          "description": "Scientist working on international conservation programs and research.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Environmental Science",
+            "B.Sc. Life Sciences"
+          ],
+          "mscCourses": [
+            "M.Sc. Conservation Biology",
+            "M.Sc. International Environmental Law"
+          ],
+          "phdCourses": [
+            "Ph.D. Conservation Biology"
+          ],
+          "salaryRange": "12–35 LPA"
+        },
+        {
+          "title": "Climate & Biodiversity Analyst",
+          "description": "Analyzes climate change impacts on biodiversity for international organizations.",
+          "bscCourses": [
+            "B.Sc. Environmental Science",
+            "B.Sc. Zoology",
+            "B.Sc. Climate Science"
+          ],
+          "mscCourses": [
+            "M.Sc. Climate Science",
+            "M.Sc. Conservation Biology"
+          ],
+          "phdCourses": [
+            "Ph.D. Climate Change Biology"
+          ],
+          "salaryRange": "10–30 LPA"
+        },
+        {
+          "title": "Space Biology Researcher",
+          "description": "Conducts biological research for space agencies and programs.",
+          "bscCourses": [
+            "B.Sc. Zoology",
+            "B.Sc. Biotechnology",
+            "B.Sc. Physics"
+          ],
+          "mscCourses": [
+            "M.Sc. Space Biology",
+            "M.Sc. Astrobiology"
+          ],
+          "phdCourses": [
+            "Ph.D. Space Biology"
+          ],
+          "salaryRange": "15–40 LPA"
+        }
+      ]
+    }
+  ]
+}

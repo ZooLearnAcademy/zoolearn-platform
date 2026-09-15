@@ -1,0 +1,2131 @@
+{
+  "title": "NEET 2020 Biology Official Examination",
+  "subtitle": "National Eligibility cum Entrance Test (NEET-UG 2020) • Biology Section",
+  "examCode": "NEET-2020-BIO",
+  "year": 2020,
+  "totalQuestions": 90,
+  "durationMinutes": 90,
+  "markingScheme": {
+    "correct": 4,
+    "incorrect": -1,
+    "unattempted": 0
+  },
+  "maxMarks": 360,
+  "questions": [
+    {
+      "id": 1,
+      "qNumber": 1,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "If the distance between two consecutive base pairs is 0.34 nm and the total number of base pairs of a DNA double helix in a typical mammalian cell is 6.6 × 10⁹ bp, then the length of the DNA is approximately:",
+      "table": null,
+      "choices": [
+        "2.5 meters",
+        "2.2 meters",
+        "2.7 meters",
+        "2.0 meters"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "2.2 meters",
+      "topic": "DNA length and structure",
+      "explanation": "Each base pair contributes 0.34 nm. Thus, total length = 6.6 × 10⁹ × 0.34 nm = 2.244 × 10⁹ nm = approximately 2.2 m."
+    },
+    {
+      "id": 2,
+      "qNumber": 2,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Animal Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Bilaterally symmetrical and acoelomate animals are exemplified by:",
+      "table": null,
+      "choices": [
+        "Platyhelminthes",
+        "Aschelminthes",
+        "Annelida",
+        "Ctenophora"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Platyhelminthes",
+      "topic": "Symmetry and body cavity",
+      "explanation": "Members of Platyhelminthes are bilaterally symmetrical and acoelomate animals. Their body does not possess a true coelom."
+    },
+    {
+      "id": 3,
+      "qNumber": 3,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Animal Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Gregarious, polyphagous pest",
+          "(i) Asterias"
+        ],
+        [
+          "(b) Adult with radial symmetry and larva with bilateral symmetry",
+          "(ii) Scorpion"
+        ],
+        [
+          "(c) Book lungs",
+          "(iii) Ctenoplana"
+        ],
+        [
+          "(d) Bioluminescence",
+          "(iv) Locusta"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(i), (c)–(ii), (d)–(iii)",
+        "(a)–(iii), (b)–(ii), (c)–(i), (d)–(iv)",
+        "(a)–(ii), (b)–(i), (c)–(iii), (d)–(iv)",
+        "(a)–(i), (b)–(iii), (c)–(ii), (d)–(iv)"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "(a)–(i), (b)–(iii), (c)–(ii), (d)–(iv)",
+      "topic": "Animal phylum characteristics and examples",
+      "explanation": "Locusta is a gregarious, polyphagous pest; Asterias has radial adult symmetry and bilateral larvae; scorpions possess book lungs; Ctenoplana exhibits bioluminescence."
+    },
+    {
+      "id": 4,
+      "qNumber": 4,
+      "unit": "Unit III: Cell – Structure and Functions",
+      "chapter": "Cell: The Unit of Life",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which is the important site of formation of glycoproteins and glycolipids in eukaryotic cells?",
+      "table": null,
+      "choices": [
+        "Peroxisomes",
+        "Golgi bodies",
+        "Polysomes",
+        "Endoplasmic reticulum"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Golgi bodies",
+      "topic": "Golgi apparatus",
+      "explanation": "The Golgi apparatus modifies, packages and helps form glycoproteins and glycolipids."
+    },
+    {
+      "id": 5,
+      "qNumber": 5,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Body Fluids and Circulation",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The QRS complex in a standard ECG represents:",
+      "table": null,
+      "choices": [
+        "Depolarisation of auricles",
+        "Depolarisation of ventricles",
+        "Repolarisation of ventricles",
+        "Repolarisation of auricles"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Depolarisation of ventricles",
+      "topic": "Electrocardiogram (ECG)",
+      "explanation": "The QRS complex represents ventricular depolarisation, which initiates ventricular contraction."
+    },
+    {
+      "id": 6,
+      "qNumber": 6,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Locomotion and Movement",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Floating ribs",
+          "(i) Located between second and seventh ribs"
+        ],
+        [
+          "(b) Acromion",
+          "(ii) Head of the humerus"
+        ],
+        [
+          "(c) Scapula",
+          "(iii) Clavicle"
+        ],
+        [
+          "(d) Glenoid cavity",
+          "(iv) Do not connect with the sternum"
+        ]
+      ],
+      "choices": [
+        "(a)–(i), (b)–(ii), (c)–(ii), (d)–(iv)",
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(i)",
+        "(a)–(iv), (b)–(iii), (c)–(i), (d)–(ii)",
+        "(a)–(ii), (b)–(iv), (c)–(i), (d)–(iii)"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "(a)–(iv), (b)–(iii), (c)–(i), (d)–(ii)",
+      "topic": "Pectoral girdle and ribs",
+      "explanation": "Floating ribs do not attach to the sternum. The acromion articulates with the clavicle, the scapula lies opposite the second to seventh ribs, and the glenoid cavity articulates with the head of the humerus."
+    },
+    {
+      "id": 7,
+      "qNumber": 7,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Principles of Inheritance and Variation",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Experimental verification of the chromosomal theory of inheritance was done by:",
+      "table": null,
+      "choices": [
+        "Sutton",
+        "Boveri",
+        "Morgan",
+        "Mendel"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Morgan",
+      "topic": "Chromosomal theory of inheritance",
+      "explanation": "Sutton and Boveri proposed the chromosomal theory, while Thomas Hunt Morgan experimentally verified it using Drosophila."
+    },
+    {
+      "id": 8,
+      "qNumber": 8,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Anatomy of Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Identify the incorrect statement.",
+      "table": null,
+      "choices": [
+        "Sapwood is involved in conduction of water and minerals from root to leaf.",
+        "Sapwood is the innermost secondary xylem and is lighter in colour.",
+        "Due to deposition of tannins, resins, oils, etc., heart wood is dark in colour.",
+        "Heart wood does not conduct water but gives mechanical support."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Sapwood is the innermost secondary xylem and is lighter in colour.",
+      "topic": "Secondary growth – heartwood and sapwood",
+      "explanation": "Sapwood is the outer secondary xylem, not the innermost. It conducts water and minerals. Heartwood is the inner, darker, non-conducting region that provides mechanical support."
+    },
+    {
+      "id": 9,
+      "qNumber": 9,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Chemical Coordination and Integration",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Pituitary gland",
+          "(i) Grave’s disease"
+        ],
+        [
+          "(b) Thyroid gland",
+          "(ii) Diabetes mellitus"
+        ],
+        [
+          "(c) Adrenal gland",
+          "(iii) Diabetes insipidus"
+        ],
+        [
+          "(d) Pancreas",
+          "(iv) Addison’s disease"
+        ]
+      ],
+      "choices": [
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(iv)",
+        "(a)–(iii), (b)–(i), (c)–(iv), (d)–(ii)",
+        "(a)–(ii), (b)–(i), (c)–(iv), (d)–(iii)",
+        "(a)–(iv), (b)–(iii), (c)–(i), (d)–(ii)"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "(a)–(iii), (b)–(i), (c)–(iv), (d)–(ii)",
+      "topic": "Endocrine disorders",
+      "explanation": "Pituitary-related ADH deficiency causes diabetes insipidus; hyperthyroidism can cause Graves' disease; adrenal insufficiency causes Addison's disease; insufficient insulin causes diabetes mellitus."
+    },
+    {
+      "id": 10,
+      "qNumber": 10,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the organism with its use in biotechnology.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Bacillus thuringiensis",
+          "(i) Cloning vector"
+        ],
+        [
+          "(b) Thermus aquaticus",
+          "(ii) Construction of first rDNA molecule"
+        ],
+        [
+          "(c) Agrobacterium tumefaciens",
+          "(iii) DNA polymerase"
+        ],
+        [
+          "(d) Salmonella typhimurium",
+          "(iv) Cry proteins"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(i), (d)–(ii)",
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(i)",
+        "(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iv), (b)–(iii), (c)–(i), (d)–(ii)",
+      "topic": "Tools and organisms used in biotechnology",
+      "explanation": "B. thuringiensis produces Cry proteins; T. aquaticus provides Taq DNA polymerase; A. tumefaciens is used as a cloning vector; S. typhimurium was involved in the construction of the first recombinant DNA molecule."
+    },
+    {
+      "id": 11,
+      "qNumber": 11,
+      "unit": "Unit III: Cell – Structure and Functions",
+      "chapter": "Biomolecules",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Identify the substances having glycosidic bond and peptide bond, respectively in their structure:",
+      "table": null,
+      "choices": [
+        "Glycerol, trypsin",
+        "Cellulose, lecithin",
+        "Inulin, insulin",
+        "Chitin, cholesterol"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Inulin, insulin",
+      "topic": "Carbohydrates and proteins",
+      "explanation": "Inulin is a polysaccharide containing glycosidic linkages, whereas insulin is a protein whose amino acids are connected by peptide bonds."
+    },
+    {
+      "id": 12,
+      "qNumber": 12,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Name the enzyme that facilitates opening of DNA helix during transcription.",
+      "table": null,
+      "choices": [
+        "DNA helicase",
+        "DNA polymerase",
+        "RNA polymerase",
+        "DNA ligase"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "RNA polymerase",
+      "topic": "Transcription",
+      "explanation": "During transcription, RNA polymerase binds to the promoter and facilitates local unwinding of DNA so that the template strand can be transcribed."
+    },
+    {
+      "id": 13,
+      "qNumber": 13,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Neural Control and Coordination",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "If the head of cockroach is removed, it may live for few days because:",
+      "table": null,
+      "choices": [
+        "the cockroach does not have nervous system.",
+        "the head holds a small proportion of a nervous system while the rest is situated along the ventral part of its body.",
+        "the head holds a 1/3rd of a nervous system while the rest is situated along the dorsal part of its body.",
+        "the supra-oesophageal ganglia of the cockroach are situated in ventral part of abdomen."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "the head holds a small proportion of a nervous system while the rest is situated along the ventral part of its body.",
+      "topic": "Nervous system of cockroach",
+      "explanation": "Most of the cockroach's nervous system consists of a ventral nerve cord and segmental ganglia, so removal of the head does not immediately stop all nervous activity."
+    },
+    {
+      "id": 14,
+      "qNumber": 14,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Breathing and Exchange of Gases",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Select the correct events that occur during inspiration.\n(a) Contraction of diaphragm\n(b) Contraction of external inter-costal muscles\n(c) Pulmonary volume decreases\n(d) Intra pulmonary pressure increases",
+      "table": null,
+      "choices": [
+        "(c) and (d)",
+        "(a), (b) and (d)",
+        "only (d)",
+        "(a) and (b)"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "(a) and (b)",
+      "topic": "Mechanism of breathing",
+      "explanation": "During inspiration, the diaphragm and external intercostal muscles contract. Thoracic volume increases, pulmonary pressure decreases and air enters the lungs."
+    },
+    {
+      "id": 15,
+      "qNumber": 15,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Strategies for Enhancement in Food Production",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "By which method was a new breed ‘Hisardale’ of sheep formed by using Bikaneri ewes and Marino rams?",
+      "table": null,
+      "choices": [
+        "Mutational breeding",
+        "Cross breeding",
+        "Inbreeding",
+        "Out crossing"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Cross breeding",
+      "topic": "Animal breeding",
+      "explanation": "Hisardale was developed by crossing Bikaneri ewes with Marino rams, making it an example of cross breeding."
+    },
+    {
+      "id": 16,
+      "qNumber": 16,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Locomotion and Movement",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which one of the following is the most abundant protein in the animals?",
+      "table": null,
+      "choices": [
+        "Collagen",
+        "Lectin",
+        "Insulin",
+        "Haemoglobin"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Collagen",
+      "topic": "Structural proteins",
+      "explanation": "Collagen is the most abundant protein in animals and forms an important component of connective tissues."
+    },
+    {
+      "id": 17,
+      "qNumber": 17,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Principles of Inheritance and Variation",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "How many true breeding pea plant varieties did Mendel select as pairs, which were similar except in one character with contrasting traits?",
+      "table": null,
+      "choices": [
+        "2",
+        "14",
+        "8",
+        "4"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "14",
+      "topic": "Mendel's experimental material",
+      "explanation": "Mendel selected 14 true-breeding pea varieties, arranged as seven pairs showing contrasting traits."
+    },
+    {
+      "id": 18,
+      "qNumber": 18,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Sexual Reproduction in Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The body of the ovule is fused within the funicle at:",
+      "table": null,
+      "choices": [
+        "Micropyle",
+        "Nucellus",
+        "Chalaza",
+        "Hilum"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Hilum",
+      "topic": "Structure of ovule",
+      "explanation": "The hilum is the point where the body of the ovule is attached to the funicle."
+    },
+    {
+      "id": 19,
+      "qNumber": 19,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following is correct about viroids?",
+      "table": null,
+      "choices": [
+        "They have free RNA without protein coat.",
+        "They have DNA with protein coat.",
+        "They have free DNA without protein coat.",
+        "They have RNA with protein coat."
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "They have free RNA without protein coat.",
+      "topic": "Viroids",
+      "explanation": "Viroids are small infectious RNA molecules without a protein coat."
+    },
+    {
+      "id": 20,
+      "qNumber": 20,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Respiration in Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The number of substrate level phosphorylations in one turn of citric acid cycle is:",
+      "table": null,
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "Zero"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "One",
+      "topic": "Citric acid cycle / substrate-level phosphorylation",
+      "explanation": "One molecule of GTP is produced by substrate-level phosphorylation during conversion of succinyl-CoA to succinate."
+    },
+    {
+      "id": 21,
+      "qNumber": 21,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Mineral Nutrition",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "The product(s) of reaction catalyzed by nitrogenase in root nodules of leguminous plants is/are:",
+      "table": null,
+      "choices": [
+        "Nitrate alone",
+        "Ammonia and oxygen",
+        "Ammonia and hydrogen",
+        "Ammonia alone"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Ammonia alone",
+      "topic": "Biological nitrogen fixation",
+      "explanation": "Nitrogenase catalyses the reduction of atmospheric nitrogen into ammonia (NH₃) during biological nitrogen fixation."
+    },
+    {
+      "id": 22,
+      "qNumber": 22,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Match the following diseases with the causative organism and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Typhoid",
+          "(i) Wuchereria"
+        ],
+        [
+          "(b) Pneumonia",
+          "(ii) Plasmodium"
+        ],
+        [
+          "(c) Filariasis",
+          "(iii) Salmonella"
+        ],
+        [
+          "(d) Malaria",
+          "(iv) Haemophilus"
+        ]
+      ],
+      "choices": [
+        "(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)",
+        "(a)–(ii), (b)–(i), (c)–(iii), (d)–(iv)",
+        "(a)–(iv), (b)–(i), (c)–(ii), (d)–(iii)",
+        "(a)–(i), (b)–(iii), (c)–(ii), (d)–(iv)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)",
+      "topic": "Disease-causing organisms",
+      "explanation": "Typhoid is caused by Salmonella typhi, pneumonia by Haemophilus, filariasis by Wuchereria, and malaria by Plasmodium."
+    },
+    {
+      "id": 23,
+      "qNumber": 23,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Evolution",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "From his experiments, S.L. Miller produced amino acids by mixing the following in a closed flask:",
+      "table": null,
+      "choices": [
+        "CH₃, H₂, NH₄ and water vapor at 800°C",
+        "CH₄, H₂, NH₃ and water vapor at 600°C",
+        "CH₃, H₂, NH₃ and water vapor at 600°C",
+        "CH₄, H₂, NH₃ and water vapor at 800°C"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "CH₄, H₂, NH₃ and water vapor at 800°C",
+      "topic": "Chemical evolution – Miller experiment",
+      "explanation": "Miller's experiment used a reducing atmosphere containing methane, hydrogen, ammonia and water vapour, with electrical sparks simulating lightning."
+    },
+    {
+      "id": 24,
+      "qNumber": 24,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following statements is correct?",
+      "table": null,
+      "choices": [
+        "Adenine pairs with thymine through one H-bond.",
+        "Adenine pairs with thymine through three H-bonds.",
+        "Adenine does not pair with thymine.",
+        "Adenine pairs with thymine through two H-bonds."
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Adenine pairs with thymine through two H-bonds.",
+      "topic": "Base pairing in DNA",
+      "explanation": "In DNA, adenine and thymine form two hydrogen bonds, while guanine and cytosine form three."
+    },
+    {
+      "id": 25,
+      "qNumber": 25,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Cell Cycle and Cell Division",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following with respect to meiosis:",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Zygotene",
+          "(i) Terminalization"
+        ],
+        [
+          "(b) Pachytene",
+          "(ii) Chiasmata"
+        ],
+        [
+          "(c) Diplotene",
+          "(iii) Crossing over"
+        ],
+        [
+          "(d) Diakinesis",
+          "(iv) Synapsis"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(i), (b)–(ii), (c)–(iv), (d)–(iii)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+      "topic": "Prophase I of meiosis",
+      "explanation": "Synapsis occurs in zygotene, crossing over in pachytene, chiasmata become visible in diplotene, and terminalization occurs during diakinesis."
+    },
+    {
+      "id": 26,
+      "qNumber": 26,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Choose the correct pair from the following:",
+      "table": null,
+      "choices": [
+        "Polymerases – Break the DNA into fragments",
+        "Nucleases – Separate the two strands of DNA",
+        "Exonucleases – Make cuts at specific positions within DNA",
+        "Ligases – Join the two DNA molecules"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Ligases – Join the two DNA molecules",
+      "topic": "Enzymes used in recombinant DNA technology",
+      "explanation": "DNA ligase joins DNA fragments by forming phosphodiester bonds, allowing DNA molecules/fragments to be joined."
+    },
+    {
+      "id": 27,
+      "qNumber": 27,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Select the option including all sexually transmitted diseases.",
+      "table": null,
+      "choices": [
+        "Gonorrhoea, Malaria, Genital herpes",
+        "AIDS, Malaria, Filaria",
+        "Cancer, AIDS, Syphilis",
+        "Gonorrhoea, Syphilis, Genital herpes"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Gonorrhoea, Syphilis, Genital herpes",
+      "topic": "Sexually transmitted diseases",
+      "explanation": "Gonorrhoea, syphilis and genital herpes are all sexually transmitted infections/diseases. Malaria and filariasis are not STDs."
+    },
+    {
+      "id": 28,
+      "qNumber": 28,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Evolution",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Embryological support for evolution was disapproved by:",
+      "table": null,
+      "choices": [
+        "Alfred Wallace",
+        "Charles Darwin",
+        "Oparin",
+        "Karl Ernst von Baer"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Karl Ernst von Baer",
+      "topic": "Evidences for evolution – embryological evidence",
+      "explanation": "Karl Ernst von Baer criticised the idea that embryonic development directly recapitulates evolutionary history, which challenged the use of embryology as originally proposed in support of evolution."
+    },
+    {
+      "id": 29,
+      "qNumber": 29,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Morphology of Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The roots that originate from the base of the stem are:",
+      "table": null,
+      "choices": [
+        "Primary roots",
+        "Prop roots",
+        "Lateral roots",
+        "Fibrous roots"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Prop roots",
+      "topic": "Modification of roots",
+      "explanation": "Prop roots arise from the branches/stem and grow downward into the soil, providing additional mechanical support. The banyan tree is a common example."
+    },
+    {
+      "id": 30,
+      "qNumber": 30,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "In gel electrophoresis, separated DNA fragments can be visualized with the help of:",
+      "table": null,
+      "choices": [
+        "Ethidium bromide in UV radiation",
+        "Acetocarmine in UV radiation",
+        "Ethidium bromide in infrared radiation",
+        "Acetocarmine in bright blue light"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Ethidium bromide in UV radiation",
+      "topic": "Gel electrophoresis",
+      "explanation": "DNA fragments separated by gel electrophoresis are stained with ethidium bromide and visualized under UV radiation, where the DNA bands fluoresce."
+    },
+    {
+      "id": 31,
+      "qNumber": 31,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Human Reproduction",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following hormone levels will cause release of ovum (ovulation) from the Graafian follicle?",
+      "table": null,
+      "choices": [
+        "High concentration of Progesterone",
+        "Low concentration of LH",
+        "Low concentration of FSH",
+        "High concentration of Estrogen"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "High concentration of Estrogen",
+      "topic": "Ovulation and hormonal regulation",
+      "explanation": "A high level of estrogen produced by the mature Graafian follicle causes a positive feedback effect on the pituitary, resulting in the LH surge, which triggers ovulation."
+    },
+    {
+      "id": 32,
+      "qNumber": 32,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Structural Organisation in Animals",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Goblet cells of alimentary canal are modified from:",
+      "table": null,
+      "choices": [
+        "Columnar epithelial cells",
+        "Chondrocytes",
+        "Compound epithelial cells",
+        "Squamous epithelial cells"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Columnar epithelial cells",
+      "topic": "Epithelial tissue",
+      "explanation": "Goblet cells are specialized columnar epithelial cells that secrete mucus, which protects and lubricates the lining of the alimentary canal."
+    },
+    {
+      "id": 33,
+      "qNumber": 33,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Environmental Issues",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Snow-blindness in Antarctic region is due to:",
+      "table": null,
+      "choices": [
+        "Inflammation of cornea due to high dose of UV-B radiation",
+        "High reflection of light from snow",
+        "Damage to retina caused by infra-red rays",
+        "Freezing of fluids in the eye by low temperature"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Inflammation of cornea due to high dose of UV-B radiation",
+      "topic": "Ultraviolet radiation and ozone depletion",
+      "explanation": "Excessive exposure to UV-B radiation can cause inflammation and damage to the cornea, producing snow blindness."
+    },
+    {
+      "id": 34,
+      "qNumber": 34,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Mineral Nutrition",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following concerning essential elements and their functions in plants:",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Iron",
+          "(i) Photolysis of water"
+        ],
+        [
+          "(b) Zinc",
+          "(ii) Pollen germination"
+        ],
+        [
+          "(c) Boron",
+          "(iii) Required for chlorophyll biosynthesis"
+        ],
+        [
+          "(d) Manganese",
+          "(iv) IAA biosynthesis"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(iii), (b)–(iv), (c)–(ii), (d)–(i)",
+        "(a)–(iv), (b)–(i), (c)–(ii), (d)–(iii)",
+        "(a)–(ii), (b)–(i), (c)–(iv), (d)–(iii)"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "(a)–(iii), (b)–(iv), (c)–(ii), (d)–(i)",
+      "topic": "Essential mineral elements and their functions",
+      "explanation": "Iron is involved in chlorophyll biosynthesis; zinc is required for IAA synthesis; boron is important for pollen germination; manganese participates in photolysis of water during photosynthesis."
+    },
+    {
+      "id": 35,
+      "qNumber": 35,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology and its Applications",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Bt cotton variety that was developed by the introduction of toxin gene of Bacillus thuringiensis (Bt) is resistant to:",
+      "table": null,
+      "choices": [
+        "Fungal diseases",
+        "Plant nematodes",
+        "Insect predators",
+        "Insect pests"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Insect pests",
+      "topic": "Bt cotton and insect resistance",
+      "explanation": "Bt cotton contains genes from Bacillus thuringiensis that produce Cry proteins, which are toxic to certain insect pests."
+    },
+    {
+      "id": 36,
+      "qNumber": 36,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Morphology of Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Ray florets have:",
+      "table": null,
+      "choices": [
+        "Superior ovary",
+        "Hypogynous ovary",
+        "Half inferior ovary",
+        "Inferior ovary"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Inferior ovary",
+      "topic": "Asteraceae – inflorescence and flowers",
+      "explanation": "Ray florets of members of Asteraceae possess an inferior ovary."
+    },
+    {
+      "id": 37,
+      "qNumber": 37,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Environmental Issues",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Montreal protocol was signed in 1987 for control of:",
+      "table": null,
+      "choices": [
+        "Emission of ozone depleting substances",
+        "Release of Green House gases",
+        "Disposal of e-wastes",
+        "Transport of Genetically modified organisms from one country to another"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Emission of ozone depleting substances",
+      "topic": "Ozone depletion and Montreal Protocol",
+      "explanation": "The Montreal Protocol (1987) was an international agreement designed to control and phase out substances responsible for depletion of the ozone layer, particularly CFCs."
+    },
+    {
+      "id": 38,
+      "qNumber": 38,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Identify the wrong statement with regard to Restriction Enzymes.",
+      "table": null,
+      "choices": [
+        "They cut the strand of DNA at palindromic sites.",
+        "They are useful in genetic engineering.",
+        "Sticky ends can be joined by using DNA ligases.",
+        "Each restriction enzyme functions by inspecting the length of a DNA sequence."
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Each restriction enzyme functions by inspecting the length of a DNA sequence.",
+      "topic": "Restriction enzymes",
+      "explanation": "Restriction enzymes recognize specific nucleotide sequences, often palindromic sequences, and cut DNA at or near those sites. They do not function by simply inspecting the length of DNA."
+    },
+    {
+      "id": 39,
+      "qNumber": 39,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The infectious stage of Plasmodium that enters the human body is:",
+      "table": null,
+      "choices": [
+        "Sporozoites",
+        "Female gametocytes",
+        "Male gametocytes",
+        "Trophozoites"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Sporozoites",
+      "topic": "Life cycle of Plasmodium",
+      "explanation": "When an infected female Anopheles mosquito bites a human, it injects sporozoites into the bloodstream. These initiate the infection in humans."
+    },
+    {
+      "id": 40,
+      "qNumber": 40,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Human Reproduction",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Meiotic division of the secondary oocyte is completed:",
+      "table": null,
+      "choices": [
+        "At the time of copulation",
+        "After zygote formation",
+        "At the time of fusion of a sperm with an ovum",
+        "Prior to ovulation"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "At the time of fusion of a sperm with an ovum",
+      "topic": "Oogenesis and fertilisation",
+      "explanation": "The secondary oocyte is arrested at metaphase II. It completes meiosis II only after sperm entry, during fertilisation."
+    },
+    {
+      "id": 41,
+      "qNumber": 41,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Photosynthesis in Higher Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "The oxygenation activity of RuBisCO enzyme in C₃ photosynthetic leaf leads to the formation of:",
+      "table": null,
+      "choices": [
+        "1 molecule of 3-C compound",
+        "1 molecule of 6-C compound",
+        "1 molecule of 4-C compound and 1 molecule of 2-C compound",
+        "2 molecules of 3-C compound"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "1 molecule of 4-C compound and 1 molecule of 2-C compound",
+      "topic": "Photorespiration",
+      "explanation": "During oxygenation, RuBisCO adds O₂ to RuBP, producing one molecule of 3-phosphoglycerate (3-C) and one molecule of 2-phosphoglycolate (2-C).Note: The wording/options in the paper appear inconsistent with the standard biochemical products; the option structure does not exactly represent the usual 3-C + 2-C products."
+    },
+    {
+      "id": 42,
+      "qNumber": 42,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Animal Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Which of the following statements are true for the phylum-Chordata?\nQuestion statements:\n(a) In Urochordata notochord extends from head to tail and it is present throughout their life.\n(b) In Vertebrata notochord is present during the embryonic period only.\n(c) Central nervous system is dorsal and hollow.\n(d) Chordata is divided into 3 subphyla: Hemichordata, Tunicata and Cephalochordata.",
+      "table": null,
+      "choices": [
+        "(c) and (a)",
+        "(a) and (b)",
+        "(b) and (c)",
+        "(d) and (c)"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "(b) and (c)",
+      "topic": "Chordata – characteristic features",
+      "explanation": "In vertebrates, the notochord is present during embryonic development and is replaced by the vertebral column in adults. Chordates have a dorsal, hollow nerve cord. Statement (a) is incorrect for Urochordata because the notochord occurs only in the larval tail."
+    },
+    {
+      "id": 43,
+      "qNumber": 43,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Microbes in Human Welfare",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Clostridium butyricum",
+          "(i) Cyclosporin-A"
+        ],
+        [
+          "(b) Trichoderma polysporum",
+          "(ii) Butyric Acid"
+        ],
+        [
+          "(c) Monascus purpureus",
+          "(iii) Citric Acid"
+        ],
+        [
+          "(d) Aspergillus niger",
+          "(iv) Blood cholesterol lowering agent"
+        ]
+      ],
+      "choices": [
+        "(a)–(ii), (b)–(i), (c)–(iv), (d)–(iii)",
+        "(a)–(i), (b)–(ii), (c)–(iv), (d)–(iii)",
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(iii), (b)–(iv), (c)–(ii), (d)–(i)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(ii), (b)–(i), (c)–(iv), (d)–(iii)",
+      "topic": "Microbial products",
+      "explanation": "Clostridium butyricum produces butyric acid; Trichoderma polysporum produces cyclosporin-A; Monascus purpureus produces statins that lower blood cholesterol; Aspergillus niger produces citric acid."
+    },
+    {
+      "id": 44,
+      "qNumber": 44,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Biological Classification",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following pairs is of unicellular algae?",
+      "table": null,
+      "choices": [
+        "Gelidium and Gracilaria",
+        "Anabaena and Volvox",
+        "Chlorella and Spirulina",
+        "Laminaria and Sargassum"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Chlorella and Spirulina",
+      "topic": "Algae",
+      "explanation": "Chlorella and Spirulina are commonly included among unicellular/single-celled algal or cyanobacterial forms used as single-cell protein sources. Gelidium, Gracilaria, Laminaria and Sargassum are multicellular forms."
+    },
+    {
+      "id": 45,
+      "qNumber": 45,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Photosynthesis in Higher Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "In light reaction, plastoquinone facilitates the transfer of electrons from:",
+      "table": null,
+      "choices": [
+        "Cyt b₆f complex to PS-I",
+        "PS-I to NADP⁺",
+        "PS-I to ATP synthase",
+        "PS-II to Cyt b₆f complex"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "PS-II to Cyt b₆f complex",
+      "topic": "Electron transport in light reaction",
+      "explanation": "Plastoquinone acts as an electron carrier between Photosystem II and the cytochrome b₆f complex in the thylakoid electron transport chain."
+    },
+    {
+      "id": 46,
+      "qNumber": 46,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Chemical Coordination and Integration",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Presence of which of the following conditions in urine are indicative of Diabetes Mellitus?",
+      "table": null,
+      "choices": [
+        "Uremia and Renal Calculi",
+        "Ketonuria and Glycosuria",
+        "Renal calculi and Hyperglycaemia",
+        "Uremia and Ketonuria"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Ketonuria and Glycosuria",
+      "topic": "Diabetes mellitus",
+      "explanation": "Diabetes mellitus can result in glucose in urine (glycosuria). Increased fat breakdown can also produce ketone bodies, resulting in ketonuria."
+    },
+    {
+      "id": 47,
+      "qNumber": 47,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Secondary metabolites such as nicotine, strychnine and caffeine are produced by plants for their:",
+      "table": null,
+      "choices": [
+        "Growth response",
+        "Defence action",
+        "Effect on reproduction",
+        "Nutritive value"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Defence action",
+      "topic": "Secondary metabolites",
+      "explanation": "Many secondary metabolites such as nicotine, strychnine and caffeine have protective roles and help plants defend themselves against herbivores and other threats."
+    },
+    {
+      "id": 48,
+      "qNumber": 48,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Excretory Products and their Elimination",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Which of the following would help in prevention of diuresis?",
+      "table": null,
+      "choices": [
+        "Reabsorption of Na⁺ and water from renal tubules due to aldosterone",
+        "Atrial natriuretic factor causes vasoconstriction",
+        "Decrease in secretion of renin by JG cells",
+        "More water reabsorption due to undersecretion of ADH"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Reabsorption of Na⁺ and water from renal tubules due to aldosterone",
+      "topic": "Regulation of urine formation",
+      "explanation": "Aldosterone increases sodium reabsorption in the renal tubules. Water follows sodium osmotically, thereby helping reduce water loss and diuresis."
+    },
+    {
+      "id": 49,
+      "qNumber": 49,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Principles of Inheritance and Variation",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Select the correct match.",
+      "table": null,
+      "choices": [
+        "Phenylketonuria — Autosomal dominant trait",
+        "Sickle cell anaemia — Autosomal recessive trait, chromosome-11",
+        "Thalassemia — X linked",
+        "Haemophilia — Y linked"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Sickle cell anaemia — Autosomal recessive trait, chromosome-11",
+      "topic": "Genetic disorders",
+      "explanation": "Sickle-cell anaemia is an autosomal recessive disorder caused by a mutation in the β-globin gene located on chromosome 11."
+    },
+    {
+      "id": 50,
+      "qNumber": 50,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Organisms and Populations",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following is not an attribute of a population?",
+      "table": null,
+      "choices": [
+        "Natality",
+        "Mortality",
+        "Species interaction",
+        "Sex ratio"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Species interaction",
+      "topic": "Population attributes",
+      "explanation": "Natality, mortality and sex ratio are population attributes. Species interactions such as competition, predation and mutualism describe relationships between populations rather than being direct population attributes."
+    },
+    {
+      "id": 51,
+      "qNumber": 51,
+      "unit": "Unit III: Cell – Structure and Functions",
+      "chapter": "Cell: The Unit of Life",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following statements about inclusion bodies is incorrect?",
+      "table": null,
+      "choices": [
+        "These are involved in ingestion of food particles.",
+        "They lie free in the cytoplasm.",
+        "These represent reserve material in cytoplasm.",
+        "They are not bound by any membrane."
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "These are involved in ingestion of food particles.",
+      "topic": "Inclusion bodies",
+      "explanation": "Inclusion bodies are non-living structures present freely in the cytoplasm and may store reserve materials. They are not involved in ingestion of food particles."
+    },
+    {
+      "id": 52,
+      "qNumber": 52,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Anatomy of Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "The transverse section of a plant shows following anatomical features:\n(a) Large number of scattered vascular bundles surrounded by bundle sheath.\n(b) Large conspicuous parenchymatous ground tissue.\n(c) Vascular bundles conjoint and closed.\n(d) Phloem parenchyma absent.\nIdentify the category of plant and its part:",
+      "table": null,
+      "choices": [
+        "Monocotyledonous root",
+        "Dicotyledonous stem",
+        "Dicotyledonous root",
+        "Monocotyledonous stem"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Monocotyledonous stem",
+      "topic": "Anatomy of monocot stem",
+      "explanation": "A monocot stem has scattered, conjoint and closed vascular bundles, a large parenchymatous ground tissue and generally lacks phloem parenchyma."
+    },
+    {
+      "id": 53,
+      "qNumber": 53,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Ecosystem",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "In relation to Gross primary productivity and Net primary productivity of an ecosystem, which one of the following statements is correct?",
+      "table": null,
+      "choices": [
+        "Gross primary productivity is always more than net primary productivity.",
+        "Gross primary productivity and Net primary productivity are one and same.",
+        "There is no relationship between Gross primary productivity and Net primary productivity.",
+        "Gross primary productivity is always less than net primary productivity."
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Gross primary productivity is always more than net primary productivity.",
+      "topic": "Primary productivity",
+      "explanation": "NPP = GPP − Respiration losses. Therefore, net primary productivity is lower than gross primary productivity."
+    },
+    {
+      "id": 54,
+      "qNumber": 54,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Sexual Reproduction in Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "In water hyacinth and water lily, pollination takes place by:",
+      "table": null,
+      "choices": [
+        "water currents only",
+        "wind and water",
+        "insects and water",
+        "insects or wind"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "insects and water",
+      "topic": "Pollination",
+      "explanation": "Water-associated plants such as water hyacinth and water lily are not necessarily hydrophilous; their pollination can involve insects and water-associated mechanisms."
+    },
+    {
+      "id": 55,
+      "qNumber": 55,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Environmental Issues",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following is put into Anaerobic sludge digester for further sewage treatment?",
+      "table": null,
+      "choices": [
+        "Floating debris",
+        "Effluents of primary treatment",
+        "Activated sludge",
+        "Primary sludge"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Activated sludge",
+      "topic": "Sewage treatment",
+      "explanation": "During secondary sewage treatment, activated sludge is generated. A portion is returned to the aeration tank and the remaining sludge is sent to anaerobic sludge digesters."
+    },
+    {
+      "id": 56,
+      "qNumber": 56,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Transport in Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The process responsible for facilitating loss of water in liquid form from the tip of grass blades at night and in early morning is:",
+      "table": null,
+      "choices": [
+        "Root pressure",
+        "Imbibition",
+        "Plasmolysis",
+        "Transpiration"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Root pressure",
+      "topic": "Root pressure and guttation",
+      "explanation": "Loss of water in liquid form from leaf tips is called guttation. It is caused by positive root pressure, particularly at night or early morning when transpiration is low."
+    },
+    {
+      "id": 57,
+      "qNumber": 57,
+      "unit": "Unit II: Structural Organisation in Plants and Animals",
+      "chapter": "Structural Organisation in Animals",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Cuboidal epithelium with brush border of microvilli is found in:",
+      "table": null,
+      "choices": [
+        "ducts of salivary glands",
+        "proximal convoluted tubule of nephron",
+        "eustachian tube",
+        "lining of intestine"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "proximal convoluted tubule of nephron",
+      "topic": "Epithelial tissue",
+      "explanation": "The proximal convoluted tubule (PCT) is lined by cuboidal epithelium with a brush border of microvilli, increasing the surface area for reabsorption."
+    },
+    {
+      "id": 58,
+      "qNumber": 58,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Chemical Coordination and Integration",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Select the correct statement.",
+      "table": null,
+      "choices": [
+        "Glucagon is associated with hypoglycemia.",
+        "Insulin acts on pancreatic cells and adipocytes.",
+        "Insulin is associated with hyperglycemia.",
+        "Glucocorticoids stimulate gluconeogenesis."
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Glucocorticoids stimulate gluconeogenesis.",
+      "topic": "Adrenal hormones and glucose metabolism",
+      "explanation": "Glucocorticoids promote gluconeogenesis, increasing blood glucose availability. Insulin generally lowers blood glucose, while glucagon acts primarily to raise blood glucose."
+    },
+    {
+      "id": 59,
+      "qNumber": 59,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following is not an inhibitory substance governing seed dormancy?",
+      "table": null,
+      "choices": [
+        "Abscisic acid",
+        "Phenolic acid",
+        "Para-ascorbic acid",
+        "Gibberellic acid"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Gibberellic acid",
+      "topic": "Seed dormancy and plant growth regulators",
+      "explanation": "Abscisic acid (ABA) promotes seed dormancy. Gibberellins generally promote germination and overcome dormancy, so gibberellic acid is not an inhibitory substance governing seed dormancy."
+    },
+    {
+      "id": 60,
+      "qNumber": 60,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Organisms and Populations",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "According to Robert May, the global species diversity is about:",
+      "table": null,
+      "choices": [
+        "20 million",
+        "50 million",
+        "7 million",
+        "1.5 million"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "7 million",
+      "topic": "Species diversity",
+      "explanation": "Ecologist Robert May estimated that the total number of species on Earth could be around 7 million, although only a fraction had been scientifically described."
+    },
+    {
+      "id": 61,
+      "qNumber": 61,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Ecosystem",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Match the trophic levels with their correct species examples in grassland ecosystem.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Fourth trophic level",
+          "(i) Crow"
+        ],
+        [
+          "(b) Second trophic level",
+          "(ii) Vulture"
+        ],
+        [
+          "(c) First trophic level",
+          "(iii) Rabbit"
+        ],
+        [
+          "(d) Third trophic level",
+          "(iv) Grass"
+        ]
+      ],
+      "choices": [
+        "(a)–(iii), (b)–(ii), (c)–(i), (d)–(iv)",
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(i), (b)–(ii), (c)–(iii), (d)–(iv)",
+        "(a)–(ii), (b)–(iii), (c)–(iv), (d)–(i)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iii), (b)–(ii), (c)–(i), (d)–(iv)",
+      "topic": "Trophic levels",
+      "explanation": "Grass is the producer (first trophic level), rabbit is the primary consumer (second), crow is the secondary consumer (third), and vulture is the tertiary consumer (fourth)."
+    },
+    {
+      "id": 62,
+      "qNumber": 62,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The first phase of translation is:",
+      "table": null,
+      "choices": [
+        "Recognition of DNA molecule",
+        "Aminoacylation of tRNA",
+        "Recognition of an anti-codon",
+        "Binding of mRNA to ribosome"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "Binding of mRNA to ribosome",
+      "topic": "Translation",
+      "explanation": "Translation begins with initiation, during which the mRNA binds to the ribosome and the translation machinery is assembled."
+    },
+    {
+      "id": 63,
+      "qNumber": 63,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Plant Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Strobili or cones are found in:",
+      "table": null,
+      "choices": [
+        "Pteris",
+        "Marchantia",
+        "Equisetum",
+        "Salvinia"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Equisetum",
+      "topic": "Pteridophytes – reproductive structures",
+      "explanation": "Equisetum produces strobili (cones) containing sporangia. It is a pteridophyte."
+    },
+    {
+      "id": 64,
+      "qNumber": 64,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Animal Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) 6–15 pairs of gill slits",
+          "(i) Trygon"
+        ],
+        [
+          "(b) Heterocercal caudal fin",
+          "(ii) Cyclostomes"
+        ],
+        [
+          "(c) Air Bladder",
+          "(iii) Chondrichthyes"
+        ],
+        [
+          "(d) Poison sting",
+          "(iv) Osteichthyes"
+        ]
+      ],
+      "choices": [
+        "(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)",
+        "(a)–(iv), (b)–(ii), (c)–(iii), (d)–(i)",
+        "(a)–(i), (b)–(iv), (c)–(ii), (d)–(ii)",
+        "(a)–(ii), (b)–(iii), (c)–(iv), (d)–(i)"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "(a)–(ii), (b)–(iii), (c)–(iv), (d)–(i)",
+      "topic": "Classification of fishes",
+      "explanation": "Cyclostomes have 6–15 pairs of gill slits; Chondrichthyes have heterocercal caudal fins; Osteichthyes possess an air bladder; Trygon has a poison sting."
+    },
+    {
+      "id": 65,
+      "qNumber": 65,
+      "unit": "Unit III: Cell – Structure and Functions",
+      "chapter": "Cell Cycle and Cell Division",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Some dividing cells exit the cell cycle and enter vegetative inactive stage. This is called quiescent stage (G₀). This process occurs at the end of:",
+      "table": null,
+      "choices": [
+        "G₁ phase",
+        "S phase",
+        "G₂ phase",
+        "M phase"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "G₁ phase",
+      "topic": "Cell cycle – G₀ phase",
+      "explanation": "Cells may exit the active cell cycle from the G₁ phase and enter the quiescent G₀ stage."
+    },
+    {
+      "id": 66,
+      "qNumber": 66,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Digestion and Absorption",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Identify the correct statement with reference to human digestive system.",
+      "table": null,
+      "choices": [
+        "Serosa is the innermost layer of the alimentary canal.",
+        "Ileum is a highly coiled part.",
+        "Vermiform appendix arises from duodenum.",
+        "Ileum opens into small intestine."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Ileum is a highly coiled part.",
+      "topic": "Alimentary canal",
+      "explanation": "The ileum is the highly coiled terminal part of the small intestine. Serosa is the outermost layer, and the vermiform appendix arises from the caecum."
+    },
+    {
+      "id": 67,
+      "qNumber": 67,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Reproductive Health",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "In which of the following techniques, the embryos are transferred to assist those females who cannot conceive?",
+      "table": null,
+      "choices": [
+        "GIFT and ZIFT",
+        "ICSI and ZIFT",
+        "GIFT and ICSI",
+        "ZIFT and IUT"
+      ],
+      "correctAnswerIndex": 3,
+      "answerText": "ZIFT and IUT",
+      "topic": "Assisted reproductive technologies",
+      "explanation": "ZIFT transfers a zygote or early embryo into the fallopian tube, while IUT transfers an embryo into the uterus."
+    },
+    {
+      "id": 68,
+      "qNumber": 68,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Sexual Reproduction in Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "The plant parts which consist of two generations – one within the other:\n(a) Pollen grains inside the anther(b) Germinated pollen grain with two male gametes(c) Seed inside the fruit(d) Embryo sac inside the ovule",
+      "table": null,
+      "choices": [
+        "(a), (b) and (c)",
+        "(c) and (d)",
+        "(a) and (d)",
+        "(a) only"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a), (b) and (c)",
+      "topic": "Alternation of generations",
+      "explanation": "Anther with pollen grains, germinated pollen grain with male gametes, and seed inside fruit represent two generations in the stated arrangements. The embryo sac is the female gametophyte, while the ovule is part of the sporophyte."
+    },
+    {
+      "id": 69,
+      "qNumber": 69,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Cell Cycle and Cell Division",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Dissolution of the synaptonemal complex occurs during:",
+      "table": null,
+      "choices": [
+        "Zygotene",
+        "Diplotene",
+        "Leptotene",
+        "Pachytene"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Diplotene",
+      "topic": "Prophase I of meiosis",
+      "explanation": "The synaptonemal complex dissolves during diplotene, when homologous chromosomes begin to separate and chiasmata become visible."
+    },
+    {
+      "id": 70,
+      "qNumber": 70,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Neural Control and Coordination",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following:",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Organ of Corti",
+          "(i) Cochlea"
+        ],
+        [
+          "(b) Cochlea",
+          "(ii) Eustachian tube"
+        ],
+        [
+          "(c) Eustachian tube",
+          "(iii) Middle ear"
+        ],
+        [
+          "(d) Stapes",
+          "(iv) Located on the basilar membrane"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(i), (c)–(ii), (d)–(iii)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(i), (b)–(ii), (c)–(iv), (d)–(iii)",
+        "(a)–(iii), (b)–(iv), (c)–(ii), (d)–(i)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iv), (b)–(i), (c)–(ii), (d)–(iii)",
+      "topic": "Human ear",
+      "explanation": "The Organ of Corti is located on the basilar membrane; the cochlea is the hearing organ; the Eustachian tube connects the middle ear to the pharynx; stapes is a middle-ear bone."
+    },
+    {
+      "id": 71,
+      "qNumber": 71,
+      "unit": "Unit VI: Reproduction",
+      "chapter": "Sexual Reproduction in Flowering Plants",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The ovary is half inferior in:",
+      "table": null,
+      "choices": [
+        "Mustard",
+        "Sunflower",
+        "Plum",
+        "Brinjal"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Plum",
+      "topic": "Position of ovary",
+      "explanation": "Plum has a perigynous flower with a half-inferior ovary. Mustard and brinjal have superior ovaries, while sunflower has an inferior ovary."
+    },
+    {
+      "id": 72,
+      "qNumber": 72,
+      "unit": "Unit III: Cell – Structure and Functions",
+      "chapter": "Biomolecules",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Identify the basic amino acid from the following.",
+      "table": null,
+      "choices": [
+        "Glutamic acid",
+        "Leucine",
+        "Valine",
+        "Tyrosine"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "",
+      "topic": "Amino acids",
+      "explanation": "The listed amino acids are glutamic acid (acidic), leucine (neutral), valine (neutral) and tyrosine (neutral). A basic amino acid would be lysine, arginine or histidine. The question appears to contain an error."
+    },
+    {
+      "id": 73,
+      "qNumber": 73,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns and select the correct option.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Eosinophils",
+          "(i) Immune response"
+        ],
+        [
+          "(b) Basophils",
+          "(ii) Phagocytosis"
+        ],
+        [
+          "(c) Neutrophils",
+          "(iii) Release of histamine"
+        ],
+        [
+          "(d) Lymphocytes",
+          "(iv) Release of granules containing histamine"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(i)",
+        "(a)–(i), (b)–(iii), (c)–(ii), (d)–(iv)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+      "topic": "White blood cells",
+      "explanation": "Eosinophils release granules containing histamine; basophils release histamine; neutrophils perform phagocytosis; lymphocytes are involved in immune responses."
+    },
+    {
+      "id": 74,
+      "qNumber": 74,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following:",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Inhibitor of catalytic activity",
+          "(i) Collagen"
+        ],
+        [
+          "(b) Active peptide bond",
+          "(ii) Malonate"
+        ],
+        [
+          "(c) Cell wall material in fungi",
+          "(iii) Chitin"
+        ],
+        [
+          "(d) Secondary metabolite",
+          "(iv) Ricin"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(ii), (b)–(iii), (c)–(iv), (d)–(i)",
+        "(a)–(i), (b)–(ii), (c)–(iii), (d)–(iv)"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+      "topic": "Enzymes and biomolecules",
+      "explanation": "Malonate is an inhibitor of succinate dehydrogenase; ricin is a protein containing peptide bonds; chitin is the fungal cell wall material; collagen is a structural protein."
+    },
+    {
+      "id": 75,
+      "qNumber": 75,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Identify the incorrect statement with regard to growth.",
+      "table": null,
+      "choices": [
+        "Reproduction of an organism is an accomplished phenomenon.",
+        "Cell is metabolically active, grows but does not reproduce its DNA.",
+        "Nuclear Division takes place.",
+        "DNA synthesis or replication takes place."
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Reproduction of an organism is an accomplished phenomenon.",
+      "topic": "Growth and cell division",
+      "explanation": "Growth is a continuous, irreversible process, not an accomplished or completed phenomenon. Growth involves cell division, enlargement and DNA replication."
+    },
+    {
+      "id": 76,
+      "qNumber": 76,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Name the plant growth regulator which upon spraying on sugarcane crop, increase the length of stem, thus increasing the yield of sugarcane.",
+      "table": null,
+      "choices": [
+        "Gibberellin",
+        "Ethylene",
+        "Abscisic acid",
+        "Cytokinin"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Gibberellin",
+      "topic": "Plant growth regulators",
+      "explanation": "Gibberellins promote stem elongation and are used in sugarcane to increase internode length and yield."
+    },
+    {
+      "id": 77,
+      "qNumber": 77,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Principles of Inheritance and Variation",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Identify the correct statement with reference to the gene of human ABO blood group.",
+      "table": null,
+      "choices": [
+        "A person will have only two of the three alleles of ABO blood group.",
+        "Allele Iᴬ and Iᴮ are present together, they express their own type.",
+        "Allele Iᴬ and Iᴮ are not present in any person.",
+        "The gene of ABO blood group has only one allele."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Allele Iᴬ and Iᴮ are present together, they express their own type.",
+      "topic": "Multiple alleles and codominance",
+      "explanation": "The ABO blood group system demonstrates codominance: when Iᴬ and Iᴮ occur together, both are expressed, producing blood group AB."
+    },
+    {
+      "id": 78,
+      "qNumber": 78,
+      "unit": "Unit VIII: Biology in Human Welfare",
+      "chapter": "Human Health and Disease",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Identify the wrong statement with reference to immunity.",
+      "table": null,
+      "choices": [
+        "When ready-made antibodies are directly given, it is called passive immunity.",
+        "Active immunity is given by injection of antigen.",
+        "When a person receives some antibodies from mother, it is an example of passive immunity.",
+        "When exposed to antigen (living or dead) antibodies are produced in the host’s body. It is called “Active immunity”."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Active immunity is given by injection of antigen.",
+      "topic": "Active and passive immunity",
+      "explanation": "Active immunity develops when the body produces its own antibodies after exposure to an antigen. Ready-made antibodies provide passive immunity."
+    },
+    {
+      "id": 79,
+      "qNumber": 79,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Digestion and Absorption",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The enzyme enterokinase helps in conversion of:",
+      "table": null,
+      "choices": [
+        "Trypsinogen into trypsin",
+        "Caseinogen into casein",
+        "Pepsinogen into pepsin",
+        "Protein into polypeptides"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Trypsinogen into trypsin",
+      "topic": "Digestive enzymes",
+      "explanation": "Enterokinase, secreted by the intestinal mucosa, activates trypsinogen into trypsin."
+    },
+    {
+      "id": 80,
+      "qNumber": 80,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "The specific palindromic sequence which is recognized by EcoRI is:",
+      "table": null,
+      "choices": [
+        "5′-GAACCG-3′ / 3′-CTTGGC-5′",
+        "5′-CCGGAA-3′ / 3′-GGCCCT-5′",
+        "5′-GAATTC-3′ / 3′-CTTAAG-5′",
+        "5′-GGATCC-3′ / 3′-CCTAGG-5′"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "5′-GAATTC-3′ / 3′-CTTAAG-5′",
+      "topic": "Restriction enzymes",
+      "explanation": "EcoRI recognizes the palindromic sequence 5′-GAATTC-3′ and cuts DNA between G and A."
+    },
+    {
+      "id": 81,
+      "qNumber": 81,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Cotton",
+          "(i) Detection of infection"
+        ],
+        [
+          "(b) Adenosine deaminase",
+          "(ii) Cellular defence"
+        ],
+        [
+          "(c) RNAi",
+          "(iii) Human growth hormone"
+        ],
+        [
+          "(d) PCR",
+          "(iv) Insecticidal protein Bacillus thuringiensis"
+        ]
+      ],
+      "choices": [
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(i)",
+        "(a)–(i), (b)–(ii), (c)–(iii), (d)–(iv)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)",
+      "topic": "Biotechnology applications",
+      "explanation": "Bt cotton produces insecticidal Cry protein; ADA is associated with gene therapy; RNAi provides cellular defence; PCR is used to detect infection."
+    },
+    {
+      "id": 82,
+      "qNumber": 82,
+      "unit": "Unit I: Diversity in the Living World",
+      "chapter": "Plant Kingdom",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Floridean starch is structurally similar to:",
+      "table": null,
+      "choices": [
+        "Amylopectin and glycogen",
+        "Mannitol and algin",
+        "Laminarin and cellulose",
+        "Starch and cellulose"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Amylopectin and glycogen",
+      "topic": "Red algae",
+      "explanation": "Floridean starch, the reserve food of red algae, resembles amylopectin and glycogen."
+    },
+    {
+      "id": 83,
+      "qNumber": 83,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Molecular Basis of Inheritance",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Which of the following statements is not correct?",
+      "table": null,
+      "choices": [
+        "The promoter has an extra peptide.",
+        "The function of insulin has A and B chains linked together by hydrogen bonds.",
+        "Genetically engineered insulin is produced in E. coli.",
+        "In a human insulin, A and B chains are synthesized as a single polypeptide."
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "The promoter has an extra peptide.",
+      "topic": "Recombinant insulin",
+      "explanation": "The promoter is a regulatory DNA sequence, not a peptide. Insulin consists of A and B chains linked by disulfide bonds; recombinant insulin can be produced in E. coli."
+    },
+    {
+      "id": 84,
+      "qNumber": 84,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Evolution",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Flippers of Penguin and Dolphin are examples of:",
+      "table": null,
+      "choices": [
+        "Convergent evolution",
+        "Divergent evolution",
+        "Natural selection",
+        "Adaptive radiation"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Convergent evolution",
+      "topic": "Evidences for evolution",
+      "explanation": "Penguin flippers and dolphin flippers perform similar functions but evolved independently in unrelated groups, making them examples of convergent evolution."
+    },
+    {
+      "id": 85,
+      "qNumber": 85,
+      "unit": "Unit VII: Genetics and Evolution",
+      "chapter": "Evolution",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Which of the following refer to correct example(s) of organisms which have evolved due to changes in environment brought about by anthropogenic activities?",
+      "table": null,
+      "choices": [
+        "Darwin’s Finches of Galapagos",
+        "Herbicide resistant weeds",
+        "Drug resistant eukaryotes",
+        "Man-created breeds of domesticated animals"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Herbicide resistant weeds",
+      "topic": "Natural selection and anthropogenic selection",
+      "explanation": "Herbicide-resistant weeds evolve through selection pressure caused by human use of herbicides."
+    },
+    {
+      "id": 86,
+      "qNumber": 86,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Breathing and Exchange of Gases",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Identify the wrong statement with reference to transport of oxygen.",
+      "table": null,
+      "choices": [
+        "Partial pressure of CO₂ can interfere with O₂ binding with haemoglobin.",
+        "Higher H⁺ ion concentration favours the formation of oxyhaemoglobin.",
+        "Low pCO₂ favours the formation of oxyhaemoglobin.",
+        "Binding of oxygen with haemoglobin is mainly related to partial pressure of O₂."
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Higher H⁺ ion concentration favours the formation of oxyhaemoglobin.",
+      "topic": "Oxygen transport and Bohr effect",
+      "explanation": "Higher H⁺ concentration reduces haemoglobin’s affinity for oxygen and favours oxygen unloading. This is part of the Bohr effect."
+    },
+    {
+      "id": 87,
+      "qNumber": 87,
+      "unit": "Unit IV: Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The process of growth is maximum during:",
+      "table": null,
+      "choices": [
+        "Lag phase",
+        "Log phase",
+        "Dormancy",
+        "Lag phase"
+      ],
+      "correctAnswerIndex": 1,
+      "answerText": "Log phase",
+      "topic": "Growth curve",
+      "explanation": "Growth is maximum during the logarithmic (exponential) phase, when cells divide rapidly."
+    },
+    {
+      "id": 88,
+      "qNumber": 88,
+      "unit": "Unit X: Ecology and Environment",
+      "chapter": "Biodiversity and Conservation",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "Which of the following regions of the globe exhibit highest species diversity?",
+      "table": null,
+      "choices": [
+        "Madagascar",
+        "Himalayas",
+        "Amazon forests",
+        "Western Ghats of India"
+      ],
+      "correctAnswerIndex": 2,
+      "answerText": "Amazon forests",
+      "topic": "Species diversity",
+      "explanation": "Tropical rainforests, particularly the Amazon forests, exhibit extremely high species diversity."
+    },
+    {
+      "id": 89,
+      "qNumber": 89,
+      "unit": "Unit IX: Biotechnology",
+      "chapter": "Biotechnology: Principles and Processes",
+      "specification": "PYQ-2020",
+      "difficulty": "Easy",
+      "question": "The sequence that controls the copy number of the linked DNA in the vector, is termed:",
+      "table": null,
+      "choices": [
+        "Ori site",
+        "Palindromic sequence",
+        "Promoter",
+        "Selectable marker"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "Ori site",
+      "topic": "Cloning vectors",
+      "explanation": "The origin of replication (Ori) is the sequence where replication begins and controls the copy number of linked DNA in a vector."
+    },
+    {
+      "id": 90,
+      "qNumber": 90,
+      "unit": "Unit V: Human Physiology",
+      "chapter": "Chemical Coordination and Integration",
+      "specification": "PYQ-2020",
+      "difficulty": "Moderate",
+      "question": "Match the following columns.",
+      "table": [
+        [
+          "Column I",
+          "Column II"
+        ],
+        [
+          "(a) Placenta",
+          "(i) Androgens"
+        ],
+        [
+          "(b) Zona pellucida",
+          "(ii) Human Chorionic Gonadotropin (hCG)"
+        ],
+        [
+          "(c) Bulbo-urethral glands",
+          "(iii) Leydig cells"
+        ],
+        [
+          "(d) Leydig cells",
+          "(iv) Lubrication of the penis"
+        ]
+      ],
+      "choices": [
+        "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+        "(a)–(iii), (b)–(ii), (c)–(iv), (d)–(i)",
+        "(a)–(i), (b)–(iv), (c)–(ii), (d)–(iii)",
+        "(a)–(iv), (b)–(iii), (c)–(ii), (d)–(i)"
+      ],
+      "correctAnswerIndex": 0,
+      "answerText": "(a)–(ii), (b)–(iv), (c)–(iii), (d)–(i)",
+      "topic": "Human reproductive hormones",
+      "explanation": "The placenta secretes hCG; the zona pellucida surrounds the ovum; bulbourethral glands secrete mucus for lubrication; Leydig cells produce androgens."
+    }
+  ]
+}

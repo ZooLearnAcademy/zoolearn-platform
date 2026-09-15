@@ -1,0 +1,2454 @@
+{
+  "_meta": {
+    "description": "ZooHub data - Complete animal kingdom phyla, classes, and species for ZooLearn",
+    "totalPhyla": 11,
+    "totalClasses": 45,
+    "totalSpecies": 265,
+    "generatedAt": "2026-08-18T07:38:06.202Z"
+  },
+  "phyla": [
+    {
+      "id": "porifera",
+      "name": "Porifera",
+      "description": "Sponges",
+      "icon": "🧽",
+      "color": "#e74c3c",
+      "route": "/zoohub",
+      "scrollKey": "porifera",
+      "classes": [
+        {
+          "name": "Calcarea",
+          "phylum": "Porifera"
+        },
+        {
+          "name": "Hexactinellida",
+          "phylum": "Porifera"
+        },
+        {
+          "name": "Demospongiae",
+          "phylum": "Porifera"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "sycon",
+          "scientificName": "Scypha sponge",
+          "slug": "sycon",
+          "route": "/zoohub/porifera/sycon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671742/sycon_kzvnrx.png"
+        },
+        {
+          "id": 2,
+          "name": "leucosolenia",
+          "scientificName": "White tubular sponge",
+          "slug": "leucosolenia",
+          "route": "/zoohub/porifera/leucosolenia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671721/Leucosolenia_lyznns.png"
+        },
+        {
+          "id": 3,
+          "name": "grantia",
+          "scientificName": "Grant’s sponge",
+          "slug": "grantia",
+          "route": "/zoohub/porifera/grantia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671622/Grantia_oxhw07.png"
+        },
+        {
+          "id": 4,
+          "name": "euplectella",
+          "scientificName": "Venus Flower Basket",
+          "slug": "euplectella",
+          "route": "/zoohub/porifera/euplectella",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671687/Euplectella_zkbhq3.png"
+        },
+        {
+          "id": 5,
+          "name": "hyalonema",
+          "scientificName": "Glass Rope Sponge",
+          "slug": "hyalonema",
+          "route": "/zoohub/porifera/hyalonema",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671709/Hyalonema_d6gda7.png"
+        },
+        {
+          "id": 6,
+          "name": "spongilla",
+          "scientificName": "Freshwater Sponge",
+          "slug": "spongilla",
+          "route": "/zoohub/porifera/spongilla",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671733/Spongilla_ykscrw.png"
+        },
+        {
+          "id": 7,
+          "name": "euspongia",
+          "scientificName": "Bath Sponge",
+          "slug": "euspongia",
+          "route": "/zoohub/porifera/euspongia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671701/Euspongia_sckgkk.png"
+        },
+        {
+          "id": 8,
+          "name": "cliona",
+          "scientificName": "Boring Sponge",
+          "slug": "cliona",
+          "route": "/zoohub/porifera/cliona",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671680/Cliona_mkq4gd.png"
+        },
+        {
+          "id": 9,
+          "name": "xestospongia",
+          "scientificName": "Giant Barrel Sponge",
+          "slug": "xestospongia",
+          "route": "/zoohub/porifera/xestospongia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671751/Xestospongia_pxgw30.png"
+        },
+        {
+          "id": 10,
+          "name": "chalina",
+          "scientificName": "Finger Sponge",
+          "slug": "chalina",
+          "route": "/zoohub/porifera/chalina",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671657/Chalina_ip1gvg.png"
+        }
+      ]
+    },
+    {
+      "id": "coelenterata",
+      "name": "Coelenterata",
+      "description": "Cnidarians / Jellyfish & Corals",
+      "icon": "🌊",
+      "color": "#3498db",
+      "route": "/zoohub",
+      "scrollKey": "coelenterata",
+      "classes": [
+        {
+          "name": "Hydrozoa",
+          "phylum": "Coelenterata"
+        },
+        {
+          "name": "Scyphozoa",
+          "phylum": "Coelenterata"
+        },
+        {
+          "name": "Anthozoa",
+          "phylum": "Coelenterata"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "hydra",
+          "scientificName": "Freshwater polyp",
+          "slug": "hydra",
+          "route": "/zoohub/coelenterata/hydra",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892096/Hydra_ljhbjv.png"
+        },
+        {
+          "id": 2,
+          "name": "obelia",
+          "scientificName": "Sea fur / Sea moss",
+          "slug": "obelia",
+          "route": "/zoohub/coelenterata/obelia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892152/Obelia_ovbvj3.png"
+        },
+        {
+          "id": 3,
+          "name": "physalia",
+          "scientificName": "Portuguese man-of-war",
+          "slug": "physalia",
+          "route": "/zoohub/coelenterata/physalia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892218/Physalia_d0xxsl.png"
+        },
+        {
+          "id": 4,
+          "name": "aurelia",
+          "scientificName": "Moon jellyfish",
+          "slug": "aurelia",
+          "route": "/zoohub/coelenterata/aurelia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892060/Aurelia_y0ii6v.png"
+        },
+        {
+          "id": 5,
+          "name": "adamsia",
+          "scientificName": "Sea anemone",
+          "slug": "adamsia",
+          "route": "/zoohub/coelenterata/adamsia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892009/Adamsia_orkdvo.png"
+        },
+        {
+          "id": 6,
+          "name": "pennatula",
+          "scientificName": "Sea pen",
+          "slug": "pennatula",
+          "route": "/zoohub/coelenterata/pennatula",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892197/Pennatula_fx3glt.png"
+        },
+        {
+          "id": 7,
+          "name": "gorgonia",
+          "scientificName": "Sea fan",
+          "slug": "gorgonia",
+          "route": "/zoohub/coelenterata/gorgonia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892082/Gorgonia_vyf78r.png"
+        },
+        {
+          "id": 8,
+          "name": "meandrina",
+          "scientificName": "Brain coral",
+          "slug": "meandrina",
+          "route": "/zoohub/coelenterata/meandrina",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767891973/Meandrina_pqw88x.png"
+        },
+        {
+          "id": 9,
+          "name": "metridium",
+          "scientificName": "Plumose anemone",
+          "slug": "metridium",
+          "route": "/zoohub/coelenterata/metridium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892113/Metridium_czmjde.png"
+        },
+        {
+          "id": 10,
+          "name": "corallium",
+          "scientificName": "Red coral",
+          "slug": "corallium",
+          "route": "/zoohub/coelenterata/corallium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892072/Corallium_x9awvc.png"
+        },
+        {
+          "id": 11,
+          "name": "antipatharia",
+          "scientificName": "Black corals",
+          "slug": "antipatharia",
+          "route": "/zoohub/coelenterata/antipatharia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892029/Antipatharia_txlpbb.png"
+        }
+      ]
+    },
+    {
+      "id": "ctenophora",
+      "name": "Ctenophora",
+      "description": "Comb Jellies",
+      "icon": "💫",
+      "color": "#9b59b6",
+      "route": "/zoohub",
+      "scrollKey": "ctenophora",
+      "classes": [
+        {
+          "name": "Tentaculata",
+          "phylum": "Ctenophora"
+        },
+        {
+          "name": "Nuda",
+          "phylum": "Ctenophora"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "ctenoplana",
+          "scientificName": "Creeping comb jelly",
+          "slug": "ctenoplana",
+          "route": "/zoohub/ctenophora/ctenoplana",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893538/Ctenoplana_hbzyki.png"
+        },
+        {
+          "id": 2,
+          "name": "pleurobrachia",
+          "scientificName": "Sea gooseberry",
+          "slug": "pleurobrachia",
+          "route": "/zoohub/ctenophora/pleurobrachia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893553/Pleurobrachia_ffya5t.png"
+        },
+        {
+          "id": 3,
+          "name": "hormiphora",
+          "scientificName": "Comb jelly",
+          "slug": "hormiphora",
+          "route": "/zoohub/ctenophora/hormiphora",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893551/Hormiphora_jmfpun.png"
+        },
+        {
+          "id": 4,
+          "name": "cestum",
+          "scientificName": "Venus girdle",
+          "slug": "cestum",
+          "route": "/zoohub/ctenophora/cestum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893548/Cestum_imikzw.png"
+        },
+        {
+          "id": 5,
+          "name": "beroe",
+          "scientificName": "Comb jelly",
+          "slug": "beroe",
+          "route": "/zoohub/ctenophora/beroe",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893545/Beroe_cke3tj.png"
+        }
+      ]
+    },
+    {
+      "id": "platyhelminthes",
+      "name": "Platyhelminthes",
+      "description": "Flatworms",
+      "icon": "🪱",
+      "color": "#f39c12",
+      "route": "/zoohub",
+      "scrollKey": "platyhelminthes",
+      "classes": [
+        {
+          "name": "Turbellaria",
+          "phylum": "Platyhelminthes"
+        },
+        {
+          "name": "Trematoda",
+          "phylum": "Platyhelminthes"
+        },
+        {
+          "name": "Cestoda",
+          "phylum": "Platyhelminthes"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "dugesia",
+          "scientificName": "Planarian",
+          "slug": "dugesia",
+          "route": "/zoohub/platyhelminthes/dugesia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595669/Dugesia_hpaibv.png"
+        },
+        {
+          "id": 2,
+          "name": "fasciola hepatica",
+          "scientificName": "Sheep liver fluke",
+          "slug": "fasciola",
+          "route": "/zoohub/platyhelminthes/fasciola",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595716/Fasciola_hepatica_wso3xw.png"
+        },
+        {
+          "id": 3,
+          "name": "schistosoma",
+          "scientificName": "Blood Fluke",
+          "slug": "schistosoma",
+          "route": "/zoohub/platyhelminthes/schistosoma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595732/Schistosoma_ru8kzg.png"
+        },
+        {
+          "id": 4,
+          "name": "taenia solium",
+          "scientificName": "Pork tapeworm",
+          "slug": "taenia-solium",
+          "route": "/zoohub/platyhelminthes/taenia-solium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595750/Taenia_solium_oew5qm.png"
+        },
+        {
+          "id": 5,
+          "name": "taenia saginata",
+          "scientificName": "Beef tapeworm",
+          "slug": "taenia-saginata",
+          "route": "/zoohub/platyhelminthes/taenia-saginata",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595743/Taenia_saginata_xaxmpq.png"
+        },
+        {
+          "id": 6,
+          "name": "echinococcus",
+          "scientificName": "Dog tapeworm",
+          "slug": "echinococcus",
+          "route": "/zoohub/platyhelminthes/echinococcus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595702/Echinococcus_pi8lv5.png"
+        }
+      ]
+    },
+    {
+      "id": "aschelminthes",
+      "name": "Aschelminthes",
+      "description": "Roundworms",
+      "icon": "🦠",
+      "color": "#1abc9c",
+      "route": "/zoohub",
+      "scrollKey": "aschelminthes",
+      "classes": [
+        {
+          "name": "Nematoda",
+          "phylum": "Aschelminthes"
+        },
+        {
+          "name": "Enoplea",
+          "phylum": "Aschelminthes"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "ascaris lumbricoides",
+          "scientificName": "Roundworm",
+          "slug": "ascaris",
+          "route": "/zoohub/aschelminthes/ascaris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982056/Ascaris_lumbricoides_izwqjh.png"
+        },
+        {
+          "id": 2,
+          "name": "wuchereria bancrofti",
+          "scientificName": "Filarial worm",
+          "slug": "wuchereria",
+          "route": "/zoohub/aschelminthes/wuchereria",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982084/Wuchereria_bancrofti_azjsvd.png"
+        },
+        {
+          "id": 3,
+          "name": "ancylostoma duodenale",
+          "scientificName": "Hookworm",
+          "slug": "ancylostoma",
+          "route": "/zoohub/aschelminthes/ancylostoma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982052/Ancylostoma_duodenale_c7jhbf.png"
+        },
+        {
+          "id": 4,
+          "name": "enterobius vermicularis",
+          "scientificName": "Pinworm",
+          "slug": "enterobius",
+          "route": "/zoohub/aschelminthes/enterobius",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982065/Enterobius_vermicularis_htjsjz.png"
+        },
+        {
+          "id": 5,
+          "name": "loa loa",
+          "scientificName": "Eye worm",
+          "slug": "loa-loa",
+          "route": "/zoohub/aschelminthes/loa-loa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982069/Loa_loa_maj2rm.png"
+        },
+        {
+          "id": 6,
+          "name": "trichuris trichiura",
+          "scientificName": "Whipworm",
+          "slug": "trichuris",
+          "route": "/zoohub/aschelminthes/trichuris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982078/Trichuris_trichiura_erm3qa.png"
+        },
+        {
+          "id": 7,
+          "name": "trichinella spiralis",
+          "scientificName": "Trichina worm",
+          "slug": "trichinella",
+          "route": "/zoohub/aschelminthes/trichinella",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982073/Trichinella_spiralis_tjazqd.png"
+        },
+        {
+          "id": 8,
+          "name": "dracunculus medinensis",
+          "scientificName": "Guinea worm",
+          "slug": "dracunculus",
+          "route": "/zoohub/aschelminthes/dracunculus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982060/Dracunculus_medinensis_eibpmm.png"
+        }
+      ]
+    },
+    {
+      "id": "annelida",
+      "name": "Annelida",
+      "description": "Segmented Worms",
+      "icon": "🐛",
+      "color": "#e67e22",
+      "route": "/zoohub",
+      "scrollKey": "annelida",
+      "classes": [
+        {
+          "name": "Polychaeta",
+          "phylum": "Annelida"
+        },
+        {
+          "name": "Oligochaeta",
+          "phylum": "Annelida"
+        },
+        {
+          "name": "Hirudinea",
+          "phylum": "Annelida"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "neanthes",
+          "scientificName": "Sand worm",
+          "slug": "neanthes",
+          "route": "/zoohub/annelida/neanthes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984042/Neanthes_bsotgt.png"
+        },
+        {
+          "id": 2,
+          "name": "chaetopterus",
+          "scientificName": "Parchment worm",
+          "slug": "chaetopterus",
+          "route": "/zoohub/annelida/chaetopterus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984020/Chaetopterus_lwyfzd.png"
+        },
+        {
+          "id": 3,
+          "name": "aphrodita",
+          "scientificName": "Sea mouse",
+          "slug": "aphrodita",
+          "route": "/zoohub/annelida/aphrodita",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768983997/Aphrodita_ljkqci.png"
+        },
+        {
+          "id": 4,
+          "name": "arenicola",
+          "scientificName": "Lugworm",
+          "slug": "arenicola",
+          "route": "/zoohub/annelida/arenicola",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984016/Arenicola_gpugoh.png"
+        },
+        {
+          "id": 5,
+          "name": "lampito mauritii",
+          "scientificName": "Indian earthworm",
+          "slug": "lampito-mauritii",
+          "route": "/zoohub/annelida/lampito-mauritii",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984033/Lampito_mauritii_ttkkue.png"
+        },
+        {
+          "id": 6,
+          "name": "pheretima posthuma",
+          "scientificName": "Earthworm",
+          "slug": "pheretima-posthuma",
+          "route": "/zoohub/annelida/pheretima-posthuma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984044/Pheretima_posthuma_lj6y2z.png"
+        },
+        {
+          "id": 7,
+          "name": "megascolex",
+          "scientificName": "Giant earthworm",
+          "slug": "megascolex",
+          "route": "/zoohub/annelida/megascolex",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984099/Megascolex_qckucb.png"
+        },
+        {
+          "id": 8,
+          "name": "tubifex",
+          "scientificName": "Sludge worm",
+          "slug": "tubifex",
+          "route": "/zoohub/annelida/tubifex",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984047/Tubifex_nafvip.png"
+        },
+        {
+          "id": 9,
+          "name": "lumbricus",
+          "scientificName": "Earthworm",
+          "slug": "lumbricus",
+          "route": "/zoohub/annelida/lumbricus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984035/Lumbricus_wfhpyb.png"
+        },
+        {
+          "id": 10,
+          "name": "hirudinaria granulosa",
+          "scientificName": "Cattle leech",
+          "slug": "hirudinaria-granulosa",
+          "route": "/zoohub/annelida/hirudinaria-granulosa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984024/Hirudinaria_granulosa_bpsrjd.png"
+        },
+        {
+          "id": 11,
+          "name": "hirudo",
+          "scientificName": "Medicinal leech",
+          "slug": "hirudo",
+          "route": "/zoohub/annelida/hirudo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984030/Hirudo_rrbynu.png"
+        }
+      ]
+    },
+    {
+      "id": "arthropoda",
+      "name": "Arthropoda",
+      "description": "Jointed-leg Animals",
+      "icon": "🦀",
+      "color": "#e91e63",
+      "route": "/zoohub",
+      "scrollKey": "arthropoda",
+      "classes": [
+        {
+          "name": "Onychophora",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Crustacea",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Insecta",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Arachnida",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Chilopoda",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Diplopoda",
+          "phylum": "Arthropoda"
+        },
+        {
+          "name": "Merostomata",
+          "phylum": "Arthropoda"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "peripatus",
+          "scientificName": "Velvet worm",
+          "slug": "peripatus",
+          "route": "/zoohub/arthropoda/peripatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060363/Peripatus_o09obg.png"
+        },
+        {
+          "id": 2,
+          "name": "palaemon",
+          "scientificName": "Prawn / Freshwater Prawn",
+          "slug": "palaemon",
+          "route": "/zoohub/arthropoda/palaemon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060541/Palaemon_zt97tj.png"
+        },
+        {
+          "id": 3,
+          "name": "macrobrachium",
+          "scientificName": "Giant Freshwater Prawn / Scampi / River Prawn",
+          "slug": "macrobrachium",
+          "route": "/zoohub/arthropoda/macrobrachium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060529/Macrobactrum_k5rdik.png"
+        },
+        {
+          "id": 4,
+          "name": "cancer",
+          "scientificName": "True crab",
+          "slug": "cancer",
+          "route": "/zoohub/arthropoda/cancer",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060461/cancer_tvitw9.png"
+        },
+        {
+          "id": 5,
+          "name": "lucifer",
+          "scientificName": "Ghost shrimp",
+          "slug": "lucifer",
+          "route": "/zoohub/arthropoda/lucifer",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060518/lucifer_tneeyj.png"
+        },
+        {
+          "id": 6,
+          "name": "eupagurus",
+          "scientificName": "Hermit crab",
+          "slug": "eupagurus",
+          "route": "/zoohub/arthropoda/eupagurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060501/euparugus_lbi0jb.png"
+        },
+        {
+          "id": 7,
+          "name": "daphnia",
+          "scientificName": "Water flea",
+          "slug": "daphnia",
+          "route": "/zoohub/arthropoda/daphnia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060486/dafina_x1ngnw.png"
+        },
+        {
+          "id": 8,
+          "name": "cyclops",
+          "scientificName": "Copepod",
+          "slug": "cyclops",
+          "route": "/zoohub/arthropoda/cyclops",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060474/cyclops_h6keae.png"
+        },
+        {
+          "id": 9,
+          "name": "astacus",
+          "scientificName": "Crayfish",
+          "slug": "astacus",
+          "route": "/zoohub/arthropoda/astacus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060445/astacus_ktbezp.png"
+        },
+        {
+          "id": 10,
+          "name": "palinurus",
+          "scientificName": "Spiny lobster",
+          "slug": "palinurus",
+          "route": "/zoohub/arthropoda/palinurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060556/palinurus_jc0k8t.png"
+        },
+        {
+          "id": 11,
+          "name": "bombyx mori",
+          "scientificName": "Mulberry silkworm",
+          "slug": "bombyx-mori",
+          "route": "/zoohub/arthropoda/bombyx-mori",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060662/bombyx_mori_nzio0j.png"
+        },
+        {
+          "id": 12,
+          "name": "lepisma saccharina",
+          "scientificName": "Silverfish",
+          "slug": "lepisma-saccharina",
+          "route": "/zoohub/arthropoda/lepisma-saccharina",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768061543/lepsima-removebg-preview_frm809.png"
+        },
+        {
+          "id": 13,
+          "name": "antheraea mylitta",
+          "scientificName": "Tropical tasar silkworm",
+          "slug": "antheraea-mylitta",
+          "route": "/zoohub/arthropoda/antheraea-mylitta",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060734/mylitta_fjo2ue.png"
+        },
+        {
+          "id": 14,
+          "name": "antheraea paphia",
+          "scientificName": "Tropical tasar moth",
+          "slug": "antheraea-paphia",
+          "route": "/zoohub/arthropoda/antheraea-paphia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060749/paphia_holg0z.png"
+        },
+        {
+          "id": 15,
+          "name": "antheraea proylei",
+          "scientificName": "Oak tasar silkworm",
+          "slug": "antheraea-proylei",
+          "route": "/zoohub/arthropoda/antheraea-proylei",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060796/proylei_nicrvc.png"
+        },
+        {
+          "id": 16,
+          "name": "antheraea assamensis",
+          "scientificName": "Muga silkworm",
+          "slug": "antheraea-assamensis",
+          "route": "/zoohub/arthropoda/antheraea-assamensis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060656/assamensis_idnuf0.png"
+        },
+        {
+          "id": 17,
+          "name": "philosamia ricini",
+          "scientificName": "Eri silkmoth",
+          "slug": "philosamia-ricini",
+          "route": "/zoohub/arthropoda/philosamia-ricini",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060771/philosamia_dq1rfb.png"
+        },
+        {
+          "id": 18,
+          "name": "periplaneta americana",
+          "scientificName": "Cockroach",
+          "slug": "periplaneta-americana",
+          "route": "/zoohub/arthropoda/periplaneta-americana",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060767/periplanta_jcvuxs.png"
+        },
+        {
+          "id": 19,
+          "name": "apis indica",
+          "scientificName": "Indian honey bee",
+          "slug": "apis-indica",
+          "route": "/zoohub/arthropoda/apis-indica",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060650/apis_indica_chxnke.png"
+        },
+        {
+          "id": 20,
+          "name": "musca domestica",
+          "scientificName": "Housefly",
+          "slug": "musca-domestica",
+          "route": "/zoohub/arthropoda/musca-domestica",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060719/musca_domestica_luivou.png"
+        },
+        {
+          "id": 21,
+          "name": "laccifer",
+          "scientificName": "Lac insect",
+          "slug": "laccifer",
+          "route": "/zoohub/arthropoda/laccifer",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060684/laccifer_xkk7c2.png"
+        },
+        {
+          "id": 22,
+          "name": "anopheles",
+          "scientificName": "Malaria mosquito",
+          "slug": "anopheles",
+          "route": "/zoohub/arthropoda/anopheles",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060644/anopheles_buassy.png"
+        },
+        {
+          "id": 23,
+          "name": "culex",
+          "scientificName": "Common mosquito",
+          "slug": "culex",
+          "route": "/zoohub/arthropoda/culex",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060667/culex_yy4abh.png"
+        },
+        {
+          "id": 24,
+          "name": "aedes",
+          "scientificName": "Dengue mosquito",
+          "slug": "aedes",
+          "route": "/zoohub/arthropoda/aedes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060627/aedes_qq40th.png"
+        },
+        {
+          "id": 25,
+          "name": "xenopsylla",
+          "scientificName": "Rat flea",
+          "slug": "xenopsylla",
+          "route": "/zoohub/arthropoda/xenopsylla",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060804/xenopsylla_tkxxlm.png"
+        },
+        {
+          "id": 26,
+          "name": "glossina",
+          "scientificName": "Tsetse fly",
+          "slug": "glossina",
+          "route": "/zoohub/arthropoda/glossina",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060674/glossina_qf3duk.png"
+        },
+        {
+          "id": 27,
+          "name": "phlebotomus",
+          "scientificName": "Sand fly",
+          "slug": "phlebotomus",
+          "route": "/zoohub/arthropoda/phlebotomus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060783/phlebotomus_womcq6.png"
+        },
+        {
+          "id": 28,
+          "name": "locusta",
+          "scientificName": "Locust",
+          "slug": "locusta",
+          "route": "/zoohub/arthropoda/locusta",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060708/locusta_cnspv6.png"
+        },
+        {
+          "id": 29,
+          "name": "araneus",
+          "scientificName": "Garden orb-weaver spider",
+          "slug": "araneus",
+          "route": "/zoohub/arthropoda/araneus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060852/araneus_ybf4zq.png"
+        },
+        {
+          "id": 30,
+          "name": "buthus",
+          "scientificName": "Yellow scorpion",
+          "slug": "buthus",
+          "route": "/zoohub/arthropoda/buthus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060858/buthus_rdfa8t.png"
+        },
+        {
+          "id": 31,
+          "name": "palamneus",
+          "scientificName": "Black scorpion",
+          "slug": "palamneus",
+          "route": "/zoohub/arthropoda/palamneus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060868/palamneus_duj4f9.png"
+        },
+        {
+          "id": 32,
+          "name": "scolopendra hardwickei",
+          "scientificName": "Indian blue centipede",
+          "slug": "scolopendra-hardwickei",
+          "route": "/zoohub/arthropoda/scolopendra-hardwickei",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060953/scolopendra_hardwickei_il2y1b.png"
+        },
+        {
+          "id": 33,
+          "name": "archispirostreptus gigas",
+          "scientificName": "Giant African millipede",
+          "slug": "archispirostreptus-gigas",
+          "route": "/zoohub/arthropoda/archispirostreptus-gigas",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768060982/archispirotrptus_gigas_nib8mk.png"
+        },
+        {
+          "id": 34,
+          "name": "limulus",
+          "scientificName": "Horseshoe crab",
+          "slug": "limulus",
+          "route": "/zoohub/arthropoda/limulus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768061330/lemulus-removebg-preview_mke1gv.png"
+        }
+      ]
+    },
+    {
+      "id": "mollusca",
+      "name": "Mollusca",
+      "description": "Soft-bodied Animals",
+      "icon": "🐙",
+      "color": "#00bcd4",
+      "route": "/zoohub",
+      "scrollKey": "mollusca",
+      "classes": [
+        {
+          "name": "Polyplacophora",
+          "phylum": "Mollusca"
+        },
+        {
+          "name": "Scaphopoda",
+          "phylum": "Mollusca"
+        },
+        {
+          "name": "Gastropoda",
+          "phylum": "Mollusca"
+        },
+        {
+          "name": "Bivalvia",
+          "phylum": "Mollusca"
+        },
+        {
+          "name": "Cephalopoda",
+          "phylum": "Mollusca"
+        },
+        {
+          "name": "Monoplacophora",
+          "phylum": "Mollusca"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "chaetopleura",
+          "scientificName": "Chiton / Coat-of-mail shell",
+          "slug": "chaetopleura",
+          "route": "/zoohub/mollusca/chaetopleura",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102611/Chaetopleura_wp6ppp.png"
+        },
+        {
+          "id": 2,
+          "name": "chiton",
+          "scientificName": "Coat-of-mail shell",
+          "slug": "chiton",
+          "route": "/zoohub/mollusca/chiton",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102617/Chiton_btgiv5.png"
+        },
+        {
+          "id": 3,
+          "name": "dentalium",
+          "scientificName": "Tusk shell",
+          "slug": "dentalium",
+          "route": "/zoohub/mollusca/dentalium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102631/Dentalium_ebjnqz.png"
+        },
+        {
+          "id": 4,
+          "name": "pila globosa",
+          "scientificName": "Apple snail",
+          "slug": "pila_globosa",
+          "route": "/zoohub/mollusca/pila_globosa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102646/Pila_globosa_cxtyhi.png"
+        },
+        {
+          "id": 5,
+          "name": "aplysia",
+          "scientificName": "Sea hare",
+          "slug": "aplysia",
+          "route": "/zoohub/mollusca/aplysia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102588/Aplysia_b5hjkw.png"
+        },
+        {
+          "id": 6,
+          "name": "conus marmoreus",
+          "scientificName": "Marbled cone snail",
+          "slug": "conus_marmoreus",
+          "route": "/zoohub/mollusca/conus_marmoreus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102629/Conus_marmoreus_gkdqfv.png"
+        },
+        {
+          "id": 7,
+          "name": "unio",
+          "scientificName": "Freshwater mussel",
+          "slug": "unio",
+          "route": "/zoohub/mollusca/unio",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102657/Unio_iqhmtv.png"
+        },
+        {
+          "id": 8,
+          "name": "mytilus",
+          "scientificName": "Marine mussel",
+          "slug": "mytilus",
+          "route": "/zoohub/mollusca/mytilus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102724/Mytilus_icxcpy.png"
+        },
+        {
+          "id": 9,
+          "name": "lamellidens",
+          "scientificName": "Freshwater pearl mussel",
+          "slug": "lamellidens",
+          "route": "/zoohub/mollusca/lamellidens",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102632/Lamellidens_ryycck.png"
+        },
+        {
+          "id": 10,
+          "name": "pinctada",
+          "scientificName": "Pearl oyster",
+          "slug": "pinctada",
+          "route": "/zoohub/mollusca/pinctada",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102649/Pinctada_em5bxg.png"
+        },
+        {
+          "id": 11,
+          "name": "spondylus",
+          "scientificName": "Thorny oyster",
+          "slug": "spondylus",
+          "route": "/zoohub/mollusca/spondylus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102652/Spondylus_ygtqnu.png"
+        },
+        {
+          "id": 12,
+          "name": "ostrea",
+          "scientificName": "Oyster",
+          "slug": "ostrea",
+          "route": "/zoohub/mollusca/ostrea",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770103032/Ostrea_dibwmj.png"
+        },
+        {
+          "id": 13,
+          "name": "loligo",
+          "scientificName": "Squid",
+          "slug": "loligo",
+          "route": "/zoohub/mollusca/loligo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102634/Loligo_xjtqbd.png"
+        },
+        {
+          "id": 14,
+          "name": "nautilus",
+          "scientificName": "Nautilus",
+          "slug": "nautilus",
+          "route": "/zoohub/mollusca/nautilus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102637/Nautilus_iuztri.png"
+        },
+        {
+          "id": 15,
+          "name": "octopus",
+          "scientificName": "Octopus",
+          "slug": "octopus",
+          "route": "/zoohub/mollusca/octopus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102641/Octopus_pgsgai.png"
+        },
+        {
+          "id": 16,
+          "name": "sepia",
+          "scientificName": "Cuttlefish",
+          "slug": "sepia",
+          "route": "/zoohub/mollusca/sepia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102655/Sepia_wtpaco.png"
+        },
+        {
+          "id": 17,
+          "name": "architeuthes",
+          "scientificName": "Giant squid",
+          "slug": "architeuthes",
+          "route": "/zoohub/mollusca/architeuthes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102597/Architeuthes_m3fj02.png"
+        },
+        {
+          "id": 18,
+          "name": "neopilina galathea",
+          "scientificName": "Living fossil mollusc",
+          "slug": "neopilina_galathea",
+          "route": "/zoohub/mollusca/neopilina_galathea",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770102639/Neopilina_galathea_gebuh8.png"
+        }
+      ]
+    },
+    {
+      "id": "echinodermata",
+      "name": "Echinodermata",
+      "description": "Spiny-skinned Animals",
+      "icon": "⭐",
+      "color": "#4caf50",
+      "route": "/zoohub",
+      "scrollKey": "echinodermata",
+      "classes": [
+        {
+          "name": "Asteroidea",
+          "phylum": "Echinodermata"
+        },
+        {
+          "name": "Ophiuroidea",
+          "phylum": "Echinodermata"
+        },
+        {
+          "name": "Echinoidea",
+          "phylum": "Echinodermata"
+        },
+        {
+          "name": "Holothuroidea",
+          "phylum": "Echinodermata"
+        },
+        {
+          "name": "Crinoidea",
+          "phylum": "Echinodermata"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "asterias",
+          "scientificName": "Common starfish",
+          "slug": "asterias",
+          "route": "/zoohub/echinodermata/asterias",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360493/Asterias_habged.png"
+        },
+        {
+          "id": 2,
+          "name": "astropecten",
+          "scientificName": "Sand star",
+          "slug": "astropecten",
+          "route": "/zoohub/echinodermata/astropecten",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360496/Astropecten_bnftwd.png"
+        },
+        {
+          "id": 3,
+          "name": "pentaceros",
+          "scientificName": "Horned starfish",
+          "slug": "pentaceros",
+          "route": "/zoohub/echinodermata/pentaceros",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360537/Pentaceros_tv8ynk.png"
+        },
+        {
+          "id": 4,
+          "name": "ophiothrix",
+          "scientificName": "Brittle star",
+          "slug": "ophiothrix",
+          "route": "/zoohub/echinodermata/ophiothrix",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360528/Ophiothrix_bc2hdg.png"
+        },
+        {
+          "id": 5,
+          "name": "ophiura",
+          "scientificName": "Brittle star",
+          "slug": "ophiura",
+          "route": "/zoohub/echinodermata/ophiura",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360532/Ophiura_ym6abk.png"
+        },
+        {
+          "id": 6,
+          "name": "echinus",
+          "scientificName": "Sea urchin",
+          "slug": "echinus",
+          "route": "/zoohub/echinodermata/echinus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360511/Echinus_eotis0.png"
+        },
+        {
+          "id": 7,
+          "name": "echinocardium",
+          "scientificName": "Heart urchin",
+          "slug": "echinocardium",
+          "route": "/zoohub/echinodermata/echinocardium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360508/Echinocardium_ohmfl0.png"
+        },
+        {
+          "id": 8,
+          "name": "cucumaria",
+          "scientificName": "Sea cucumber",
+          "slug": "cucumaria",
+          "route": "/zoohub/echinodermata/cucumaria",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360504/Cucumaria_fmxlmu.png"
+        },
+        {
+          "id": 9,
+          "name": "holothuria",
+          "scientificName": "Sea cucumber",
+          "slug": "holothuria",
+          "route": "/zoohub/echinodermata/holothuria",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360522/Holothuria_ddp7k9.png"
+        },
+        {
+          "id": 10,
+          "name": "antedon",
+          "scientificName": "Feather star",
+          "slug": "antedon",
+          "route": "/zoohub/echinodermata/antedon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360490/Antedon_fmu9ps.png"
+        }
+      ]
+    },
+    {
+      "id": "hemichordata",
+      "name": "Hemichordata",
+      "description": "Acorn Worms",
+      "icon": "🔬",
+      "color": "#795548",
+      "route": "/zoohub",
+      "scrollKey": "hemichordata",
+      "classes": [
+        {
+          "name": "Enteropneusta",
+          "phylum": "Hemichordata"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "balanoglossus",
+          "scientificName": "Acorn worm",
+          "slug": "balanoglossus",
+          "route": "/zoohub/hemichordata/balanoglossus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769410292/balanoglossus_z0bacg.png"
+        },
+        {
+          "id": 2,
+          "name": "saccoglossus",
+          "scientificName": "Acorn worm",
+          "slug": "saccoglossus",
+          "route": "/zoohub/hemichordata/saccoglossus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769410298/Saccoglossus_lr8wsu.png"
+        },
+        {
+          "id": 3,
+          "name": "ptychodera flava",
+          "scientificName": "Acorn worm",
+          "slug": "ptychodera-flava",
+          "route": "/zoohub/hemichordata/ptychodera-flava",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769410294/Ptychodera_flava_bjmhjz.png"
+        }
+      ]
+    },
+    {
+      "id": "chordata",
+      "name": "Chordata",
+      "description": "Vertebrates & relatives",
+      "icon": "🐟",
+      "color": "#2196f3",
+      "route": "/zoohub",
+      "scrollKey": "chordata",
+      "classes": [
+        {
+          "name": "Ascidiacea",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Thaliacea",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Leptocardii",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Cyclostomata",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Chondrichthyes",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Osteichthyes",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Amphibia",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Reptilia",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Aves",
+          "phylum": "Chordata"
+        },
+        {
+          "name": "Mammalia",
+          "phylum": "Chordata"
+        }
+      ],
+      "species": [
+        {
+          "id": 1,
+          "name": "ascidia",
+          "scientificName": "Sea squirt",
+          "slug": "ascidia",
+          "route": "/zoohub/chordata/ascidia",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767894433/Ascidia_jhgqzv.png"
+        },
+        {
+          "id": 2,
+          "name": "herdmania",
+          "scientificName": "Red sea squirt",
+          "slug": "herdmania",
+          "route": "/zoohub/chordata/herdmania",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767894447/Herdmania_ecxear.png"
+        },
+        {
+          "id": 3,
+          "name": "salpa",
+          "scientificName": "Salpa",
+          "slug": "salpa",
+          "route": "/zoohub/chordata/salpa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895302/Salpa_v6xxui.png"
+        },
+        {
+          "id": 4,
+          "name": "doliolum",
+          "scientificName": "Doliolid",
+          "slug": "doliolum",
+          "route": "/zoohub/chordata/doliolum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895311/Doliolum_kcjpas.png"
+        },
+        {
+          "id": 5,
+          "name": "pyrosoma",
+          "scientificName": "Fire body",
+          "slug": "pyrosoma",
+          "route": "/zoohub/chordata/pyrosoma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895306/Pyrosoma_xupmt9.png"
+        },
+        {
+          "id": 6,
+          "name": "branchiostoma lanceolatum",
+          "scientificName": "Lancelet / Amphioxus",
+          "slug": "branchiostoma_lanceolatum",
+          "route": "/zoohub/chordata/branchiostoma_lanceolatum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895339/Branchiostoma_lanceolatum_lnmage.png"
+        },
+        {
+          "id": 7,
+          "name": "petromyzon marinus",
+          "scientificName": "Sea lamprey",
+          "slug": "petromyzon",
+          "route": "/zoohub/chordata/petromyzon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895415/Petromyzon_marinus_smue6p.png"
+        },
+        {
+          "id": 8,
+          "name": "myxine glutinosa",
+          "scientificName": "Hagfish/slime eel",
+          "slug": "myxine",
+          "route": "/zoohub/chordata/myxine",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895410/myxine_glutinosa_vyqwnl.png"
+        },
+        {
+          "id": 9,
+          "name": "scoliodon laticaudus",
+          "scientificName": "Dogfish / Spadenose shark",
+          "slug": "scoliodon",
+          "route": "/zoohub/chordata/scoliodon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770196659/Scoliodon_laticaudus_onqoyb.png"
+        },
+        {
+          "id": 10,
+          "name": "pristis",
+          "scientificName": "Sawfish",
+          "slug": "pristis",
+          "route": "/zoohub/chordata/pristis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770196645/Pristis_hv29co.png"
+        },
+        {
+          "id": 11,
+          "name": "trygon",
+          "scientificName": "Stingray",
+          "slug": "trygon",
+          "route": "/zoohub/chordata/trygon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770196672/Trygon_jv0e3i.png"
+        },
+        {
+          "id": 12,
+          "name": "torpedo",
+          "scientificName": "Electric ray",
+          "slug": "torpedo",
+          "route": "/zoohub/chordata/torpedo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770196667/Torpedo_jk0rwb.png"
+        },
+        {
+          "id": 13,
+          "name": "carcharodon carcharias",
+          "scientificName": "Great white shark",
+          "slug": "carcharodon",
+          "route": "/zoohub/chordata/carcharodon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770196618/Carcharodon_carcharias_snql93.png"
+        },
+        {
+          "id": 14,
+          "name": "exocoetus",
+          "scientificName": "Flying fish",
+          "slug": "exocoetus",
+          "route": "/zoohub/chordata/exocoetus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197387/Exocoetus_kvnttp.png"
+        },
+        {
+          "id": 15,
+          "name": "hippocampus",
+          "scientificName": "Seahorse",
+          "slug": "hippocampus",
+          "route": "/zoohub/chordata/hippocampus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197390/Hippocampus_r4zr6o.png"
+        },
+        {
+          "id": 16,
+          "name": "labeo rohita",
+          "scientificName": "Rohu",
+          "slug": "labeo",
+          "route": "/zoohub/chordata/labeo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197393/Labeo_rohita_g6zyn0.png"
+        },
+        {
+          "id": 17,
+          "name": "catla catla",
+          "scientificName": "Catla",
+          "slug": "catla",
+          "route": "/zoohub/chordata/catla",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197366/Catla_catla_algwyr.png"
+        },
+        {
+          "id": 18,
+          "name": "clarias batrachus",
+          "scientificName": "Magur",
+          "slug": "clarias",
+          "route": "/zoohub/chordata/clarias",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197380/Clarias_batrachus_toqsqe.png"
+        },
+        {
+          "id": 19,
+          "name": "echeneis",
+          "scientificName": "Sucker fish / Remora",
+          "slug": "echeneis",
+          "route": "/zoohub/chordata/echeneis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197384/Echeneis_rndj1u.png"
+        },
+        {
+          "id": 20,
+          "name": "betta splendens",
+          "scientificName": "Fighter fish",
+          "slug": "betta",
+          "route": "/zoohub/chordata/betta",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197339/Betta_splendens_r5yyew.png"
+        },
+        {
+          "id": 21,
+          "name": "pterophyllum scalare",
+          "scientificName": "Angel fish",
+          "slug": "pterophyllum",
+          "route": "/zoohub/chordata/pterophyllum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197404/Pterophyllum_scalare_qfqoqn.png"
+        },
+        {
+          "id": 22,
+          "name": "latimeria chalumnae",
+          "scientificName": "Coelacanth",
+          "slug": "latimeria",
+          "route": "/zoohub/chordata/latimeria",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197400/Latimeria_chalumnae_zlrae2.png"
+        },
+        {
+          "id": 23,
+          "name": "protopterus annectens",
+          "scientificName": "African lungfish",
+          "slug": "protopterus",
+          "route": "/zoohub/chordata/protopterus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197397/Protopterus_annectens_fc1lqr.png"
+        },
+        {
+          "id": 24,
+          "name": "bufo",
+          "scientificName": "Toad",
+          "slug": "bufo",
+          "route": "/zoohub/chordata/bufo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197529/Bufo_iky9ot.png"
+        },
+        {
+          "id": 25,
+          "name": "alytes",
+          "scientificName": "Midwife toad",
+          "slug": "alytes",
+          "route": "/zoohub/chordata/alytes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197518/Alytes_oezmlf.png"
+        },
+        {
+          "id": 26,
+          "name": "hyla",
+          "scientificName": "Tree frog",
+          "slug": "hyla",
+          "route": "/zoohub/chordata/hyla",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197544/Hyla_lbmzja.png"
+        },
+        {
+          "id": 27,
+          "name": "rhacophorus",
+          "scientificName": "Flying frog",
+          "slug": "rhacophorus",
+          "route": "/zoohub/chordata/rhacophorus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197754/Rhacophorus_paaoef.png"
+        },
+        {
+          "id": 28,
+          "name": "rana",
+          "scientificName": "Frog",
+          "slug": "rana",
+          "route": "/zoohub/chordata/rana",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197751/Rana_dpyid8.png"
+        },
+        {
+          "id": 29,
+          "name": "necturus maculosus",
+          "scientificName": "Mudpuppy",
+          "slug": "necturus",
+          "route": "/zoohub/chordata/necturus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197748/Necturus_maculosus_bymsxk.png"
+        },
+        {
+          "id": 30,
+          "name": "ambystoma tigrinum",
+          "scientificName": "Tiger salamander",
+          "slug": "ambystoma",
+          "route": "/zoohub/chordata/ambystoma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197526/Ambystoma_tigrinum_ltgewv.png"
+        },
+        {
+          "id": 31,
+          "name": "salamandra",
+          "scientificName": "Fire salamander",
+          "slug": "salamandra",
+          "route": "/zoohub/chordata/salamandra",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197757/Salamandra_km1ahw.png"
+        },
+        {
+          "id": 32,
+          "name": "ichthyophis",
+          "scientificName": "Caecilian",
+          "slug": "ichthyophis",
+          "route": "/zoohub/chordata/ichthyophis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197557/Ichthyophis_oqw4wr.png"
+        },
+        {
+          "id": 33,
+          "name": "hemidactylus",
+          "scientificName": "House lizard / Gecko",
+          "slug": "hemidactylus",
+          "route": "/zoohub/chordata/hemidactylus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197883/Hemidactylus_bqzpvf.png"
+        },
+        {
+          "id": 34,
+          "name": "calotes",
+          "scientificName": "Garden lizard",
+          "slug": "calotes",
+          "route": "/zoohub/chordata/calotes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197855/Calotes_g8mz9s.png"
+        },
+        {
+          "id": 35,
+          "name": "draco",
+          "scientificName": "Flying lizard",
+          "slug": "draco",
+          "route": "/zoohub/chordata/draco",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197872/Draco_amkrks.png"
+        },
+        {
+          "id": 36,
+          "name": "chamaeleon",
+          "scientificName": "Chameleon",
+          "slug": "chamaeleon",
+          "route": "/zoohub/chordata/chamaeleon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197862/Chamaeleon_gtimfs.png"
+        },
+        {
+          "id": 37,
+          "name": "phrynosoma",
+          "scientificName": "Horned lizard",
+          "slug": "phrynosoma",
+          "route": "/zoohub/chordata/phrynosoma",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197938/Phrynosoma_s02hd1.png"
+        },
+        {
+          "id": 38,
+          "name": "varanus",
+          "scientificName": "Monitor lizard",
+          "slug": "varanus",
+          "route": "/zoohub/chordata/varanus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198076/Varanus_npexhs.png"
+        },
+        {
+          "id": 39,
+          "name": "sphenodon punctatum",
+          "scientificName": "Tuatara",
+          "slug": "sphenodon_punctatum",
+          "route": "/zoohub/chordata/sphenodon_punctatum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198041/Sphenodon_punctatum_bx838s.png"
+        },
+        {
+          "id": 40,
+          "name": "chelone",
+          "scientificName": "Sea turtle",
+          "slug": "chelone",
+          "route": "/zoohub/chordata/chelone",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197859/Chelone_ea4fpo.png"
+        },
+        {
+          "id": 41,
+          "name": "testudo",
+          "scientificName": "Tortoise",
+          "slug": "testudo",
+          "route": "/zoohub/chordata/testudo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198055/Testudo_p5k79t.png"
+        },
+        {
+          "id": 42,
+          "name": "naja naja",
+          "scientificName": "Indian cobra",
+          "slug": "naja_naja",
+          "route": "/zoohub/chordata/naja_naja",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197893/Naja_naja_zlcckg.png"
+        },
+        {
+          "id": 43,
+          "name": "vipera russelli",
+          "scientificName": "Russell's viper",
+          "slug": "vipera_russelli",
+          "route": "/zoohub/chordata/vipera_russelli",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198072/Vipera_russelli_kbzx1t.png"
+        },
+        {
+          "id": 44,
+          "name": "bungarus",
+          "scientificName": "Krait",
+          "slug": "bungarus",
+          "route": "/zoohub/chordata/bungarus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197852/Bungarus_bypmqc.png"
+        },
+        {
+          "id": 45,
+          "name": "hydrophis",
+          "scientificName": "Sea snake",
+          "slug": "hydrophis",
+          "route": "/zoohub/chordata/hydrophis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197889/Hydrophis_hyllg4.png"
+        },
+        {
+          "id": 46,
+          "name": "typhlops",
+          "scientificName": "Blind snake",
+          "slug": "typhlops",
+          "route": "/zoohub/chordata/typhlops",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198061/Typhlops_ctg0fa.png"
+        },
+        {
+          "id": 47,
+          "name": "python",
+          "scientificName": "Python",
+          "slug": "python",
+          "route": "/zoohub/chordata/python",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198037/Python_kvqhuq.png"
+        },
+        {
+          "id": 48,
+          "name": "crocodylus",
+          "scientificName": "Crocodile",
+          "slug": "crocodylus",
+          "route": "/zoohub/chordata/crocodylus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197865/Crocodylus_kw1m5m.png"
+        },
+        {
+          "id": 49,
+          "name": "gavialis gangeticus",
+          "scientificName": "Gharial",
+          "slug": "gavialis_gangeticus",
+          "route": "/zoohub/chordata/gavialis_gangeticus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197879/Gavialis_gangeticus_opbcsy.png"
+        },
+        {
+          "id": 50,
+          "name": "alligator",
+          "scientificName": "Alligator",
+          "slug": "alligator",
+          "route": "/zoohub/chordata/alligator",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197838/Alligator_pbeml9.png"
+        },
+        {
+          "id": 51,
+          "name": "ichthyosaurus communis",
+          "scientificName": "Fish lizard",
+          "slug": "ichthyosaurus",
+          "route": "/zoohub/chordata/ichthyosaurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197886/Ichthyosaurus_communis_%EF%B8%8E_mxckvr.png"
+        },
+        {
+          "id": 52,
+          "name": "triceratops horridus",
+          "scientificName": "Three-horned face",
+          "slug": "triceratops",
+          "route": "/zoohub/chordata/triceratops",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198064/Triceratops_horridus_%EF%B8%8E_bvpicd.png"
+        },
+        {
+          "id": 53,
+          "name": "stegosaurus stenops",
+          "scientificName": "Roofed lizard",
+          "slug": "stegosaurus",
+          "route": "/zoohub/chordata/stegosaurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198051/Stegosaurus_stenops_%EF%B8%8E_au7ji4.png"
+        },
+        {
+          "id": 54,
+          "name": "brachiosaurus altithorax",
+          "scientificName": "Arm lizard",
+          "slug": "brachiosaurus",
+          "route": "/zoohub/chordata/brachiosaurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197841/Brachiosaurus_altithorax_%EF%B8%8E_mouin2.png"
+        },
+        {
+          "id": 55,
+          "name": "tyrannosaurus rex",
+          "scientificName": "Tyrant lizard king",
+          "slug": "tyrannosaurus",
+          "route": "/zoohub/chordata/tyrannosaurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770198067/Tyrannosaurus_rex_%EF%B8%8E_cjrciq.png"
+        },
+        {
+          "id": 56,
+          "name": "pteranodon longiceps",
+          "scientificName": "Winged reptile",
+          "slug": "pteranodon",
+          "route": "/zoohub/chordata/pteranodon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1770197948/Pteranodon_longiceps_%EF%B8%8E_vopkkg.png"
+        },
+        {
+          "id": 57,
+          "name": "corvus",
+          "scientificName": "Crow",
+          "slug": "corvus",
+          "route": "/zoohub/chordata/corvus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060910/Corvus_qwxc1n.png"
+        },
+        {
+          "id": 58,
+          "name": "columba",
+          "scientificName": "Pigeon",
+          "slug": "columba",
+          "route": "/zoohub/chordata/columba",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060907/Columba_kuhius.png"
+        },
+        {
+          "id": 59,
+          "name": "psittacula",
+          "scientificName": "Parrot",
+          "slug": "psittacula",
+          "route": "/zoohub/chordata/psittacula",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060968/Psittacula_ifzpdh.png"
+        },
+        {
+          "id": 60,
+          "name": "pavo cristatus",
+          "scientificName": "Peacock",
+          "slug": "pavo_cristatus",
+          "route": "/zoohub/chordata/pavo_cristatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060958/Pavo_Cristatus_er4gne.png"
+        },
+        {
+          "id": 61,
+          "name": "aptenodytes forsteri",
+          "scientificName": "Emperor penguin",
+          "slug": "aptenodytes_forsteri",
+          "route": "/zoohub/chordata/aptenodytes_forsteri",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060654/Apetenodytes_forsteri_n8i84x.png"
+        },
+        {
+          "id": 62,
+          "name": "struthio camelus",
+          "scientificName": "Ostrich",
+          "slug": "struthio_camelus",
+          "route": "/zoohub/chordata/struthio_camelus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060974/Struthio_camelus_gdmfzg.png"
+        },
+        {
+          "id": 63,
+          "name": "rhea",
+          "scientificName": "Rhea",
+          "slug": "rhea",
+          "route": "/zoohub/chordata/rhea",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060971/Rhea_c2ppze.png"
+        },
+        {
+          "id": 64,
+          "name": "dromaius novaehollandiae",
+          "scientificName": "Emu",
+          "slug": "dromaius_novaehollandiae",
+          "route": "/zoohub/chordata/dromaius_novaehollandiae",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060912/Dromaius_novaehollandiae_jadmth.png"
+        },
+        {
+          "id": 65,
+          "name": "apteryx",
+          "scientificName": "Kiwi",
+          "slug": "apteryx",
+          "route": "/zoohub/chordata/apteryx",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060664/Apteryx_a7rkue.png"
+        },
+        {
+          "id": 66,
+          "name": "casuarius",
+          "scientificName": "Cassowary",
+          "slug": "casuarius",
+          "route": "/zoohub/chordata/casuarius",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060897/Casuarius_ar0cz9.png"
+        },
+        {
+          "id": 67,
+          "name": "neophron",
+          "scientificName": "Egyptian vulture",
+          "slug": "neophron",
+          "route": "/zoohub/chordata/neophron",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060943/Neophron_vvou6n.png"
+        },
+        {
+          "id": 68,
+          "name": "passer",
+          "scientificName": "House Sparrow",
+          "slug": "passer",
+          "route": "/zoohub/chordata/passer",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060949/Passer_go3zwg.png"
+        },
+        {
+          "id": 69,
+          "name": "gallus gallus",
+          "scientificName": "Domestic fowl",
+          "slug": "gallus_gallus",
+          "route": "/zoohub/chordata/gallus_gallus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060914/Gallus_gallus_t4myed.png"
+        },
+        {
+          "id": 70,
+          "name": "trochilus colubris",
+          "scientificName": "Ruby-throated hummingbird",
+          "slug": "trochilus_colubris",
+          "route": "/zoohub/chordata/trochilus_colubris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060980/Trochilus_colubris_ckubst.png"
+        },
+        {
+          "id": 71,
+          "name": "chalcophaps indica",
+          "scientificName": "Emerald dove",
+          "slug": "chalcophaps_indica",
+          "route": "/zoohub/chordata/chalcophaps_indica",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060905/Chalcophaps_indica_uvahxj.png"
+        },
+        {
+          "id": 72,
+          "name": "pitohui dichrous",
+          "scientificName": "Poison bird",
+          "slug": "pitohui_dichrous",
+          "route": "/zoohub/chordata/pitohui_dichrous",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060962/pitohui_dichrous_z8iyea.png"
+        },
+        {
+          "id": 73,
+          "name": "geospiza magnirostris",
+          "scientificName": "Large ground finch",
+          "slug": "geospiza_magnirostris",
+          "route": "/zoohub/chordata/geospiza_magnirostris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060933/Geospiza_magnirostris_n61vkz.png"
+        },
+        {
+          "id": 74,
+          "name": "geospiza fortis",
+          "scientificName": "Medium ground finch",
+          "slug": "geospiza_fortis",
+          "route": "/zoohub/chordata/geospiza_fortis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060920/Geospiza_fortis_tewqjg.png"
+        },
+        {
+          "id": 75,
+          "name": "geospiza fuliginosa",
+          "scientificName": "Small ground finch",
+          "slug": "geospiza_fuliginosa",
+          "route": "/zoohub/chordata/geospiza_fuliginosa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060929/Geospiza_fuliginosa_yt9p3i.png"
+        },
+        {
+          "id": 76,
+          "name": "geospiza difficilis",
+          "scientificName": "Sharp-beaked ground finch",
+          "slug": "geospiza_difficilis",
+          "route": "/zoohub/chordata/geospiza_difficilis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060918/Geospiza_difficilis_jj9l1r.png"
+        },
+        {
+          "id": 77,
+          "name": "geospiza scandens",
+          "scientificName": "Cactus ground finch",
+          "slug": "geospiza_scandens",
+          "route": "/zoohub/chordata/geospiza_scandens",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060935/Geospiza_scandens_ie57vr.png"
+        },
+        {
+          "id": 78,
+          "name": "camarhynchus psittacula",
+          "scientificName": "Large tree finch",
+          "slug": "camarhynchus_psittacula",
+          "route": "/zoohub/chordata/camarhynchus_psittacula",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060696/Camarhynchus_psittacula_gqfxrw.png"
+        },
+        {
+          "id": 79,
+          "name": "camarhynchus parvulus",
+          "scientificName": "Small tree finch",
+          "slug": "camarhynchus_parvulus",
+          "route": "/zoohub/chordata/camarhynchus_parvulus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060690/Camarhynchus_parvulus_sjffdh.png"
+        },
+        {
+          "id": 80,
+          "name": "camarhynchus pallidus",
+          "scientificName": "Woodpecker finch",
+          "slug": "camarhynchus_pallidus",
+          "route": "/zoohub/chordata/camarhynchus_pallidus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060683/Camarhynchus_pallidus_zrgcfa.png"
+        },
+        {
+          "id": 81,
+          "name": "certhidea olivacea",
+          "scientificName": "Warbler finch",
+          "slug": "certhidea_olivacea",
+          "route": "/zoohub/chordata/certhidea_olivacea",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060902/Certhidea_olivacea_ltosdt.png"
+        },
+        {
+          "id": 82,
+          "name": "platyspiza crassirostris",
+          "scientificName": "Vegetarian finch",
+          "slug": "platyspiza_crassirostris",
+          "route": "/zoohub/chordata/platyspiza_crassirostris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060965/Platyspiza_crassirostris_jsanft.png"
+        },
+        {
+          "id": 83,
+          "name": "archaeopteryx",
+          "scientificName": "Archaeopteryx",
+          "slug": "archaeopteryx",
+          "route": "/zoohub/chordata/archaeopteryx",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060675/Archaeopteryx_ldrm2p.png"
+        },
+        {
+          "id": 84,
+          "name": "ornithorhynchus anatinus",
+          "scientificName": "Duck-billed Platypus",
+          "slug": "ornithorhynchus_anatinus",
+          "route": "/zoohub/chordata/ornithorhynchus_anatinus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061140/Ornithorhynchus_anatinus_duy6mx.png"
+        },
+        {
+          "id": 85,
+          "name": "echidna",
+          "scientificName": "Spiny anteater",
+          "slug": "echidna",
+          "route": "/zoohub/chordata/echidna",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061156/Echidna_mpfue6.png"
+        },
+        {
+          "id": 86,
+          "name": "antechinus flavipes",
+          "scientificName": "Yellow-footed antechinus",
+          "slug": "antechinus_flavipes",
+          "route": "/zoohub/chordata/antechinus_flavipes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061190/Antechinus_flavipes_q75wqu.png"
+        },
+        {
+          "id": 87,
+          "name": "macropus",
+          "scientificName": "Kangaroo",
+          "slug": "macropus",
+          "route": "/zoohub/chordata/macropus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061198/Macropus_pwnylz.png"
+        },
+        {
+          "id": 88,
+          "name": "phascolarctos cinereus",
+          "scientificName": "Koala",
+          "slug": "phascolarctos_cinereus",
+          "route": "/zoohub/chordata/phascolarctos_cinereus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061211/Phascolarctos_cinereus_qewcmq.png"
+        },
+        {
+          "id": 89,
+          "name": "vombatus",
+          "scientificName": "Wombat",
+          "slug": "vombatus",
+          "route": "/zoohub/chordata/vombatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061225/Vombatus_szmne0.png"
+        },
+        {
+          "id": 90,
+          "name": "perameles",
+          "scientificName": "Bandicoot",
+          "slug": "perameles",
+          "route": "/zoohub/chordata/perameles",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061206/Perameles_aunjt1.png"
+        },
+        {
+          "id": 91,
+          "name": "petaurus breviceps",
+          "scientificName": "Sugar glider",
+          "slug": "petaurus_breviceps",
+          "route": "/zoohub/chordata/petaurus_breviceps",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061208/Petaurus_breviceps_r5a0ki.png"
+        },
+        {
+          "id": 92,
+          "name": "notoryctes",
+          "scientificName": "Marsupial mole",
+          "slug": "notoryctes",
+          "route": "/zoohub/chordata/notoryctes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061203/Notoryctes_bqojtj.png"
+        },
+        {
+          "id": 93,
+          "name": "didelphis marsupialis",
+          "scientificName": "Common opossum",
+          "slug": "didelphis_marsupialis",
+          "route": "/zoohub/chordata/didelphis_marsupialis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061195/Didelphis_marsupialis_igacwr.png"
+        },
+        {
+          "id": 94,
+          "name": "myrmecobius fasciatus",
+          "scientificName": "Numbat",
+          "slug": "myrmecobius_fasciatus",
+          "route": "/zoohub/chordata/myrmecobius_fasciatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061201/Myrmecobius_fasciatus_ahda3n.png"
+        },
+        {
+          "id": 95,
+          "name": "thylacinus cynocephalus",
+          "scientificName": "Tasmanian tiger/Thylacine",
+          "slug": "thylacinus_cynocephalus",
+          "route": "/zoohub/chordata/thylacinus_cynocephalus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061217/Thylacinus_cynocephalus_%EF%B8%8E_rwnurz.png"
+        },
+        {
+          "id": 96,
+          "name": "spilocuscus maculatus",
+          "scientificName": "Spotted cuscus",
+          "slug": "spilocuscus_maculatus",
+          "route": "/zoohub/chordata/spilocuscus_maculatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061215/Spilocuscus_maculatus_gvsab3.png"
+        },
+        {
+          "id": 97,
+          "name": "dasyurus maculatus",
+          "scientificName": "Spotted-tail quoll",
+          "slug": "dasyurus_maculatus",
+          "route": "/zoohub/chordata/dasyurus_maculatus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771061193/Dasyurus_maculatus_tjpkg3.png"
+        },
+        {
+          "id": 98,
+          "name": "elephas maximus",
+          "scientificName": "Asian elephant",
+          "slug": "elephas_maximus",
+          "route": "/zoohub/chordata/elephas_maximus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771227788/Elephas_maximus_zudqyt.png"
+        },
+        {
+          "id": 99,
+          "name": "loxodonta africana",
+          "scientificName": "African elephant",
+          "slug": "loxodonta_africana",
+          "route": "/zoohub/chordata/loxodonta_africana",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228574/Loxodonta_africana_svfx7s.png"
+        },
+        {
+          "id": 100,
+          "name": "bos indicus",
+          "scientificName": "Indian cattle",
+          "slug": "bos_indicus",
+          "route": "/zoohub/chordata/bos_indicus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226475/Bos_indicus_chzkfu.png"
+        },
+        {
+          "id": 101,
+          "name": "rattus fuscipes",
+          "scientificName": "Bush rat",
+          "slug": "rattus_fuscipes",
+          "route": "/zoohub/chordata/rattus_fuscipes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228790/Rattus_fuscipes_zuw5tr.png"
+        },
+        {
+          "id": 102,
+          "name": "sciurus",
+          "scientificName": "Squirrel",
+          "slug": "sciurus",
+          "route": "/zoohub/chordata/sciurus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228828/Sciurus_k1j5o5.png"
+        },
+        {
+          "id": 103,
+          "name": "pteropus",
+          "scientificName": "Flying fox",
+          "slug": "pteropus",
+          "route": "/zoohub/chordata/pteropus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228747/Pteropus_nixkvk.png"
+        },
+        {
+          "id": 104,
+          "name": "oryctolagus cuniculus",
+          "scientificName": "Rabbit",
+          "slug": "oryctolagus_cuniculus",
+          "route": "/zoohub/chordata/oryctolagus_cuniculus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228647/Oryctolagus_cuniculus_t8kcgs.png"
+        },
+        {
+          "id": 105,
+          "name": "hyracotherium",
+          "scientificName": "Eohippus (Dawn horse)",
+          "slug": "hyracotherium",
+          "route": "/zoohub/chordata/hyracotherium",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228545/Hyracotherium_%EF%B8%8E_mi78ms.png"
+        },
+        {
+          "id": 106,
+          "name": "orohippus",
+          "scientificName": "Early Eocene horse",
+          "slug": "orohippus",
+          "route": "/zoohub/chordata/orohippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228644/Orohippus_%EF%B8%8E_moxn95.png"
+        },
+        {
+          "id": 107,
+          "name": "mesohippus",
+          "scientificName": "Middle horse",
+          "slug": "mesohippus",
+          "route": "/zoohub/chordata/mesohippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228636/Mesohippus_%EF%B8%8E_hld5dm.png"
+        },
+        {
+          "id": 108,
+          "name": "miohippus",
+          "scientificName": "Advanced Mesohippus",
+          "slug": "miohippus",
+          "route": "/zoohub/chordata/miohippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228640/Miohippus_%EF%B8%8E_cq5med.png"
+        },
+        {
+          "id": 109,
+          "name": "parahippus",
+          "scientificName": "Early grazing horse",
+          "slug": "parahippus",
+          "route": "/zoohub/chordata/parahippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228686/Parahippus_%EF%B8%8E_vcq6jw.png"
+        },
+        {
+          "id": 110,
+          "name": "merychippus",
+          "scientificName": "True grazing horse",
+          "slug": "merychippus",
+          "route": "/zoohub/chordata/merychippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228618/Merychippus_%EF%B8%8E_ry9izt.png"
+        },
+        {
+          "id": 111,
+          "name": "pliohippus",
+          "scientificName": "Single-toed horse",
+          "slug": "pliohippus",
+          "route": "/zoohub/chordata/pliohippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228714/Pliohippus_%EF%B8%8E_u0clzq.png"
+        },
+        {
+          "id": 112,
+          "name": "callippus",
+          "scientificName": "Slender grazing horse",
+          "slug": "callippus",
+          "route": "/zoohub/chordata/callippus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226488/Callippus_%EF%B8%8E_rz4br6.png"
+        },
+        {
+          "id": 113,
+          "name": "equus ferus",
+          "scientificName": "Horse",
+          "slug": "equus_ferus",
+          "route": "/zoohub/chordata/equus_ferus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228322/Equus_ferus_vk3fio.png"
+        },
+        {
+          "id": 114,
+          "name": "macaca",
+          "scientificName": "Macaque",
+          "slug": "macaca",
+          "route": "/zoohub/chordata/macaca",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228600/Macaca_rj1ozb.png"
+        },
+        {
+          "id": 115,
+          "name": "camelus",
+          "scientificName": "Camel",
+          "slug": "camelus",
+          "route": "/zoohub/chordata/camelus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226501/Camelus_jtelxr.png"
+        },
+        {
+          "id": 116,
+          "name": "canis lupus familiaris",
+          "scientificName": "Dog",
+          "slug": "canis_lupus_familiaris",
+          "route": "/zoohub/chordata/canis_lupus_familiaris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226508/Canis_lupus_familiaris_vxbxin.png"
+        },
+        {
+          "id": 117,
+          "name": "felis catus",
+          "scientificName": "Cat",
+          "slug": "felis_catus",
+          "route": "/zoohub/chordata/felis_catus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228332/Felis_catus_mc0zft.png"
+        },
+        {
+          "id": 118,
+          "name": "delphinus",
+          "scientificName": "Dolphin",
+          "slug": "delphinus",
+          "route": "/zoohub/chordata/delphinus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226548/Delphinus_adgsnw.png"
+        },
+        {
+          "id": 119,
+          "name": "balaenoptera musculus",
+          "scientificName": "Blue whale",
+          "slug": "balaenoptera_musculus",
+          "route": "/zoohub/chordata/balaenoptera_musculus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226455/Balaenoptera_musculus_xvpjua.png"
+        },
+        {
+          "id": 120,
+          "name": "panthera tigris",
+          "scientificName": "Tiger",
+          "slug": "panthera_tigris",
+          "route": "/zoohub/chordata/panthera_tigris",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228678/Panthera_tigris_moeexr.png"
+        },
+        {
+          "id": 121,
+          "name": "panthera leo",
+          "scientificName": "Lion",
+          "slug": "panthera_leo",
+          "route": "/zoohub/chordata/panthera_leo",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228668/Panthera_leo_qdbma1.png"
+        },
+        {
+          "id": 122,
+          "name": "manis crassicaudata",
+          "scientificName": "Indian pangolin",
+          "slug": "manis_crassicaudata",
+          "route": "/zoohub/chordata/manis_crassicaudata",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228612/Manis_crassicaudata_hmhx0t.png"
+        },
+        {
+          "id": 123,
+          "name": "funambulus palmarum",
+          "scientificName": "Palm squirrel",
+          "slug": "funambulus_palmarum",
+          "route": "/zoohub/chordata/funambulus_palmarum",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228347/Funambulus_palmarum_epnsif.png"
+        },
+        {
+          "id": 124,
+          "name": "lepus nigricollis",
+          "scientificName": "Indian hare",
+          "slug": "lepus_nigricollis",
+          "route": "/zoohub/chordata/lepus_nigricollis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228569/Lepus_nigricollis_lwqkhu.png"
+        },
+        {
+          "id": 125,
+          "name": "physeter macrocephalus",
+          "scientificName": "Sperm whale",
+          "slug": "physeter_macrocephalus",
+          "route": "/zoohub/chordata/physeter_macrocephalus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228704/Physeter_macrocephalus_nzmckp.png"
+        },
+        {
+          "id": 126,
+          "name": "dugong dugon",
+          "scientificName": "Dugong",
+          "slug": "dugong_dugon",
+          "route": "/zoohub/chordata/dugong_dugon",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226597/Dugong_dugon_a4b239.png"
+        },
+        {
+          "id": 127,
+          "name": "rhinoceros unicornis",
+          "scientificName": "Indian rhinoceros",
+          "slug": "rhinoceros_unicornis",
+          "route": "/zoohub/chordata/rhinoceros_unicornis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228809/Rhinoceros_unicornis_ballyn.png"
+        },
+        {
+          "id": 128,
+          "name": "hylobates hoolock",
+          "scientificName": "Hoolock gibbon",
+          "slug": "hylobates_hoolock",
+          "route": "/zoohub/chordata/hylobates_hoolock",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228533/Hylobates_hoolock_onqil7.png"
+        },
+        {
+          "id": 129,
+          "name": "lutra",
+          "scientificName": "Otter",
+          "slug": "lutra",
+          "route": "/zoohub/chordata/lutra",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228578/Lutra_dvb4z8.png"
+        },
+        {
+          "id": 130,
+          "name": "lynx",
+          "scientificName": "Lynx",
+          "slug": "lynx",
+          "route": "/zoohub/chordata/lynx",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228591/Lynx_u612f1.png"
+        },
+        {
+          "id": 131,
+          "name": "phoca",
+          "scientificName": "Seal",
+          "slug": "phoca",
+          "route": "/zoohub/chordata/phoca",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228697/Phoca_llziwy.png"
+        },
+        {
+          "id": 132,
+          "name": "trichechus",
+          "scientificName": "Manatee",
+          "slug": "trichechus",
+          "route": "/zoohub/chordata/trichechus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228845/Trichechus_ke90cy.png"
+        },
+        {
+          "id": 133,
+          "name": "pongo pygmaeus",
+          "scientificName": "Orangutan",
+          "slug": "pongo_pygmaeus",
+          "route": "/zoohub/chordata/pongo_pygmaeus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228740/Pongo_pygmaeus_uen2wk.png"
+        },
+        {
+          "id": 134,
+          "name": "pan troglodytes",
+          "scientificName": "Chimpanzee",
+          "slug": "pan_troglodytes",
+          "route": "/zoohub/chordata/pan_troglodytes",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228658/Pan_troglodytes_dxd9zx.png"
+        },
+        {
+          "id": 135,
+          "name": "gorilla gorilla",
+          "scientificName": "Gorilla",
+          "slug": "gorilla_gorilla",
+          "route": "/zoohub/chordata/gorilla_gorilla",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228492/Gorilla_gorilla_xxa8tj.png"
+        },
+        {
+          "id": 136,
+          "name": "lemur catta",
+          "scientificName": "Ring-tailed lemur",
+          "slug": "lemur_catta",
+          "route": "/zoohub/chordata/lemur_catta",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228558/Lemur_catta_ycpw9m.png"
+        },
+        {
+          "id": 137,
+          "name": "talpa",
+          "scientificName": "Mole",
+          "slug": "talpa",
+          "route": "/zoohub/chordata/talpa",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228842/Talpa_gpikln.png"
+        },
+        {
+          "id": 138,
+          "name": "dryopithecus",
+          "scientificName": "Early fossil ape",
+          "slug": "dryopithecus",
+          "route": "/zoohub/chordata/dryopithecus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226566/Dryopithecus_africanus_%EF%B8%8E_rlifox.png"
+        },
+        {
+          "id": 139,
+          "name": "kenyapithecus wickeri",
+          "scientificName": "Early Miocene ape",
+          "slug": "kenyapithecus_wickeri",
+          "route": "/zoohub/chordata/kenyapithecus_wickeri",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228553/Kenyapithecus_wickeri_%EF%B8%8E_vkg0um.png"
+        },
+        {
+          "id": 140,
+          "name": "ramapithecus",
+          "scientificName": "Early hominid (fossil ape)",
+          "slug": "ramapithecus",
+          "route": "/zoohub/chordata/ramapithecus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228760/Ramapithecus_%EF%B8%8E_pof5qv.png"
+        },
+        {
+          "id": 141,
+          "name": "sivapithecus",
+          "scientificName": "Fossil Miocene ape",
+          "slug": "sivapithecus",
+          "route": "/zoohub/chordata/sivapithecus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228838/Sivapithecus_%EF%B8%8E_gvckdm.png"
+        },
+        {
+          "id": 142,
+          "name": "australopithecus africanus",
+          "scientificName": "Southern ape",
+          "slug": "australopithecus_africanus",
+          "route": "/zoohub/chordata/australopithecus_africanus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226383/Australopithecus_africanus_%EF%B8%8E_tplmgv.png"
+        },
+        {
+          "id": 143,
+          "name": "australopithecus afarensis",
+          "scientificName": "Lucy species",
+          "slug": "australopithecus_afarensis",
+          "route": "/zoohub/chordata/australopithecus_afarensis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226358/Australopithecus_afarensis_%EF%B8%8E_lbxcxk.png"
+        },
+        {
+          "id": 144,
+          "name": "australopithecus boisei",
+          "scientificName": "Robust australopithecine",
+          "slug": "australopithecus_boisei",
+          "route": "/zoohub/chordata/australopithecus_boisei",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226406/Australopithecus_boisei_%EF%B8%8E_xisccy.png"
+        },
+        {
+          "id": 145,
+          "name": "australopithecus robustus",
+          "scientificName": "Robust australopithecine",
+          "slug": "australopithecus_robustus",
+          "route": "/zoohub/chordata/australopithecus_robustus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771226441/Australopithecus_robustus_%EF%B8%8E_ynzrfo.png"
+        },
+        {
+          "id": 146,
+          "name": "homo habilis",
+          "scientificName": "Handy man",
+          "slug": "homo_habilis",
+          "route": "/zoohub/chordata/homo_habilis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228500/Homo_habilis_%EF%B8%8E_gtjyot.png"
+        },
+        {
+          "id": 147,
+          "name": "homo erectus",
+          "scientificName": "Upright man",
+          "slug": "homo_erectus",
+          "route": "/zoohub/chordata/homo_erectus",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228497/Homo_erectus_%EF%B8%8E_tgx2w4.png"
+        },
+        {
+          "id": 148,
+          "name": "homo neanderthalensis",
+          "scientificName": "Neanderthal",
+          "slug": "homo_neanderthalensis",
+          "route": "/zoohub/chordata/homo_neanderthalensis",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228516/Homo_neanderthalensis_%EF%B8%8E_quqisx.png"
+        },
+        {
+          "id": 149,
+          "name": "homo sapiens",
+          "scientificName": "Human",
+          "slug": "homo_sapiens",
+          "route": "/zoohub/chordata/homo_sapiens",
+          "thumbnail": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771228525/Homo_sapiens_gwfpme.png"
+        }
+      ]
+    }
+  ]
+}

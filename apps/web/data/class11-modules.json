@@ -1,0 +1,310 @@
+{
+  "grade": "11th",
+  "gradeTitle": "Class 11 Biology",
+  "badgeText": "NCERT CLASS 11 CURRICULUM",
+  "heroTitle": "Class 11 Biology",
+  "heroDescription": "Master the fundamental principles of life sciences, botanical structures, cellular mechanisms, and integrated human physiology with complete high-yield NEET blueprints.",
+  "stats": {
+    "totalUnits": 5,
+    "totalChapters": 22,
+    "neetQuestions": "45-50",
+    "syllabusStandard": "100% NCERT"
+  },
+  "units": [
+    {
+      "id": "diversity-in-living-world",
+      "unitNumber": "Unit I",
+      "title": "Diversity in the Living World",
+      "tagline": "Taxonomy, Systematics & The Grand Tree of Life",
+      "description": "Explore the fundamental principles of biological classification, binomial nomenclature, five-kingdom system, plant kingdom alternation of generations, and the animal kingdom hierarchy.",
+      "accentColor": "emerald",
+      "icon": "tree-structure",
+      "neetWeightage": "12-14% (7-8 Qs)",
+      "totalChapters": 4,
+      "category": "General Biology",
+      "route": "/modules/11th/diversity-in-living-world",
+      "chapters": [
+        {
+          "id": "the-living-world",
+          "number": 1,
+          "title": "The Living World",
+          "description": "What is living? Biodiversity, taxonomic categories, taxonomical aids, herbarium, botanical gardens, and rules of nomenclature.",
+          "keyTopics": ["Taxonomic Hierarchy", "Binomial Nomenclature", "Herbarium & Botanical Gardens", "Systematics & Keys"],
+          "neetWeightage": "1-2 Qs",
+          "link": "/modules/11th/the-living-world",
+          "isAvailable": true
+        },
+        {
+          "id": "biological-classification",
+          "number": 2,
+          "title": "Biological Classification",
+          "description": "Five kingdom classification of Whittaker: Monera, Protista, Fungi, Plantae, Animalia, plus Viruses, Viroids & Lichens.",
+          "keyTopics": ["Kingdom Monera & Archaebacteria", "Protista & Diatoms", "Fungi Classes (Phyco/Asco/Basidio/Deutero)", "Prions & Viroids"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/biological-classification",
+          "isAvailable": true
+        },
+        {
+          "id": "plant-kingdom",
+          "number": 3,
+          "title": "Plant Kingdom",
+          "description": "Algae, Bryophytes, Pteridophytes, Gymnosperms, and Angiosperms life cycles and alternation of generations.",
+          "keyTopics": ["Algae Pigments & Reserves", "Bryophyte Amphibians of Plant World", "Pteridophyte Heterospory", "Gymnosperm Naked Seeds"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/plant-kingdom",
+          "isAvailable": true
+        },
+        {
+          "id": "animal-kingdom",
+          "number": 4,
+          "title": "Animal Kingdom",
+          "description": "Salient features and classification of non-chordates (Porifera to Hemichordata) and chordates up to class level.",
+          "keyTopics": ["Levels of Organisation & Coelom", "11 Major Phyla Blueprint", "Vertebrata Classes", "Chordata vs Non-Chordata"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/zoohub",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "structural-organisation",
+      "unitNumber": "Unit II",
+      "title": "Structural Organisation in Plants and Animals",
+      "tagline": "Morphology, Anatomy, Histology & Tissue Systems",
+      "description": "Deep dive into root, stem, leaf modifications, floral diagrams, plant tissue systems, animal epithelial/connective tissues, and comparative morphology of model organisms.",
+      "accentColor": "cyan",
+      "icon": "dna",
+      "neetWeightage": "10-12% (5-6 Qs)",
+      "totalChapters": 3,
+      "category": "General Biology",
+      "route": "/modules/11th/structural-organisation",
+      "chapters": [
+        {
+          "id": "morphology-of-flowering-plants",
+          "number": 1,
+          "title": "Morphology of Flowering Plants",
+          "description": "Modifications of roots, stems, leaves; inflorescence (racemose/cymose), flower, fruit, seed, and floral families.",
+          "keyTopics": ["Root & Stem Modifications", "Placentation & Aestivation", "Flower Parts & Ovary Positions", "Floral Formulae (Fabaceae, Solanaceae)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/morphology-of-flowering-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "anatomy-of-flowering-plants",
+          "number": 2,
+          "title": "Anatomy of Flowering Plants",
+          "description": "Meristematic and permanent tissues, tissue systems, anatomy of dicot/monocot root, stem, leaf, and secondary growth.",
+          "keyTopics": ["Complex Tissues (Xylem/Phloem)", "Dicot vs Monocot Internal Anatomy", "Secondary Cambial Ring", "Heartwood & Sapwood"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/anatomy-of-flowering-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "structural-organisation-in-animals",
+          "number": 3,
+          "title": "Structural Organisation in Animals",
+          "description": "Animal tissues (Epithelial, Connective, Muscular, Neural) and morphology/anatomy of Cockroach and Frog.",
+          "keyTopics": ["Epithelial Junctions (Tight, Adhering, Gap)", "Connective Tissue Matrix & Fibres", "Cockroach Digestive & Reproductive System", "Frog Organ Systems"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/structural-organisation-in-animals",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "cell-structure-and-functions",
+      "unitNumber": "Unit III",
+      "title": "Cell – Structure and Functions",
+      "tagline": "The Microscopic Unit of Life & Molecular Machinery",
+      "description": "Unravel cell theory, prokaryotic vs eukaryotic organelles, membrane dynamics, structure and function of proteins, enzymes, carbohydrates, nucleic acids, and cell cycle checkpoints.",
+      "accentColor": "violet",
+      "icon": "atom",
+      "neetWeightage": "12-15% (7-8 Qs)",
+      "totalChapters": 3,
+      "category": "General Biology",
+      "route": "/modules/11th/cell-structure-and-functions",
+      "chapters": [
+        {
+          "id": "cell-the-unit-of-life",
+          "number": 1,
+          "title": "Cell – The Unit of Life",
+          "description": "Cell theory, prokaryotic vs eukaryotic cell, plasma membrane fluid mosaic model, cell wall, endomembrane system, mitochondria, chloroplast, ribosomes, cytoskeleton, nucleus, chromosomes.",
+          "keyTopics": ["Singer-Nicolson Fluid Mosaic", "Endomembrane System (ER, Golgi, Lysosome, Vacuole)", "Semiautonomous Organelles", "Chromosome Morphology & Centromere"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/11th/cell-the-unit-of-life",
+          "isAvailable": true
+        },
+        {
+          "id": "biomolecules",
+          "number": 2,
+          "title": "Biomolecules",
+          "description": "Chemical constituents of living cells: Amino acids, proteins, lipids, carbohydrates, nucleotides, nucleic acids, nature of bond linking monomers, enzyme kinetics and co-factors.",
+          "keyTopics": ["Primary, Secondary, Tertiary & Quaternary Proteins", "Enzyme Kinetics & Competitive Inhibition", "DNA Double Helix (B-DNA)", "Metabolic Flux & ATP"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/biomolecules",
+          "isAvailable": true
+        },
+        {
+          "id": "cell-cycle-and-cell-division",
+          "number": 3,
+          "title": "Cell Cycle and Cell Division",
+          "description": "Cell cycle phases (G1, S, G2, M), Mitosis stages, Meiosis I & II stages, synaptonemal complex, crossing over, and significance.",
+          "keyTopics": ["Interphase S-Phase DNA Replication", "Prophase I Stages (Leptotene to Diakinesis)", "Metaphasic Plate Alignment", "Mitosis vs Meiosis Comparison"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/cell-cycle-and-cell-division",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "plant-physiology",
+      "unitNumber": "Unit IV",
+      "title": "Plant Physiology",
+      "tagline": "Water Transport, Minerals, Photosynthesis & Bioenergetics",
+      "description": "Explore water transport mechanisms, essential mineral nutrients, light harvesting complexes, C3/C4 photosynthetic cycles, cellular respiration, glycolysis, Krebs cycle, and phytohormones.",
+      "accentColor": "amber",
+      "icon": "plant",
+      "neetWeightage": "14-16% (7-8 Qs)",
+      "totalChapters": 5,
+      "category": "Botany",
+      "route": "/modules/11th/plant-physiology",
+      "chapters": [
+        {
+          "id": "transport-in-plants",
+          "number": 1,
+          "title": "Transport in Plants",
+          "description": "Means of transport (diffusion, facilitated diffusion, active transport), plant-water relations, water potential, osmosis, plasmolysis, transpiration pull, phloem translocation (Mass Flow Hypothesis).",
+          "keyTopics": ["Water Potential (Ψw = Ψs + Ψp)", "Apoplast & Symplast Pathways", "Transpiration Cohesion-Tension Theory", "Münch Pressure Flow Hypothesis"],
+          "neetWeightage": "1-2 Qs",
+          "link": "/modules/11th/transport-in-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "mineral-nutrition",
+          "number": 2,
+          "title": "Mineral Nutrition",
+          "description": "Essential macro and micronutrients, deficiency symptoms, toxicity of micronutrients, mechanism of absorption, and biological nitrogen fixation (Nitrogenase & Rhizobium).",
+          "keyTopics": ["Hydroponics Technique", "Macro vs Micronutrient Roles (N, P, K, Mg, Fe, Mo)", "Critical Concentration & Deficiency", "Biological N2 Fixation & Leghaemoglobin"],
+          "neetWeightage": "1-2 Qs",
+          "link": "/modules/11th/mineral-nutrition",
+          "isAvailable": true
+        },
+        {
+          "id": "photosynthesis-in-higher-plants",
+          "number": 3,
+          "title": "Photosynthesis in Higher Plants",
+          "description": "Chloroplast pigments, light reactions, photolysis of water, cyclic/non-cyclic photophosphorylation, chemiosmotic hypothesis, C3 Calvin cycle, C4 Hatch-Slack pathway, and Photorespiration.",
+          "keyTopics": ["PS I & PS II Reaction Centres", "Chemiosmotic ATP Synthesis (CF0-CF1)", "Calvin Cycle (Carboxylation, Reduction, Regeneration)", "C4 Kranz Anatomy & PEPcase", "Blackman's Law of Limiting Factors"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/photosynthesis-in-higher-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "respiration-in-plants",
+          "number": 4,
+          "title": "Respiration in Plants",
+          "description": "Cellular respiration, Glycolysis (EMP pathway), fermentation, TCA / Krebs cycle, electron transport system (ETS), oxidative phosphorylation, and respiratory quotient (RQ).",
+          "keyTopics": ["10 Steps of Glycolysis", "Link Reaction (Acetyl-CoA)", "Krebs Cycle Decarboxylation & Dehydrogenation", "ETS Complexes I-V & Proton Gradient", "RQ Calculations (Carbs, Fats, Proteins)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/respiration-in-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "plant-growth-and-development",
+          "number": 5,
+          "title": "Plant Growth and Development",
+          "description": "Phases of growth, growth rate arithmetic/geometric, differentiation, dedifferentiation, plant growth regulators (Auxins, GA, Cytokinins, Ethylene, ABA), photoperiodism, vernalization.",
+          "keyTopics": ["Sigmoid Growth Curve", "Auxin Apical Dominance & Rooting", "Gibberellin Bolting & Malting", "Cytokinin Cell Division & Delay of Senescence", "Ethylene Fruit Ripening & Triple Response", "ABA Stress Hormone & Stomatal Closure"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/plant-growth-and-development",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "human-physiology",
+      "unitNumber": "Unit V",
+      "title": "Human Physiology",
+      "tagline": "Integrated Organ Systems, Homeostasis & Chemical Coordination",
+      "description": "The ultimate organ system deep-dive: Gastrointestinal digestion, pulmonary gas transport, cardiac cycle & ECG, nephron counter-current mechanism, sliding filament theory, neural impulse transmission, and endocrine hormonal integration.",
+      "accentColor": "rose",
+      "icon": "heartbeat",
+      "neetWeightage": "18-20% (10-12 Qs)",
+      "totalChapters": 7,
+      "category": "Physiology",
+      "route": "/modules/11th/human-physiology",
+      "chapters": [
+        {
+          "id": "digestion-and-absorption",
+          "number": 1,
+          "title": "Digestion and Absorption",
+          "description": "Human alimentary canal, histology of gut wall, digestive glands (salivary, liver, pancreas), digestion of carbohydrates, proteins, fats, absorption and assimilation, disorders.",
+          "keyTopics": ["Dental Formula & Heterodont Dentition", "Gut Histology (Serosa to Mucosa)", "Digestive Enzymes & Bile Function", "Micelle & Chylomicron Absorption", "PEM (Kwashiorkor & Marasmus)"],
+          "neetWeightage": "1-2 Qs",
+          "link": "/modules/11th/digestion-and-absorption",
+          "isAvailable": true
+        },
+        {
+          "id": "breathing-and-exchange-of-gases",
+          "number": 2,
+          "title": "Breathing and Exchange of Gases",
+          "description": "Respiratory organs, human respiratory system, mechanism of breathing, respiratory volumes and capacities (TV, IRV, ERV, RV, VC, TLC), gas exchange, transport of O2 and CO2, regulation.",
+          "keyTopics": ["Inspiration & Expiration Mechanics (Diaphragm & Intercostals)", "Spirometry Volumes & Capacities", "Oxygen-Haemoglobin Dissociation Curve (Bohr Effect)", "CO2 Transport (Chloride Shift / Hamburger Phenomenon)", "Respiratory Disorders (Asthma, Emphysema, Occupational)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/breathing-and-exchange-of-gases",
+          "isAvailable": true
+        },
+        {
+          "id": "body-fluids-and-circulation",
+          "number": 3,
+          "title": "Body Fluids and Circulation",
+          "description": "Blood composition, formed elements, ABO and Rh blood groups, coagulation cascade, lymph, human circulatory system, cardiac cycle, ECG waves, double circulation, regulation.",
+          "keyTopics": ["Formed Elements (RBCs, WBCs, Platelets)", "Erythroblastosis Foetalis (Rh Incompatibility)", "Cardiac Conducting System (SA Node, AV Node, Bundle of His, Purkinje)", "Cardiac Cycle Phases & Output", "ECG Waves (P, QRS, T)", "Disorders (Hypertension, CAD, Angina, Heart Failure)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/body-fluids-and-circulation",
+          "isAvailable": true
+        },
+        {
+          "id": "excretory-products-and-their-elimination",
+          "number": 4,
+          "title": "Excretory Products and Their Elimination",
+          "description": "Modes of excretion (Ammonotelism, Ureotelism, Uricotelism), human excretory system, nephron structure (Cortical vs Juxtamedullary), urine formation, countercurrent multiplier, regulation.",
+          "keyTopics": ["Glomerular Filtration Rate (GFR = 125 ml/min)", "PCT, Loop of Henle, DCT & Collecting Duct Functions", "Counter-Current Mechanism in Henle's Loop & Vasa Recta", "RAAS (Renin-Angiotensin-Aldosterone System)", "ANF (Atrial Natriuretic Factor) Antagonism", "Hemodialysis & Renal Disorders (Uremia, Renal Calculi)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/excretory-products-and-their-elimination",
+          "isAvailable": true
+        },
+        {
+          "id": "locomotion-and-movement",
+          "number": 5,
+          "title": "Locomotion and Movement",
+          "description": "Types of movement (amoeboid, ciliary, muscular), skeletal muscle ultrastructure, contractile proteins (Actin & Myosin), sliding filament theory, skeletal system bones, joints, disorders.",
+          "keyTopics": ["Sarcomere Structure (A-band, I-band, H-zone, Z-line)", "Troponin-Tropomyosin-Actin Complex", "Sliding Filament Cross-Bridge Cycle & Ca2+ / ATP", "Axial Skeleton (80 bones) & Appendicular Skeleton (126 bones)", "Joints Classification (Fibrous, Cartilaginous, Synovial)", "Disorders (Myasthenia Gravis, Tetany, Muscular Dystrophy, Arthritis, Osteoporosis, Gout)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/locomotion-and-movement",
+          "isAvailable": true
+        },
+        {
+          "id": "neural-control-and-coordination",
+          "number": 6,
+          "title": "Neural Control and Coordination",
+          "description": "Neurons and nerves, structure of neuron, resting potential, generation and conduction of nerve impulse, synaptic transmission (electrical and chemical), CNS division, reflex action.",
+          "keyTopics": ["Polarised Resting State (Na+/K+ ATPase Pump)", "Depolarisation & Action Potential Generation (Na+ Influx)", "Synaptic Cleft & Neurotransmitter Release (Acetylcholine)", "Brain Anatomy (Forebrain, Midbrain, Hindbrain & Limbic System)", "Reflex Arc Neural Pathway"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/neural-control-and-coordination",
+          "isAvailable": true
+        },
+        {
+          "id": "chemical-coordination-and-integration",
+          "number": 7,
+          "title": "Chemical Coordination and Integration",
+          "description": "Endocrine glands and hormones, human endocrine system (Hypothalamus, Pituitary, Pineal, Thyroid, Parathyroid, Adrenal, Pancreas, Gonads), hormones of heart, kidney and GI tract, mechanism of hormone action.",
+          "keyTopics": ["Hypothalamus & Pituitary Hormones", "Thyroid & Parathyroid (T3, T4, TSH, PTH)", "Adrenal Cortex & Medulla (Corticoids & Epinephrine)", "Pancreatic Insulin & Glucagon Regulation", "Peptide vs Steroid Hormone Action (cAMP Second Messenger)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/11th/chemical-coordination-and-integration",
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}
