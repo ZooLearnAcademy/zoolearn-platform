@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "11th Module",
+    "description": "Master the foundational concepts of biology. Perfect for starting your advanced learning journey.",
+    "icon": "magnifying-glass",
+    "link": "/modules/11th"
+  },
+  {
+    "id": 2,
+    "title": "12th Module",
+    "description": "Deep dive into complex biological systems, genetics, and board exam focused preparation.",
+    "icon": "projector",
+    "link": "/modules/12th"
+  },
+  {
+    "id": 3,
+    "title": "Neet Module",
+    "description": "High-yield topics, competitive strategies, and extensive mock tests for medical entrance exams.",
+    "icon": "globe",
+    "link": "/modules/neet"
+  }
+]

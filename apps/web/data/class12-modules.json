@@ -1,0 +1,220 @@
+{
+  "grade": "12th",
+  "gradeTitle": "Class 12 Biology",
+  "badgeText": "NCERT CLASS 12 CURRICULUM",
+  "heroTitle": "Class 12 Biology",
+  "heroDescription": "Master modern biological concepts across human reproduction, molecular genetics, applied biotechnology, and ecological conservation with high-yield NEET blueprints.",
+  "stats": {
+    "totalUnits": 5,
+    "totalChapters": 13,
+    "neetQuestions": "45-50",
+    "syllabusStandard": "100% NCERT"
+  },
+  "units": [
+    {
+      "id": "reproduction",
+      "unitNumber": "Unit VI",
+      "title": "Reproduction",
+      "tagline": "Angiosperm Embryology, Gametogenesis & Reproductive Physiology",
+      "description": "In-depth exploration of floral reproductive morphology, pollination dynamics, double fertilization, human reproductive systems, gametogenesis, menstrual cycle, embryonic development, and reproductive health standards.",
+      "accentColor": "rose",
+      "icon": "heartbeat",
+      "neetWeightage": "14-16% (9-10 Qs)",
+      "totalChapters": 3,
+      "category": "Reproduction",
+      "route": "/modules/12th/reproduction",
+      "chapters": [
+        {
+          "id": "sexual-reproduction-in-flowering-plants",
+          "number": 1,
+          "title": "Sexual Reproduction in Flowering Plants",
+          "description": "Flower structure, development of male and female gametophytes, pollination types, agents and outbreeding devices, pollen-pistil interaction, double fertilization, post-fertilization events, endosperm and embryo development, seed and fruit formation, apomixis, and polyembryony.",
+          "keyTopics": ["Microsporogenesis & Pollen Morphology", "Megasporogenesis & Embryo Sac (7-Celled 8-Nucleate)", "Pollination & Outbreeding Devices", "Double Fertilization (Syngamy + Triple Fusion)", "Endosperm & Dicot/Monocot Embryo", "Apomixis & Polyembryony"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/sexual-reproduction-in-flowering-plants",
+          "isAvailable": true
+        },
+        {
+          "id": "human-reproduction",
+          "number": 2,
+          "title": "Human Reproduction",
+          "description": "Male and female reproductive systems, spermatogenesis, oogenesis, menstrual cycle, fertilization, blastocyst formation, implantation, pregnancy, and parturition.",
+          "keyTopics": ["Spermatogenesis & Oogenesis", "Menstrual Cycle Hormonal Control", "Fertilization & Cleavage", "Placenta & Parturition"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/human-reproduction",
+          "isAvailable": true
+        },
+        {
+          "id": "reproductive-health",
+          "number": 3,
+          "title": "Reproductive Health",
+          "description": "Need for reproductive health, prevention of sexually transmitted diseases (STDs), birth control methods, medical termination of pregnancy (MTP), amniocentesis, and ART (IVF, ZIFT, GIFT).",
+          "keyTopics": ["Contraceptive Methods (Barrier, IUDs, Hormonal)", "MTP Act & Amniocentesis", "Infertility & Assisted Reproductive Technologies (ART)", "Sexually Transmitted Infections (STIs)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/12th/reproductive-health",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "genetics-and-evolution",
+      "unitNumber": "Unit VII",
+      "title": "Genetics and Evolution",
+      "tagline": "Mendelian Inheritance, Molecular DNA Mechanisms & Evolutionary Divergence",
+      "description": "The core foundational pillar of modern biology covering Mendelian genetics, chromosomal theory, DNA replication, transcription, genetic code, translation, human genome project, and evolutionary mechanisms.",
+      "accentColor": "cyan",
+      "icon": "dna",
+      "neetWeightage": "18-20% (12-14 Qs)",
+      "totalChapters": 3,
+      "category": "Genetics",
+      "route": "/modules/12th/genetics-and-evolution",
+      "chapters": [
+        {
+          "id": "principles-of-inheritance-and-variation",
+          "number": 4,
+          "title": "Principles of Inheritance and Variation",
+          "description": "Mendelian laws of inheritance, incomplete dominance, co-dominance, multiple alleles, pleiotropy, polygenic inheritance, chromosome theory, sex determination, and genetic disorders (Down, Turner, Klinefelter, Hemophilia).",
+          "keyTopics": ["Mendel's Laws & Dihybrid Crosses", "Linkage & Genetic Recombination (Morgan)", "Sex Determination in Humans & Birds", "Pedigree Analysis & Mendelian Disorders"],
+          "neetWeightage": "5-6 Qs",
+          "link": "/modules/12th/principles-of-inheritance",
+          "isAvailable": true
+        },
+        {
+          "id": "molecular-basis-of-inheritance",
+          "number": 5,
+          "title": "Molecular Basis of Inheritance",
+          "description": "DNA structure and packaging, search for genetic material (Griffith, Hershey-Chase), semiconservative replication (Meselson-Stahl), transcription, genetic code, translation, lac operon regulation, and Human Genome Project.",
+          "keyTopics": ["DNA Double Helix & Nucleosome Packaging", "Replication Fork & DNA Polymerase", "Transcription & Post-transcriptional Processing", "Lac Operon Model & Human Genome Project"],
+          "neetWeightage": "6-8 Qs",
+          "link": "/modules/12th/molecular-basis-of-inheritance",
+          "isAvailable": true
+        },
+        {
+          "id": "evolution",
+          "number": 6,
+          "title": "Evolution",
+          "description": "Origin of life, biological evolution and evidences (homologous vs analogous organs, embryological, paleontological), Darwinian natural selection, Hardy-Weinberg equilibrium, and human evolutionary ancestry.",
+          "keyTopics": ["Oparin-Haldane Theory & Miller-Urey", "Homologous vs Analogous Structures (Adaptive Radiation)", "Hardy-Weinberg Principle & Genetic Drift", "Stages of Human Evolution (Australopithecus to Homo sapiens)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/12th/evolution",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "biology-in-human-welfare",
+      "unitNumber": "Unit VIII",
+      "title": "Biology in Human Welfare",
+      "tagline": "Pathology, Immunology, Microbial Industrial Biotechnology & Bio-agents",
+      "description": "Immune defense mechanisms, infectious pathogens (Malaria, Typhoid, HIV/AIDS, Cancer), drug abuse, and the utilization of microbes in household products, industrial fermentation, sewage treatment, biogas, and biocontrol.",
+      "accentColor": "emerald",
+      "icon": "atom",
+      "neetWeightage": "12-14% (7-8 Qs)",
+      "totalChapters": 2,
+      "category": "Applied Biology",
+      "route": "/modules/12th/biology-in-human-welfare",
+      "chapters": [
+        {
+          "id": "human-health-and-disease",
+          "number": 7,
+          "title": "Human Health and Disease",
+          "description": "Pathogens causing human diseases (Typhoid, Pneumonia, Malaria, Filariasis, Ringworm), innate and acquired immunity, antibodies, allergy, autoimmunity, AIDS pathogenesis, Cancer biology, and drug/alcohol abuse.",
+          "keyTopics": ["Plasmodium Life Cycle (Malaria)", "Innate vs Acquired Immunity & Antibodies (IgA, IgG, IgM)", "HIV Life Cycle & ELISA / Western Blot", "Carcinogens, Oncogenes & Cancer Therapies"],
+          "neetWeightage": "4-5 Qs",
+          "link": "/modules/12th/human-health-and-disease",
+          "isAvailable": true
+        },
+        {
+          "id": "microbes-in-human-welfare",
+          "number": 8,
+          "title": "Microbes in Human Welfare",
+          "description": "Microbes in household food processing (LAB, Baker's yeast), industrial products (fermented beverages, antibiotics, bioactive molecules: Cyclosporin A, Statins), biological sewage treatment (STP), biogas generation, and biofertilizers.",
+          "keyTopics": ["Household Fermentation (Lactobacillus, Saccharomyces)", "Bioactive Molecules (Statins, Streptokinase, Cyclosporin A)", "Primary & Secondary (Biological) Sewage Treatment (BOD)", "Biogas Production (Methanogens) & Biofertilizers (Mycorrhiza, Rhizobium)"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/12th/microbes-in-human-welfare",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "biotechnology",
+      "unitNumber": "Unit IX",
+      "title": "Biotechnology and its Applications",
+      "tagline": "Recombinant DNA Tools, Genetic Engineering & Transgenic Bio-Solutions",
+      "description": "Genetic engineering techniques, restriction endonucleases, cloning vectors (pBR322), PCR amplification, bioreactors, Bt crops, RNA interference (RNAi), gene therapy, and bioethics.",
+      "accentColor": "amber",
+      "icon": "plant",
+      "neetWeightage": "10-12% (5-6 Qs)",
+      "totalChapters": 2,
+      "category": "Biotechnology",
+      "route": "/modules/12th/biotechnology",
+      "chapters": [
+        {
+          "id": "biotechnology-principles-and-processes",
+          "number": 9,
+          "title": "Biotechnology: Principles and Processes",
+          "description": "Recombinant DNA technology tools: Restriction enzymes (EcoRI), ligases, selectable markers, cloning vectors, PCR thermal cycles, insertion into host, and downstream processing in stirred-tank bioreactors.",
+          "keyTopics": ["Restriction Endonucleases & Palindromic Sequences", "Cloning Vector Anatomy (pBR322, ori, rop, ampR, tetR)", "Polymerase Chain Reaction (Denaturation, Annealing, Extension)", "Bioreactors & Downstream Processing"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/biotechnology-principles",
+          "isAvailable": true
+        },
+        {
+          "id": "biotechnology-and-its-applications",
+          "number": 10,
+          "title": "Biotechnology and its Applications",
+          "description": "Applications in agriculture (Bt Cotton, RNAi against Meloidegyne incognita), medicine (Genetically engineered insulin, ADA deficiency gene therapy), molecular diagnostics (ELISA, PCR), transgenic animals, and ethical issues.",
+          "keyTopics": ["Bt Toxin (Cry Proteins) & Insect Resistance", "RNA Interference (RNAi) Gene Silencing", "Recombinant Human Insulin (Humulin) & ADA Gene Therapy", "Transgenic Animals & GEAC Bioethics"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/12th/biotechnology-applications",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "ecology-and-environment",
+      "unitNumber": "Unit X",
+      "title": "Ecology and Environment",
+      "tagline": "Population Dynamics, Ecosystem Energetics & Global Biodiversity Conservation",
+      "description": "Organism and environmental adaptations, population attributes and growth models, ecosystem trophic structures and nutrient cycles, biodiversity gradients, extinction causes, and biosphere reserves.",
+      "accentColor": "emerald",
+      "icon": "tree-structure",
+      "neetWeightage": "14-16% (9-10 Qs)",
+      "totalChapters": 3,
+      "category": "Ecology",
+      "route": "/modules/12th/ecology-and-environment",
+      "chapters": [
+        {
+          "id": "organisms-and-populations",
+          "number": 11,
+          "title": "Organisms and Populations",
+          "description": "Abiotic factors, adaptations, population attributes (birth rate, death rate, age pyramids), population growth models (exponential vs logistic), and interspecific population interactions (mutualism, predation, parasitism).",
+          "keyTopics": ["Regulate, Conform, Migrate, Suspend Adaptations", "Exponential vs Logistic (Verhulst-Pearl) Growth Curve", "Population Interactions (+/+, +/-, +/0, -/-)", "Gause's Competitive Exclusion Principle"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/organisms-and-populations",
+          "isAvailable": true
+        },
+        {
+          "id": "ecosystem",
+          "number": 12,
+          "title": "Ecosystem",
+          "description": "Structure and function of ecosystem, productivity (GPP, NPP), decomposition dynamics, energy flow (10% law), ecological pyramids (number, biomass, energy), and ecological succession.",
+          "keyTopics": ["Productivity (GPP vs NPP) & Decomposition", "Trophic Levels & 10% Energy Transfer Law", "Ecological Pyramids (Upright vs Inverted)", "Hydrarch & Xerarch Ecological Succession"],
+          "neetWeightage": "2-3 Qs",
+          "link": "/modules/12th/ecosystem",
+          "isAvailable": true
+        },
+        {
+          "id": "biodiversity-and-conservation",
+          "number": 13,
+          "title": "Biodiversity and Conservation",
+          "description": "Patterns of biodiversity (latitudinal gradients, species-area relationship), importance of biodiversity (Rivet popper hypothesis), causes of biodiversity loss (The Evil Quartet), and In-situ vs Ex-situ conservation strategies.",
+          "keyTopics": ["Species-Area Relationship (Alexander von Humboldt)", "The Evil Quartet (Habitat Loss, Over-exploitation, Alien Species, Co-extinctions)", "In-Situ Conservation (National Parks, Sanctuaries, Biosphere Reserves)", "Ex-Situ Conservation (Botanical Gardens, Cryopreservation, Gene Banks)"],
+          "neetWeightage": "3-4 Qs",
+          "link": "/modules/12th/biodiversity-and-conservation",
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}
