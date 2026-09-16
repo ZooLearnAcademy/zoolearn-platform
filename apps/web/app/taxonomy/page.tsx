@@ -41,13 +41,13 @@ export default async function TaxonomyPage() {
 
   if (error || !animaliaTree) {
     return (
-      <div className="w-full h-full min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center">
+      <div className="w-full h-full min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center bg-[#080c14]">
         <div className="text-center max-w-md">
           <div className="text-5xl mb-4">⚠️</div>
-          <h1 className="text-2xl font-bold text-slate-800 dark:text-white mb-2">
+          <h1 className="text-2xl font-bold text-white mb-2">
             Unable to Load Taxonomy Tree
           </h1>
-          <p className="text-slate-600 dark:text-slate-400 mb-6">
+          <p className="text-slate-400 mb-6">
             There was an error connecting to the database. Please try refreshing the page.
           </p>
           <a
@@ -62,19 +62,8 @@ export default async function TaxonomyPage() {
   }
 
   return (
-    <div className="w-full h-full min-h-[calc(100vh-4rem)] flex flex-col items-center">
-      <div className="w-full max-w-4xl text-center py-8">
-        <h1 className="text-4xl md:text-5xl font-black text-[#0a192f] dark:text-white tracking-tighter mb-4">
-          Taxonomy <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">Tree</span>
-        </h1>
-        <p className="text-lg text-slate-600 dark:text-slate-400">
-          Interactive classification of Kingdom Animalia. Explore the hierarchical relationships between different phyla and classes.
-        </p>
-      </div>
-      
-      <div className="w-full flex-1 min-h-[600px] border-y border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/20 relative">
-        <AnimaliaFlow treeData={animaliaTree} />
-      </div>
+    <div className="w-full h-[calc(100vh-4rem)] relative overflow-hidden bg-[#080c14]">
+      <AnimaliaFlow treeData={animaliaTree} />
     </div>
   );
 }

@@ -8,7 +8,7 @@ import { Button } from "@workspace/ui/components/button";
 
 export function BinomialTigerCard() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const tigerImageUrl = "https://res.cloudinary.com/duibfmcw1/image/upload/v1767809416/tiger_y9orpy.jpg";
+  const tigerImageUrl = "https://res.cloudinary.com/duibfmcw1/image/upload/f_auto,q_auto,w_600/v1767809416/tiger_y9orpy.jpg";
 
   return (
     <div className="mt-6 flex flex-col gap-6">
@@ -128,7 +128,7 @@ export function BinomialTigerCard() {
                 <X className="h-5 w-5" />
               </button>
               <div className="relative aspect-[4/3] w-full">
-                <img
+                <img loading="lazy"
                   src={tigerImageUrl}
                   alt="Tiger Scientific Name Breakdown"
                   className="h-full w-full object-contain"

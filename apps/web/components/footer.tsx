@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { cloudinaryLoader } from "@/lib/cloudinary";
 import "./Footer.css";
-
 
 export function Footer() {
   const [showContact, setShowContact] = useState(false);
@@ -30,9 +31,13 @@ export function Footer() {
       <div className="foo-zl-stars" />
       
       {/* Deer Icon Overlay (visible only in dark mode to compensate for the dark background) */}
-      <img 
+      <Image 
+        loader={cloudinaryLoader}
         src="https://res.cloudinary.com/duibfmcw1/image/upload/v1786006495/mammal_cz8uck.png" 
         alt="Deer Silhouette" 
+        width={100}
+        height={100}
+        loading="lazy"
         className="foo-zl-bg-deer"
       />
 
@@ -47,9 +52,13 @@ export function Footer() {
         {/* ================= BRAND SECTION ================= */}
         <div className="foo-zl-brand foo-zl-glass">
           <div className="foo-zl-logo">
-            <img
+            <Image
+              loader={cloudinaryLoader}
               src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png"
               alt="ZooLearn Logo"
+              width={56}
+              height={56}
+              loading="lazy"
               className="foo-zl-logo-img"
             />
             <h1>
@@ -72,6 +81,8 @@ export function Footer() {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/taxonomy">Taxonomy Tree</Link></li>
               <li><Link href="/zoohub">ZooHub</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
+              <li><Link href="/quiz">Quiz</Link></li>
             </ul>
           </div>
 
@@ -88,8 +99,6 @@ export function Footer() {
                   >
                     Contact
                   </span>
-
-                 
                   {showContact && (
                     <ul className="contact-dropdown">
                       <li>

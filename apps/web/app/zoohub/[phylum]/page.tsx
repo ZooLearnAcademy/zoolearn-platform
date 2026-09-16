@@ -1,21 +1,39 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, SquaresFour } from "@phosphor-icons/react/dist/ssr";
-import { getPhylumWithSpecies, getAllPhyla } from "@/lib/supabase/zoohub-public";
+import { getPhylumWithSpecies, getAllPhyla } from "@/lib/supabase/zoohub";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const revalidate = 3600;
+
+const PHYLUM_SLUGS = [
+  "porifera",
+  "coelenterata",
+  "ctenophora",
+  "platyhelminthes",
+  "aschelminthes",
+  "annelida",
+  "arthropoda",
+  "mollusca",
+  "echinodermata",
+  "hemichordata",
+  "chordata",
+];
+
+export async function generateStaticParams() {
+  return PHYLUM_SLUGS.map((phylum) => ({ phylum }));
+}
 
 const subtitleMap: Record<string, string> = {
-  porifera: "Discover the ancient, pore-bearing sponges that filter the ocean's depths.",
-  coelenterata: "Explore the mesmerizing world of stinging jellies and corals.",
-  ctenophora: "Witness the glowing bioluminescence of the beautiful comb jellies.",
-  platyhelminthes: "Uncover the fascinating biology of the unsegmented flatworms.",
-  aschelminthes: "Delve into the ubiquitous and diverse world of roundworms.",
-  annelida: "Study the complex segmentation of earthworms and leeches.",
-  arthropoda: "Venture into the largest phylum of joint-legged insects, spiders, and crustaceans.",
-  mollusca: "Discover the soft-bodied wonders from snails to the highly intelligent octopus.",
-  echinodermata: "Explore the spiny-skinned starfish and sea urchins of the ocean floor.",
+  porifera: "Simple, aquatic multicellular organisms known as sponges.",
+  coelenterata: "Aquatic, mostly marine organisms with stinging cells.",
+  ctenophora: "Exclusively marine, known for their comb plates and bioluminescence.",
+  platyhelminthes: "Dorso-ventrally flattened worms, mostly endoparasites.",
+  aschelminthes: "Roundworms with circular cross-sections, free-living or parasitic.",
+  annelida: "Segmented worms with true coelom and specialized organ systems.",
+  arthropoda: "The largest phylum of the animal kingdom with jointed appendages.",
+  mollusca: "The second largest animal phylum with soft, unsegmented bodies.",
+  echinodermata: "Marine organisms known for their spiny skin and radial symmetry.",
   hemichordata: "Learn about the evolutionary link presented by the intriguing acorn worms.",
   chordata: "From fishes to mammals, explore the animals with a dorsal nerve cord.",
 };
@@ -101,7 +119,7 @@ export default async function PhylumPage({ params }: Props) {
               <div className="flex items-start gap-4 pb-6 border-b border-slate-200/60 dark:border-slate-800/60">
                 <div className="w-2 h-16 rounded-full bg-gradient-to-b from-emerald-400 to-teal-500" />
                 <div className="flex flex-col gap-3">
-                  <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">{cls.className}</h2>
+                  <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">{cls.class_name}</h2>
                   <div className="flex items-center gap-3">
                     <span className="px-4 py-1.5 rounded-full bg-transparent border border-slate-200 dark:border-slate-700 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-widest">Class</span>
                     <span className="px-4 py-1.5 rounded-full bg-emerald-50/50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-sm font-bold border border-emerald-100/80 dark:border-emerald-800/40">{cls.species.length} Species</span>
@@ -129,7 +147,7 @@ export default async function PhylumPage({ params }: Props) {
                   </div>
                   <h3 className="text-[clamp(1.125rem,3vw,1.5rem)] font-extrabold italic text-slate-800 dark:text-slate-100 mb-3 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors duration-300">{species.name}</h3>
                   <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/50 mt-auto group-hover:border-emerald-200 group-hover:bg-emerald-50 transition-colors duration-300">
-                    <span className="text-[clamp(0.65rem,1.5vw,0.75rem)] text-slate-600 dark:text-slate-300 font-bold group-hover:text-emerald-700 truncate">{species.scientificName ?? species.scientific_name}</span>
+                    <span className="text-[clamp(0.65rem,1.5vw,0.75rem)] text-slate-600 dark:text-slate-300 font-bold group-hover:text-emerald-700 truncate">{species.scientific_name}</span>
                   </div>
                 </Link>
               ))}

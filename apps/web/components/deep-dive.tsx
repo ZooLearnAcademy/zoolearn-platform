@@ -4,9 +4,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import deepDiveData from "../data/deep-dive-organisms.json";
-import { Info, ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, Info, Sparkle, Microscope } from "@phosphor-icons/react";
 import { useAtom } from "jotai";
 import { organismsAtom, isOrganismsLoadingAtom } from "../store/deepDiveStore";
+
+// shadcn/ui components
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@workspace/ui/components/card";
+import { Badge } from "@workspace/ui/components/badge";
+import { Button } from "@workspace/ui/components/button";
+import { Separator } from "@workspace/ui/components/separator";
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+  TooltipProvider,
+} from "@workspace/ui/components/tooltip";
 
 export interface Organism {
   id: string;
@@ -22,90 +41,125 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.1 }
-  }
+    transition: { staggerChildren: 0.12 },
+  },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 30, scale: 0.95 },
-  visible: { 
-    opacity: 1, 
+  hidden: { opacity: 0, y: 35, scale: 0.94 },
+  visible: {
+    opacity: 1,
     y: 0,
     scale: 1,
-    transition: { type: "spring" as const, stiffness: 100, damping: 20 }
-  }
+    transition: { type: "spring" as const, stiffness: 90, damping: 18 },
+  },
 };
 
-const cardGradients = [
-  "from-primary/15 via-primary/5 to-transparent",
-  "from-muted-foreground/10 via-muted/10 to-transparent",
-  "from-primary/10 via-primary/5 to-transparent",
-  "from-muted-foreground/15 via-muted/5 to-transparent",
-  "from-primary/20 via-muted/10 to-transparent",
-  "from-muted/20 via-primary/5 to-transparent"
+const cardAccents = [
+  "from-emerald-500/15 via-teal-500/5",
+  "from-teal-500/12 via-cyan-500/5",
+  "from-cyan-500/15 via-emerald-500/5",
+  "from-green-500/12 via-teal-500/8",
+  "from-emerald-400/18 via-green-500/5",
+  "from-teal-400/15 via-emerald-400/8",
 ];
 
 function OrganismCard({ org, index }: { org: Organism; index: number }) {
   return (
-    <motion.div 
-      variants={cardVariants} 
+    <motion.div
+      variants={cardVariants}
       className="h-full"
-      whileHover={{ y: -8, transition: { type: "spring" as const, stiffness: 300, damping: 20 } }}
+      whileHover={{
+        y: -10,
+        transition: { type: "spring" as const, stiffness: 280, damping: 22 },
+      }}
     >
-      <Link 
-        href={org.link}
-        className="group relative flex flex-col p-5 rounded-[1.5rem] bg-card/80 backdrop-blur-sm border border-border/60 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 h-full overflow-hidden"
-      >
-        {/* The bottom mesh-like gradient using theme colors */}
-        <div 
-          className={`absolute bottom-0 inset-x-0 h-3/4 bg-gradient-to-t ${cardGradients[index % cardGradients.length]} opacity-40 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`} 
-        />
-        
-        <div className="relative z-10 flex flex-col h-full">
-          {/* Top line & label */}
-          <div className="flex items-center justify-between mb-5">
-             <div className="h-[1px] bg-gradient-to-r from-border/20 via-border/80 to-transparent flex-1 mr-4" />
-             <span className="text-[9px] font-bold tracking-[0.2em] text-muted-foreground uppercase">
-               {org.category}
-             </span>
-          </div>
+      <Link href={org.link} className="block h-full group">
+        <Card className="relative h-full overflow-hidden border-border/50 bg-card/90 backdrop-blur-sm shadow-sm hover:shadow-2xl hover:shadow-primary/8 transition-all duration-500 rounded-[1.5rem] cursor-pointer">
+          {/* Bottom gradient aura — visual depth */}
+          <div
+            className={`absolute bottom-0 inset-x-0 h-3/4 bg-gradient-to-t ${cardAccents[index % cardAccents.length]} to-transparent opacity-30 group-hover:opacity-80 transition-opacity duration-700 pointer-events-none`}
+          />
 
-          {/* Icon Container */}
-          <div className="w-12 h-12 rounded-2xl bg-background/50 border border-border/50 shadow-sm flex items-center justify-center text-3xl mb-4 group-hover:scale-110 group-hover:-rotate-6 group-hover:shadow-md transition-all duration-500">
-            <span className=" group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 drop-shadow-sm">{org.icon}</span>
-          </div>
+          <CardHeader className="relative z-10 pb-3">
+            {/* Top accent line + category badges */}
+            <div className="flex items-center justify-between mb-4">
+              <Separator className="flex-1 mr-3 bg-gradient-to-r from-border/20 via-border/60 to-transparent h-px" />
+              <div className="flex items-center gap-1.5 shrink-0">
+                <Badge
+                  variant="success"
+                  className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5 rounded-full"
+                >
+                  {org.categoryType}
+                </Badge>
+                <Badge
+                  variant="category"
+                  className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5 rounded-full"
+                >
+                  {org.category}
+                </Badge>
+              </div>
+            </div>
 
-          {/* Title Area */}
-          <div className="mb-3">
-            <h3 className="text-2xl font-black text-foreground tracking-tight group-hover:text-primary transition-colors duration-300">
+            {/* Animated icon container */}
+            <div className="w-14 h-14 rounded-2xl bg-background/60 border border-border/50 shadow-sm flex items-center justify-center text-3xl mb-3 group-hover:scale-110 group-hover:-rotate-6 group-hover:shadow-lg group-hover:border-primary/30 transition-all duration-500">
+              <span className="group-hover:drop-shadow-md transition-all duration-500">
+                {org.icon}
+              </span>
+            </div>
+
+            {/* Title + Scientific Name */}
+            <CardTitle className="text-2xl font-black text-foreground tracking-tight group-hover:text-primary transition-colors duration-300">
               {org.name}
-            </h3>
-            {/* Scientific Name directly under Name */}
-            <p className="text-[13px] text-muted-foreground/70 italic font-serif mt-0.5">
+            </CardTitle>
+            <CardDescription className="text-[13px] text-muted-foreground/70 italic font-serif mt-0.5">
               {org.scientificName}
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent className="relative z-10 pb-4">
+            <p className="text-xs text-muted-foreground leading-relaxed font-medium">
+              Explore the detailed anatomy, biological structure, and functions
+              of the {org.name.toLowerCase()}.
             </p>
-          </div>
-          
-          {/* Desc - Smaller font size */}
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed font-medium">
-            Explore the detailed anatomy, biological structure, and functions of the {org.name.toLowerCase()}.
-          </p>
+          </CardContent>
 
-          {/* Bottom row */}
-          <div className="mt-auto flex items-center justify-between pt-4 border-t border-border/40">
-             <div className="flex items-center gap-1.5 text-[11px] font-bold text-foreground/50 group-hover:text-foreground transition-colors duration-300">
-                Know more 
-                <Info className="w-4 h-4" weight="duotone" />
-             </div>
+          <Separator className="mx-6 bg-border/40" />
 
-             <div className="group/btn relative px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-[10px] font-bold tracking-[0.15em] shadow-sm shadow-primary/20 hover:shadow-primary/40 hover:scale-105 transition-all duration-300 overflow-hidden flex items-center">
-               <span className="relative z-10 flex items-center gap-1.5 transition-transform duration-300 group-hover/btn:-translate-x-1">
-                 START NOW
-                 <ArrowRight className="w-3.5 h-3.5 opacity-0 absolute -right-5 group-hover/btn:opacity-100 group-hover/btn:-right-4 transition-all duration-300" weight="bold" />
-               </span>
-             </div>
-          </div>
-        </div>
+          <CardFooter className="relative z-10 pt-4 pb-5 flex items-center justify-between">
+            {/* Info tooltip */}
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger
+                  className="flex items-center gap-1.5 text-[11px] font-bold text-foreground/50 group-hover:text-foreground transition-colors duration-300 cursor-help"
+                >
+                  Know more
+                  <Info className="w-4 h-4" weight="duotone" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Deep dive into {org.name} anatomy, physiology &amp;
+                    classification
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* CTA Button */}
+            <Button
+              size="sm"
+              className="rounded-full bg-primary text-primary-foreground text-[10px] font-bold tracking-[0.15em] uppercase shadow-sm shadow-primary/20 hover:shadow-primary/40 hover:scale-105 transition-all duration-300 px-5 py-2.5 h-auto group/btn"
+            >
+              <span className="flex items-center gap-1.5 transition-transform duration-300 group-hover/btn:-translate-x-0.5">
+                START NOW
+                <ArrowRight
+                  className="w-3.5 h-3.5 opacity-0 group-hover/btn:opacity-100 transition-all duration-300"
+                  weight="bold"
+                />
+              </span>
+            </Button>
+          </CardFooter>
+        </Card>
       </Link>
     </motion.div>
   );
@@ -114,7 +168,7 @@ function OrganismCard({ org, index }: { org: Organism; index: number }) {
 export function DeepDive() {
   const [organisms, setOrganisms] = useAtom(organismsAtom);
   const [isLoading, setIsLoading] = useAtom(isOrganismsLoadingAtom);
-  
+
   /* ==============================================================
      BACKEND INTEGRATION READY (COMMENTED OUT FOR NOW)
      Uncomment this block when your backend API is ready to serve the data.
@@ -146,20 +200,23 @@ export function DeepDive() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 blur-[100px] rounded-full pointer-events-none opacity-50" />
 
       <div className="container px-4 md:px-6 mx-auto max-w-7xl relative z-10">
+        {/* Section Header */}
         <div className="mb-16 flex flex-col items-center text-center space-y-4">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex items-center gap-2 mb-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-[10px] font-bold tracking-[0.2em] text-primary uppercase">
+            <Badge
+              variant="success"
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
               Master Key Organisms
-            </span>
+            </Badge>
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -168,7 +225,7 @@ export function DeepDive() {
           >
             Deep Dive
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -176,11 +233,13 @@ export function DeepDive() {
             transition={{ delay: 0.2 }}
             className="text-base text-muted-foreground max-w-2xl font-medium"
           >
-            Examine the detailed anatomy and physiology of crucial species through our interactive platform.
+            Examine the detailed anatomy and physiology of crucial species
+            through our interactive platform.
           </motion.p>
         </div>
 
-        <motion.div 
+        {/* Organism Cards Grid — ALL expanded, no collapsing */}
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

@@ -1,0 +1,179 @@
+/* Digestive System - Premium Styling */
+
+.dig-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Flow Steps */
+.dig-flow-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dig-flow-step {
+  display: flex;
+  gap: 12px;
+  padding: 1rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 14px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  transition: all 0.3s ease;
+}
+
+.dig-flow-step:hover {
+  transform: translateX(4px);
+  box-shadow: var(--leech-shadow-soft);
+  border-color: var(--leech-border-strong, rgba(61, 107, 10, 0.22));
+}
+
+.dig-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--leech-primary, #3d6b0a), var(--leech-primary-vivid, #65a30d));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.dig-step-content {
+  flex: 1;
+}
+
+.dig-step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dig-step-label {
+  font-size: 0.88rem;
+  color: var(--leech-primary-dark, #14280a);
+}
+
+.dig-step-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(61, 107, 10, 0.08);
+  color: var(--leech-primary, #3d6b0a);
+}
+
+.dig-step-text {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Right Column */
+.dig-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dig-image-frame {
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 16px;
+  padding: 1.25rem;
+  text-align: center;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+}
+
+.dig-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--leech-shadow-soft);
+  transition: transform 0.4s ease;
+}
+
+.dig-image-frame:hover .dig-img {
+  transform: scale(1.02);
+}
+
+.dig-img-caption {
+  margin-top: 0.75rem;
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--leech-text-muted, #5c6e56);
+}
+
+.dig-facts-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+}
+
+/* Mechanism Grid */
+.dig-mechanism-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.dig-mechanism-card {
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 16px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dig-mechanism-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--leech-shadow-medium);
+}
+
+.dig-mech-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dig-mech-step-num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--leech-primary, #3d6b0a);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dig-mech-title {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--leech-primary-dark, #14280a);
+  margin-bottom: 0.35rem;
+}
+
+.dig-mech-text {
+  font-size: 0.8rem;
+  color: var(--leech-text-secondary, #2d3b29);
+  line-height: 1.55;
+  margin: 0;
+}

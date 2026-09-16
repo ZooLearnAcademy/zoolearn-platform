@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mk-sand-50: #fbf4e6;
+  --mk-sand-100: #f6e9cf;
+  --mk-sand-200: #ecd6a8;
+  --mk-terracotta: #b95e2a;
+  --mk-terracotta-dark: #8f451c;
+  --mk-gold: #d4a04a;
+  --mk-brown: #3a2314;
+  --mk-brown-soft: #5b3a22;
+  --mk-cream: #fbf6ec;
+  --mk-ink: #2b1a0d;
+  --mk-muted: #7a5a3e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--mk-cream);
+  color: var(--mk-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Fraunces', Georgia, serif; letter-spacing: -0.01em; }
+
+@layer base {
+  :root {
+    --background: 36 45% 96%;
+    --foreground: 25 40% 12%;
+    --card: 36 50% 98%;
+    --card-foreground: 25 40% 12%;
+    --popover: 36 50% 98%;
+    --popover-foreground: 25 40% 12%;
+    --primary: 22 65% 44%;
+    --primary-foreground: 36 45% 96%;
+    --secondary: 36 30% 88%;
+    --secondary-foreground: 25 40% 15%;
+    --muted: 36 25% 90%;
+    --muted-foreground: 30 15% 40%;
+    --accent: 38 60% 55%;
+    --accent-foreground: 25 40% 12%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 36 45% 96%;
+    --border: 32 22% 82%;
+    --input: 32 22% 82%;
+    --ring: 22 65% 44%;
+    --radius: 0.75rem;
+  }
+}
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}

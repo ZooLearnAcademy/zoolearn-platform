@@ -412,7 +412,9 @@ export async function getTaxonomyTreeFull(): Promise<any> {
   for (const node of nodes) {
     const treeNode = nodeMap.get(node.id)!
     if (!node.parent_id) {
-      root = treeNode
+      if (node.id === "animalia" || !root) {
+        root = treeNode
+      }
     } else {
       const parent = nodeMap.get(node.parent_id)
       if (parent) {
@@ -421,8 +423,8 @@ export async function getTaxonomyTreeFull(): Promise<any> {
     }
   }
 
-  if (!root) {
-    root = nodeMap.get("animalia") ?? { id: "animalia", label: "Animalia", rank: "Kingdom", children: [] }
+  if (!root || root.id !== "animalia") {
+    root = nodeMap.get("animalia") ?? root ?? { id: "animalia", label: "Animalia", rank: "Kingdom", children: [] }
   }
 
   return root

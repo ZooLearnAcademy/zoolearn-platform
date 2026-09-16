@@ -1,0 +1,439 @@
+{
+  "theLivingWorld": {
+    "title": "The Living World",
+    "subtitle": "Foundations of Life, Taxonomy & Systematics",
+    "tagline": "Explore what defines life, the 5-kingdom classification, taxonomic hierarchies, and universal rules of binomial nomenclature.",
+    "seo": {
+      "title": "The Living World - Complete Guide to Taxonomy & Classification",
+      "description": "Learn about the diversity of living organisms, taxonomy, systematics, binomial nomenclature, 5 kingdoms, and taxonomic hierarchy. Comprehensive biology study material.",
+      "keywords": "The Living World, What is Life, Protoplasm, Taxonomy, Systematics, Binomial Nomenclature, Carolus Linnaeus, 5 Kingdoms, Taxonomic Hierarchy, Biology, Zoology, NEET"
+    },
+    "hero": {
+      "title": "The Living World",
+      "introParagraphs": [
+        "The living world encompasses all organisms on Earth, from microscopic bacteria to massive blue whales. Understanding what makes something 'living' and how we classify this incredible diversity is fundamental to the study of biology.",
+        "This chapter explores the characteristics of life, biodiversity, and the systematic organization of organisms through taxonomy."
+      ],
+      "heroImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767809047/image_pwt5qp.png",
+      "altText": "The Living World Illustration"
+    },
+    "whatIsLife": {
+      "title": "What is Life?",
+      "guidingQuestion": "But what makes something alive?",
+      "description": "The Earth is filled with an unbelievable variety of living organisms — from tiny bacteria to giant blue whales. Life exists everywhere: icy mountains, hot deserts, deep oceans, lakes, forests, and even boiling hot springs.",
+      "molecularBasis": "Life is made of a complex, organized system of molecules that constantly perform chemical reactions to maintain essential activities such as growth, movement, metabolism, and reproduction.",
+      "protoplasm": {
+        "definition": "A key feature inside all living cells is protoplasm — the jelly-like living material.",
+        "quote": "Biologist T.H. Huxley (1863) described it as the 'physical basis of life.'",
+        "keyConcept": "Life is basically 'organized chemistry' happening inside protoplasm."
+      },
+      "definingCharacteristics": [
+        {
+          "trait": "Metabolism",
+          "isDefining": true,
+          "description": "Sum total of all chemical reactions occurring in an organism (anabolism + catabolism). Present in all living organisms without exception. No non-living object exhibits metabolism."
+        },
+        {
+          "trait": "Cellular Organisation",
+          "isDefining": true,
+          "description": "All living organisms are made of cells (unicellular or multicellular). The cell is the fundamental structural and functional unit of life."
+        },
+        {
+          "trait": "Consciousness & Responsiveness",
+          "isDefining": true,
+          "description": "The ability of an organism to sense its environmental stimuli (physical, chemical, or biological) and respond to them. Humans possess self-consciousness."
+        },
+        {
+          "trait": "Growth",
+          "isDefining": false,
+          "description": "Increase in mass and number of individuals. In living beings, growth is intrinsic (from inside). Non-living things (mountains, sand dunes) also grow extrinsically by accumulation of material."
+        },
+        {
+          "trait": "Reproduction",
+          "isDefining": false,
+          "description": "Production of progeny possessing features more or less similar to parents. Not a defining property because many living organisms do not reproduce (e.g., mules, sterile worker bees, infertile human couples)."
+        }
+      ]
+    },
+    "fiveKingdomClassification": {
+      "title": "Five Kingdom Classification",
+      "subtitle": "Proposed by R.H. Whittaker (1969)",
+      "criteria": [
+        "Cell Structure (Prokaryotic vs Eukaryotic)",
+        "Body Organisation (Unicellular vs Multicellular/Tissue/Organ)",
+        "Mode of Nutrition (Autotrophic, Heterotrophic, Saprophytic)",
+        "Reproduction (Asexual vs Sexual)",
+        "Phylogenetic Relationships"
+      ],
+      "kingdoms": [
+        {
+          "id": "monera",
+          "title": "Kingdom Monera",
+          "label": "BACTERIA",
+          "color": "#A8DADC",
+          "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767847552/bacteria_k8yvy1.png",
+          "short": "Prokaryotic, unicellular organisms",
+          "keyCharacteristics": [
+            "Prokaryotic cells (lack membrane-bound organelles)",
+            "No true nucleus (nucleoid/incipient nucleus)",
+            "Reproduction primarily by binary fission",
+            "Non-cellulosic cell wall (peptidoglycan) present in most",
+            "Oldest and most abundant life forms on Earth"
+          ],
+          "examples": ["Bacteria", "Cyanobacteria (Blue-green algae)", "Archaebacteria", "Mycoplasma"]
+        },
+        {
+          "id": "protista",
+          "title": "Kingdom Protista",
+          "label": "PROTISTS",
+          "color": "#F4A261",
+          "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767848520/protista_ozgbo9.png",
+          "short": "Eukaryotic, mostly unicellular",
+          "keyCharacteristics": [
+            "Unicellular eukaryotic organisms with well-defined nucleus",
+            "Possess flagella or cilia for locomotion",
+            "Modes of nutrition: Autotrophic (photosynthetic) or Heterotrophic",
+            "Reproduce sexually (zygote formation) and asexually",
+            "Forms a connecting link between Monera and multicellular kingdoms"
+          ],
+          "examples": ["Amoeba", "Paramecium", "Euglena", "Diatoms", "Dinoflagellates"]
+        },
+        {
+          "id": "fungi",
+          "title": "Kingdom Fungi",
+          "label": "FUNGI",
+          "color": "#B7E4C7",
+          "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767848699/fungi_lf0jgp.png",
+          "short": "Saprophytic, spore-forming",
+          "keyCharacteristics": [
+            "Cell wall made of chitin and fungal cellulose",
+            "Absorptive heterotrophic nutrition (saprophytes, parasites, or symbionts)",
+            "Lack chlorophyll (achlorophyllous)",
+            "Mostly multicellular filaments (hyphae/mycelium); Yeast is unicellular",
+            "Spore-bearing organisms (ascospores, basidiospores, conidia)"
+          ],
+          "examples": ["Mushrooms (Agaricus)", "Yeast (Saccharomyces)", "Rhizopus (Bread mould)", "Penicillium"]
+        },
+        {
+          "id": "plantae",
+          "title": "Kingdom Plantae",
+          "label": "PLANTS",
+          "color": "#F9C6D3",
+          "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767848840/plant_nsqucy.png",
+          "short": "Photosynthetic, multicellular",
+          "keyCharacteristics": [
+            "Eukaryotic multicellular organisms with chloroplasts",
+            "Rigid cell wall composed primarily of cellulose",
+            "Autotrophic mode of nutrition via photosynthesis",
+            "Life cycle shows alternation of generations (haploid gametophyte & diploid sporophyte)",
+            "Non-motile and anchored to substrate"
+          ],
+          "examples": ["Algae", "Bryophytes (Mosses)", "Pteridophytes (Ferns)", "Gymnosperms (Pinus)", "Angiosperms (Flowering plants)"]
+        },
+        {
+          "id": "animalia",
+          "title": "Kingdom Animalia",
+          "label": "ANIMALS",
+          "color": "#CDB4DB",
+          "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767849129/animal_jgxujk.png",
+          "short": "Multicellular, ingestive heterotrophs",
+          "keyCharacteristics": [
+            "Multicellular eukaryotes without cell walls",
+            "Holozoic (ingestive) heterotrophic nutrition",
+            "High specialization with well-developed nervous & sensory systems",
+            "Capable of active locomotion in most species",
+            "Reproduction predominantly sexual with embryological development"
+          ],
+          "examples": ["Insects", "Molluscs", "Fishes", "Amphibians", "Reptiles", "Birds", "Mammals (Humans)"]
+        }
+      ]
+    },
+    "binomialNomenclature": {
+      "title": "Binomial Nomenclature",
+      "introducedBy": "Carolus Linnaeus (1753–1758)",
+      "founderHonor": "Father of Taxonomy",
+      "overview": "Binomial nomenclature is the standardized scientific system of naming organisms so that each organism has a single, unique, globally recognized name.",
+      "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767809416/tiger_y9orpy.jpg",
+      "namingStructure": {
+        "firstWord": "Genus (Generic name) - Always Capitalized",
+        "secondWord": "Species (Specific epithet) - Always in lowercase"
+      },
+      "universalRules": [
+        {
+          "ruleNumber": 1,
+          "title": "Latinized Language",
+          "description": "Biological names are generally in Latin and written in italics, irrespective of their origin."
+        },
+        {
+          "ruleNumber": 2,
+          "title": "Two-Part Construction",
+          "description": "The first word represents the Genus, while the second word denotes the specific epithet (species)."
+        },
+        {
+          "ruleNumber": 3,
+          "title": "Formatting & Underlining",
+          "description": "When printed, scientific names are italicized; when handwritten, the genus and species names are separately underlined."
+        },
+        {
+          "ruleNumber": 4,
+          "title": "Capitalization Rules",
+          "description": "The genus name starts with a capital letter (e.g., Panthera), while the specific epithet starts with a small letter (e.g., tigris)."
+        },
+        {
+          "ruleNumber": 5,
+          "title": "Author Citation",
+          "description": "The name of the author appears at the end of the biological name in abbreviated form (e.g., Mangifera indica Linn., indicating Linnaeus first described it)."
+        }
+      ],
+      "standardExamples": [
+        {
+          "scientificName": "Mangifera indica",
+          "commonName": "Mango",
+          "genus": "Mangifera",
+          "species": "indica"
+        },
+        {
+          "scientificName": "Solanum tuberosum",
+          "commonName": "Potato",
+          "genus": "Solanum",
+          "species": "tuberosum"
+        },
+        {
+          "scientificName": "Panthera tigris",
+          "commonName": "Tiger",
+          "genus": "Panthera",
+          "species": "tigris"
+        },
+        {
+          "scientificName": "Homo sapiens",
+          "commonName": "Modern Human",
+          "genus": "Homo",
+          "species": "sapiens"
+        }
+      ],
+      "keyWorksByLinnaeus": [
+        {
+          "book": "Species Plantarum (1753)",
+          "scope": "Classified 5,900 plant species using binomial nomenclature"
+        },
+        {
+          "book": "Systema Naturae (10th Edition, 1758)",
+          "scope": "Classified 4,326 animal species; marked the starting point of zoological nomenclature"
+        }
+      ],
+      "internationalCodes": [
+        { "code": "ICBN", "fullName": "International Code of Botanical Nomenclature" },
+        { "code": "ICZN", "fullName": "International Code of Zoological Nomenclature" },
+        { "code": "ICNB", "fullName": "International Code of Nomenclature of Bacteria" },
+        { "code": "ICTV", "fullName": "International Committee on Taxonomy of Viruses" }
+      ]
+    },
+    "taxonomyAndSystematics": {
+      "title": "Taxonomy & Systematics",
+      "summaryQuote": "Taxonomy tells 'who it is,' while Systematics explains 'how it is related.'",
+      "taxonomy": {
+        "title": "Taxonomy",
+        "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767850326/taxonomy_oqcngx.png",
+        "definition": "The branch of science dealing with identification, nomenclature, and classification of organisms based on shared characteristics.",
+        "fourBasicProcesses": [
+          "Characterisation (understanding morphological and anatomical traits)",
+          "Identification (determining whether the organism is known or new)",
+          "Nomenclature (assigning scientific names according to universal rules)",
+          "Classification (ordering organisms into categories based on relationships)"
+        ]
+      },
+      "systematics": {
+        "title": "Systematics",
+        "icon": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767780954/006-dna_wrm2wd.png",
+        "definition": "The study of the diversity of organisms and their comparative and evolutionary (phylogenetic) relationships through time.",
+        "etymology": "Derived from the Latin word 'systema' meaning systematic arrangement of organisms."
+      },
+      "classificationPredictiveValue": [
+        "Morphological Structure",
+        "Behavioral Patterns",
+        "Biochemistry & Molecular Genetics",
+        "Evolutionary History (Phylogeny)",
+        "Biological Similarities & Differences"
+      ]
+    },
+    "taxonomicHierarchy": {
+      "title": "Taxonomic Hierarchy (The Classification Pyramid)",
+      "description": "Taxonomic hierarchy is the arrangement of various categories (taxa) in a descending order of ranking from kingdom to species.",
+      "mnemonic": {
+        "sentence": "Dear King Philip Came Over For Good Soup",
+        "breakdown": [
+          { "word": "Dear", "letter": "D", "level": "Domain", "color": "#8b5cf6" },
+          { "word": "King", "letter": "K", "level": "Kingdom", "color": "#ec4899" },
+          { "word": "Philip", "letter": "P", "level": "Phylum", "color": "#3b82f6" },
+          { "word": "Came", "letter": "C", "level": "Class", "color": "#06b6d4" },
+          { "word": "Over", "letter": "O", "level": "Order", "color": "#4ade80" },
+          { "word": "For", "letter": "F", "level": "Family", "color": "#fbbf24" },
+          { "word": "Good", "letter": "G", "level": "Genus", "color": "#f97316" },
+          { "word": "Soup", "letter": "S", "level": "Species", "color": "#ef4444" }
+        ]
+      },
+      "hierarchyLevels": [
+        {
+          "rank": 1,
+          "id": "domain",
+          "name": "Domain",
+          "shortDescription": "Broadest category of life",
+          "longDescription": "The highest taxonomic rank of organisms in the three-domain system proposed by Carl Woese. There are three domains: Archaea, Bacteria, and Eukarya.",
+          "keyPoint": "The broadest classification level, grouping organisms based on fundamental cellular and 16S rRNA differences.",
+          "examples": ["Eukarya", "Bacteria", "Archaea"],
+          "color": "#8b5cf6"
+        },
+        {
+          "rank": 2,
+          "id": "kingdom",
+          "name": "Kingdom",
+          "shortDescription": "Major groups of organisms",
+          "longDescription": "The second highest taxonomic rank. Organisms are grouped into kingdoms based on general characteristics like cell structure, body organization, and nutrition.",
+          "keyPoint": "Divides all living organisms into 5 major groups: Monera, Protista, Fungi, Plantae, Animalia.",
+          "examples": ["Animalia", "Plantae", "Fungi", "Protista", "Monera"],
+          "color": "#ec4899"
+        },
+        {
+          "rank": 3,
+          "id": "phylum",
+          "name": "Phylum / Division",
+          "shortDescription": "Major body plans",
+          "longDescription": "Groups organisms based on general body plan, embryonic germ layers, and anatomical organization. In botany, 'Division' is used instead of Phylum.",
+          "keyPoint": "Focuses on fundamental anatomical and developmental body architectures.",
+          "examples": ["Chordata", "Arthropoda", "Mollusca", "Annelida", "Echinodermata"],
+          "color": "#3b82f6"
+        },
+        {
+          "rank": 4,
+          "id": "class",
+          "name": "Class",
+          "shortDescription": "Groups within phylum",
+          "longDescription": "A taxonomic rank below phylum and above order. Groups together orders of organisms sharing major distinctive structural traits.",
+          "keyPoint": "Further divides phyla into more specific groups with shared adaptations.",
+          "examples": ["Mammalia", "Aves", "Reptilia", "Amphibia", "Insecta"],
+          "color": "#06b6d4"
+        },
+        {
+          "rank": 5,
+          "id": "order",
+          "name": "Order",
+          "shortDescription": "Groups within class",
+          "longDescription": "A taxonomic rank below class and above family. Groups together families of organisms with common evolutionary and morphological characteristics.",
+          "keyPoint": "Organizes classes into assemblages of families exhibiting few similar characters.",
+          "examples": ["Primates", "Carnivora", "Rodentia", "Chiroptera", "Polymoniales"],
+          "color": "#4ade80"
+        },
+        {
+          "rank": 6,
+          "id": "family",
+          "name": "Family",
+          "shortDescription": "Groups of related genera",
+          "longDescription": "A taxonomic rank below order and above genus. Characterized by both vegetative and reproductive features with fewer similarities than genus.",
+          "keyPoint": "Groups together genera that share a relatively recent common evolutionary ancestor.",
+          "examples": ["Hominidae (Humans)", "Felidae (Cats, Tigers)", "Canidae (Dogs, Wolves)", "Solanaceae (Potato, Tomato)"],
+          "color": "#fbbf24"
+        },
+        {
+          "rank": 7,
+          "id": "genus",
+          "name": "Genus",
+          "shortDescription": "Groups of related species",
+          "longDescription": "A group of closely related species that possess more characters in common in comparison to species of other genera.",
+          "keyPoint": "The first part of a scientific binomial name.",
+          "examples": ["Homo", "Panthera", "Canis", "Solanum", "Mangifera"],
+          "color": "#f97316"
+        },
+        {
+          "rank": 8,
+          "id": "species",
+          "name": "Species",
+          "shortDescription": "Specific organisms",
+          "longDescription": "The fundamental and basic unit of biological classification. A group of individuals with fundamental morphological similarities capable of interbreeding to produce fertile offspring.",
+          "keyPoint": "The lowest and most specific classification category. Uses binomial nomenclature (Genus + species).",
+          "examples": ["Homo sapiens (Human)", "Panthera leo (Lion)", "Panthera tigris (Tiger)", "Solanum tuberosum (Potato)"],
+          "color": "#ef4444"
+        }
+      ]
+    },
+    "taxonomicalAids": {
+      "title": "Taxonomical Aids",
+      "description": "Techniques, procedures, and stored information useful in identification, classification, and preservation of biological specimens.",
+      "aids": [
+        {
+          "name": "Herbarium",
+          "definition": "Storehouse of collected plant specimens that are dried, pressed, and preserved on sheets, arranged according to universally accepted classification systems.",
+          "labelInfo": "Herbarium sheets carry a label providing information about date, place of collection, English, local and botanical names, family, and collector's name."
+        },
+        {
+          "name": "Botanical Gardens",
+          "definition": "Specialized collections of living plants grown for identification, reference, and educational purposes.",
+          "famousExamples": [
+            "Royal Botanic Gardens, Kew (England) - Largest in the world",
+            "Indian Botanical Garden, Howrah (Kolkata, India)",
+            "National Botanical Research Institute (NBRI), Lucknow (India)"
+          ]
+        },
+        {
+          "name": "Museums",
+          "definition": "Institutions maintaining preserved plant and animal specimens in jars with preservative solutions (formalin), dry specimens, insect boxes, and animal skeletons for study and reference."
+        },
+        {
+          "name": "Zoological Parks (Zoos)",
+          "definition": "Protected enclosures where wild animals are kept in human care in conditions mimicking their natural habitats, enabling study of their food habits and behavior."
+        },
+        {
+          "name": "Taxonomic Key",
+          "definition": "Analytical identification device based on contrasting characters generally in pairs called Couplets. Each statement in a key is called a Lead.",
+          "types": ["Indented (Yoked) Key", "Bracketed Key"]
+        },
+        {
+          "name": "Flora, Manuals, Monographs & Catalogues",
+          "details": [
+            "Flora: Contains actual account of habitat and distribution of plants of a given area.",
+            "Manuals: Useful in providing information for identification of names of species found in an area.",
+            "Monographs: Contain comprehensive information on any one taxon (e.g., a single family or genus).",
+            "Catalogue: Alphabetical listing of species found in a particular location."
+          ]
+        }
+      ]
+    },
+    "ncertOrganismClassificationTable": [
+      {
+        "commonName": "Man",
+        "biologicalName": "Homo sapiens",
+        "genus": "Homo",
+        "family": "Hominidae",
+        "order": "Primata",
+        "class": "Mammalia",
+        "phylumDivision": "Chordata"
+      },
+      {
+        "commonName": "Housefly",
+        "biologicalName": "Musca domestica",
+        "genus": "Musca",
+        "family": "Muscidae",
+        "order": "Diptera",
+        "class": "Insecta",
+        "phylumDivision": "Arthropoda"
+      },
+      {
+        "commonName": "Mango",
+        "biologicalName": "Mangifera indica",
+        "genus": "Mangifera",
+        "family": "Anacardiaceae",
+        "order": "Sapindales",
+        "class": "Dicotyledonae",
+        "phylumDivision": "Angiospermae"
+      },
+      {
+        "commonName": "Wheat",
+        "biologicalName": "Triticum aestivum",
+        "genus": "Triticum",
+        "family": "Poaceae",
+        "order": "Poales",
+        "class": "Monocotyledonae",
+        "phylumDivision": "Angiospermae"
+      }
+    ]
+  }
+}

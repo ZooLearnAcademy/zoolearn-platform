@@ -1,0 +1,287 @@
+/* --- Container & Layout --- */
+.leech-anatomy-container {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+  color: #1f2937;
+}
+
+.leech-header-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leech-header-section .leech-badge {
+  display: inline-block;
+  background: #d1fae5;
+  color: #059669;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.leech-header-section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  color: #064e3b;
+}
+
+.leech-header-section p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Grid Layout */
+.leech-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px; /* Image area | Info area */
+  gap: 40px;
+  align-items: start;
+}
+
+/* --- Visual Area (Ruler + Image) --- */
+.leech-visual-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+
+/* The Ruler */
+.leech-ruler-col {
+  position: relative;
+  width: 40px;
+  height: 100%; /* Matches image height implicitly via flex */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure ruler matches image height aspect ratio logic if needed */
+.leech-ruler-col {
+  height: auto; 
+}
+
+.leech-ruler-mark {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.leech-ruler-num {
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.leech-ruler-mark.leech-active-mark .leech-ruler-num {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 800;
+  transform: scale(1.1) translateX(-2px);
+}
+
+/* Image Wrapper */
+
+
+
+
+
+.leech-image-wrapper {
+  position: relative;
+  width: 250px;
+    /* Fixed width for the leech illustration to maintain aspect */
+  border-radius: 40px;
+  background: white;
+  padding: 4px; /* White border effect */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden; /* Clips content to rounded corners */
+}
+
+.leech-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 56px; /* Slightly less than wrapper */
+}
+
+/* Segments */
+.leech-segment-overlay {
+  position: absolute;
+  left: 0; 
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border 0.1s;
+  z-index: 10;
+  border-top: 1px solid rgba(255,255,255,0.1); /* Subtle divider */
+}
+
+.leech-segment-overlay:hover {
+  /* Handled by React inline style logic, but baseline hover here */
+  z-index: 20;
+}
+
+/* --- Info Panel --- */
+.leech-info-panel-wrapper {
+  position: sticky;
+  top: 20px;
+}
+
+.leech-info-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0,0,0,0.05);
+  min-height: 300px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animation classes */
+.leech-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.leech-card-empty {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.leech-card-header {
+  padding: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leech-card-icon {
+  font-size: 32px;
+  background: rgba(255,255,255,0.25);
+  width: 50px; 
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.leech-card-seg-range {
+  font-weight: 600;
+  font-size: 14px;
+  background: rgba(0,0,0,0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.leech-card-body {
+  padding: 24px;
+  animation: leech-fadeIn 0.4s ease forwards;
+}
+
+.leech-card-body h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.leech-card-body p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.leech-stat-row {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.leech-stat-pill {
+  flex: 1;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.leech-stat-pill .leech-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.leech-stat-pill .leech-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Empty State */
+.leech-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  text-align: center;
+  padding: 30px;
+  color: #9ca3af;
+}
+
+.leech-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+  animation: leech-bounce 2s infinite;
+}
+
+/* Keyframes */
+@keyframes leech-fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes leech-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .leech-layout {
+    grid-template-columns: 1fr;
+  }
+  .leech-info-panel-wrapper {
+    position: relative;
+    top: 0;
+  }
+  .leech-visual-container {
+    justify-content: center;
+  }
+}

@@ -91,7 +91,7 @@ export function TissueImageCard({
               </button>
               
               <div className="relative max-h-[75vh] w-full flex items-center justify-center overflow-auto p-2">
-                <img
+                <img loading="lazy"
                   src={src}
                   alt={alt}
                   className="max-h-[70vh] w-auto object-contain rounded-lg shadow-xs"

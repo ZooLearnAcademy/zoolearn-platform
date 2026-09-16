@@ -14,6 +14,7 @@ import {
 import { Button } from "@workspace/ui/components/button";
 import { cn } from "@workspace/ui/lib/utils";
 import { Navbar } from "@/components/navbar";
+import { optimizeCloudinaryUrl } from "@/lib/cloudinary";
 
 export interface OrganismCardContent {
   id: string;
@@ -354,7 +355,7 @@ export function OrganismShell({ data, hideNavbar = false }: OrganismShellProps) 
                               <span>Anatomical Illustration / Diagram</span>
                             </div>
                             <img
-                              src={card.image.src}
+                              src={optimizeCloudinaryUrl(card.image.src, 600)}
                               alt={card.image.alt}
                               className="mx-auto max-h-96 w-auto rounded-xl object-contain shadow-md transition-transform hover:scale-[1.01]"
                               loading="lazy"

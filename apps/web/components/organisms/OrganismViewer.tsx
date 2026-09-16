@@ -9,11 +9,14 @@ import { cockroachData } from "@/data/organisms/cockroach-data";
 import { frogData } from "@/data/organisms/frog-data";
 import { honeybeeData } from "@/data/organisms/honeybee-data";
 import { humanEvolutionData } from "@/data/organisms/human-evolution-data";
+import MeerkatBlog from "./meerkat/pages/MeerkatBlog";
 
 export function OrganismViewer({ slug }: { slug: string }) {
   const normalizedSlug = slug.toLowerCase();
 
   switch (normalizedSlug) {
+    case "meerkat":
+      return <MeerkatBlog />;
     case "leech":
       return <OrganismShell data={leechData} />;
     case "rabbit":

@@ -8,6 +8,7 @@ import { DeepDive } from "@/components/deep-dive"
 export default function Page() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Premium Floating Navbar */}
       <Navbar />
       <Hero />
       <LearningModules />
@@ -16,3 +17,4 @@ export default function Page() {
     </div>
   )
 }
+

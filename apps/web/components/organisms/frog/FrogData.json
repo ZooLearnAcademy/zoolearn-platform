@@ -1,0 +1,1003 @@
+{
+    "taxonomy": {
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Anura",
+        "scientificName": "Rana tigrina",
+        "tag": "Amphibia | Anura"
+    },
+    "hero": {
+        "title": "Frog",
+        "subtitle": "Rana tigrina",
+        "image": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102582/6f91a33b-f2ff-44e1-8451-0f799300c203_b5tnhc.png"
+    },
+    "models": {
+        "morphology": "",
+        "digestive": "",
+        "respiratory": "",
+        "circulatory": "",
+        "excretory": "",
+        "reproductive": ""
+    },
+    "sections": [
+        {
+            "id": "classification",
+            "label": "Classification & Habitat",
+            "icon": "classification",
+            "classificationIntro": "The Indian bullfrog is a vertebrate animal and is classified as follows:",
+            "systematicPosition": [
+                {
+                    "rank": "Phylum",
+                    "value": "Chordata"
+                },
+                {
+                    "rank": "Class",
+                    "value": "Amphibia"
+                },
+                {
+                    "rank": "Order",
+                    "value": "Anura (includes frogs and toads)"
+                },
+                {
+                    "rank": "Genus",
+                    "value": "Rana"
+                },
+                {
+                    "rank": "Species",
+                    "value": "tigrina"
+                }
+            ],
+            "habitat": [
+                {
+                    "text": "As an amphibian, Rana tigrina can live both on land and in freshwater habitats. It is commonly found near freshwater bodies such as ponds, lakes, and streams.",
+                    "highlight": false
+                },
+                {
+                    "text": "The Indian bullfrog is a cold-blooded (poikilothermic) animal, meaning its body temperature changes according to the surrounding environment.",
+                    "highlight": true,
+                    "strong": "cold-blooded (poikilothermic)"
+                },
+                {
+                    "text": "To survive extreme weather conditions, the bullfrog buries itself in moist soil. During hot and dry periods, it enters a state called aestivation, while during cold conditions it undergoes hibernation. During these inactive periods, respiration mainly takes place through the skin.",
+                    "highlight": true,
+                    "strong": "aestivation"
+                },
+                {
+                    "text": "In its early life stage, the bullfrog lives entirely in water as a tadpole and breathes through gills, similar to a fish.",
+                    "highlight": true,
+                    "strong": "tadpole"
+                }
+            ],
+            "skinNote": "The skin of Rana tigrina is always moist and slippery due to the secretion of mucus. This moisture is essential for its survival because frogs do not drink water directly. Instead, they absorb water through their skin.",
+            "facts": [
+                {
+                    "icon": "Thermometer",
+                    "label": "Thermoregulation",
+                    "value": "Cold-blooded (Poikilothermic)"
+                },
+                {
+                    "icon": "Home",
+                    "label": "Habitat",
+                    "value": "Land & Freshwater"
+                },
+                {
+                    "icon": "Sun",
+                    "label": "Summer Dormancy",
+                    "value": "Aestivation"
+                },
+                {
+                    "icon": "Snowflake",
+                    "label": "Winter Dormancy",
+                    "value": "Hibernation"
+                },
+                {
+                    "icon": "Waves",
+                    "label": "Larval Stage",
+                    "value": "Tadpole (aquatic)"
+                },
+                {
+                    "icon": "Droplet",
+                    "label": "Water Absorption",
+                    "value": "Through Skin"
+                }
+            ]
+        },
+        {
+            "id": "morphology",
+            "label": "External Morphology",
+            "icon": "morphology",
+            "intro": "The external morphology of a frog deals with the study of its visible external features and overall appearance.",
+            "images": {
+                "morphologyMain": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102570/b2844280-84d5-4f43-bc2c-cf05647b3bc9_zfah8k.png",
+                "vocalSacs": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102588/vocal_sacs_hknbhx.jpg",
+                "copulatoryPads": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102589/nuptial_pad_xoqpe0.jpg",
+                "headFeatures": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102591/f0_lqcerb.png"
+            },
+            "bodyDivision": {
+                "title": "Body Division and Shape",
+                "subsections": [
+                    {
+                        "subtitle": "Streamlined Form",
+                        "points": [
+                            "The body of a frog is streamlined and dorsoventrally flattened, which helps it move efficiently through water."
+                        ]
+                    },
+                    {
+                        "subtitle": "Divisions",
+                        "points": [
+                            "The body is divided into two main regions: the head and the trunk.",
+                            "A neck and tail are absent in adult frogs."
+                        ]
+                    },
+                    {
+                        "subtitle": "Cloacal Aperture",
+                        "points": [
+                            "A small opening called the cloacal aperture is present at the posterior end of the body between the hind limbs.",
+                            "It serves as a common opening for the digestive, excretory, and reproductive systems."
+                        ]
+                    }
+                ]
+            },
+            "skin": {
+                "title": "Skin Characteristics",
+                "subsections": [
+                    {
+                        "subtitle": "Texture",
+                        "points": [
+                            "The skin is smooth, moist, and slippery due to the mucus secreted by mucous glands.",
+                            "The moist skin helps in respiration."
+                        ]
+                    },
+                    {
+                        "subtitle": "Hydration",
+                        "points": [
+                            "Frogs do not drink water directly.",
+                            "Instead, they absorb water through their highly vascularized skin."
+                        ]
+                    },
+                    {
+                        "subtitle": "Coloration",
+                        "points": [
+                            "The dorsal (upper) surface is usually olive green with dark irregular spots.",
+                            "The ventral (lower) surface is generally pale yellow in color."
+                        ]
+                    },
+                    {
+                        "subtitle": "Defense",
+                        "points": [
+                            "Frogs can change their body color to blend with their surroundings.",
+                            "This adaptation helps them avoid predators through camouflage."
+                        ]
+                    }
+                ]
+            },
+            "head": {
+                "title": "Head Features",
+                "subsections": [
+                    {
+                        "subtitle": "Snout and Mouth",
+                        "points": [
+                            "The head is roughly triangular in shape, with the pointed end forming the snout.",
+                            "A wide mouth is present at the anterior end and can open broadly."
+                        ]
+                    },
+                    {
+                        "subtitle": "Nostrils",
+                        "points": [
+                            "A pair of external nostrils is present on the dorsal surface of the snout.",
+                            "These openings help in respiration."
+                        ]
+                    },
+                    {
+                        "subtitle": "Eyes",
+                        "points": [
+                            "The eyes are large and bulging.",
+                            "Each eye is protected by a transparent nictitating membrane (third eyelid), which protects the eye while the frog is underwater."
+                        ]
+                    },
+                    {
+                        "subtitle": "Tympanum",
+                        "points": [
+                            "A circular membranous tympanum (eardrum) is present on either side of the head behind the eyes.",
+                            "It receives sound vibrations and helps in hearing.",
+                            "External ears are absent."
+                        ]
+                    }
+                ]
+            },
+            "appendages": {
+                "title": "Appendages (Limbs)",
+                "subsections": [
+                    {
+                        "subtitle": "Forelimbs",
+                        "points": [
+                            "The forelimbs are short and sturdy.",
+                            "They support the body's weight and help the frog land safely after jumping.",
+                            "Each forelimb consists of an upper arm, forearm, and hand.",
+                            "The hand bears four digits."
+                        ]
+                    },
+                    {
+                        "subtitle": "Hind Limbs",
+                        "points": [
+                            "The hind limbs are longer, larger, and more muscular than the forelimbs.",
+                            "They are adapted for swimming, walking, leaping, and burrowing.",
+                            "Each hind limb consists of a thigh, shank, and foot.",
+                            "The foot bears five digits."
+                        ]
+                    },
+                    {
+                        "subtitle": "Webbed Feet",
+                        "points": [
+                            "The digits of the hind limbs are connected by thin webs of skin.",
+                            "These webbed feet help the frog swim efficiently.",
+                            "When at rest, the hind limbs are usually folded in a characteristic 'Z'-shaped position."
+                        ]
+                    }
+                ]
+            },
+            "sexualDimorphism": {
+                "title": "Sexual Dimorphism",
+                "intro": "Male and female frogs can be distinguished by certain external features.",
+                "subsections": [
+                    {
+                        "subtitle": "Vocal Sacs",
+                        "points": [
+                            "Male frogs possess vocal sacs that amplify their croaking sounds during the breeding season."
+                        ],
+                        "imageKey": "vocalSacs"
+                    },
+                    {
+                        "subtitle": "Copulatory Pads",
+                        "points": [
+                            "Male frogs have copulatory (nuptial) pads on the first digit of each forelimb.",
+                            "These pads help the male hold the female firmly during mating."
+                        ],
+                        "imageKey": "copulatoryPads"
+                    },
+                    {
+                        "subtitle": "Females",
+                        "points": [
+                            "Vocal sacs and copulatory pads are absent in female frogs."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "digestive",
+            "label": "Digestive System",
+            "icon": "digestive",
+            "intro": "The digestive system of a frog consists of a well-developed alimentary canal and several digestive glands that help in the digestion and absorption of food.",
+            "images": {
+                "digestive": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102546/digestive_system_wpfa55.jpg"
+            },
+            "alimentaryCanal": {
+                "title": "The Alimentary Canal",
+                "description": "The alimentary canal of a frog is comparatively short. It consists of the following parts:",
+                "subsections": [
+                    {
+                        "subtitle": "Mouth and Buccal Cavity",
+                        "points": [
+                            "The mouth is wide and opens into a spacious buccal cavity."
+                        ]
+                    },
+                    {
+                        "subtitle": "Tongue",
+                        "points": [
+                            "Frogs capture their prey using a large, muscular, sticky tongue with a bifid (forked) tip.",
+                            "The tongue is attached at the front of the lower jaw and free at the back.",
+                            "This arrangement allows the frog to quickly project its tongue outward and catch insects."
+                        ]
+                    },
+                    {
+                        "subtitle": "Teeth",
+                        "points": [
+                            "The upper jaw bears a row of small, pointed maxillary teeth.",
+                            "A pair of vomerine teeth is present on the roof of the buccal cavity near the internal nostrils.",
+                            "Teeth are absent in the lower jaw."
+                        ]
+                    },
+                    {
+                        "subtitle": "Pharynx and Oesophagus",
+                        "points": [
+                            "The buccal cavity opens into the pharynx, which leads to a short muscular tube called the oesophagus."
+                        ]
+                    },
+                    {
+                        "subtitle": "Stomach",
+                        "points": [
+                            "The oesophagus opens into the stomach.",
+                            "The initial stages of chemical digestion take place here."
+                        ]
+                    },
+                    {
+                        "subtitle": "Small Intestine",
+                        "points": [
+                            "The small intestine consists of two parts:",
+                            "Duodenum – the first part",
+                            "Ileum – the second and longer part"
+                        ]
+                    },
+                    {
+                        "subtitle": "Rectum and Cloaca",
+                        "points": [
+                            "The intestine continues into the rectum, which opens into the cloaca.",
+                            "The cloaca is a common chamber that receives faeces, urine, and reproductive cells (sperms or eggs).",
+                            "These materials are expelled through the cloacal aperture."
+                        ]
+                    }
+                ],
+                "flow": [
+                    "Mouth",
+                    "Buccal Cavity",
+                    "Pharynx",
+                    "Oesophagus",
+                    "Stomach",
+                    "Duodenum",
+                    "Ileum",
+                    "Rectum",
+                    "Cloaca"
+                ]
+            },
+            "glands": {
+                "title": "Digestive Glands and Process",
+                "subsections": [
+                    {
+                        "subtitle": "Liver",
+                        "points": [
+                            "The liver is the largest digestive gland.",
+                            "It secretes bile, which is stored in the gall bladder.",
+                            "Bile helps in the emulsification of fats."
+                        ]
+                    },
+                    {
+                        "subtitle": "Pancreas",
+                        "points": [
+                            "The pancreas produces pancreatic juice containing enzymes that digest carbohydrates, proteins, and lipids."
+                        ]
+                    }
+                ]
+            },
+            "digestionProcess": {
+                "title": "Digestion of Food",
+                "subsections": [
+                    {
+                        "subtitle": "Digestion in the Stomach",
+                        "points": [
+                            "Food is partially digested in the stomach by hydrochloric acid (HCl) and gastric juices secreted by the stomach wall.",
+                            "The partially digested food formed is called chyme."
+                        ]
+                    },
+                    {
+                        "subtitle": "Duodenal Digestion",
+                        "points": [
+                            "Chyme enters the duodenum, where it receives bile and pancreatic juice through a common bile duct.",
+                            "These secretions aid in further digestion of food."
+                        ]
+                    },
+                    {
+                        "subtitle": "Absorption",
+                        "points": [
+                            "Final digestion and absorption take place in the intestine.",
+                            "The inner lining of the intestine contains numerous finger-like projections called villi and microscopic projections called microvilli.",
+                            "These structures increase the surface area for efficient absorption of digested nutrients.",
+                            "The remaining undigested waste passes into the rectum and is finally expelled through the cloaca."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "respiratory",
+            "label": "Respiration System",
+            "icon": "respiratory",
+            "intro": "Frogs possess a versatile respiratory system that enables them to breathe in different environments and at various stages of their life cycle. Adult frogs use three types of respiration: cutaneous respiration, buccal respiration, and pulmonary respiration.",
+            "modes": [
+                {
+                    "title": "1. Cutaneous Respiration (Skin)",
+                    "description": "This type of respiration occurs both in water and on land.",
+                    "subsections": [
+                        {
+                            "subtitle": "Mechanism",
+                            "points": [
+                                "The skin is highly vascularized and remains moist due to the secretion of mucus from mucus glands.",
+                                "Oxygen dissolved in water or present in the air diffuses directly through the skin into the blood.",
+                                "Carbon dioxide diffuses out through the skin."
+                            ]
+                        },
+                        {
+                            "subtitle": "Seasonal Survival",
+                            "points": [
+                                "During aestivation (summer sleep) and hibernation (winter sleep), frogs remain buried in moist soil.",
+                                "During these periods, respiration takes place entirely through the skin."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Buccal Respiration (Mouth)",
+                    "description": "When the frog is on land and at rest, the buccal cavity functions as a respiratory organ.",
+                    "subsections": [
+                        {
+                            "subtitle": "Mechanism",
+                            "points": [
+                                "The mouth remains closed while the nostrils stay open.",
+                                "The floor of the buccal cavity moves up and down rhythmically.",
+                                "This movement allows air to enter and leave the buccal cavity through the nostrils.",
+                                "Gaseous exchange occurs through the moist lining of the buccal cavity."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Pulmonary Respiration (Lungs)",
+                    "description": "This is the process of respiration through the lungs and occurs when the frog is active on land.",
+                    "subsections": [
+                        {
+                            "subtitle": "Structure",
+                            "points": [
+                                "The lungs are a pair of elongated, pink, sac-like organs located in the upper part of the body cavity."
+                            ]
+                        },
+                        {
+                            "subtitle": "Pathway",
+                            "points": [
+                                "Air enters through the external nostrils.",
+                                "It passes into the buccal cavity and then reaches the lungs.",
+                                "Gaseous exchange takes place in the lungs, where oxygen enters the blood and carbon dioxide is released."
+                            ]
+                        }
+                    ],
+                    "pathway": [
+                        "External Nostrils",
+                        "Buccal Cavity",
+                        "Lungs"
+                    ]
+                },
+                {
+                    "title": "4. Larval Respiration (Gills)",
+                    "description": "Before becoming an adult, the frog passes through a larval stage called the tadpole.",
+                    "subsections": [
+                        {
+                            "subtitle": "Mechanism",
+                            "points": [
+                                "The tadpole is fully aquatic and breathes through gills, similar to a fish.",
+                                "Oxygen dissolved in water is absorbed through the gills."
+                            ]
+                        },
+                        {
+                            "subtitle": "Metamorphosis",
+                            "points": [
+                                "During metamorphosis, the gills gradually disappear.",
+                                "The lungs develop and become functional, allowing the adult frog to breathe air."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "circulatory",
+            "label": "Circulatory System",
+            "icon": "circulatory",
+            "intro": "The frog possesses a well-developed closed circulatory system along with a lymphatic system that helps in the transport of materials throughout the body.",
+            "images": {
+                "circulatory": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102589/lungs_xttiru.png",
+                "blood": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102546/blood_cells_kdstzu.jpg",
+                "circulation": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782224061/Picture1_ukyap6.png"
+            },
+            "heart": {
+                "title": "The Heart",
+                "description": "The heart is a muscular organ located in the upper part of the body cavity and is enclosed within a double-walled membrane called the pericardium. It is three-chambered, consisting of:",
+                "subsections": [
+                    {
+                        "subtitle": "Two Atria (Auricles)",
+                        "points": [
+                            "The atria are thin-walled chambers situated in the anterior part of the heart.",
+                            "The right atrium receives deoxygenated blood through a triangular chamber called the sinus venosus, into which the major veins (vena cavae) open.",
+                            "The left atrium receives oxygenated blood from the lungs through the pulmonary vein."
+                        ]
+                    },
+                    {
+                        "subtitle": "One Ventricle",
+                        "points": [
+                            "The ventricle is a single, thick-walled chamber located posterior to the atria.",
+                            "It pumps blood out of the heart.",
+                            "The ventricle opens into a cylindrical sac-like structure called the conus arteriosus (or truncus arteriosus)."
+                        ]
+                    }
+                ]
+            },
+            "vascular": {
+                "title": "Vascular and Portal Systems",
+                "subsections": [
+                    {
+                        "subtitle": "Truncus Arteriosus",
+                        "points": [
+                            "The truncus arteriosus arises from the ventricle and divides into the right and left aortic trunks.",
+                            "Each aortic trunk further divides into three arterial arches:",
+                            "Carotid arch – supplies blood to the head region.",
+                            "Systemic arch – supplies blood to the rest of the body.",
+                            "Pulmocutaneous arch – carries blood to the lungs and skin for respiration."
+                        ]
+                    },
+                    {
+                        "subtitle": "Arterial System",
+                        "points": [
+                            "The arterial system carries blood from the heart to various parts of the body."
+                        ]
+                    },
+                    {
+                        "subtitle": "Venous System",
+                        "points": [
+                            "The venous system collects blood from different body parts and returns it to the heart."
+                        ]
+                    }
+                ],
+                "portalSystems": {
+                    "intro": "Frogs possess two specialized portal systems:",
+                    "systems": [
+                        {
+                            "subtitle": "Hepatic Portal System",
+                            "points": [
+                                "It is a venous connection between the intestine and the liver.",
+                                "Nutrient-rich blood from the intestine passes through the liver before entering the general circulation."
+                            ]
+                        },
+                        {
+                            "subtitle": "Renal Portal System",
+                            "points": [
+                                "It is a venous connection between the posterior parts of the body and the kidneys.",
+                                "Blood from the hind region passes through the kidneys before returning to the heart."
+                            ]
+                        }
+                    ]
+                }
+            },
+            "blood": {
+                "title": "Blood and Lymph",
+                "subsections": [
+                    {
+                        "subtitle": "Blood Composition",
+                        "points": [
+                            "Blood consists of:",
+                            "Plasma (about 60%)",
+                            "Blood cells (about 40%)"
+                        ]
+                    },
+                    {
+                        "subtitle": "Red Blood Cells (Erythrocytes)",
+                        "points": [
+                            "Red blood cells are oval-shaped and nucleated.",
+                            "They contain the respiratory pigment haemoglobin."
+                        ]
+                    },
+                    {
+                        "subtitle": "White Blood Cells (Leucocytes)",
+                        "points": [
+                            "White blood cells are nucleated and help in body defence."
+                        ]
+                    },
+                    {
+                        "subtitle": "Platelets",
+                        "points": [
+                            "Platelets are present in the blood and help in blood clotting."
+                        ]
+                    },
+                    {
+                        "subtitle": "Lymph",
+                        "points": [
+                            "The lymphatic system consists of lymph, lymph vessels, and lymph nodes.",
+                            "Lymph differs from blood because it lacks red blood cells and contains fewer proteins."
+                        ]
+                    }
+                ]
+            },
+            "circulation": {
+                "title": "Circulation",
+                "points": [
+                    "Blood circulation is maintained by the pumping action of the muscular heart.",
+                    "Frogs possess a closed circulatory system, where blood flows through blood vessels.",
+                    "Because oxygenated and deoxygenated blood are not completely separated in the ventricle, the circulation is often described as incomplete double circulation."
+                ]
+            }
+        },
+        {
+            "id": "nervous",
+            "label": "Nervous System",
+            "icon": "nervous",
+            "intro": "The nervous system of a frog is a highly developed system responsible for the control and coordination of various body activities. It works in association with the endocrine system and is divided into three main parts: the Central Nervous System (CNS), Peripheral Nervous System (PNS), and Autonomic Nervous System (ANS).",
+            "images": {
+                "peripheral": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102586/f2_x30s0m.png",
+                "senses": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102580/f1_irosfz.png"
+            },
+            "cns": {
+                "title": "1. Central Nervous System (CNS)",
+                "description": "The Central Nervous System forms the main coordinating centre of the body and consists of the brain and spinal cord.",
+                "brain": {
+                    "title": "The Brain",
+                    "points": [
+                        "The brain is located inside the cranial cavity and is protected by the cranium (brain box).",
+                        "It is further covered by two protective membranes called the dura mater and pia mater.",
+                        "The brain is divided into three major regions:"
+                    ],
+                    "regions": [
+                        {
+                            "subtitle": "Forebrain (Prosencephalon)",
+                            "points": [
+                                "The forebrain is the largest and anterior-most part of the brain.",
+                                "It consists of:",
+                                "A pair of olfactory lobes, responsible for the sense of smell.",
+                                "A pair of cerebral hemispheres.",
+                                "An unpaired diencephalon."
+                            ]
+                        },
+                        {
+                            "subtitle": "Midbrain (Mesencephalon)",
+                            "points": [
+                                "The midbrain contains a pair of large, oval optic lobes.",
+                                "These lobes are associated with vision and contain cavities known as optic ventricles."
+                            ]
+                        },
+                        {
+                            "subtitle": "Hindbrain (Rhombencephalon)",
+                            "points": [
+                                "The hindbrain consists of:",
+                                "Cerebellum – a narrow transverse band that helps maintain balance and coordinate muscular activities.",
+                                "Medulla oblongata – controls various involuntary activities of the body."
+                            ]
+                        }
+                    ]
+                },
+                "spinalCord": {
+                    "title": "The Spinal Cord",
+                    "points": [
+                        "The medulla oblongata continues posteriorly as the spinal cord.",
+                        "It leaves the skull through an opening called the foramen magnum.",
+                        "The spinal cord is enclosed and protected by the vertebral column."
+                    ]
+                }
+            },
+            "peripheral": {
+                "title": "2. Peripheral and Autonomic Systems",
+                "subsections": [
+                    {
+                        "subtitle": "Peripheral Nervous System (PNS)",
+                        "points": [
+                            "The PNS connects the Central Nervous System to different parts of the body.",
+                            "It consists of:",
+                            "10 pairs of cranial nerves arising from the brain.",
+                            "10 pairs of spinal nerves arising from the spinal cord."
+                        ]
+                    },
+                    {
+                        "subtitle": "Autonomic Nervous System (ANS)",
+                        "points": [
+                            "The ANS controls the involuntary activities of internal organs.",
+                            "It is divided into:",
+                            "Sympathetic nervous system",
+                            "Parasympathetic nervous system"
+                        ]
+                    }
+                ]
+            },
+            "senseOrgans": {
+                "title": "3. Sense Organs",
+                "description": "Frogs possess specialized sense organs that help them respond to their surroundings.",
+                "subsections": [
+                    {
+                        "subtitle": "Vision",
+                        "points": [
+                            "Frogs have a pair of simple eyes located in the eye sockets (orbits) of the skull.",
+                            "Each eye is protected by a transparent nictitating membrane while the frog is underwater."
+                        ]
+                    },
+                    {
+                        "subtitle": "Hearing and Balance",
+                        "points": [
+                            "A circular tympanum (eardrum) is visible externally behind each eye.",
+                            "External ears are absent.",
+                            "The ear functions in both hearing and maintenance of body balance (equilibrium)."
+                        ]
+                    },
+                    {
+                        "subtitle": "Chemical and Physical Senses",
+                        "points": [
+                            "Sensory papillae are responsible for touch sensation.",
+                            "Taste buds present on the tongue help in tasting food.",
+                            "The nasal epithelium is responsible for the sense of smell.",
+                            "Unlike the eyes and ears, these sensory structures consist mainly of groups of sensory cells associated with nerve endings."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "excretory",
+            "label": "Excretory System",
+            "icon": "excretory",
+            "intro": "The excretory system of a frog is a well-developed system responsible for the removal of nitrogenous wastes and the maintenance of water and salt balance (osmoregulation). It consists of the following components:",
+            "kidneys": {
+                "title": "The Kidneys",
+                "subsections": [
+                    {
+                        "subtitle": "Structure and Location",
+                        "points": [
+                            "The kidneys are a pair of compact, dark red, bean-shaped organs.",
+                            "They are located in the posterior part of the body cavity on either side of the vertebral column.",
+                            "The kidneys of frogs are mesonephric kidneys."
+                        ]
+                    },
+                    {
+                        "subtitle": "Functional Units",
+                        "points": [
+                            "Each kidney is made up of numerous structural and functional units called nephrons (uriniferous tubules).",
+                            "Nephrons filter the blood and remove nitrogenous wastes for excretion."
+                        ]
+                    }
+                ]
+            },
+            "ureters": {
+                "title": "Ureters and Sexual Differences",
+                "description": "The arrangement of the ureters differs in male and female frogs.",
+                "subsections": [
+                    {
+                        "subtitle": "In Males",
+                        "points": [
+                            "Two ureters arise from the kidneys and function as urinogenital ducts.",
+                            "These ducts carry both urine and sperm.",
+                            "They open into the cloaca."
+                        ]
+                    },
+                    {
+                        "subtitle": "In Females",
+                        "points": [
+                            "The ureters and oviducts are separate structures.",
+                            "Both open independently into the cloaca.",
+                            "The ureters transport only urine."
+                        ]
+                    }
+                ]
+            },
+            "storage": {
+                "title": "Storage and Elimination",
+                "subsections": [
+                    {
+                        "subtitle": "Urinary Bladder",
+                        "points": [
+                            "A thin-walled, unpaired urinary bladder is present ventral to the rectum.",
+                            "It temporarily stores urine before excretion.",
+                            "The urinary bladder opens into the cloaca."
+                        ]
+                    },
+                    {
+                        "subtitle": "Cloaca",
+                        "points": [
+                            "The cloaca is a small median chamber that serves as a common passage for:",
+                            "Faecal matter",
+                            "Urine",
+                            "Reproductive cells (sperms or eggs)",
+                            "These materials are discharged to the outside through the cloacal aperture."
+                        ]
+                    }
+                ]
+            },
+            "nitrogenousWaste": {
+                "title": "Nitrogenous Waste",
+                "points": [
+                    "Frogs primarily excrete urea as their nitrogenous waste.",
+                    "Therefore, they are called ureotelic animals.",
+                    "Nitrogenous wastes are transported by the blood to the kidneys, where they are filtered and removed from the body."
+                ]
+            }
+        },
+        {
+            "id": "reproductive",
+            "label": "Reproductive System",
+            "icon": "reproductive",
+            "intro": "Frogs possess well-developed male and female reproductive systems. Fertilization and early development usually take place in water.",
+            "images": {
+                "metamorphosis": "https://res.cloudinary.com/dstunh4mx/image/upload/v1782102586/frog_metamorphism_vtvc1t.png"
+            },
+            "male": {
+                "title": "Male Reproductive System",
+                "subsections": [
+                    {
+                        "subtitle": "Testes",
+                        "points": [
+                            "The male reproductive organs consist of a pair of yellowish, ovoid testes.",
+                            "They are attached to the upper part of the kidneys and the dorsal body wall by a double fold of peritoneum called the mesorchium."
+                        ]
+                    },
+                    {
+                        "subtitle": "Duct System",
+                        "points": [
+                            "About 10–12 vasa efferentia arise from each testis.",
+                            "These ducts enter the kidneys and open into Bidder's canal."
+                        ]
+                    },
+                    {
+                        "subtitle": "Urinogenital Duct",
+                        "points": [
+                            "From Bidder's canal, the sperm passes into the urinogenital duct.",
+                            "This duct emerges from the kidneys and opens into the cloaca.",
+                            "In male frogs, the urinogenital duct carries both urine and sperm."
+                        ]
+                    },
+                    {
+                        "subtitle": "Cloaca",
+                        "points": [
+                            "The cloaca is a small median chamber that serves as a common passage for:",
+                            "Sperm",
+                            "Urine",
+                            "Faecal matter",
+                            "These materials are discharged through the cloacal aperture."
+                        ]
+                    },
+                    {
+                        "subtitle": "Secondary Sexual Characteristics",
+                        "points": [
+                            "Male frogs possess vocal sacs that amplify their croaking sounds during the breeding season.",
+                            "They also have copulatory (nuptial) pads on the first digit of each forelimb, which help them hold the female during mating."
+                        ]
+                    }
+                ]
+            },
+            "female": {
+                "title": "Female Reproductive System",
+                "subsections": [
+                    {
+                        "subtitle": "Ovaries",
+                        "points": [
+                            "The female reproductive organs consist of a pair of ovaries located near the kidneys.",
+                            "They are attached to the kidneys and dorsal body wall by folds of peritoneum called the mesovarium.",
+                            "Unlike males, there is no direct functional connection between the ovaries and kidneys."
+                        ]
+                    },
+                    {
+                        "subtitle": "Oviducts",
+                        "points": [
+                            "A pair of long, coiled oviducts are present on either side of the kidneys.",
+                            "Each oviduct opens into the body cavity anteriorly through a funnel-shaped opening called the ostium."
+                        ]
+                    },
+                    {
+                        "subtitle": "Egg Storage and Elimination",
+                        "points": [
+                            "Posteriorly, each oviduct expands into an ovisac, where eggs are temporarily stored.",
+                            "The oviducts and ureters open separately into the cloaca.",
+                            "In females, the ureters carry only urine."
+                        ]
+                    },
+                    {
+                        "subtitle": "Spawning",
+                        "points": [
+                            "A mature female frog can lay approximately 2,500–3,000 eggs (ova) at a time."
+                        ]
+                    }
+                ]
+            },
+            "fertilization": {
+                "title": "Fertilization and Development",
+                "subsections": [
+                    {
+                        "subtitle": "Fertilization",
+                        "points": [
+                            "Fertilization is external and usually takes place in water.",
+                            "The male releases sperm over the eggs laid by the female."
+                        ]
+                    },
+                    {
+                        "subtitle": "Larval Stage",
+                        "points": [
+                            "Development includes a larval stage called the tadpole.",
+                            "Newly hatched tadpoles initially depend on the yolk reserve present in their bodies for nourishment."
+                        ]
+                    },
+                    {
+                        "subtitle": "Metamorphosis",
+                        "points": [
+                            "The tadpole undergoes a transformation known as metamorphosis, during which it develops into an adult frog."
+                        ]
+                    },
+                    {
+                        "subtitle": "Changes During Metamorphosis",
+                        "points": [
+                            "The tail gradually disappears.",
+                            "The gills degenerate and disappear.",
+                            "Forelimbs and hind limbs develop.",
+                            "The mouth becomes wider, and jaws and teeth develop.",
+                            "The lungs become functional, enabling the frog to breathe air and live on land."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "economic",
+            "label": "Economic Importance of Frogs",
+            "icon": "economic",
+            "intro": "Frogs have great economic and ecological importance. They benefit both humans and the environment in several ways.",
+            "categories": [
+                {
+                    "title": "Pest Control and Agriculture",
+                    "icon": "Sprout",
+                    "points": [
+                        "Frogs are highly beneficial because they feed on a variety of insects.",
+                        "By consuming insect pests, they help control pest populations naturally.",
+                        "This reduces damage to agricultural crops and supports farming activities."
+                    ]
+                },
+                {
+                    "title": "Ecological Balance",
+                    "icon": "Leaf",
+                    "points": [
+                        "Frogs play an important role in maintaining ecological balance.",
+                        "They form a vital link in food chains and food webs.",
+                        "Frogs act as predators by feeding on insects and as prey for birds, snakes, fishes, and other animals."
+                    ]
+                },
+                {
+                    "title": "Food Source",
+                    "icon": "Utensils",
+                    "points": [
+                        "In many parts of the world, frogs are considered a nutritious food source.",
+                        "Their muscular hind limbs, commonly known as frog legs, are consumed as a delicacy in several countries.",
+                        "Frog legs are popular in countries such as the USA, Japan, and China, and are also consumed in some regions of North-East India."
+                    ]
+                },
+                {
+                    "title": "Medicinal Use",
+                    "icon": "Pill",
+                    "points": [
+                        "Frogs have been used in traditional medicine in some cultures.",
+                        "Certain frog-derived compounds have been studied for their potential medicinal applications.",
+                        "Research suggests that some frog secretions may possess antimicrobial and therapeutic properties."
+                    ]
+                },
+                {
+                    "title": "Conservation Importance",
+                    "icon": "Shield",
+                    "points": [
+                        "Because of their ecological and economic significance, frogs should be protected.",
+                        "Conserving frog populations helps maintain healthy ecosystems and biodiversity.",
+                        "Frogs are also considered important bioindicators, as changes in their populations can indicate environmental disturbances and pollution."
+                    ]
+                }
+            ],
+            "facts": [
+                {
+                    "icon": "Dna",
+                    "label": "Order Anura (Frogs and Toads)",
+                    "text": "Frogs and toads have bodies specifically designed for jumping, characterized by greatly elongated hind limbs. They are highly adaptable and can live in aquatic (water), terrestrial (land), or arboreal (trees) environments."
+                },
+                {
+                    "icon": "RefreshCw",
+                    "label": "Anus vs. Cloaca",
+                    "text": "While mammals have an anus for the exit of solid waste, amphibians, birds, reptiles, and certain fishes have a cloaca. The cloaca is a common chamber where the intestinal, urinary, and genital tracts all open; in female frogs, it also serves as a depository for sperm."
+                },
+                {
+                    "icon": "History",
+                    "label": "Evolutionary Milestone",
+                    "text": "Amphibians were the first vertebrates to live on land, appearing approximately 360 million years ago."
+                },
+                {
+                    "icon": "Globe",
+                    "label": "Species Diversity",
+                    "text": "There are about 4,500 known species of amphibians. In India, the most common species are Rana tigrina and Rana hexadactyla."
+                },
+                {
+                    "icon": "Utensils",
+                    "label": "Dietary Adaptation",
+                    "text": "Because frogs are carnivores, they have a relatively short alimentary canal, as a long intestine is not required to digest meat."
+                },
+                {
+                    "icon": "Layers",
+                    "label": "Reproductive Capacity",
+                    "text": "A single mature female frog is capable of laying between 2,500 and 3,000 ova at one time."
+                }
+            ]
+        }
+    ]
+}

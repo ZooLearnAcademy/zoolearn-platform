@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo, useEffect } from "react";
+import React, { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import {
   ReactFlow,
   Background,
@@ -23,53 +23,78 @@ export type AnimaliaNode = {
   children?: AnimaliaNode[];
 };
 
-/**
- * nodeTypes MUST be outside to avoid re-renders
- */
 const nodeTypes = {
   custom: CustomNode,
 };
 
-/**
- * Extract the actual species slug from a composite tree ID.
- * e.g. "animalia_porifera_calcarea_sycon" → "sycon"
- */
 function extractSpeciesSlug(treeId: string): string {
   const parts = treeId.split("_");
   return parts[parts.length - 1] || treeId;
 }
 
-/**
- * Extract the phylum slug from a composite tree ID.
- * e.g. "animalia_porifera_calcarea_sycon" → "porifera"
- */
 function extractPhylumSlug(treeId: string): string {
   const parts = treeId.split("_");
   return parts.length >= 2 ? parts[1]! : treeId;
+}
+
+const LEVEL_HEIGHT = 160;
+const HORIZONTAL_GAP = 36;
+
+/**
+ * Accurately calculate the visual width of any node based on text length.
+ */
+function getNodeWidth(node: AnimaliaNode): number {
+  if (node.id === "animalia") return 220;
+  const labelLen = node.label ? node.label.length : 0;
+  const subLen = node.commonName ? node.commonName.length : 0;
+  const maxChars = Math.max(labelLen, subLen);
+  // 9px per char + 48px padding & handles
+  return Math.max(160, Math.min(320, maxChars * 8.8 + 48));
+}
+
+/**
+ * Recursively computes non-overlapping subtree bounding box widths.
+ */
+function getSubtreeWidth(node: AnimaliaNode, openNodes: Set<string>): number {
+  const selfWidth = getNodeWidth(node) + HORIZONTAL_GAP;
+  if (!node.children || node.children.length === 0 || !openNodes.has(node.id)) {
+    return selfWidth;
+  }
+  let childrenTotal = 0;
+  for (const child of node.children) {
+    childrenTotal += getSubtreeWidth(child, openNodes);
+  }
+  return Math.max(selfWidth, childrenTotal);
 }
 
 function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
   const router = useRouter();
   const { fitView, getNode, setCenter } = useReactFlow();
 
-  // Set of node IDs that are currently expanded
-  const [openNodes, setOpenNodes] = useState<Set<string>>(
-    () => new Set(["animalia"])
-  );
+  // Root initially collapsed so user sees "Click to expand the Kingdom"
+  const [openNodes, setOpenNodes] = useState<Set<string>>(() => new Set());
   const [activeNode, setActiveNode] = useState<string | null>(null);
+  const [matchedNodeId, setMatchedNodeId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchError, setSearchError] = useState("");
-  const [suggestions, setSuggestions] = useState<string[]>([]);
-  const [spacingY, setSpacingY] = useState(240);
+  const [suggestions, setSuggestions] = useState<{ label: string; commonName?: string }[]>([]);
+  const isSearchingRef = useRef(false);
 
-  // Responsive spacing — safe for SSR
-  useEffect(() => {
-    const update = () =>
-      setSpacingY(window.innerWidth < 768 ? 160 : 240);
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
+  // Build index map of all nodes in treeData
+  const nodeMap = useMemo(() => {
+    const map = new Map<string, AnimaliaNode>();
+    const traverse = (node: AnimaliaNode) => {
+      if (!node) return;
+      map.set(node.id, node);
+      if (node.children) {
+        for (const child of node.children) {
+          traverse(child);
+        }
+      }
+    };
+    traverse(treeData);
+    return map;
+  }, [treeData]);
 
   // Search suggestions
   useEffect(() => {
@@ -78,14 +103,15 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
       return;
     }
     const query = searchQuery.trim().toLowerCase();
-    const matches: string[] = [];
+    const matches: { label: string; commonName?: string }[] = [];
 
     const collectMatches = (node: AnimaliaNode) => {
-      if (
-        node.label.toLowerCase().includes(query) ||
-        (node.commonName && node.commonName.toLowerCase().includes(query))
-      ) {
-        matches.push(node.label);
+      if (!node) return;
+      const labelMatch = node.label.toLowerCase().includes(query);
+      const commonMatch = node.commonName && node.commonName.toLowerCase().includes(query);
+
+      if (labelMatch || commonMatch) {
+        matches.push({ label: node.label, commonName: node.commonName });
       }
       if (node.children) {
         for (const child of node.children) {
@@ -98,14 +124,11 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
     setSuggestions(matches.slice(0, 8));
   }, [searchQuery, treeData]);
 
-  const spacingX = 200;
+  const toggleNode = useCallback(
+    (nodeId: string) => {
+      const node = nodeMap.get(nodeId);
+      if (!node) return;
 
-  // ReactFlow onNodeClick handler — looks up the tree node and delegates
-  // NOTE: We do NOT use ReactFlow's onNodeClick prop because nodesDraggable=false
-  // + elementsSelectable=false sets pointer-events:none on wrappers.
-  // Instead we use data.onClick on the inner div in CustomNode.
-  const handleNodeClick = useCallback(
-    (parentId: string | null, node: AnimaliaNode) => {
       setActiveNode(node.id);
 
       if (!node.children || node.children.length === 0) {
@@ -126,7 +149,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         return next;
       });
     },
-    [router]
+    [nodeMap, router]
   );
 
   const executeSearch = useCallback(
@@ -140,6 +163,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         node: AnimaliaNode,
         path: string[] = []
       ): { found: AnimaliaNode | null; path: string[] } => {
+        if (!node) return { found: null, path: [] };
         const isMatch =
           node.label.toLowerCase().includes(query) ||
           (node.commonName &&
@@ -159,27 +183,30 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
       const result = findPath(treeData);
 
       if (result.found) {
-        // Open all ancestors along the path
+        isSearchingRef.current = true;
         const newOpenNodes = new Set(openNodes);
-        // Always keep animalia open
         newOpenNodes.add("animalia");
         result.path.forEach((id) => {
           newOpenNodes.add(id);
         });
         setOpenNodes(newOpenNodes);
         setActiveNode(result.found.id);
+        setMatchedNodeId(result.found.id);
 
         setTimeout(() => {
           const flowNode = getNode(result.found!.id);
           if (flowNode) {
-            setCenter(flowNode.position.x + 60, flowNode.position.y + 20, {
-              zoom: 1,
+            setCenter(flowNode.position.x + 80, flowNode.position.y + 20, {
+              zoom: 1.1,
               duration: 800,
             });
           }
-        }, 200);
+          setTimeout(() => {
+            isSearchingRef.current = false;
+          }, 900);
+        }, 220);
       } else {
-        setSearchError("No matching species/taxon found.");
+        setSearchError("No matching taxon found.");
       }
     },
     [openNodes, getNode, setCenter, treeData]
@@ -191,88 +218,97 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
     executeSearch(searchQuery);
   };
 
-  const handleSuggestionClick = (s: string) => {
-    setSearchQuery(s);
+  const handleSuggestionClick = (item: { label: string; commonName?: string }) => {
+    const term = item.commonName || item.label;
+    setSearchQuery(term);
     setSuggestions([]);
-    executeSearch(s);
+    executeSearch(term);
   };
 
-  // Generate stable nodes and edges arrays
+  // Build hierarchical layout with guaranteed zero overlap
   const { nodes, edges } = useMemo(() => {
-    const getNodesAndEdges = (rootNode: AnimaliaNode) => {
-      const nodes: Node[] = [];
-      const edges: Edge[] = [];
-      const levelCounts: Record<number, number> = {};
+    const computedNodes: Node[] = [];
+    const computedEdges: Edge[] = [];
 
-      const traverse = (node: AnimaliaNode, depth: number, parentId: string | null) => {
-        if (levelCounts[depth] === undefined) {
-          levelCounts[depth] = 0;
-        }
-        const indexInLevel = levelCounts[depth]!;
-        levelCounts[depth]!++;
+    const layout = (
+      node: AnimaliaNode,
+      xStart: number,
+      depth: number,
+      parentId: string | null
+    ) => {
+      if (!node) return;
+      const subtreeWidth = getSubtreeWidth(node, openNodes);
+      const nodeWidth = getNodeWidth(node);
+      const isRoot = node.id === "animalia" || depth === 0;
+      const isLeaf = !node.children || node.children.length === 0;
+      const isOpen = openNodes.has(node.id);
+      const isMatched = matchedNodeId === node.id;
 
-        const x = indexInLevel * spacingX;
-        const y = depth * spacingY;
-        const parent = parentId;
-        const isLeaf = !node.children || node.children.length === 0;
+      // Perfectly center node within its subtree bounding box
+      const nodeX = xStart + (subtreeWidth - nodeWidth - HORIZONTAL_GAP) / 2;
+      const nodeY = depth * LEVEL_HEIGHT;
 
-        nodes.push({
-          id: node.id,
-          type: "custom",
-          position: { x, y },
-          data: {
-            label: node.label,
-            rank: node.rank,
-            isLeaf,
-            isActive: activeNode === node.id,
-            onClick: () => handleNodeClick(parentId, node),
+      computedNodes.push({
+        id: node.id,
+        type: "custom",
+        position: { x: nodeX, y: nodeY },
+        data: {
+          label: node.label,
+          subtitle: node.commonName,
+          rank: node.rank,
+          isLeaf,
+          isRoot,
+          isOpen,
+          isActive: isOpen || activeNode === node.id,
+          isMatched,
+          showTooltip: isRoot && !isOpen,
+          onClick: () => toggleNode(node.id),
+        },
+      });
+
+      if (parentId) {
+        const isBranchActive = openNodes.has(node.id) || matchedNodeId === node.id;
+        computedEdges.push({
+          id: `edge-${parentId}-${node.id}`,
+          source: parentId,
+          target: node.id,
+          type: "default",
+          animated: false,
+          style: {
+            stroke: isBranchActive ? "#64748b" : "#475569",
+            strokeWidth: 1.5,
+            strokeDasharray: "3 3",
           },
         });
+      }
 
-        if (parentId) {
-          const isActiveEdge =
-            openNodes.has(node.id) || activeNode === node.id;
-
-          edges.push({
-            id: `edge-${parentId}-${node.id}`,
-            source: parentId,
-            target: node.id,
-            type: "default",
-            animated: true,
-            style: {
-              stroke: isActiveEdge ? "#ffd54f" : "#ffffff",
-              strokeWidth: isActiveEdge ? 3 : 2,
-              strokeDasharray: "5,5",
-              opacity: isActiveEdge ? 1 : 0.3,
-            },
-          });
+      if (node.children && isOpen) {
+        let currentX = xStart;
+        for (const child of node.children) {
+          const childWidth = getSubtreeWidth(child, openNodes);
+          layout(child, currentX, depth + 1, node.id);
+          currentX += childWidth;
         }
-
-        // Expand children when the node is open
-        if (node.children && openNodes.has(node.id)) {
-          for (const child of node.children) {
-            traverse(child, depth + 1, node.id);
-          }
-        }
-      };
-
-      traverse(rootNode, 0, null);
-      return { nodes, edges };
+      }
     };
 
-    return getNodesAndEdges(treeData);
-  }, [openNodes, activeNode, spacingY, treeData, handleNodeClick]);
+    if (treeData) {
+      layout(treeData, 0, 0, null);
+    }
 
-  // Auto-fit view when nodes change
+    return { nodes: computedNodes, edges: computedEdges };
+  }, [openNodes, activeNode, matchedNodeId, treeData, toggleNode]);
+
+  // Fit view automatically on node changes when not in active search zoom
   useEffect(() => {
+    if (isSearchingRef.current) return;
     const timer = setTimeout(() => {
-      fitView({ duration: 400, padding: 0.2 });
-    }, 100);
+      fitView({ duration: 500, padding: 0.2 });
+    }, 80);
     return () => clearTimeout(timer);
-  }, [nodes.length, fitView]);
+  }, [nodes.length, openNodes, fitView]);
 
-  // Check if tree is empty (no children on root)
-  const isEmpty = !treeData.children || treeData.children.length === 0;
+  const isEmpty = !treeData || (!treeData.children && !treeData.label);
 
   if (isEmpty) {
     return (
@@ -280,7 +316,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         style={{
           height: "100%",
           width: "100%",
-          background: "#121212",
+          background: "#080c14",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -293,7 +329,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
           Taxonomy Tree is Empty
         </h3>
         <p style={{ color: "#94a3b8", fontSize: "14px", maxWidth: "400px", textAlign: "center" }}>
-          No phyla, classes, or species data has been added yet. Use the Admin panel to populate the taxonomy tree.
+          No taxonomy data found. Please verify the database connection.
         </p>
       </div>
     );
@@ -304,7 +340,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
       style={{
         height: "100%",
         width: "100%",
-        background: "#121212",
+        background: "#080c14",
         position: "relative",
       }}
     >
@@ -312,13 +348,18 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
+        onNodeClick={(_, rfNode) => toggleNode(rfNode.id)}
         fitView
-        minZoom={0.1}
+        minZoom={0.05}
+        maxZoom={2}
         nodesConnectable={false}
+        nodesDraggable={true}
+        elementsSelectable={true}
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#333" gap={20} />
+        <Background color="#1e293b" gap={24} size={1.5} />
 
+        {/* Top-Right Control Panel */}
         <Panel
           position="top-right"
           style={{ marginTop: "16px", marginRight: "20px" }}
@@ -327,7 +368,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
             style={{
               display: "flex",
               flexDirection: "column",
-              gap: "10px",
+              gap: "8px",
               alignItems: "flex-end",
             }}
           >
@@ -342,13 +383,14 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   style={{
-                    padding: "8px 12px",
-                    borderRadius: "6px",
-                    border: "1px solid #444",
-                    background: "#222",
+                    padding: "8px 14px",
+                    borderRadius: "8px",
+                    border: "1px solid #334155",
+                    background: "#161f30",
                     color: "white",
                     outline: "none",
-                    width: "200px",
+                    width: "220px",
+                    fontSize: "13px",
                   }}
                 />
                 {suggestions.length > 0 && (
@@ -358,37 +400,45 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
                       top: "100%",
                       left: 0,
                       width: "100%",
-                      background: "#222",
+                      background: "#161f30",
                       listStyle: "none",
                       padding: 0,
                       margin: "4px 0 0 0",
-                      borderRadius: "6px",
+                      borderRadius: "8px",
                       zIndex: 10,
-                      border: "1px solid #444",
+                      border: "1px solid #334155",
                       overflow: "hidden",
-                      maxHeight: "200px",
+                      maxHeight: "220px",
                       overflowY: "auto",
+                      boxShadow: "0 8px 24px rgba(0,0,0,0.5)",
                     }}
                   >
-                    {suggestions.map((s) => (
+                    {suggestions.map((item, i) => (
                       <li
-                        key={s}
-                        onClick={() => handleSuggestionClick(s)}
+                        key={`${item.label}-${i}`}
+                        onClick={() => handleSuggestionClick(item)}
                         style={{
                           padding: "8px 12px",
                           cursor: "pointer",
-                          borderBottom: "1px solid #333",
+                          borderBottom: "1px solid #24324a",
                           color: "#fff",
-                          fontSize: "14px",
+                          fontSize: "13px",
+                          display: "flex",
+                          flexDirection: "column",
                         }}
                         onMouseEnter={(e) =>
-                          (e.currentTarget.style.background = "#333")
+                          (e.currentTarget.style.background = "#24324a")
                         }
                         onMouseLeave={(e) =>
                           (e.currentTarget.style.background = "transparent")
                         }
                       >
-                        {s}
+                        <span style={{ fontWeight: 600 }}>{item.label}</span>
+                        {item.commonName && (
+                          <span style={{ fontSize: "10px", color: "#94a3b8" }}>
+                            {item.commonName}
+                          </span>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -397,13 +447,15 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
               <button
                 type="submit"
                 style={{
-                  background: "#ffd54f",
+                  background: "#facc15",
                   color: "#000",
-                  padding: "8px 12px",
-                  borderRadius: "6px",
+                  padding: "8px 16px",
+                  borderRadius: "8px",
                   border: "none",
                   cursor: "pointer",
                   fontWeight: "bold",
+                  fontSize: "13px",
+                  transition: "opacity 0.2s",
                 }}
               >
                 Search
@@ -413,87 +465,61 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
             {searchError && (
               <span
                 style={{
-                  color: "#ff6b6b",
-                  fontSize: "0.85rem",
-                  background: "#222",
-                  padding: "4px 8px",
-                  borderRadius: "4px",
+                  color: "#f87171",
+                  fontSize: "12px",
+                  background: "#1e293b",
+                  padding: "4px 10px",
+                  borderRadius: "6px",
+                  border: "1px solid #334155",
                 }}
               >
                 {searchError}
               </span>
             )}
 
-            <div style={{ display: "flex", gap: "10px" }}>
+            <div style={{ display: "flex", gap: "8px" }}>
               <button
                 onClick={() => {
-                  setOpenNodes(new Set(["animalia"]));
+                  setOpenNodes(new Set());
                   setActiveNode(null);
+                  setMatchedNodeId(null);
                   setSearchQuery("");
                   setSearchError("");
                 }}
                 style={{
-                  background: "#222",
-                  color: "white",
-                  padding: "8px 12px",
+                  background: "#161f30",
+                  color: "#e2e8f0",
+                  padding: "6px 14px",
                   borderRadius: "6px",
-                  border: "1px solid #444",
+                  border: "1px solid #334155",
                   cursor: "pointer",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  transition: "background 0.2s",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "#24324a")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "#161f30")}
               >
                 Reset Tree
               </button>
               <button
-                onClick={() => fitView({ duration: 800, padding: 0.2 })}
+                onClick={() => fitView({ duration: 600, padding: 0.2 })}
                 style={{
-                  background: "#222",
-                  color: "white",
-                  padding: "8px 12px",
+                  background: "#161f30",
+                  color: "#e2e8f0",
+                  padding: "6px 14px",
                   borderRadius: "6px",
-                  border: "1px solid #444",
+                  border: "1px solid #334155",
                   cursor: "pointer",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  transition: "background 0.2s",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "#24324a")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "#161f30")}
               >
                 Reset View
               </button>
-            </div>
-
-            {/* Legend */}
-            <div
-              style={{
-                display: "flex",
-                gap: "8px",
-                flexWrap: "wrap",
-                justifyContent: "flex-end",
-              }}
-            >
-              {[
-                { color: "#7c3aed", label: "Kingdom" },
-                { color: "#64b5f6", label: "Phylum" },
-                { color: "#4db6ac", label: "Class" },
-                { color: "#ffd54f", label: "Species" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    fontSize: "11px",
-                    color: "#94a3b8",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "10px",
-                      height: "10px",
-                      borderRadius: "3px",
-                      background: item.color,
-                    }}
-                  />
-                  {item.label}
-                </div>
-              ))}
             </div>
           </div>
         </Panel>

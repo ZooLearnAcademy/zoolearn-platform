@@ -1,0 +1,1792 @@
+{
+  "kingdomAnimalia": {
+    "title": "Kingdom Animalia",
+    "subtitle": "Discover the 11 Major Animal Phyla",
+    "tagline": "Explore the structural blueprints, evolutionary milestones, and anatomical secrets of all living animals.",
+    "introDescription": "The kingdom Animalia is characterised by heterotrophic, eukaryotic, multicellular organisms whose cells lack a cell wall. All animals are heterotrophic and directly or indirectly dependent on plants for food.",
+    "seo": {
+      "title": "Kingdom Animalia - Complete Classification & Phyla Guide",
+      "description": "Explore the comprehensive classification of Kingdom Animalia, detailing all 11 major animal phyla from Porifera to Chordata with anatomical blueprints, evolutionary notes, and high-yield points.",
+      "keywords": "Kingdom Animalia, Animal Classification, Porifera, Coelenterata, Ctenophora, Platyhelminthes, Aschelminthes, Annelida, Arthropoda, Mollusca, Echinodermata, Hemichordata, Chordata, Zoology, Biology"
+    },
+    "historyTimeline": [
+      {
+        "year": "~350 BCE",
+        "name": "Aristotle (Ancient Greece): The Beginning",
+        "description": "The first major classifier was the philosopher Aristotle. He grouped animals based on how they looked and moved.\n• He divided animals into two main groups: animals with blood (vertebrates) and animals without blood (invertebrates).\n• He further subdivided them according to their mode of transportation, such as land, water, and air.\nThis system was used for centuries. However, it grouped bats with birds because both fly, and whales with fish because both swim. Today, we know these are not accurate biological relationships.",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1772182700/aristotle_e3sa7v.png"
+      },
+      {
+        "year": "1600s",
+        "name": "The Age of Exploration: The Expansion",
+        "description": "As Europeans traveled the world, they discovered thousands of new plants and animals.\nThe simple blood versus no blood system could not handle the growing volume of discoveries. Scientists needed a better way to organize and document biodiversity.\nThis period created the demand for a more structured and universal classification system.",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1772184026/The-Age-of-Exploration_krfcmy.jpg"
+      },
+      {
+        "year": "1735",
+        "name": "Linnaeus: The Revolution",
+        "description": "Carl Linnaeus, a Swedish botanist, revolutionized biological classification. Although he believed species were fixed, he created the organizational system we still use today.\n• Binomial Nomenclature: Every species was given a two-part Latin name (Genus and species), such as Homo sapiens.\n• Hierarchical System: He introduced ranked categories including Kingdom, Class, Order, Genus, and Species.\nLinnaeus grouped organisms based on overall similarity, not evolutionary history, but his structured system became the foundation of modern taxonomy.",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1772182705/carl_linnaeus_nyrcl6.png"
+      },
+      {
+        "year": "1859",
+        "name": "Darwin to Today: Shift to Evolution",
+        "description": "Everything changed after Charles Darwin proposed the theory of evolution by natural selection.\nScientists realized that similarities among organisms reflect shared ancestry.\n• The focus shifted from simple organization to tracing evolutionary relationships (Phylogenetics).",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1772182700/darwin_wytd2o.png"
+      },
+      {
+        "year": "Present",
+        "name": "Modern Cladistics: DNA-Based Classification",
+        "description": "Modern cladistics represents the most advanced stage in biological classification.\nUnlike earlier systems that grouped organisms based mainly on physical similarity, cladistics classifies organisms according to their evolutionary relationships and shared ancestry.\n• It focuses on common derived characteristics (synapomorphies) that indicate shared evolutionary history.\n• Organisms are arranged into clades, which include an ancestor and all of its descendants.\n• Modern classification heavily relies on molecular data, especially DNA sequencing, to determine how closely species are related.\nThis approach has reshaped taxonomy. For example, birds are now recognized as a group within reptiles, and classification is based on evolutionary branching patterns rather than superficial traits like wings or fins.",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1772182700/dna_phylogeny.png"
+      }
+    ],
+    "phylaList": [
+      {
+        "id": "basic-features",
+        "index": 0,
+        "name": "Basic Features",
+        "scientificName": "Fundamentals",
+        "badge": "Intro",
+        "category": "Foundation",
+        "shortDescription": "Levels of organisation, symmetry, coelom, and embryonic germ layers.",
+        "route": "/basic-features-of-classification"
+      },
+      {
+        "id": "porifera",
+        "index": 1,
+        "name": "Porifera",
+        "scientificName": "Pore Bearers",
+        "badge": "Phylum 01",
+        "category": "Non-Chordata",
+        "shortDescription": "Cellular level organisation with a specialized water canal system.",
+        "route": "/porifera"
+      },
+      {
+        "id": "coelenterata",
+        "index": 2,
+        "name": "Coelenterata (Cnidaria)",
+        "scientificName": "Stinging Cells",
+        "badge": "Phylum 02",
+        "category": "Non-Chordata",
+        "shortDescription": "Tissue level, radial symmetry, cnidoblasts, and metagenesis.",
+        "route": "/coelenterata"
+      },
+      {
+        "id": "ctenophora",
+        "index": 3,
+        "name": "Ctenophora",
+        "scientificName": "Comb Jellies",
+        "badge": "Phylum 03",
+        "category": "Non-Chordata",
+        "shortDescription": "Eight ciliated comb plates and remarkable bioluminescence.",
+        "route": "/ctenophora"
+      },
+      {
+        "id": "platyhelminthes",
+        "index": 4,
+        "name": "Platyhelminthes",
+        "scientificName": "Flatworms",
+        "badge": "Phylum 04",
+        "category": "Non-Chordata",
+        "shortDescription": "Dorso-ventrally flattened, triploblastic, acoelomates with flame cells.",
+        "route": "/platyhelminthes"
+      },
+      {
+        "id": "aschelminthes",
+        "index": 5,
+        "name": "Aschelminthes",
+        "scientificName": "Roundworms",
+        "badge": "Phylum 05",
+        "category": "Non-Chordata",
+        "shortDescription": "Pseudocoelomate body cavity with muscular pharynx and sexual dimorphism.",
+        "route": "/aschelminthes"
+      },
+      {
+        "id": "annelida",
+        "index": 6,
+        "name": "Annelida",
+        "scientificName": "Segmented Worms",
+        "badge": "Phylum 06",
+        "category": "Non-Chordata",
+        "shortDescription": "True metameric segmentation, closed circulation, and nephridia.",
+        "route": "/annelida"
+      },
+      {
+        "id": "arthropoda",
+        "index": 7,
+        "name": "Arthropoda",
+        "scientificName": "Jointed Appendages",
+        "badge": "Phylum 07",
+        "category": "Non-Chordata",
+        "shortDescription": "The largest phylum; chitinous exoskeleton and Malpighian tubules.",
+        "route": "/arthropoda"
+      },
+      {
+        "id": "mollusca",
+        "index": 8,
+        "name": "Mollusca",
+        "scientificName": "Soft Bodied",
+        "badge": "Phylum 08",
+        "category": "Non-Chordata",
+        "shortDescription": "Second largest phylum; calcareous shell, muscular foot, and radula.",
+        "route": "/mollusca"
+      },
+      {
+        "id": "echinodermata",
+        "index": 9,
+        "name": "Echinodermata",
+        "scientificName": "Spiny Skinned",
+        "badge": "Phylum 09",
+        "category": "Non-Chordata",
+        "shortDescription": "Exclusively marine, water vascular system, radial adults and bilateral larvae.",
+        "route": "/echinodermata"
+      },
+      {
+        "id": "hemichordata",
+        "index": 10,
+        "name": "Hemichordata",
+        "scientificName": "Acorn Worms",
+        "badge": "Phylum 10",
+        "category": "Non-Chordata",
+        "shortDescription": "Worm-like connecting link with proboscis, collar, trunk, and stomochord.",
+        "route": "/hemichordata"
+      },
+      {
+        "id": "chordata",
+        "index": 11,
+        "name": "Chordata",
+        "scientificName": "Vertebrates & Allies",
+        "badge": "Phylum 11",
+        "category": "Chordata",
+        "shortDescription": "Notochord, dorsal hollow nerve cord, pharyngeal gill slits, and post-anal tail.",
+        "route": "/chordata"
+      }
+    ]
+  },
+  "basicFeaturesOfClassification": {
+    "title": "Basic Features of Classification",
+    "description": "Understand the fundamental basis of biological classification, including symmetry, coelom, germ layers, and body plans.",
+    "intro": {
+      "mainHeading": "Basic Features of Classification",
+      "paragraphs": [
+        "The kingdom Animalia is characterised by heterotrophic, eukaryotic, multicellular organisms whose cells lack a cell wall.",
+        "All animals are heterotrophic and are directly or indirectly dependent on plants for food.",
+        "Nutrition involving the engulfment of whole or part of a plant or animal, in solid or liquid form, is called holozoic nutrition."
+      ],
+      "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810735/1000083461-removebg-preview_pmodrn.png"
+    },
+    "nutrition": {
+      "sections": [
+        {
+          "heading": "Heterotrophic Nutrition",
+          "text": "All animals are heterotrophic. They are directly or indirectly dependent on plants for food (herbivores, carnivores, and omnivores)."
+        },
+        {
+          "heading": "Holozoic Mode of Nutrition",
+          "text": "Nutrition involving the engulfment of whole or part of a plant or animal, either in solid or liquid state, is called animal-like or holozoic nutrition."
+        }
+      ],
+      "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767627322/Nutrition_imjqgn.png",
+      "imageCaption": "Holozoic nutrition in Amoeba"
+    },
+    "metazoa": {
+      "title": "Metazoa",
+      "description": "Metazoa are multicellular, eukaryotic animals that show tissue-level or higher organization and generally exhibit holozoic nutrition.",
+      "subLabel": "Sub-kingdoms based on complexity",
+      "subKingdoms": [
+        {
+          "id": "parazoa",
+          "title": "Parazoa",
+          "description": "Includes primitive organisms like sponges. In this group, cells are loosely aggregated and do not form true tissues or organs."
+        },
+        {
+          "id": "eumetazoa",
+          "title": "Eumetazoa",
+          "description": "Includes all animals other than sponges. Cells are organized into distinct structural and functional units called tissues, organs, and organ systems."
+        }
+      ]
+    },
+    "levelsOfOrganisation": {
+      "title": "Level of Organization",
+      "levels": [
+        {
+          "id": "cellular",
+          "title": "CELLULAR LEVEL",
+          "label": "Loose cell aggregates",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767811726/cellular_level_of_organiszation_dceufr.png",
+          "description": "Cells are the basic unit. In this level, cells are arranged as loose aggregates but do not form tissues.",
+          "examples": ["Porifera (Sponges)"]
+        },
+        {
+          "id": "tissue",
+          "title": "TISSUE LEVEL",
+          "label": "Cells form Tissue",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767811726/tissue_level_of_organiszation_gikdnz.png",
+          "description": "Similar cells performing the same function are arranged into tissues, allowing for division of labor.",
+          "examples": ["Coelenterates", "Ctenophores"]
+        },
+        {
+          "id": "organ",
+          "title": "ORGAN LEVEL",
+          "label": "Tissues form Organs",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767811725/organ_level_of_organiszation_qg95xt.png",
+          "description": "Tissues are grouped together to form organs, which are specialized for specific functions.",
+          "examples": ["Platyhelminthes"]
+        },
+        {
+          "id": "system",
+          "title": "ORGAN-SYSTEM LEVEL",
+          "label": "Organs form Systems",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767811726/organ_system_level_of_organiszation_znh9a3.png",
+          "description": "Organs associate to form functional systems, each concerned with a specific physiological function.",
+          "examples": ["Aschelminthes", "Chordates"]
+        }
+      ]
+    },
+    "bodySymmetry": {
+      "title": "Body Symmetry",
+      "types": [
+        {
+          "id": "asym",
+          "title": "Asymmetrical",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768923661/photo_2026-01-20_21-10-00_bwjz9j.jpg",
+          "description": "The body cannot be divided into two similar parts from any plane or direction.",
+          "extra": "Common in sponges."
+        },
+        {
+          "id": "radial",
+          "title": "Radial Symmetry",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768923706/photo_2026-01-20_21-11-08_l4gpsx.jpg",
+          "description": "A plane passing through the central axis divides it into two equal halves.",
+          "extra": "Advantageous for gathering food from all sides."
+        },
+        {
+          "id": "bilateral",
+          "title": "Bilateral Symmetry",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768923742/photo_2026-01-20_21-11-23_icpxvr.jpg",
+          "description": "The body can be divided into identical left and right halves in only one plane.",
+          "extra": "Leads to cephalization (development of a head)."
+        }
+      ],
+      "evolutionaryNote": {
+        "title": "Cephalization",
+        "description": "Bilateral symmetry evolved when animals on the ocean floor became mobile. The end that encounters food first developed the mouth, along with sensory organs and a coordinating brain—this is called cephalization."
+      }
+    },
+    "germLayers": {
+      "title": "Germ Layers",
+      "overview": "Germ layers arise during embryo formation and differentiate into specific tissues.",
+      "layers": [
+        {
+          "name": "Ectoderm",
+          "role": "Forms epidermis and nervous tissue",
+          "color": "#93c5fd"
+        },
+        {
+          "name": "Mesoderm",
+          "role": "Forms skeletal, muscular, connective tissue, and coelom",
+          "color": "#fca5a5"
+        },
+        {
+          "name": "Endoderm",
+          "role": "Forms vital organs and their linings",
+          "color": "#fcd34d"
+        },
+        {
+          "name": "Mesoglea",
+          "role": "Undifferentiated jelly-like layer between Ectoderm and Endoderm (present in diploblastic animals)",
+          "color": "#e9d5ff"
+        },
+        {
+          "name": "Cavity",
+          "role": "Digestive Cavity (Gut)",
+          "color": "#ffffff"
+        }
+      ],
+      "classificationByLayers": [
+        {
+          "type": "Diploblastic Animals",
+          "description": "The gastrula has two layers: external ectoderm and internal endoderm, with an undifferentiated jelly-like layer (mesoglea) between them.",
+          "examples": ["Coelenterates", "Ctenophores"]
+        },
+        {
+          "type": "Triploblastic Animals",
+          "description": "The gastrula has three germ layers: ectoderm, mesoderm, and endoderm.",
+          "examples": ["Platyhelminthes to Chordata"]
+        }
+      ]
+    },
+    "coelom": {
+      "title": "Coelom (Body Cavity)",
+      "description": "A body cavity arises from the embryonic mesoderm. The mesoderm provides a cellular lining called the coelomic epithelium or peritoneum.",
+      "types": [
+        {
+          "id": "acoelomate",
+          "title": "Triploblastic Acoelomate",
+          "description": "These animals do not contain any space between their body wall and gut.",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767626839/TriploblasticAcoelomate_twtml1.png",
+          "examples": ["Platyhelminthes"]
+        },
+        {
+          "id": "pseudo",
+          "title": "Triploblastic Pseudocoelomate",
+          "description": "These animals have a false body cavity, a fluid-filled space separating the gut from the body wall.",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767626852/TriploblasticPseudocoelomate_gecq6s.png",
+          "examples": ["Aschelminthes"]
+        },
+        {
+          "id": "eucoelomate",
+          "title": "Triploblastic Eucoelomate",
+          "description": "These animals have a true coelom lined by mesoderm on both sides.",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767626849/TriploblasticEucoelomate_z2rhpi.png",
+          "examples": ["Annelida", "Arthropoda", "Mollusca", "Echinodermata", "Hemichordata", "Chordata"]
+        }
+      ],
+      "formationMechanisms": [
+        {
+          "id": "schizo",
+          "title": "Schizocoelom",
+          "summary": "Forms by Splitting of Mesoderm",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767626840/Schizocoelom_elzmax.png",
+          "points": [
+            "In some animals, the middle embryonic layer (mesoderm) first appears as a solid mass.",
+            "Later, this solid mesoderm splits from the inside, creating an empty space.",
+            "This space becomes the body cavity, called a schizocoelom."
+          ],
+          "extraNote": {
+            "title": "Haemocoel",
+            "text": "In animals like arthropods (insects, crabs) and many molluscs, this body cavity is mostly filled with blood. Such a blood-filled cavity is called a haemocoel, and organs float in it."
+          }
+        },
+        {
+          "id": "entero",
+          "title": "Enterocoelom",
+          "summary": "Forms from Gut Pouches",
+          "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767626836/Enterocoelom_wavgqj.png",
+          "points": [
+            "In some other animals, the body cavity forms in a different and more organized way.",
+            "During early development, the primitive gut (archenteron) forms small outward bulges or pouches.",
+            "These pouches separate from the gut and develop into the mesoderm, enclosing a space inside.",
+            "This space becomes a true coelom, called an enterocoelom, and it is completely lined by mesoderm."
+          ],
+          "extraNote": null
+        }
+      ]
+    },
+    "bodyPlans": {
+      "title": "Body Plans",
+      "subtitle": "Understanding the complexity of animal body organization",
+      "plans": [
+        {
+          "id": 1,
+          "title": "Cell Aggregate Body Plan",
+          "description": "Organism made up of loosely arranged cells with no proper coordination",
+          "features": [
+            "Each cell works independently",
+            "No tissues or organs formed",
+            "Very simple body functions"
+          ],
+          "example": "Sponges",
+          "complexity": "Low"
+        },
+        {
+          "id": 2,
+          "title": "Blind Sac Body Plan",
+          "description": "Incomplete digestive system with a single opening",
+          "features": [
+            "One opening acts as both mouth and anus",
+            "Food enters and waste leaves through same opening",
+            "Digestion in sac-like cavity"
+          ],
+          "example": "Coelenterates, Platyhelminthes",
+          "complexity": "Medium"
+        },
+        {
+          "id": 3,
+          "title": "Tube-Within-a-Tube Body Plan",
+          "description": "Complete digestive system with separate openings",
+          "features": [
+            "Outer tube = body wall",
+            "Inner tube = digestive tract",
+            "Mouth and anus are separate"
+          ],
+          "example": "Annelida, Arthropoda, Mollusca, Echinodermata, Chordata",
+          "complexity": "High"
+        }
+      ]
+    },
+    "protostomeVsDeuterostome": {
+      "title": "Protostomous vs Deuterostomous Comparison",
+      "protostome": {
+        "etymology": "proto: first; stomium: mouth",
+        "definition": "In protostomous animals, the first opening formed in the embryo (blastopore) becomes the mouth. The anus forms later at another place.",
+        "organization": "Simple to moderately complex body organization. Mostly belong to one major evolutionary line.",
+        "fateOfBlastopore": "Blastopore → Mouth first; Anus forms secondarily",
+        "cleavage": "Spiral and determinate cleavage (Eight-cell stage)",
+        "cleavageImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600219/image_2_jfn8yx.png",
+        "coelomFormation": "Schizocoelous: Solid masses of mesoderm split to form the coelom cavity.",
+        "coelomImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600220/image_3_h5sibm.png",
+        "blastoporeImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600221/image_4_br8wr3.png",
+        "examples": ["Flatworms", "Roundworms", "Annelids", "Arthropods", "Molluscs"]
+      },
+      "deuterostome": {
+        "etymology": "deuteron: second; stomium: mouth",
+        "definition": "In deuterostomous animals, the blastopore develops into the anus. The mouth forms later on the opposite side.",
+        "organization": "More advanced animals with complex body organization and internal skeletons.",
+        "fateOfBlastopore": "Blastopore → Anus first; Mouth forms secondarily",
+        "cleavage": "Radial and indeterminate cleavage (Eight-cell stage)",
+        "cleavageImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600218/image_2_hjofss.png",
+        "coelomFormation": "Enterocoelous: Folds of the archenteron form the coelom cavity.",
+        "coelomImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600218/image_3_pxwhbm.png",
+        "blastoporeImage": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767600219/image_4_bzdgh2.png",
+        "examples": ["Echinoderms", "Hemichordates", "Chordates (including vertebrates)"]
+      }
+    },
+    "evolutionaryDevelopmentNote": {
+      "title": "Evolutionary Note (Starfish & Humans)",
+      "text": "Although humans look very different from starfish, we share a common developmental pattern with them. Both humans and echinoderms are deuterostomes, meaning that during early embryonic development, the blastopore forms the anus first and the mouth develops later. Because of this similar pattern of development, humans are evolutionarily closer to echinoderms than to insects or molluscs, which are protostomes."
+    },
+    "taxonomyTreeHierarchy": {
+      "id": "animalia",
+      "label": "Animalia (Kingdom)",
+      "children": [
+        {
+          "id": "parazoa",
+          "label": "Parazoa (Sub-Kingdom)",
+          "children": [
+            {
+              "id": "porifera",
+              "label": "Porifera (Phylum)"
+            }
+          ]
+        },
+        {
+          "id": "eumetazoa",
+          "label": "Eumetazoa (Sub-Kingdom)",
+          "children": [
+            {
+              "id": "radial",
+              "label": "Radial Symmetry",
+              "children": [
+                {
+                  "id": "coelenterata",
+                  "label": "Coelenterata (Phylum)"
+                },
+                {
+                  "id": "ctenophora",
+                  "label": "Ctenophora (Phylum)"
+                }
+              ]
+            },
+            {
+              "id": "bilateral",
+              "label": "Bilateral Symmetry",
+              "children": [
+                {
+                  "id": "acoelomates",
+                  "label": "Acoelomates",
+                  "children": [
+                    {
+                      "id": "platyhelminthes",
+                      "label": "Platyhelminthes (Phylum)"
+                    }
+                  ]
+                },
+                {
+                  "id": "pseudocoelomates",
+                  "label": "Pseudocoelomates",
+                  "children": [
+                    {
+                      "id": "aschelminthes",
+                      "label": "Aschelminthes (Phylum)"
+                    }
+                  ]
+                },
+                {
+                  "id": "coelomates",
+                  "label": "Coelomates (Eucoelomates)",
+                  "children": [
+                    {
+                      "id": "annelida",
+                      "label": "Annelida (Phylum)"
+                    },
+                    {
+                      "id": "arthropoda",
+                      "label": "Arthropoda (Phylum)"
+                    },
+                    {
+                      "id": "mollusca",
+                      "label": "Mollusca (Phylum)"
+                    },
+                    {
+                      "id": "echinodermata",
+                      "label": "Echinodermata (Phylum)"
+                    },
+                    {
+                      "id": "hemichordata",
+                      "label": "Hemichordata (Phylum)"
+                    },
+                    {
+                      "id": "chordata",
+                      "label": "Chordata (Phylum)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "phyla": [
+    {
+      "id": "porifera",
+      "phylumNumber": "01",
+      "name": "Porifera",
+      "etymology": "Porus – pore; ferre – to bear",
+      "tagline": "The Primitive Pore Bearers",
+      "badge": "Cellular Level",
+      "hero": {
+        "intro": [
+          "Members of phylum Porifera are commonly known as sponges. They are the most primitive multicellular animals, predominantly marine, asymmetrical, and exhibit a cellular level of organisation.",
+          "Sponges have a distinctive water transport or canal system which serves crucial physiological functions including food gathering, respiratory exchange, and removal of waste products."
+        ],
+        "academicNote": "Water enters through minute pores (ostia) in the body wall into a central cavity, spongocoel, from where it goes out through the osculum.",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "VIBRANT MARINE SPONGE COLONY"
+      },
+      "anatomy": {
+        "title": "Sponge Anatomy & Canal System",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Porifera_body_structures_01.png/800px-Porifera_body_structures_01.png",
+        "diagramCaption": "WATER CIRCULATION ARCHITECTURE",
+        "keyStructures": [
+          {
+            "name": "Ostia",
+            "description": "Microscopic pores through which water enters the body."
+          },
+          {
+            "name": "Spongocoel",
+            "description": "Central body cavity lined by specialized flagellated cells."
+          },
+          {
+            "name": "Choanocytes (Collar Cells)",
+            "description": "Flagellated cells that line the spongocoel and canals, maintaining water current and filtering food particles."
+          },
+          {
+            "name": "Osculum",
+            "description": "Large terminal opening through which water exits the sponge body."
+          },
+          {
+            "name": "Spicules / Spongin Fibres",
+            "description": "Microscopic skeletal elements composed of calcium carbonate, silica, or spongin protein."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Cellular level of organisation with no true tissues or organs.",
+        "Water canal system: Ostia → Spongocoel → Osculum.",
+        "Choanocytes (collar cells) line the spongocoel and canals.",
+        "Digestion is completely intracellular.",
+        "Skeleton made up of spicules (calcareous/siliceous) or spongin fibres.",
+        "Hermaphrodite (sexes are not separate); eggs and sperms produced by the same individual.",
+        "Asexual reproduction by fragmentation/gemmules; sexual reproduction by gamete formation.",
+        "Fertilisation is internal; development is indirect with a free-swimming ciliated larval stage (Amphiblastula / Parenchymula)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Cellular",
+        "symmetry": "Asymmetrical (mostly)",
+        "germLayers": "Diploblastic",
+        "bodyCavity": "Acoelomate (Spongocoel is not a true coelom)"
+      },
+      "majorClasses": [
+        {
+          "name": "Calcarea (Calcispongiae)",
+          "description": "Sponges with skeleton made entirely of calcium carbonate (calcite) spicules. Exclusively marine and shallow water.",
+          "examples": ["Sycon (Scypha)", "Leucosolenia", "Clathrina"]
+        },
+        {
+          "name": "Hexactinellida (Hyalospongiae)",
+          "description": "Glass sponges with 6-rayed siliceous spicules. Found in deep marine waters.",
+          "examples": ["Euplectella (Venus flower basket)", "Hyalonema (Glass rope sponge)"]
+        },
+        {
+          "name": "Demospongiae",
+          "description": "Largest class (90% of all sponges). Skeleton of spongin fibres, siliceous spicules, or both. Marine and freshwater.",
+          "examples": ["Spongilla (Freshwater sponge)", "Euspongia (Bath sponge)", "Cliona (Boring sponge)"]
+        }
+      ],
+      "conclusion": "Sponges represent one of the earliest branches of animal life, demonstrating an elegant cellular division of labor without true tissues.",
+      "quiz": [
+        {
+          "questionText": "Which specialized cell lines the spongocoel and canals in Porifera?",
+          "answerOptions": [
+            { "answerText": "Cnidoblasts", "isCorrect": false },
+            { "answerText": "Choanocytes", "isCorrect": true },
+            { "answerText": "Nephridia", "isCorrect": false },
+            { "answerText": "Flame cells", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Water exits a sponge through which structure?",
+          "answerOptions": [
+            { "answerText": "Ostia", "isCorrect": false },
+            { "answerText": "Spongocoel", "isCorrect": false },
+            { "answerText": "Osculum", "isCorrect": true },
+            { "answerText": "Choanocyte", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which sponge is found in freshwater habitats?",
+          "answerOptions": [
+            { "answerText": "Sycon", "isCorrect": false },
+            { "answerText": "Euspongia", "isCorrect": false },
+            { "answerText": "Spongilla", "isCorrect": true },
+            { "answerText": "Euplectella", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Digestion in sponges is:",
+          "answerOptions": [
+            { "answerText": "Intracellular only", "isCorrect": true },
+            { "answerText": "Extracellular only", "isCorrect": false },
+            { "answerText": "Both intra- and extracellular", "isCorrect": false },
+            { "answerText": "Absent", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which sponge is commonly given as a wedding gift in Japan symbolizing union till death?",
+          "answerOptions": [
+            { "answerText": "Hyalonema", "isCorrect": false },
+            { "answerText": "Euplectella (Venus flower basket)", "isCorrect": true },
+            { "answerText": "Cliona", "isCorrect": false },
+            { "answerText": "Leucosolenia", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coelenterata",
+      "phylumNumber": "02",
+      "name": "Coelenterata (Cnidaria)",
+      "etymology": "Knide – nettle/sting; koilos – hollow; enteron – intestine",
+      "tagline": "The Stinging-Cell Organisms",
+      "badge": "Tissue Level",
+      "hero": {
+        "intro": [
+          "Phylum Coelenterata (Cnidaria) contains aquatic, mostly marine, sessile or free-swimming animals with radial symmetry and tissue level of organisation.",
+          "The name Cnidaria is derived from cnidocytes (or cnidoblasts) containing stinging capsules or nematocysts on tentacles and the body, used for anchorage, defense, and prey capture."
+        ],
+        "academicNote": "Cnidarians exhibit two basic body forms: Polyp (sessile and cylindrical like Hydra, Adamsia) and Medusa (umbrella-shaped and free-swimming like Aurelia/Jellyfish).",
+        "image": "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "FREESWIMMING CNIDARIAN (JELLYFISH MEDUSA)"
+      },
+      "anatomy": {
+        "title": "Cnidocyte & Body Wall Architecture",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hydra_anatomy_numbers.svg/800px-Hydra_anatomy_numbers.svg.png",
+        "diagramCaption": "ANATOMICAL STRUCTURE OF HYDRA",
+        "keyStructures": [
+          {
+            "name": "Cnidoblast / Cnidocyte",
+            "description": "Specialized defensive cell containing a toxin-loaded nematocyst capsule with a coiled piercing barb."
+          },
+          {
+            "name": "Gastrovascular Cavity (Coelenteron)",
+            "description": "Central digestive cavity with a single opening (hypostome) serving as both mouth and anus (Blind Sac body plan)."
+          },
+          {
+            "name": "Tentacles",
+            "description": "Slender, flexible appendages encircling the mouth used to capture and direct prey."
+          },
+          {
+            "name": "Mesoglea",
+            "description": "Acellular jelly-like layer separating outer ectoderm from inner endoderm (gastrodermis)."
+          }
+        ]
+      },
+      "metagenesis": {
+        "title": "Metagenesis (Alternation of Generations)",
+        "description": "Cnidarians which exist in both forms exhibit alternation of generation: Polyps produce Medusae asexually, and Medusae produce Polyps sexually.",
+        "example": "Obelia",
+        "cycle": "Polyp (Asexual budding) ➔ Medusa ➔ Gametes (Sexual) ➔ Planula Larva ➔ Polyp"
+      },
+      "examHighYieldPoints": [
+        "Tissue level of organisation, Diploblastic, Radial symmetry.",
+        "Blind sac body plan (single hypostome opening).",
+        "Cnidoblasts / Nematocysts for defense and predation.",
+        "Digestion is both extracellular and intracellular.",
+        "Corals have a hard skeleton made of calcium carbonate (CaCO3).",
+        "Exhibit polymorphism: Sessile Polyp vs Free-swimming Medusa.",
+        "Metagenesis seen in Obelia.",
+        "Fertilisation external; development indirect (Planula larva)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Tissue",
+        "symmetry": "Radial",
+        "germLayers": "Diploblastic",
+        "bodyCavity": "Acoelomate (Gastrovascular cavity)"
+      },
+      "majorClasses": [
+        {
+          "name": "Hydrozoa",
+          "description": "Both polyp and medusa stages usually present; some form polymorphic colonies.",
+          "examples": ["Hydra (Freshwater polyp)", "Obelia (Sea fur)", "Physalia (Portuguese man-of-war)"]
+        },
+        {
+          "name": "Scyphozoa",
+          "description": "True jellyfish where the medusa stage is dominant and umbrella-shaped. Solitary and marine.",
+          "examples": ["Aurelia (Moon jellyfish)", "Rhizostoma"]
+        },
+        {
+          "name": "Anthozoa",
+          "description": "Exclusively polypoid forms with flower-like appearance; medusa stage is completely absent. Includes sea anemones and corals.",
+          "examples": ["Adamsia (Sea anemone)", "Pennatula (Sea pen)", "Gorgonia (Sea fan)", "Meandrina (Brain coral)"]
+        }
+      ],
+      "conclusion": "Cnidarians represent a monumental leap in biological complexity, introducing true tissues, coordinated nerve nets, and predatory cnidocytes.",
+      "quiz": [
+        {
+          "questionText": "Which cnidarian is known as Portuguese Man-of-War?",
+          "answerOptions": [
+            { "answerText": "Pennatula", "isCorrect": false },
+            { "answerText": "Physalia", "isCorrect": true },
+            { "answerText": "Adamsia", "isCorrect": false },
+            { "answerText": "Gorgonia", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "The phenomenon of alternation of generation between polyp and medusa is called:",
+          "answerOptions": [
+            { "answerText": "Metamorphosis", "isCorrect": false },
+            { "answerText": "Metagenesis", "isCorrect": true },
+            { "answerText": "Metamerism", "isCorrect": false },
+            { "answerText": "Parthenogenesis", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Corals have an exoskeleton composed mainly of:",
+          "answerOptions": [
+            { "answerText": "Silica", "isCorrect": false },
+            { "answerText": "Chitin", "isCorrect": false },
+            { "answerText": "Calcium carbonate", "isCorrect": true },
+            { "answerText": "Spongin fibres", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ctenophora",
+      "phylumNumber": "03",
+      "name": "Ctenophora",
+      "etymology": "Ktenos – comb; phoros – bearing",
+      "tagline": "The Comb Jellies & Sea Walnuts",
+      "badge": "Bioluminescent",
+      "hero": {
+        "intro": [
+          "Ctenophores, commonly known as sea walnuts or comb jellies, are exclusively marine, radially symmetrical, diploblastic organisms with tissue level of organisation.",
+          "Their defining hallmark is the presence of eight external rows of ciliated comb plates used for locomotion, making them the largest animals that swim by means of cilia."
+        ],
+        "academicNote": "Bioluminescence (the property of a living organism to emit light) is well-marked and universally observed in ctenophores.",
+        "image": "https://images.unsplash.com/photo-1544551763-92ab472cad5d?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "BIOLUMINESCENT COMB JELLY (CTENOPHORE)"
+      },
+      "anatomy": {
+        "title": "Ctenophore Morphology & Locomotion",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pleurobrachia_pileus.jpg/800px-Pleurobrachia_pileus.jpg",
+        "diagramCaption": "PLEUROBRACHIA COMB ROW MORPHOLOGY",
+        "keyStructures": [
+          {
+            "name": "8 Ciliated Comb Plates",
+            "description": "Fused plates of long cilia arranged in longitudinal rows that beat in waves for locomotion."
+          },
+          {
+            "name": "Colloblasts (Lasso Cells)",
+            "description": "Specialized adhesive cells on tentacles that discharge glue to stick to and trap prey (no stinging nematocysts)."
+          },
+          {
+            "name": "Statocyst",
+            "description": "A sensory equilibrium organ located at the aboral pole governing balance and coordinated ciliary beating."
+          },
+          {
+            "name": "Aboral Sense Organ",
+            "description": "Coordinates orientation and steering in the water column."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Exclusively marine (no freshwater or terrestrial species).",
+        "Radial / Biradial symmetry, Diploblastic, Tissue level.",
+        "Locomotion by 8 external rows of ciliated comb plates.",
+        "Possess Colloblasts (adhesive cells) instead of cnidoblasts.",
+        "Digestion is both extracellular and intracellular.",
+        "Bioluminescence is prominent.",
+        "Reproduction takes place only by sexual means (Hermaphrodite).",
+        "Fertilisation is external; development is indirect with a Cydippid larva."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Tissue",
+        "symmetry": "Radial / Biradial",
+        "germLayers": "Diploblastic",
+        "bodyCavity": "Acoelomate"
+      },
+      "majorClasses": [
+        {
+          "name": "Tentaculata",
+          "description": "Possess two retractile tentacles provided with colloblasts.",
+          "examples": ["Pleurobrachia", "Cestum (Venus girdle)", "Hormiphora"]
+        },
+        {
+          "name": "Nuda",
+          "description": "Lack tentacles completely; have a wide mouth and large pharynx for swallowing prey whole.",
+          "examples": ["Beroe (Swimming cap)"]
+        }
+      ],
+      "conclusion": "Ctenophores represent nature's light show in the deep sea, mastering oceanic locomotion through exquisite ciliary comb rows.",
+      "quiz": [
+        {
+          "questionText": "How many external rows of ciliated comb plates do Ctenophores possess?",
+          "answerOptions": [
+            { "answerText": "4", "isCorrect": false },
+            { "answerText": "6", "isCorrect": false },
+            { "answerText": "8", "isCorrect": true },
+            { "answerText": "10", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which type of cells are used by ctenophores to capture prey?",
+          "answerOptions": [
+            { "answerText": "Choanocytes", "isCorrect": false },
+            { "answerText": "Cnidoblasts", "isCorrect": false },
+            { "answerText": "Colloblasts (Lasso cells)", "isCorrect": true },
+            { "answerText": "Flame cells", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Ctenophores reproduce exclusively through:",
+          "answerOptions": [
+            { "answerText": "Asexual fragmentation", "isCorrect": false },
+            { "answerText": "Sexual reproduction", "isCorrect": true },
+            { "answerText": "Budding", "isCorrect": false },
+            { "answerText": "Gemmules", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platyhelminthes",
+      "phylumNumber": "04",
+      "name": "Platyhelminthes",
+      "etymology": "Platys – flat; helmins – worm",
+      "tagline": "The Dorso-Ventrally Flattened Worms",
+      "badge": "Acoelomate",
+      "hero": {
+        "intro": [
+          "They have dorso-ventrally flattened bodies, hence are called flatworms. Mostly endoparasites found in animals including humans, with some free-living forms like Planaria.",
+          "They are the first triploblastic, bilaterally symmetrical animals, exhibiting an organ level of organisation while remaining completely acoelomate."
+        ],
+        "academicNote": "Specialised cells called flame cells (protonephridia) help in osmoregulation and excretion.",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "FREE-LIVING TURBELLARIAN FLATWORM"
+      },
+      "anatomy": {
+        "title": "Flatworm Anatomy & Excretory System",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flame_cell.svg/800px-Flame_cell.svg.png",
+        "diagramCaption": "FLAME CELL (PROTONEPHRIDIUM) STRUCTURE",
+        "keyStructures": [
+          {
+            "name": "Flame Cells (Protonephridia)",
+            "description": "Bulb-like excretory cells with a tuft of beating cilia (resembling a flickering flame) that filter bodily fluid and maintain osmotic balance."
+          },
+          {
+            "name": "Hooks & Suckers",
+            "description": "Specialized attachment organs present in parasitic flatworms to anchor firmly to host intestinal walls."
+          },
+          {
+            "name": "Branched Gastrovascular Cavity",
+            "description": "Incomplete gut (single opening) delivering digested nutrients directly to tissues without a circulatory system."
+          },
+          {
+            "name": "Ladder-like Nervous System",
+            "description": "Cerebral ganglia paired with longitudinal nerve cords connected by transverse commissures."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "First Triploblastic and Bilaterally symmetrical phylum.",
+        "Acoelomate (no body cavity; parenchyma fills the space).",
+        "Organ level of organisation.",
+        "Flame cells (protonephridia) for osmoregulation and excretion.",
+        "Parasitic adaptations: Hooks, suckers, cuticle, absorption of nutrients directly through body surface.",
+        "Planaria possesses high capacity of regeneration.",
+        "Hermaphrodite; internal fertilisation; indirect development with larval stages (e.g. Miracidium, Redia, Cercaria in liver fluke)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ / Organ-System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Acoelomate"
+      },
+      "majorClasses": [
+        {
+          "name": "Turbellaria",
+          "description": "Mostly free-living, aquatic flatworms with ciliated epidermis. Possess high regenerative abilities.",
+          "examples": ["Planaria (Dugesia)", "Bipalium"]
+        },
+        {
+          "name": "Trematoda (Flukes)",
+          "description": "Ecto- or endoparasites with non-ciliated tegument and oral/ventral suckers.",
+          "examples": ["Fasciola hepatica (Liver fluke)", "Schistosoma (Blood fluke)"]
+        },
+        {
+          "name": "Cestoda (Tapeworms)",
+          "description": "Endoparasites with ribbon-like bodies divided into scolex, neck, and proglottids. No digestive tract.",
+          "examples": ["Taenia solium (Pork tapeworm)", "Echinococcus (Dog tapeworm)"]
+        }
+      ],
+      "conclusion": "Flatworms mark the revolutionary evolutionary milestone of triploblastic tissues, bilateral symmetry, and cephalization.",
+      "quiz": [
+        {
+          "questionText": "The excretory cells in flatworms are known as:",
+          "answerOptions": [
+            { "answerText": "Nephridia", "isCorrect": false },
+            { "answerText": "Malpighian tubules", "isCorrect": false },
+            { "answerText": "Flame cells (Protonephridia)", "isCorrect": true },
+            { "answerText": "Proboscis gland", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which flatworm is renowned for its remarkable power of regeneration?",
+          "answerOptions": [
+            { "answerText": "Fasciola", "isCorrect": false },
+            { "answerText": "Taenia", "isCorrect": false },
+            { "answerText": "Planaria", "isCorrect": true },
+            { "answerText": "Schistosoma", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Tapeworms absorb food directly through their body surface because they:",
+          "answerOptions": [
+            { "answerText": "Have an incomplete digestive system", "isCorrect": false },
+            { "answerText": "Completely lack a digestive system", "isCorrect": true },
+            { "answerText": "Have open circulation", "isCorrect": false },
+            { "answerText": "Possess flame cells", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aschelminthes",
+      "phylumNumber": "05",
+      "name": "Aschelminthes (Nematoda)",
+      "etymology": "Askos – sac; helmins – worm; Nema – thread",
+      "tagline": "The Cylindrical Roundworms",
+      "badge": "Pseudocoelomate",
+      "hero": {
+        "intro": [
+          "The body of Aschelminthes is circular in cross-section, hence the name roundworms. They may be free-living (aquatic and terrestrial) or parasitic in plants and animals.",
+          "They are the first animals to possess an organ-system level of organisation and a complete alimentary canal with a well-developed muscular pharynx."
+        ],
+        "academicNote": "Body cavity is a Pseudocoelom, where mesoderm is scattered in pouches between ectoderm and endoderm.",
+        "image": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE NEMATODE (ASCARIS)"
+      },
+      "anatomy": {
+        "title": "Nematode Morphology & Internal Anatomy",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ascaris_lumbricoides.png/800px-Ascaris_lumbricoides.png",
+        "diagramCaption": "CROSS-SECTION OF ASCARIS",
+        "keyStructures": [
+          {
+            "name": "Syncytial Epidermis",
+            "description": "Continuous multinucleated layer of cytoplasm without cell boundaries, protected by a tough, resistant collagenous cuticle."
+          },
+          {
+            "name": "Muscular Pharynx",
+            "description": "Strongly developed pumping pharynx that forces food down the straight intestine."
+          },
+          {
+            "name": "Pseudocoelomic Fluid",
+            "description": "Fluid under high hydrostatic pressure serving as a hydrostatic skeleton for movement."
+          },
+          {
+            "name": "Excretory Tube (H-shaped cell)",
+            "description": "Removes bodily waste through an anterior excretory pore (Renette cell)."
+          }
+        ]
+      },
+      "sexualDimorphism": {
+        "title": "Sexual Dimorphism in Ascaris",
+        "female": "Longer, thicker, with straight posterior end.",
+        "male": "Shorter, thinner, with curved posterior end bearing pineal spicules (copulatory setae)."
+      },
+      "examHighYieldPoints": [
+        "Pseudocoelomate body cavity.",
+        "Triploblastic, Bilateral symmetry, Organ-system level.",
+        "Complete digestive system with muscular pharynx.",
+        "Syncytial (multinucleated) epidermis with tough cuticle.",
+        "Dioecious (sexes separate); females often longer than males.",
+        "Internal fertilisation; direct or indirect development.",
+        "Major human parasites: Ascaris (Roundworm), Wuchereria (Filarial worm - causes elephantiasis), Ancylostoma (Hookworm)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Pseudocoelomate"
+      },
+      "majorClasses": [
+        {
+          "name": "Nematoda",
+          "description": "Unsegmented cylindrical worms with pointed ends, covered by a resilient cuticle.",
+          "examples": ["Ascaris lumbricoides (Roundworm)", "Wuchereria bancrofti (Filarial worm)", "Ancylostoma duodenale (Hookworm)", "Enterobius (Pinworm)"]
+        }
+      ],
+      "conclusion": "Aschelminthes engineered the complete tube-within-a-tube digestive tract and hydrostatic pseudocoelom, dominating ecological niches worldwide.",
+      "quiz": [
+        {
+          "questionText": "The body cavity in Aschelminthes is classified as:",
+          "answerOptions": [
+            { "answerText": "Acoelomate", "isCorrect": false },
+            { "answerText": "Pseudocoelomate", "isCorrect": true },
+            { "answerText": "Eucoelomate", "isCorrect": false },
+            { "answerText": "Haemocoel", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which nematode is responsible for causing Elephantiasis (Filariasis)?",
+          "answerOptions": [
+            { "answerText": "Ascaris", "isCorrect": false },
+            { "answerText": "Ancylostoma", "isCorrect": false },
+            { "answerText": "Wuchereria bancrofti", "isCorrect": true },
+            { "answerText": "Enterobius", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "In Ascaris, sexual dimorphism is evident because:",
+          "answerOptions": [
+            { "answerText": "Males are longer than females", "isCorrect": false },
+            { "answerText": "Females are longer with a straight tail; males have a curved tail", "isCorrect": true },
+            { "answerText": "Males possess flame cells", "isCorrect": false },
+            { "answerText": "Females produce spicules", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "annelida",
+      "phylumNumber": "06",
+      "name": "Annelida",
+      "etymology": "Annulus – little ring; eidos – form",
+      "tagline": "The Truly Segmented Worms",
+      "badge": "True Coelomate",
+      "hero": {
+        "intro": [
+          "They may be aquatic (marine and freshwater) or terrestrial; free-living, and sometimes parasitic. They exhibit organ-system level organisation and bilateral symmetry.",
+          "Their body surface is distinctly marked out into segments or metameres, hence the phylum name Annelida (Latin: annulus = little ring)."
+        ],
+        "academicNote": "Possess longitudinal and circular muscles which help in locomotion, along with specialized excretory units called Nephridia.",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "METAMERICALLY SEGMENTED ANNELID (EARTHWORM)"
+      },
+      "anatomy": {
+        "title": "Metameric Plan & Nephridial Anatomy",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Earthworm_head.svg/800px-Earthworm_head.svg.png",
+        "diagramCaption": "INTERNAL SEGMENTAL ANATOMY",
+        "keyStructures": [
+          {
+            "name": "Metameres (True Segments)",
+            "description": "Serial repetition of internal organs and external rings separated by intersegmental septa."
+          },
+          {
+            "name": "Nephridia",
+            "description": "Coiled tubular excretory organs (one pair per segment) regulating osmoregulation and nitrogenous waste elimination."
+          },
+          {
+            "name": "Closed Circulatory System",
+            "description": "Blood flows entirely within closed vessels; haemoglobin is dissolved directly in blood plasma."
+          },
+          {
+            "name": "Setae & Parapodia",
+            "description": "Chitinous bristles (setae in earthworms) and lateral fleshy appendages (parapodia in Nereis) assisting swimming and crawling."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "First true Eucoelomates (Schizocoelom) and first to show True Metamerism.",
+        "Organ-system level, Triploblastic, Bilateral symmetry.",
+        "Closed circulatory system with haemoglobin dissolved in plasma (no RBCs).",
+        "Excretion and osmoregulation by Nephridia.",
+        "Locomotory structures: Setae (Earthworm), Parapodia (Nereis), Suckers (Leech).",
+        "Nereis is dioecious; Earthworms and Leeches are monoecious (hermaphrodite).",
+        "Development is indirect (Trochophore larva in Nereis) or direct (Earthworm)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (Schizocoelom)"
+      },
+      "majorClasses": [
+        {
+          "name": "Polychaeta",
+          "description": "Mostly marine annelids with distinct head, tentacles, and numerous setae on lateral parapodia.",
+          "examples": ["Nereis (Sandworm)", "Arenicola (Lugworm)", "Aphrodite (Sea mouse)"]
+        },
+        {
+          "name": "Oligochaeta",
+          "description": "Terrestrial or freshwater annelids with no distinct head or parapodia, and fewer setae.",
+          "examples": ["Pheretima (Earthworm)", "Lumbricus", "Tubifex"]
+        },
+        {
+          "name": "Hirudinea",
+          "description": "Ectoparasitic leeches with anterior and posterior suckers; coelom reduced by botryoidal tissue; secrete anticoagulant hirudin.",
+          "examples": ["Hirudinaria granulosa (Cattle leech)", "Hirudo medicinalis"]
+        }
+      ],
+      "conclusion": "Annelids introduced segmented engineering, true coelomic cavities, and sophisticated closed vascular systems to the animal tree.",
+      "quiz": [
+        {
+          "questionText": "The excretory organs in Annelids are called:",
+          "answerOptions": [
+            { "answerText": "Flame cells", "isCorrect": false },
+            { "answerText": "Nephridia", "isCorrect": true },
+            { "answerText": "Malpighian tubules", "isCorrect": false },
+            { "answerText": "Green glands", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Lateral appendages used for swimming in marine annelids like Nereis are called:",
+          "answerOptions": [
+            { "answerText": "Setae", "isCorrect": false },
+            { "answerText": "Parapodia", "isCorrect": true },
+            { "answerText": "Tentilla", "isCorrect": false },
+            { "answerText": "Radula", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "What anticoagulant is secreted by blood-sucking leeches?",
+          "answerOptions": [
+            { "answerText": "Heparin", "isCorrect": false },
+            { "answerText": "Hirudin", "isCorrect": true },
+            { "answerText": "Histamine", "isCorrect": false },
+            { "answerText": "Serotonin", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arthropoda",
+      "phylumNumber": "07",
+      "name": "Arthropoda",
+      "etymology": "Arthron – joint; podos – foot",
+      "tagline": "The Champions of Jointed Appendages",
+      "badge": "Largest Phylum",
+      "hero": {
+        "intro": [
+          "This is the largest phylum of Animalia which includes insects. Over two-thirds of all named species on earth are arthropods.",
+          "They have organ-system level of organisation, bilateral symmetry, triploblastic condition, segmented bodies, and a tough chitinous exoskeleton."
+        ],
+        "academicNote": "Body consists of Head, Thorax, and Abdomen (or Cephalothorax and Abdomen), with jointed appendages for locomotion, feeding, and sensory perception.",
+        "image": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE ARTHROPOD (BUTTERFLY/INSECT)"
+      },
+      "anatomy": {
+        "title": "Arthropod Physiology & Excretion",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Grasshopper_anatomy.svg/800px-Grasshopper_anatomy.svg.png",
+        "diagramCaption": "INTERNAL PHYSIOLOGY OF AN INSECT",
+        "keyStructures": [
+          {
+            "name": "Chitinous Cuticle (Exoskeleton)",
+            "description": "Rigid, waterproof outer layer that prevents desiccation and is periodically shed via ecdysis (moulting)."
+          },
+          {
+            "name": "Haemocoel & Open Circulation",
+            "description": "Coelom is reduced to a haemocoel where hemolymph directly bathes visceral organs."
+          },
+          {
+            "name": "Malpighian Tubules",
+            "description": "Thread-like excretory tubules that absorb uric acid from hemolymph and discharge into hindgut."
+          },
+          {
+            "name": "Sensory Structures",
+            "description": "Compound eyes with multiple ommatidia, antennae for chemoreception, and statocysts for balance."
+          },
+          {
+            "name": "Respiratory Organs",
+            "description": "Gills (crustaceans), Book gills (Limulus), Book lungs (scorpions/spiders), Tracheal system (insects)."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Largest phylum (2/3 of all animal species on Earth).",
+        "Chitinous exoskeleton shed periodically (Ecdysis / Moulting).",
+        "Body divided into Head, Thorax, Abdomen.",
+        "Circulatory system is Open type; body cavity is Haemocoel.",
+        "Respiration: Gills, Book gills, Book lungs, Tracheal system.",
+        "Excretion: Malpighian tubules (Insects), Antennal/Green glands (Prawns), Coxal glands (Spiders).",
+        "Living fossil: Limulus (King crab).",
+        "Economically important: Apis (Honey bee), Bombyx (Silkworm), Laccifer (Lac insect).",
+        "Vectors: Anopheles, Culex, Aedes mosquitoes."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (Haemocoel)"
+      },
+      "majorClasses": [
+        {
+          "name": "Crustacea",
+          "description": "Mostly aquatic with cephalothorax covered by carapace; breathe by gills; green glands for excretion.",
+          "examples": ["Palaemon (Prawn)", "Cancer (Crab)", "Daphnia (Water flea)"]
+        },
+        {
+          "name": "Insecta (Hexapoda)",
+          "description": "Largest class. Body in 3 parts; 3 pairs of walking legs on thorax; tracheal respiration; Malpighian tubules.",
+          "examples": ["Periplaneta (Cockroach)", "Apis (Honeybee)", "Musca (Housefly)", "Locusta (Locust)"]
+        },
+        {
+          "name": "Arachnida",
+          "description": "Cephalothorax and abdomen; 4 pairs of walking legs; no antennae; breathe by book lungs or tracheae.",
+          "examples": ["Scorpio (Scorpion)", "Aranea (Spider)", "Ticks & Mites"]
+        },
+        {
+          "name": "Myriapoda",
+          "description": "Elongated bodies with numerous segments, each bearing 1 or 2 pairs of legs.",
+          "examples": ["Scolopendra (Centipede)", "Julus (Millipede)"]
+        }
+      ],
+      "conclusion": "Arthropods represent the unrivaled masters of adaptation, conquoring sky, land, and deep oceans with jointed armor.",
+      "quiz": [
+        {
+          "questionText": "The body cavity filled with blood in arthropods is known as:",
+          "answerOptions": [
+            { "answerText": "Spongocoel", "isCorrect": false },
+            { "answerText": "Pseudocoelom", "isCorrect": false },
+            { "answerText": "Haemocoel", "isCorrect": true },
+            { "answerText": "Coelenteron", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which of the following is considered a 'living fossil'?",
+          "answerOptions": [
+            { "answerText": "Locusta", "isCorrect": false },
+            { "answerText": "Limulus (King crab)", "isCorrect": true },
+            { "answerText": "Bombyx", "isCorrect": false },
+            { "answerText": "Apis", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Insects excrete nitrogenous waste primarily through:",
+          "answerOptions": [
+            { "answerText": "Flame cells", "isCorrect": false },
+            { "answerText": "Green glands", "isCorrect": false },
+            { "answerText": "Malpighian tubules", "isCorrect": true },
+            { "answerText": "Nephridia", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mollusca",
+      "phylumNumber": "08",
+      "name": "Mollusca",
+      "etymology": "Mollis – soft",
+      "tagline": "The Soft-Bodied Architects of Shells",
+      "badge": "Soft Bodied",
+      "hero": {
+        "intro": [
+          "Mollusca is the second largest animal phylum. They are terrestrial or aquatic (marine or freshwater) with organ-system level of organisation.",
+          "Body is soft, unsegmented, and typically covered by a calcareous shell. It is differentiated into a distinct head, muscular foot, and visceral hump."
+        ],
+        "academicNote": "The mouth contains a file-like rasping organ for feeding called the Radula.",
+        "image": "https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE MOLLUSC (OCTOPUS)"
+      },
+      "anatomy": {
+        "title": "Snail Anatomy & The Radula",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/Scheme_snail_anatomy-numbers.svg",
+        "diagramCaption": "INTERNAL MORPHOLOGY OF A GASTROPOD",
+        "keyStructures": [
+          {
+            "name": "Radula",
+            "description": "Tongue-like rasping ribbon with transverse rows of chitinous teeth used to scrape algae or drill shells."
+          },
+          {
+            "name": "Mantle (Pallium)",
+            "description": "Soft, muscular fold of skin covering the visceral hump that secretes the calcareous shell."
+          },
+          {
+            "name": "Mantle Cavity & Ctenidia",
+            "description": "Space between visceral hump and mantle containing feather-like gills (ctenidia) for respiration and excretion."
+          },
+          {
+            "name": "Muscular Foot",
+            "description": "Ventrally placed muscular organ modified for creeping, burrowing, or capturing prey (as tentacles in cephalopods)."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Second largest animal phylum (after Arthropoda).",
+        "Body divided into Head, Muscular Foot, and Visceral Hump.",
+        "Mantle secretes calcareous shell (External in Pila, Internal in Sepia, Absent in Octopus).",
+        "Rasping organ Radula present in mouth (absent in Bivalves).",
+        "Circulatory system is Open type (except Cephalopods which have Closed circulation).",
+        "Feather-like gills (ctenidia) have both respiratory and excretory functions.",
+        "Snails exhibit Torsion (twisting of visceral mass making them asymmetrical).",
+        "Dioecious; oviparous; indirect development (Trochophore / Veliger larva)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral (secondarily asymmetrical due to torsion in Gastropods)",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (reduced coelom)"
+      },
+      "majorClasses": [
+        {
+          "name": "Gastropoda",
+          "description": "Largest class. Single spirally coiled shell; distinct head with tentacles and eyes; exhibit torsion.",
+          "examples": ["Pila (Apple snail)", "Aplysia (Sea hare)", "Helix (Land snail)"]
+        },
+        {
+          "name": "Pelecypoda (Bivalvia)",
+          "description": "Two shells (valves) hinged dorsally; laterally compressed foot; no distinct head or radula.",
+          "examples": ["Pinctada (Pearl oyster)", "Unio (Freshwater mussel)", "Mytilus"]
+        },
+        {
+          "name": "Cephalopoda",
+          "description": "Highly advanced marine molluscs; foot modified into arms/tentacles around head; closed circulation and complex eyes.",
+          "examples": ["Sepia (Cuttlefish)", "Loligo (Squid)", "Octopus (Devil fish)", "Nautilus"]
+        }
+      ],
+      "conclusion": "Molluscs masterfully balance soft-bodied flexibility with extraordinary architectural shell defense and cephalopod intelligence.",
+      "quiz": [
+        {
+          "questionText": "Which rasping feeding organ is unique to phylum Mollusca?",
+          "answerOptions": [
+            { "answerText": "Statocyst", "isCorrect": false },
+            { "answerText": "Radula", "isCorrect": true },
+            { "answerText": "Ctenidia", "isCorrect": false },
+            { "answerText": "Nephridia", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which class of molluscs exhibits a CLOSED circulatory system?",
+          "answerOptions": [
+            { "answerText": "Gastropoda", "isCorrect": false },
+            { "answerText": "Bivalvia", "isCorrect": false },
+            { "answerText": "Cephalopoda", "isCorrect": true },
+            { "answerText": "Polyplacophora", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "The shell-secreting fold of skin in molluscs is called:",
+          "answerOptions": [
+            { "answerText": "Visceral hump", "isCorrect": false },
+            { "answerText": "Mantle", "isCorrect": true },
+            { "answerText": "Foot", "isCorrect": false },
+            { "answerText": "Hypostome", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echinodermata",
+      "phylumNumber": "09",
+      "name": "Echinodermata",
+      "etymology": "Echinos – spiny; derma – skin",
+      "tagline": "The Spiny-Skinned Hydraulic Wonders",
+      "badge": "Spiny Skinned",
+      "hero": {
+        "intro": [
+          "These animals have an endoskeleton of calcareous ossicles and, hence, the name Echinodermata (spiny bodied). All are exclusively marine with organ-system level of organisation.",
+          "The adult echinoderms are radially symmetrical (pentamerous), but larvae are bilaterally symmetrical—a critical evolutionary distinction."
+        ],
+        "academicNote": "The most distinctive feature of echinoderms is the presence of a Water Vascular System which helps in locomotion, capture and transport of food, and respiration.",
+        "image": "https://images.unsplash.com/photo-1544525881-897db9268f86?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE ECHINODERM (STARFISH)"
+      },
+      "anatomy": {
+        "title": "Water Vascular (Ambulacral) System",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/FMIB_52615_Diagram_of_water-vascular_system_of_a_starfish_;.jpeg/800px-FMIB_52615_Diagram_of_water-vascular_system_of_a_starfish_;.jpeg",
+        "diagramCaption": "HYDRAULIC LOCOMOTION SYSTEM",
+        "keyStructures": [
+          {
+            "name": "Madreporite",
+            "description": "Sieve-like porous plate on the aboral surface serving as the intake pressure regulator valve."
+          },
+          {
+            "name": "Radial Canals",
+            "description": "Canals radiating down each ambulacral groove in the arms, supplying water to tube feet."
+          },
+          {
+            "name": "Tube Feet (Podia)",
+            "description": "Hollow, muscular, suction-cup tipped extensions used for walking, adhering, and gripping prey."
+          },
+          {
+            "name": "Ampullae",
+            "description": "Bulb-like hydraulic reservoirs contracting to pump water into podia and extend them."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Exclusively marine animals (no freshwater forms).",
+        "Symmetry: Adults have Pentamerous Radial symmetry; Larvae have Bilateral symmetry.",
+        "Presence of Water Vascular System (Ambulacral system).",
+        "Excretory system is completely ABSENT (nitrogenous wastes diffuse through tube feet/dermal branchiae).",
+        "Digestive system complete: mouth on ventral (lower) side and anus on dorsal (upper) side.",
+        "Endoskeleton of calcareous ossicles (mesodermal in origin).",
+        "High power of regeneration and autotomy.",
+        "External fertilisation; indirect development with free-swimming ciliated larva (Bipinnaria / Brachiolaria / Ophiopluteus)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Radial (Adult) / Bilateral (Larva)",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (Enterocoelom)"
+      },
+      "majorClasses": [
+        {
+          "name": "Asteroidea",
+          "description": "Star-shaped body with 5 or more arms not sharply demarcated from central disc; tube feet with suckers in ambulacral grooves.",
+          "examples": ["Asterias (Starfish)", "Pentaceros"]
+        },
+        {
+          "name": "Echinoidea",
+          "description": "Globular or disc-shaped body lacking arms; body encased in rigid test with movable spines; Aristotle's lantern for chewing.",
+          "examples": ["Echinus (Sea urchin)", "Echinocardium (Heart urchin)", "Clypeaster (Sand dollar)"]
+        },
+        {
+          "name": "Ophiuroidea",
+          "description": "Brittle stars with long, slender, flexible arms sharply demarcated from central disc; tube feet lack suckers.",
+          "examples": ["Ophiura (Brittle star)", "Ophiocoma"]
+        },
+        {
+          "name": "Holothuroidea",
+          "description": "Elongated, cucumber-shaped soft bodies; skeleton reduced to microscopic ossicles; mouth surrounded by tentacles.",
+          "examples": ["Cucumaria (Sea cucumber)", "Holothuria"]
+        },
+        {
+          "name": "Crinoidea",
+          "description": "Plant-like echinoderms attached to substratum by a stalk; arms branched with pinnules.",
+          "examples": ["Antedon (Sea lily / Feather star)"]
+        }
+      ],
+      "conclusion": "Echinoderms demonstrate the power of hydraulic engineering in biology, using seawater to power their locomotory and sensory systems.",
+      "quiz": [
+        {
+          "questionText": "What type of symmetry is shown by adult vs larval echinoderms?",
+          "answerOptions": [
+            { "answerText": "Adult: Bilateral; Larva: Radial", "isCorrect": false },
+            { "answerText": "Adult: Radial; Larva: Bilateral", "isCorrect": true },
+            { "answerText": "Both are Radial", "isCorrect": false },
+            { "answerText": "Both are Bilateral", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which physiological system is completely ABSENT in Echinoderms?",
+          "answerOptions": [
+            { "answerText": "Digestive system", "isCorrect": false },
+            { "answerText": "Reproductive system", "isCorrect": false },
+            { "answerText": "Dedicated excretory system", "isCorrect": true },
+            { "answerText": "Water vascular system", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "The chewing apparatus found in Sea Urchins is known as:",
+          "answerOptions": [
+            { "answerText": "Radula", "isCorrect": false },
+            { "answerText": "Aristotle's Lantern", "isCorrect": true },
+            { "answerText": "Ampulla", "isCorrect": false },
+            { "answerText": "Madreporite", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hemichordata",
+      "phylumNumber": "10",
+      "name": "Hemichordata",
+      "etymology": "Hemi – half; chorda – cord",
+      "tagline": "The Evolutionary Bridge & Acorn Worms",
+      "badge": "Connecting Link",
+      "hero": {
+        "intro": [
+          "Hemichordata was earlier considered as a sub-phylum under phylum Chordata. But now it is placed as a separate phylum under Non-chordata.",
+          "This phylum consists of a small group of worm-like marine animals with organ-system level of organisation, bilateral symmetry, and tripartite body division."
+        ],
+        "academicNote": "They have a rudimentary structure in the collar region called Stomochord, a structure similar to notochord arising from the buccal cavity roof.",
+        "image": "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE HEMICHORDATE (BALANOGLOSSUS)"
+      },
+      "anatomy": {
+        "title": "Balanoglossus Tripartite Body Plan",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/3/36/Balanoglossus_2.png",
+        "diagramCaption": "STRUCTURE OF AN ACORN WORM",
+        "keyStructures": [
+          {
+            "name": "Proboscis",
+            "description": "Club-shaped muscular anterior organ used for burrowing in marine sand and food collection."
+          },
+          {
+            "name": "Collar",
+            "description": "Short middle cylinder enclosing the stomochord with mouth situated ventrally at its anterior margin."
+          },
+          {
+            "name": "Trunk",
+            "description": "Long posterior cylindrical region containing pharyngeal gill slits, digestive tract, and gonads."
+          },
+          {
+            "name": "Proboscis Gland (Glomerulus)",
+            "description": "Dedicated excretory organ situated anteriorly inside the proboscis coelom."
+          },
+          {
+            "name": "Pharyngeal Gill Slits",
+            "description": "Pairs of U-shaped gill slits perforating the pharyngeal wall (Chordate affinity)."
+          }
+        ]
+      },
+      "examHighYieldPoints": [
+        "Exclusively marine and tubicolous (burrowing in U-shaped burrows).",
+        "Body divided into 3 regions: Proboscis, Collar, and Trunk.",
+        "Possess Stomochord (buccal diverticulum) in collar, NOT a true notochord.",
+        "Possess Pharyngeal gill slits (key chordate characteristic).",
+        "Excretion by Proboscis gland (Glomerulus).",
+        "Circulatory system is Open type with dorsal and ventral vessels.",
+        "Respiration through pharyngeal gills.",
+        "Dioecious; external fertilisation; indirect development with Tornaria larva (resembling echinoderm bipinnaria)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (Enterocoelom)"
+      },
+      "majorClasses": [
+        {
+          "name": "Enteropneusta (Acorn Worms)",
+          "description": "Solitary, burrowing worm-like hemichordates with numerous gill slits and straight intestine.",
+          "examples": ["Balanoglossus (Acorn worm / Tongue worm)", "Saccoglossus", "Ptychodera"]
+        },
+        {
+          "name": "Pterobranchia",
+          "description": "Sedentary or colonial hemichordates with U-shaped gut and ciliated tentacled arms for filter feeding.",
+          "examples": ["Rhabdopleura", "Cephalodiscus"]
+        }
+      ],
+      "conclusion": "Hemichordates serve as the evolutionary handshake connecting invertebrate blueprints to vertebrate anatomy.",
+      "quiz": [
+        {
+          "questionText": "The excretory organ in Hemichordata is the:",
+          "answerOptions": [
+            { "answerText": "Flame cell", "isCorrect": false },
+            { "answerText": "Nephridium", "isCorrect": false },
+            { "answerText": "Proboscis gland (Glomerulus)", "isCorrect": true },
+            { "answerText": "Malpighian tubule", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "The body of an acorn worm is divided into:",
+          "answerOptions": [
+            { "answerText": "Head, Thorax, Abdomen", "isCorrect": false },
+            { "answerText": "Proboscis, Collar, Trunk", "isCorrect": true },
+            { "answerText": "Head, Foot, Visceral Hump", "isCorrect": false },
+            { "answerText": "Scolex, Neck, Proglottids", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "The free-swimming ciliated larva of Balanoglossus is called:",
+          "answerOptions": [
+            { "answerText": "Planula", "isCorrect": false },
+            { "answerText": "Trochophore", "isCorrect": false },
+            { "answerText": "Tornaria", "isCorrect": true },
+            { "answerText": "Bipinnaria", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chordata",
+      "phylumNumber": "11",
+      "name": "Chordata",
+      "etymology": "Chorda – cord / string",
+      "tagline": "The Pinnacles of Animal Evolution",
+      "badge": "Vertebrates",
+      "hero": {
+        "intro": [
+          "Animals belonging to phylum Chordata are fundamentally characterised by the presence of a notochord, a dorsal hollow nerve cord, and paired pharyngeal gill slits.",
+          "They are bilaterally symmetrical, triploblastic, coelomate with organ-system level of organisation, and possess a post-anal tail and a closed circulatory system."
+        ],
+        "academicNote": "Crucial Distinction: 'All vertebrates are chordates, but all chordates are NOT vertebrates' (e.g. Protochordates retain primitive notochords without vertebral columns).",
+        "image": "https://images.unsplash.com/photo-1444464666168-49d633b867ad?auto=format&fit=crop&q=80&w=2000",
+        "imageCaption": "REPRESENTATIVE CHORDATE (AVES)"
+      },
+      "anatomy": {
+        "title": "Fundamental Chordate Features (The Big Four)",
+        "diagramImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Chordate_features.png/800px-Chordate_features.png",
+        "diagramCaption": "THE FOUR HALLMARKS OF CHORDATA",
+        "keyStructures": [
+          {
+            "name": "Notochord",
+            "description": "Flexible, solid mesodermal rod lying dorsal to the gut providing longitudinal skeletal support (replaced by vertebral column in vertebrates)."
+          },
+          {
+            "name": "Dorsal Hollow Nerve Cord",
+            "description": "Ectodermal tubular nerve cord lying dorsal to notochord that differentiates into the brain and spinal cord."
+          },
+          {
+            "name": "Pharyngeal Gill Slits",
+            "description": "Paired lateral openings in the pharynx for filter feeding or gas exchange (present at embryonic stages in all chordates)."
+          },
+          {
+            "name": "Post-Anal Tail",
+            "description": "Posterior muscular extension of body beyond the anus used for propulsion and balance."
+          }
+        ]
+      },
+      "comparisonChordatesVsNonChordates": [
+        {
+          "feature": "Notochord",
+          "chordates": "Present at some stage of life",
+          "nonChordates": "Absent throughout"
+        },
+        {
+          "feature": "Central Nervous System (CNS)",
+          "chordates": "Dorsal, hollow, and single",
+          "nonChordates": "Ventral, solid, and double"
+        },
+        {
+          "feature": "Pharynx",
+          "chordates": "Perforated by gill slits",
+          "nonChordates": "Gill slits completely absent"
+        },
+        {
+          "feature": "Heart Position",
+          "chordates": "Ventral",
+          "nonChordates": "Dorsal (if present)"
+        },
+        {
+          "feature": "Post-Anal Tail",
+          "chordates": "Present",
+          "nonChordates": "Absent"
+        }
+      ],
+      "examHighYieldPoints": [
+        "Four fundamental signatures: Notochord, Dorsal hollow CNS, Pharyngeal gill slits, Post-anal tail.",
+        "Subphylum Urochordata: Notochord present ONLY in larval tail (Retrogressive metamorphosis e.g. Ascidia, Salpa, Doliolum).",
+        "Subphylum Cephalochordata: Notochord extends from head to tail and persists throughout life (e.g. Branchiostoma / Amphioxus).",
+        "Subphylum Vertebrata: Notochord is replaced by a cartilaginous or bony vertebral column in adults.",
+        "Ventral muscular heart with 2, 3, or 4 chambers.",
+        "Kidneys for excretion and osmoregulation; paired appendages (fins or limbs)."
+      ],
+      "coreBiologicalBlueprint": {
+        "levelOfOrganisation": "Organ System",
+        "symmetry": "Bilateral",
+        "germLayers": "Triploblastic",
+        "bodyCavity": "Eucoelomate (Enterocoelom)"
+      },
+      "subphylaAndClasses": [
+        {
+          "subphylum": "Protochordata / Acraniata (Urochordata & Cephalochordata)",
+          "description": "Exclusively marine, primitive chordates without cranium (skull) or vertebral column.",
+          "examples": ["Ascidia", "Salpa", "Doliolum", "Branchiostoma (Amphioxus / Lancelet)"]
+        },
+        {
+          "subphylum": "Vertebrata (Craniata)",
+          "divisions": [
+            {
+              "division": "Agnatha (Lacks jaws)",
+              "class": "Cyclostomata",
+              "description": "Ectoparasites on fishes with sucking, circular jawless mouth and 6-15 pairs of gill slits.",
+              "examples": ["Petromyzon (Lamprey)", "Myxine (Hagfish)"]
+            },
+            {
+              "division": "Gnathostomata (Bears jaws)",
+              "superclasses": [
+                {
+                  "superclass": "Pisces (Bears fins)",
+                  "classes": [
+                    {
+                      "name": "Chondrichthyes (Cartilaginous Fishes)",
+                      "description": "Marine fishes with cartilaginous endoskeleton, placoid scales, ventral mouth, no operculum, no air bladder.",
+                      "examples": ["Scoliodon (Dog fish / Shark)", "Pristis (Saw fish)", "Carcharodon (Great white shark)", "Trygon (Sting ray)"]
+                    },
+                    {
+                      "name": "Osteichthyes (Bony Fishes)",
+                      "description": "Marine and freshwater fishes with bony endoskeleton, cycloid/ctenoid scales, terminal mouth, 4 pairs of gills with operculum, air bladder present.",
+                      "examples": ["Labeo (Rohu)", "Catla", "Clarias (Magur)", "Exocoetus (Flying fish)", "Hippocampus (Sea horse)", "Betta (Fighting fish)"]
+                    }
+                  ]
+                },
+                {
+                  "superclass": "Tetrapoda (Bears 4 limbs)",
+                  "classes": [
+                    {
+                      "name": "Amphibia",
+                      "description": "Dual life (aquatic and terrestrial); moist skin without scales; 3-chambered heart (2 auricles, 1 ventricle); cold-blooded (poikilotherm); tympanum represents ear.",
+                      "examples": ["Rana (Frog)", "Bufo (Toad)", "Hyla (Tree frog)", "Salamandra (Salamander)", "Ichthyophis (Limbless amphibia)"]
+                    },
+                    {
+                      "name": "Reptilia",
+                      "description": "First true terrestrial vertebrates; dry cornified skin with epidermal scales or scutes; 3-chambered heart (4-chambered in crocodiles); amniotic eggs; poikilotherms.",
+                      "examples": ["Chelone (Turtle)", "Testudo (Tortoise)", "Chameleon (Tree lizard)", "Calotes (Garden lizard)", "Crocodilus", "Naja (Cobra)", "Bangarus (Krait)", "Vipera (Viper)"]
+                    },
+                    {
+                      "name": "Aves (Birds)",
+                      "description": "Forelimbs modified into wings; body covered with feathers; pneumatic (air-filled hollow) bones; 4-chambered heart; warm-blooded (homeotherms); air sacs connected to lungs.",
+                      "examples": ["Corvus (Crow)", "Columba (Pigeon)", "Psittacula (Parrot)", "Struthio (Ostrich)", "Pavo (Peacock)", "Aptenodytes (Penguin)", "Neophron (Vulture)"]
+                    },
+                    {
+                      "name": "Mammalia",
+                      "description": "Possess mammary glands to nourish young; skin possesses hair; external ears (pinnae); 4-chambered heart; homeotherms; viviparous (except Platypus).",
+                      "examples": ["Ornithorhynchus (Platypus - Oviparous)", "Macropus (Kangaroo)", "Pteropus (Flying fox)", "Camelus", "Macaca (Monkey)", "Rattus", "Canis (Dog)", "Felis (Cat)", "Elephas", "Equus (Horse)", "Delphinus (Dolphin)", "Balaenoptera (Blue whale)", "Panthera tigris (Tiger)", "Panthera leo (Lion)"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": "Chordates represent the pinnacle of anatomical specialization, cephalization, and neurological complexity across all living organisms.",
+      "quiz": [
+        {
+          "questionText": "Which of the following is NOT one of the four fundamental chordate hallmarks?",
+          "answerOptions": [
+            { "answerText": "Dorsal hollow nerve cord", "isCorrect": false },
+            { "answerText": "Ventral solid nerve cord", "isCorrect": true },
+            { "answerText": "Pharyngeal gill slits", "isCorrect": false },
+            { "answerText": "Notochord", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "In Urochordates (like Ascidia), the notochord is present:",
+          "answerOptions": [
+            { "answerText": "From head to tail throughout life", "isCorrect": false },
+            { "answerText": "Only in the larval tail", "isCorrect": true },
+            { "answerText": "Only in the adult body", "isCorrect": false },
+            { "answerText": "Never present", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which is an egg-laying (oviparous) mammal?",
+          "answerOptions": [
+            { "answerText": "Macropus (Kangaroo)", "isCorrect": false },
+            { "answerText": "Pteropus (Flying fox)", "isCorrect": false },
+            { "answerText": "Ornithorhynchus (Platypus)", "isCorrect": true },
+            { "answerText": "Balaenoptera (Blue whale)", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Which of the following reptiles has a 4-chambered heart?",
+          "answerOptions": [
+            { "answerText": "Chameleon", "isCorrect": false },
+            { "answerText": "Calotes", "isCorrect": false },
+            { "answerText": "Crocodile", "isCorrect": true },
+            { "answerText": "Naja (Cobra)", "isCorrect": false }
+          ]
+        }
+      ]
+    }
+  ]
+}

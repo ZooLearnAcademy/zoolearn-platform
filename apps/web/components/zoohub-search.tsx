@@ -9,11 +9,31 @@ export type SearchItem = {
   url: string
 }
 
-export function ZoohubSearch({ searchIndex }: { searchIndex: SearchItem[] }) {
+let globalSearchIndexCache: SearchItem[] | null = null
+
+export function ZoohubSearch({ searchIndex: initialIndex }: { searchIndex?: SearchItem[] }) {
+  const [searchIndex, setSearchIndex] = useState<SearchItem[]>(() => initialIndex || globalSearchIndexCache || [])
   const [query, setQuery] = useState("")
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
   const wrapperRef = useRef<HTMLDivElement>(null)
+
+  const ensureIndexLoaded = async () => {
+    if (!searchIndex.length && !globalSearchIndexCache) {
+      try {
+        const res = await fetch("/api/zoohub/search")
+        if (res.ok) {
+          const data = await res.json()
+          globalSearchIndexCache = data
+          setSearchIndex(data)
+        }
+      } catch (e) {
+        console.error("Failed to load search index:", e)
+      }
+    } else if (globalSearchIndexCache && !searchIndex.length) {
+      setSearchIndex(globalSearchIndexCache)
+    }
+  }
 
   const filteredResults = searchIndex
     .filter((item) =>
@@ -32,6 +52,17 @@ export function ZoohubSearch({ searchIndex }: { searchIndex: SearchItem[] }) {
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
+  const handleFocus = () => {
+    setIsOpen(true)
+    ensureIndexLoaded()
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value)
+    setIsOpen(true)
+    ensureIndexLoaded()
+  }
+
   return (
     <div className="relative w-full px-2 mt-2 mb-2" ref={wrapperRef}>
       <div className="relative">
@@ -45,11 +76,8 @@ export function ZoohubSearch({ searchIndex }: { searchIndex: SearchItem[] }) {
           placeholder="Search Zoohub..."
           className="w-full bg-slate-100 dark:bg-slate-800/80 border border-transparent rounded-lg py-2.5 pl-9 pr-4 text-sm focus:outline-none focus:bg-white dark:focus:bg-slate-900 focus:border-emerald-500/50 focus:ring-4 focus:ring-emerald-500/10 transition-all text-slate-800 dark:text-slate-200 placeholder:text-slate-500"
           value={query}
-          onChange={(e) => {
-            setQuery(e.target.value)
-            setIsOpen(true)
-          }}
-          onFocus={() => setIsOpen(true)}
+          onChange={handleChange}
+          onFocus={handleFocus}
         />
       </div>
 

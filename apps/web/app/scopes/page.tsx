@@ -1,10 +1,6 @@
 import React, { Suspense } from "react";
 import { Metadata } from "next";
 import { ScopesView } from "@/components/scopes/scopes-view";
-import { getScopeData } from "@/lib/supabase/scope-public";
-import { courseDetails } from "@/data/scopes-data";
-
-export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Career Scopes & Pathways | ZooLearn Life Sciences Directory",
@@ -28,10 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function ScopesPage() {
-  // Fetch directly from Supabase — runs server-side at request time
-  const { categories, careers } = await getScopeData();
-
+export default function ScopesPage() {
   return (
     <Suspense
       fallback={
@@ -40,11 +33,8 @@ export default async function ScopesPage() {
         </div>
       }
     >
-      <ScopesView
-        initialCategories={categories}
-        initialCareers={careers}
-        courseDetails={courseDetails}
-      />
+      <ScopesView />
     </Suspense>
   );
 }
+
