@@ -1,7 +1,6 @@
 import { Tag, Cube } from "@phosphor-icons/react/dist/ssr"
 import { Card, CardHeader, CardTitle, CardContent } from "@workspace/ui/components/card"
 import { SpeciesData } from "@/types/species"
-import { Progressive3DViewer } from "./progressive-3d-viewer"
 
 export function SizeStructureCard({ data }: { data: SpeciesData }) {
   if (!data.sizeStructure?.length) return null
@@ -45,11 +44,21 @@ export function SizeStructureCard({ data }: { data: SpeciesData }) {
                 {data.name} — 3D Model
               </span>
             </div>
-            <Progressive3DViewer
-              modelUrl={data["3d"]}
-              speciesName={data.name}
-              previewImage={data.image}
-            />
+            <div className="aspect-[4/3] w-full bg-slate-50 dark:bg-slate-800/30">
+              {data["3d"] ? (
+                <iframe
+                  title={`${data.name} 3D Model`}
+                  src={data["3d"]}
+                  className="w-full h-full border-0"
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-sm font-medium text-slate-400 dark:text-slate-500">
+                  No 3D model available
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </CardContent>
