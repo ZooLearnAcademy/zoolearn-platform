@@ -145,30 +145,4 @@
   .animate-marquee:hover {
     animation-play-state: paused;
   }
-
-  /* Taxonomy admin drawer animations */
-  @keyframes slide-in-right {
-    from { transform: translateX(100%); opacity: 0; }
-    to   { transform: translateX(0);    opacity: 1; }
-  }
-  .animate-slide-in-right {
-    animation: slide-in-right 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  @keyframes toast-in {
-    from { transform: translateY(12px); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
-  }
-  .animate-toast-in {
-    animation: toast-in 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  /* Subtle fade-up for list items */
-  @keyframes fade-up {
-    from { transform: translateY(6px); opacity: 0; }
-    to   { transform: translateY(0);   opacity: 1; }
-  }
-  .animate-fade-up {
-    animation: fade-up 0.2s ease-out forwards;
-  }
 }

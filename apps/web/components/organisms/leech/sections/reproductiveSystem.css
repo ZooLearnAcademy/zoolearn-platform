@@ -1,0 +1,390 @@
+/* SECTION WRAPPER */
+.reproductive-section {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #ffffff, #f0fdfa);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.reproductive-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reproductive-underline {
+  width: 80px;
+  height: 5px;
+  background: #10b981;
+  /* Emerald Green */
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* HEADER */
+.reproductive-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+
+
+
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin-bottom: 12px;
+}
+
+.title-underline {
+  width: 100px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* GRID LAYOUT */
+.reproductive-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* CONTENT COLUMN */
+.reproductive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* HERMAPHRODITE INTRO CARD */
+.hermaphrodite-card {
+  background: #ecfdf5;
+  border: 1px solid #34d399;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1);
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.icon-badge {
+  font-size: 2rem;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #059669;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #064e3b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* SYSTEM GROUPS (MALE/FEMALE) */
+.system-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.group-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #065f46;
+  margin-top: 0;
+  /* Remove default top margin */
+  border-bottom: 3px solid #10b981;
+  padding-bottom: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.organ-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ORGAN CARDS */
+.organ-card {
+  background: white;
+  padding: 18px 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.organ-card:hover {
+  transform: translateX(10px);
+  border-color: #34d399;
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.1);
+}
+
+.organ-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #059669;
+  margin-bottom: 5px;
+}
+
+.organ-card p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Specific styling for groups to differentiate slightly */
+.male-group .organ-card {
+  border-left: 5px solid #10b981;
+  /* Strong Green */
+}
+
+.female-group .organ-card {
+  border-left: 5px solid #34d399;
+  /* Lighter Green */
+}
+
+/* IMAGE COLUMN */
+.reproductive-image-col {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 20px;
+  animation: zoomIn 1s ease-out;
+}
+
+.image-frame {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border: 4px solid #f0fdfa;
+  text-align: center;
+}
+
+.reproductive-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.image-frame:hover .reproductive-img {
+  transform: scale(1.03);
+}
+
+.img-caption {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================================
+   LAPTOP VIEW (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .reproductive-section {
+    padding: 60px 5%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .reproductive-grid {
+    gap: 30px;
+  }
+
+  .hermaphrodite-card {
+    padding: 15px;
+  }
+
+  .organ-card {
+    padding: 15px;
+  }
+
+  .icon-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .reproductive-img {
+    max-height: 500px;
+  }
+}
+
+/* =========================================
+   MOBILE / TABLET VIEW
+   ========================================= */
+@media (max-width: 900px) {
+  .reproductive-grid {
+    grid-template-columns: 1fr;
+    /* Stack vertically */
+  }
+
+  .reproductive-image-col {
+    position: static;
+    order: -1;
+    /* Image first on mobile */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .hermaphrodite-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .organ-card {
+    padding: 15px;
+  }
+}
+
+/* --- New Tab Styles --- */
+
+.system-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  /* Wraps on small mobile screens */
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  /* Light gray border */
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #065f46;
+  transition: all 0.3s ease;
+  flex: 1;
+  /* Makes buttons equal width */
+}
+
+.tab-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Active State Styling */
+.tab-btn.active {
+  background-color: #065f46;
+  /* Dark Blue/Black */
+  color: white;
+  border-color: #2c3e50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for Male/Female active states if you want different colors */
+/* Example:
+.tab-btn.active:first-child { background-color: #3498db; }  // Blue for Male
+.tab-btn.active:nth-child(2) { background-color: #e91e63; } // Pink for Female
+*/
+
+/* --- Animation for Smooth Transition --- */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure the content area fills the space nicely */
+.system-content-area {
+  min-height: 300px;
+  /* Prevents layout jump if one list is shorter */
+}

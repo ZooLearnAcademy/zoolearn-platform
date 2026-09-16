@@ -140,3 +140,63 @@ export async function getQuizForPreview(quizId: string): Promise<PublicQuizPaylo
     questions: typedQuestions,
   };
 }
+
+export interface PublicQuizSummary {
+  id: string;
+  title: string;
+  description: string | null;
+  slug: string;
+  instructions: string | null;
+  passing_percentage: number;
+  time_limit_seconds: number | null;
+  status: "published" | "draft" | "archived";
+  created_at: string;
+  updated_at: string;
+  question_count: number;
+}
+
+/**
+ * Fetch all published quizzes with question counts for public catalog.
+ */
+export async function getPublishedQuizzes(): Promise<PublicQuizSummary[]> {
+  try {
+    const admin = createAdminClient();
+    const { data, error } = await admin
+      .from("quizzes")
+      .select(`
+        id,
+        title,
+        description,
+        slug,
+        instructions,
+        passing_percentage,
+        time_limit_seconds,
+        status,
+        created_at,
+        updated_at,
+        quiz_questions (count)
+      `)
+      .eq("status", "published")
+      .order("created_at", { ascending: false });
+
+    if (error || !data) return [];
+
+    return data.map((q: any) => ({
+      id: q.id,
+      title: q.title,
+      description: q.description,
+      slug: q.slug,
+      instructions: q.instructions,
+      passing_percentage: q.passing_percentage,
+      time_limit_seconds: q.time_limit_seconds,
+      status: q.status,
+      created_at: q.created_at,
+      updated_at: q.updated_at,
+      question_count: q.quiz_questions?.[0]?.count ?? 0,
+    }));
+  } catch (err) {
+    console.error("Error fetching published quizzes:", err);
+    return [];
+  }
+}
+

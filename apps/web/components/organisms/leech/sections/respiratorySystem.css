@@ -1,0 +1,253 @@
+/* SECTION WRAPPER */
+.rs-respiratory-section {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #ecfdf5, #ffffff);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.rs-respiratory-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.rs-underline {
+  width: 80px;
+  height: 5px;
+  background: #10b981; /* Emerald Green */
+  margin: 0 auto;
+  border-radius: 4px;
+}
+/* HEADER */
+.rs-respiratory-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.rs-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin-bottom: 12px;
+}
+
+.rs-title-underline {
+  width: 100px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* GRID LAYOUT */
+.rs-respiratory-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* CONTENT COLUMN */
+.rs-respiratory-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD COMMON STYLES */
+.rs-respiratory-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid #d1fae5;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+#rs-intro{
+  display:contents;
+}
+
+.rs-respiratory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.15);
+  border-color: #34d399;
+}
+
+/* SPECIFIC CARD STYLING */
+.rs-intro-card {
+  border-left: 5px solid #10b981;
+  animation-delay: 0.1s;
+}
+
+.rs-mechanism-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  animation-delay: 0.3s;
+}
+
+/* Pulse animation for mechanism to simulate breathing */
+.rs-mechanism-card:hover .icon-wrapper {
+  animation: pulse 2s infinite;
+}
+
+.rs-transport-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  animation-delay: 0.5s;
+}
+
+/* TEXT STYLES */
+.rs-card-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 5px;
+}
+
+.rs-scientific-name {
+  font-style: italic;
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rs-divider-line {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 10px 0;
+}
+
+.rs-card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.rs-highlight-badge {
+  display: inline-block;
+  background: #ecfdf5;
+  color: #047857;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px dashed #10b981;
+}
+
+/* ICONS */
+.rs-icon-wrapper {
+  background: #f0fdfa;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  color: #10b981;
+}
+
+/* IMAGE COLUMN */
+.rs-respiratory-image-col {
+  display: flex;
+  justify-content: center;
+  animation: zoomIn 1s ease-out;
+}
+
+.rs-image-frame {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border: 4px solid #f0fdfa;
+  text-align: center;
+  position: relative;
+}
+
+.rs-respiratory-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.rs-image-frame:hover .respiratory-img {
+  transform: scale(1.03);
+}
+
+.rs-img-caption {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* =========================================
+   LAPTOP VIEW (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .rs-respiratory-section { padding: 60px 5%; }
+  .rs-section-title { font-size: 2rem; }
+  .rs-respiratory-grid { gap: 30px; }
+  
+  .rs-respiratory-card { padding: 18px; }
+  .rs-icon-wrapper { width: 40px; height: 40px; font-size: 1.3rem; }
+  .rs-card-heading { font-size: 1.1rem; }
+  .rs-card-text { font-size: 0.95rem; }
+}
+
+/* =========================================
+   MOBILE / TABLET VIEW
+   ========================================= */
+@media (max-width: 900px) {
+  .rs-respiratory-grid {
+    grid-template-columns: 1fr; /* Stack vertically */
+  }
+
+  .rs-respiratory-image-col {
+    order: -1; /* Image first on mobile */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rs-section-title { font-size: 1.8rem; }
+  .rs-mechanism-card, .transport-card { flex-direction: column; }
+  .rs-icon-wrapper { margin-bottom: 10px; }
+}

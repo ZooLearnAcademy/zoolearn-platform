@@ -9,10 +9,8 @@ export default function LoginPage() {
 
       {/* Left Column: Auth Form */}
       <div className="w-full lg:w-1/2 flex flex-col relative border-r border-border/40">
-
-
         <div className="flex-1 flex flex-col justify-center px-8 sm:px-12 md:px-24 py-12">
-          <Suspense fallback={null}>
+          <Suspense fallback={<div className="text-center text-muted-foreground">Loading authentication...</div>}>
             <AuthForm />
           </Suspense>
         </div>
@@ -40,4 +38,3 @@ export default function LoginPage() {
     </div>
   );
 }
-

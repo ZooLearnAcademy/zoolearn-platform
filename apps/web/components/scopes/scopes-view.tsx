@@ -54,26 +54,15 @@ import {
   DialogDescription,
 } from "@workspace/ui/components/dialog";
 import {
+  allCareers,
+  scopeCategories,
+  courseDetails,
   type CareerItem,
   type ScopeCategory,
-  type CourseDetail,
 } from "@/data/scopes-data";
 import { CareerPathwayFlow } from "./career-pathway-flow";
 
-interface ScopesViewProps {
-  initialCategories: ScopeCategory[];
-  initialCareers:    CareerItem[];
-  courseDetails:     Record<string, CourseDetail>;
-}
-
-export function ScopesView({
-  initialCategories,
-  initialCareers,
-  courseDetails,
-}: ScopesViewProps) {
-  // Use DB data passed from the Server Component
-  const scopeCategories = initialCategories;
-  const allCareers      = initialCareers;
+export function ScopesView() {
   const searchParams = useSearchParams();
   const router = useRouter();
 

@@ -1,6 +1,10 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr"
 import { SpeciesData, NeighborSpecies } from "@/types/species"
+import { cloudinaryLoader } from "@/lib/cloudinary"
 
 interface HeroSectionProps {
   data: SpeciesData
@@ -102,11 +106,14 @@ export function HeroSection({ data, prev, next }: HeroSectionProps) {
           {/* Species Image */}
           <div className="relative w-[clamp(13rem,30vw,20rem)] aspect-square shrink-0 mx-auto lg:mx-0">
             <div className="absolute inset-[clamp(1rem,3vw,2rem)] rounded-full bg-emerald-100/50 dark:bg-emerald-900/20 blur-2xl" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
+              loader={cloudinaryLoader}
               src={data.image}
               alt={data.name}
-              className="relative z-10 w-full h-full object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-[1.03] transition-transform duration-500 ease-out"
+              fill
+              sizes="(max-width: 1024px) clamp(13rem, 30vw, 20rem), 20rem"
+              priority
+              className="relative z-10 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-[1.03] transition-transform duration-500 ease-out"
             />
           </div>
         </div>

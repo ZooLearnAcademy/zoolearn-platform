@@ -66,6 +66,50 @@ export interface ClassWithSpecies {
 // ─── Data Fetching Functions ─────────────────────────────────
 
 /**
+ * Get all phyla ordered by sort_order
+ */
+export async function getAllPhyla(): Promise<PhylumRow[]> {
+  const supabase = await createSupabaseServerClient()
+  const { data, error } = await supabase
+    .from("phyla")
+    .select("slug, name, subtitle, sort_order")
+    .order("sort_order", { ascending: true })
+
+  if (error || !data) {
+    console.error("[zoohub] Failed to fetch all phyla:", error?.message)
+    return []
+  }
+
+  return data as PhylumRow[]
+}
+
+/**
+ * Get a phylum with its full metadata and nested classes with species
+ */
+export async function getPhylumWithSpecies(phylumSlug: string): Promise<
+  (PhylumRow & { classes: ClassWithSpecies[] }) | null
+> {
+  const supabase = await createSupabaseServerClient()
+
+  const { data: phylum, error } = await supabase
+    .from("phyla")
+    .select("slug, name, subtitle, sort_order")
+    .eq("slug", phylumSlug.toLowerCase())
+    .single()
+
+  if (error || !phylum) {
+    return null
+  }
+
+  const classes = await getPhylumWithClasses(phylumSlug)
+
+  return {
+    ...(phylum as PhylumRow),
+    classes: classes || [],
+  }
+}
+
+/**
  * Get random species for the ZooHub landing page marquee
  */
 export async function getAllSpeciesPreview(limit = 20): Promise<SpeciesPreview[]> {
@@ -412,7 +456,9 @@ export async function getTaxonomyTreeFull(): Promise<any> {
   for (const node of nodes) {
     const treeNode = nodeMap.get(node.id)!
     if (!node.parent_id) {
-      root = treeNode
+      if (node.id === "animalia" || !root) {
+        root = treeNode
+      }
     } else {
       const parent = nodeMap.get(node.parent_id)
       if (parent) {
@@ -421,8 +467,8 @@ export async function getTaxonomyTreeFull(): Promise<any> {
     }
   }
 
-  if (!root) {
-    root = nodeMap.get("animalia") ?? { id: "animalia", label: "Animalia", rank: "Kingdom", children: [] }
+  if (!root || root.id !== "animalia") {
+    root = nodeMap.get("animalia") ?? root ?? { id: "animalia", label: "Animalia", rank: "Kingdom", children: [] }
   }
 
   return root
