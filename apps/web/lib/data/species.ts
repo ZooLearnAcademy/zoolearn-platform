@@ -8,26 +8,40 @@ let cachedPhylumData: Record<string, SpeciesData> | null = null
 export async function getAllAnimalData(): Promise<any> {
   if (cachedAnimalData) return cachedAnimalData
   try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
+    const jsonPath = path.join(process.cwd(), "data", "allAnimalData.json")
     const raw = await fs.readFile(jsonPath, "utf8")
     cachedAnimalData = JSON.parse(raw)
     return cachedAnimalData
-  } catch (error) {
-    console.error("Error reading allAnimalData.json:", error)
-    return {}
+  } catch {
+    try {
+      const rootPath = path.join(process.cwd(), "..", "..", "allAnimalData.json")
+      const raw = await fs.readFile(rootPath, "utf8")
+      cachedAnimalData = JSON.parse(raw)
+      return cachedAnimalData
+    } catch (error) {
+      console.error("Error reading allAnimalData.json:", error)
+      return {}
+    }
   }
 }
 
 export async function getAllPhylumData(): Promise<Record<string, SpeciesData>> {
   if (cachedPhylumData) return cachedPhylumData
   try {
-    const jsonPath = path.join(process.cwd(), "..", "..", "AllPhylumData.json")
+    const jsonPath = path.join(process.cwd(), "data", "AllPhylumData.json")
     const raw = await fs.readFile(jsonPath, "utf8")
     cachedPhylumData = JSON.parse(raw)
     return cachedPhylumData || {}
-  } catch (error) {
-    console.error("Error reading AllPhylumData.json:", error)
-    return {}
+  } catch {
+    try {
+      const rootPath = path.join(process.cwd(), "..", "..", "AllPhylumData.json")
+      const raw = await fs.readFile(rootPath, "utf8")
+      cachedPhylumData = JSON.parse(raw)
+      return cachedPhylumData || {}
+    } catch (error) {
+      console.error("Error reading AllPhylumData.json:", error)
+      return {}
+    }
   }
 }
 
