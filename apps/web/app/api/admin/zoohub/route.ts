@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
   if (!adminUser) return NextResponse.json({ error: "Unauthorized" }, { status: 403 });
 
   const body = await request.json();
-  const { mode, editTarget, editType, name, slug, subtitle, scientific_name, phylum_slug, class_slug, sort_order } = body;
+  const { mode, editTarget, editType, name, slug, subtitle, scientific_name, phylum_slug, class_slug, sort_order, introduction, size_structure, ecology, economy, features, image_url, model_3d } = body;
 
   if (!name || !slug) {
     return NextResponse.json({ error: "Name and slug are required." }, { status: 400 });
@@ -71,12 +71,14 @@ export async function POST(request: NextRequest) {
         phylum_slug,
         class_slug: class_slug || null,
         sort_order: parseInt(sort_order) || 0,
-        introduction: [],
-        features: {},
+        introduction: introduction || [],
+        features: features || {},
         classification: {},
-        size_structure: [],
-        ecology: [],
-        economy: [],
+        size_structure: size_structure || [],
+        ecology: ecology || [],
+        economy: economy || [],
+        image_url: image_url || null,
+        model_3d: model_3d || null,
       });
       if (error) throw error;
 
@@ -108,6 +110,13 @@ export async function POST(request: NextRequest) {
           phylum_slug: phylum_slug || undefined,
           class_slug: class_slug || null,
           sort_order: parseInt(sort_order) || 0,
+          introduction: introduction || [],
+          features: features || {},
+          size_structure: size_structure || [],
+          ecology: ecology || [],
+          economy: economy || [],
+          image_url: image_url || null,
+          model_3d: model_3d || null,
         }).eq("slug", editTarget);
         if (error) throw error;
       }

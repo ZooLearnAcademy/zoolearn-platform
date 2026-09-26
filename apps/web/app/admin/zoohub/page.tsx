@@ -15,7 +15,7 @@ export default async function AdminZooHubPage() {
     supabase.from("classes").select("*").order("sort_order", { ascending: true }),
     supabase
       .from("species")
-      .select("slug, name, scientific_name, phylum_slug, class_slug, sort_order")
+      .select("*")
       .order("sort_order", { ascending: true }),
   ]);
 

@@ -40,6 +40,13 @@ interface Species {
   phylum_slug: string;
   class_slug?: string | null;
   sort_order: number;
+  introduction?: string[];
+  size_structure?: string[];
+  ecology?: string[];
+  economy?: string[];
+  features?: Record<string, string>;
+  image_url?: string;
+  model_3d?: string;
 }
 
 type DrawerMode =
@@ -59,6 +66,13 @@ interface FormState {
   phylum_slug: string;
   class_slug: string;
   sort_order: string;
+  introduction: string[];
+  size_structure: string[];
+  ecology: string[];
+  economy: string[];
+  features: Record<string, string>;
+  image_url: string;
+  model_3d: string;
 }
 
 // â”€â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -79,6 +93,13 @@ const BLANK_FORM: FormState = {
   phylum_slug: "",
   class_slug: "",
   sort_order: "0",
+  introduction: [],
+  size_structure: [],
+  ecology: [],
+  economy: [],
+  features: {},
+  image_url: "",
+  model_3d: "",
 };
 
 // ——— Main Component ——————————————————————————————————————————————————————————
@@ -274,6 +295,13 @@ export function ZooHubManager({
             phylum_slug: form.phylum_slug,
             class_slug: form.class_slug || null,
             sort_order: parseInt(form.sort_order),
+            introduction: form.introduction,
+            size_structure: form.size_structure,
+            ecology: form.ecology,
+            economy: form.economy,
+            features: form.features,
+            image_url: form.image_url,
+            model_3d: form.model_3d,
           };
           setSpecies((prev) =>
             [...prev, s].sort((a, b) => a.sort_order - b.sort_order)
@@ -323,6 +351,13 @@ export function ZooHubManager({
                     name: form.name,
                     scientific_name: form.scientific_name || null,
                     sort_order: parseInt(form.sort_order),
+                    introduction: form.introduction,
+                    size_structure: form.size_structure,
+                    ecology: form.ecology,
+                    economy: form.economy,
+                    features: form.features,
+                    image_url: form.image_url,
+                    model_3d: form.model_3d,
                   }
                 : s
             )
@@ -767,6 +802,13 @@ export function ZooHubManager({
                                 phylum_slug: sp.phylum_slug,
                                 class_slug: sp.class_slug ?? "",
                                 sort_order: String(sp.sort_order),
+                                introduction: sp.introduction ?? [],
+                                size_structure: sp.size_structure ?? [],
+                                ecology: sp.ecology ?? [],
+                                economy: sp.economy ?? [],
+                                features: sp.features ?? {},
+                                image_url: sp.image_url ?? "",
+                                model_3d: sp.model_3d ?? "",
                               })
                             }
                             className="p-1.5 rounded-lg opacity-0 group-hover:opacity-100 text-slate-600 hover:text-violet-400 hover:bg-violet-500/10 transition-all"
@@ -794,7 +836,7 @@ export function ZooHubManager({
           />
 
           {/* Drawer panel */}
-          <aside className="fixed inset-y-0 right-0 z-50 w-full max-w-sm flex flex-col bg-[#0f0f1a] border-l border-white/10 shadow-2xl animate-slide-in-right">
+          <aside className={`fixed inset-y-0 right-0 z-50 w-full flex flex-col bg-[#0f0f1a] border-l border-white/10 shadow-2xl animate-slide-in-right ${drawerMode?.includes("species") ? "max-w-xl" : "max-w-sm"}`}>
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-white/8">
               <div>
@@ -985,6 +1027,90 @@ export function ZooHubManager({
                   Lower numbers appear first (0 = top).
                 </p>
               </div>
+
+              {/* Advanced Species Data */}
+              {(drawerMode === "add-species" || drawerMode === "edit-species") && (
+                <>
+                  <div className="pt-4 mt-4 border-t border-white/10">
+                    <h3 className="text-sm font-bold text-emerald-400 mb-4 flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                      Detailed Species Profile
+                    </h3>
+                    <div className="space-y-5">
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-400 mb-1.5">
+                          Image URL
+                        </label>
+                        <input
+                          value={form.image_url}
+                          onChange={(e) => setForm(prev => ({ ...prev, image_url: e.target.value }))}
+                          placeholder="https://..."
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-400 mb-1.5">
+                          3D Model URL (Sketchfab embed)
+                        </label>
+                        <input
+                          value={form.model_3d}
+                          onChange={(e) => setForm(prev => ({ ...prev, model_3d: e.target.value }))}
+                          placeholder="https://sketchfab.com/models/..."
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all"
+                        />
+                      </div>
+                      
+                      {[
+                        { key: "introduction", label: "Introduction" },
+                        { key: "size_structure", label: "Size & Structure" },
+                        { key: "ecology", label: "Ecology" },
+                        { key: "economy", label: "Economic Importance" }
+                      ].map(field => (
+                        <div key={field.key}>
+                          <label className="flex items-center justify-between text-xs font-semibold text-slate-400 mb-1.5">
+                            {field.label}
+                            <span className="text-slate-600 font-normal">One point per line</span>
+                          </label>
+                          <textarea
+                            value={form[field.key as keyof FormState] ? (form[field.key as keyof FormState] as string[]).join("\n") : ""}
+                            onChange={(e) => setForm(prev => ({ ...prev, [field.key]: e.target.value.split("\n") }))}
+                            rows={4}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all resize-none"
+                          />
+                        </div>
+                      ))}
+
+                      <div>
+                        <label className="flex items-center justify-between text-xs font-semibold text-slate-400 mb-1.5">
+                          General Features
+                          <span className="text-slate-600 font-normal">Key: Value format</span>
+                        </label>
+                        <textarea
+                          value={Object.entries(form.features || {}).map(([k, v]) => v ? `${k}: ${v}` : k).join("\n")}
+                          onChange={(e) => {
+                            const lines = e.target.value.split('\n');
+                            const newFeatures: Record<string, string> = {};
+                            lines.forEach(line => {
+                              const colon = line.indexOf(':');
+                              if (colon !== -1) {
+                                const k = line.slice(0, colon).trim();
+                                const v = line.slice(colon + 1).trim();
+                                if (k) newFeatures[k] = v;
+                              } else {
+                                newFeatures[line] = "";
+                              }
+                            });
+                            setForm(prev => ({ ...prev, features: newFeatures }));
+                          }}
+                          rows={6}
+                          placeholder="Symmetry: Biradial&#10;Germ Layer: Diploblastic"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm font-mono focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all resize-none"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
 
               {/* Delete confirmation zone */}
               {isEditMode && deleteStage && (
