@@ -511,6 +511,7 @@ export function ZooHubManager({
                         onClick={(e) => {
                           e.stopPropagation();
                           openEdit("edit-phylum", phylum, {
+                            ...BLANK_FORM,
                             name: phylum.name,
                             slug: phylum.slug,
                             subtitle: phylum.subtitle || "",
@@ -642,6 +643,7 @@ export function ZooHubManager({
                             onClick={(e) => {
                               e.stopPropagation();
                               openEdit("edit-class", cls, {
+                                ...BLANK_FORM,
                                 name: cls.class_name,
                                 slug: cls.slug,
                                 subtitle: "",
