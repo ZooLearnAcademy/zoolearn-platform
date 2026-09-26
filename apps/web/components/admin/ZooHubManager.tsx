@@ -419,7 +419,8 @@ export function ZooHubManager({
   return (
     <div className="flex flex-1 overflow-hidden min-h-0">
       {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• Column 1 â€” Phyla â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-      <div className="w-60 shrink-0 flex flex-col border-r border-white/8 bg-[#0c0c12]">
+      <div className="w-[280px] shrink-0 flex flex-col border-r border-white/5 bg-[#08080c] relative">
+        <div className="absolute top-0 left-0 right-0 h-32 bg-amber-500/5 blur-[50px] pointer-events-none" />
         {/* Column header */}
         <div className="px-4 pt-4 pb-3 border-b border-white/8">
           <div className="flex items-center justify-between mb-2.5">
@@ -446,8 +447,8 @@ export function ZooHubManager({
             <input
               value={phylumSearch}
               onChange={(e) => setPhylumSearch(e.target.value)}
-              placeholder="Searchâ€¦"
-              className="w-full pl-7 pr-3 py-1.5 bg-white/4 border border-white/8 rounded-lg text-xs text-white placeholder-slate-700 focus:outline-none focus:border-amber-500/30 transition-all"
+              placeholder="Search..."
+              className="w-full pl-7 pr-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 focus:bg-amber-500/5 transition-all"
             />
           </div>
         </div>
@@ -455,9 +456,11 @@ export function ZooHubManager({
         {/* Phyla list */}
         <div className="flex-1 overflow-y-auto py-1">
           {filteredPhyla.length === 0 ? (
-            <div className="flex flex-col items-center justify-center h-40 gap-2 px-4 text-center">
-              <Leaf size={28} className="text-slate-800" />
-              <p className="text-xs text-slate-700">No phyla yet.</p>
+            <div className="flex flex-col items-center justify-center h-40 gap-2 px-4 text-center opacity-70">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/5 border border-amber-500/10 flex items-center justify-center">
+                <Leaf size={24} className="text-amber-600/50" />
+              </div>
+              <p className="text-[11px] text-slate-500 font-medium mt-1">No phyla found.</p>
               <button
                 onClick={() => openAdd("add-phylum")}
                 className="text-xs text-amber-400/70 hover:text-amber-400 transition-colors"
@@ -541,11 +544,14 @@ export function ZooHubManager({
       </div>
 
       {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• Column 2 â€” Classes â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-      <div className="w-60 shrink-0 flex flex-col border-r border-white/8 bg-[#0d0d14]">
+      <div className="w-[280px] shrink-0 flex flex-col border-r border-white/5 bg-[#0a0a0f] relative">
+        <div className="absolute top-0 left-0 right-0 h-32 bg-teal-500/5 blur-[50px] pointer-events-none" />
         {!selectedPhylum ? (
-          <div className="flex flex-col items-center justify-center h-full gap-3 p-6 text-center">
-            <Tree size={36} className="text-slate-800" />
-            <p className="text-xs text-slate-600 leading-relaxed">
+          <div className="flex flex-col items-center justify-center h-full gap-3 p-6 text-center opacity-70">
+            <div className="w-12 h-12 rounded-2xl bg-teal-500/5 border border-teal-500/10 flex items-center justify-center">
+              <Tree size={24} className="text-teal-600/50" />
+            </div>
+            <p className="text-[11px] text-slate-500 leading-relaxed font-medium">
               Select a phylum<br />to view its classes
             </p>
           </div>
@@ -580,16 +586,19 @@ export function ZooHubManager({
                 <input
                   value={classSearch}
                   onChange={(e) => setClassSearch(e.target.value)}
-                  placeholder="Searchâ€¦"
-                  className="w-full pl-7 pr-3 py-1.5 bg-white/4 border border-white/8 rounded-lg text-xs text-white placeholder-slate-700 focus:outline-none focus:border-teal-500/30 transition-all"
+                  placeholder="Search classes..."
+                  className="w-full pl-7 pr-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500/50 focus:ring-1 focus:ring-teal-500/20 focus:bg-teal-500/5 transition-all"
                 />
               </div>
             </div>
 
             <div className="flex-1 overflow-y-auto py-1">
               {filteredClasses.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-40 gap-2 px-4 text-center">
-                  <p className="text-xs text-slate-700">
+                <div className="flex flex-col items-center justify-center h-40 gap-2 px-4 text-center opacity-70">
+                  <div className="w-12 h-12 rounded-2xl bg-teal-500/5 border border-teal-500/10 flex items-center justify-center">
+                    <Tree size={24} className="text-teal-600/50" />
+                  </div>
+                  <p className="text-[11px] text-slate-500 font-medium mt-1">
                     No classes in {selectedPhylum.name}.
                   </p>
                   <button
@@ -675,15 +684,17 @@ export function ZooHubManager({
       </div>
 
       {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• Column 3 â€” Species â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-      <div className="flex-1 flex flex-col bg-[#0a0a10] min-w-0">
+      <div className="flex-1 flex flex-col bg-[#0c0c12] min-w-0 relative">
+        <div className="absolute top-0 left-0 right-0 h-32 bg-violet-500/5 blur-[50px] pointer-events-none" />
         {!selectedPhylum ? (
-          <div className="flex flex-col items-center justify-center h-full gap-4 p-8 text-center">
-            <div className="w-16 h-16 rounded-2xl bg-violet-500/8 border border-violet-500/15 flex items-center justify-center">
-              <Bug size={32} className="text-violet-700" />
+          <div className="flex flex-col items-center justify-center h-full gap-4 p-8 text-center opacity-70">
+            <div className="w-16 h-16 rounded-2xl bg-violet-500/5 border border-violet-500/10 flex items-center justify-center relative">
+              <div className="absolute inset-0 bg-violet-500/20 blur-xl rounded-full" />
+              <Bug size={32} className="text-violet-500/50 relative z-10" />
             </div>
             <div>
-              <h3 className="text-slate-500 font-semibold mb-1">No phylum selected</h3>
-              <p className="text-sm text-slate-700">
+              <h3 className="text-slate-400 font-bold mb-1.5">No phylum selected</h3>
+              <p className="text-[11px] text-slate-500 font-medium">
                 Choose a phylum from the left, then optionally a class,<br />to browse and manage species
               </p>
             </div>
@@ -737,8 +748,8 @@ export function ZooHubManager({
                 <input
                   value={speciesSearch}
                   onChange={(e) => setSpeciesSearch(e.target.value)}
-                  placeholder="Search by common name or scientific nameâ€¦"
-                  className="w-full pl-8 pr-3 py-2 bg-white/4 border border-white/8 rounded-lg text-xs text-white placeholder-slate-700 focus:outline-none focus:border-violet-500/30 transition-all"
+                  placeholder="Search by common name or scientific name..."
+                  className="w-full pl-8 pr-3 py-2 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/20 focus:bg-violet-500/5 transition-all"
                 />
               </div>
             </div>
@@ -746,9 +757,12 @@ export function ZooHubManager({
             {/* Species list */}
             <div className="flex-1 overflow-y-auto">
               {filteredSpecies.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-full gap-3 py-16 text-center">
-                  <Bug size={32} className="text-slate-800" />
-                  <p className="text-xs text-slate-700">No species found.</p>
+                <div className="flex flex-col items-center justify-center h-full gap-3 py-16 text-center opacity-70">
+                  <div className="w-16 h-16 rounded-2xl bg-violet-500/5 border border-violet-500/10 flex items-center justify-center relative">
+                    <div className="absolute inset-0 bg-violet-500/20 blur-xl rounded-full" />
+                    <Bug size={32} className="text-violet-500/50 relative z-10" />
+                  </div>
+                  <p className="text-sm font-medium text-slate-500 mt-2">No species found.</p>
                   <button
                     onClick={() =>
                       openAdd("add-species", {
