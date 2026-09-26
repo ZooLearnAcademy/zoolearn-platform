@@ -255,6 +255,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         data: {
           label: node.label,
           subtitle: node.commonName,
+          description: (node as any).description,
           rank: node.rank,
           isLeaf,
           isRoot,

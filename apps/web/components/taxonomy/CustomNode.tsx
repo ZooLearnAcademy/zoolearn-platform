@@ -6,6 +6,7 @@ import { Handle, Position } from "@xyflow/react";
 type CustomNodeData = {
   label: string;
   subtitle?: string;
+  description?: string;
   rank?: string;
   isLeaf: boolean;
   isRoot?: boolean;
@@ -143,6 +144,22 @@ export default function CustomNode({ data }: { data: CustomNodeData }) {
             }}
           >
             {data.subtitle}
+          </div>
+        )}
+        {data.description && (
+          <div
+            style={{
+              fontSize: "9px",
+              fontWeight: 400,
+              color: "rgba(0,0,0,0.6)",
+              marginTop: "4px",
+              lineHeight: 1.2,
+              maxWidth: "180px",
+              whiteSpace: "normal",
+              margin: "4px auto 0 auto",
+            }}
+          >
+            {data.description}
           </div>
         )}
       </div>

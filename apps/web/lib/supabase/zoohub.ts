@@ -429,7 +429,7 @@ export async function getTaxonomyTreeFull(): Promise<any> {
   // Try taxonomy_nodes first (dedicated tree table with full 8-rank hierarchy)
   const { data: nodes, error } = await supabase
     .from("taxonomy_nodes")
-    .select("id, label, rank, common_name, parent_id, sort_order")
+    .select("id, label, rank, common_name, description, parent_id, sort_order")
     .eq("is_active", true)
     .order("sort_order", { ascending: true })
 
@@ -448,6 +448,7 @@ export async function getTaxonomyTreeFull(): Promise<any> {
       label: node.label,
       rank: node.rank,
       commonName: node.common_name || undefined,
+      description: node.description || undefined,
       children: [],
     })
   }

@@ -24,7 +24,7 @@ export async function POST(req: Request) {
 
     const admin = createAdminClient();
     const body = await req.json();
-    const { mode, id, label, rank, common_name, parent_id, sort_order, is_active } = body;
+    const { mode, id, label, rank, common_name, description, parent_id, sort_order, is_active } = body;
 
     if (!mode || !label || !rank) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -41,6 +41,7 @@ export async function POST(req: Request) {
         label,
         rank,
         common_name: common_name || null,
+        description: description || null,
         parent_id: parent_id || null,
         sort_order: parseInt(sort_order) || 0,
         is_active: is_active ?? true,
@@ -61,6 +62,7 @@ export async function POST(req: Request) {
         .update({
           label,
           common_name: common_name || null,
+          description: description || null,
           sort_order: parseInt(sort_order) || 0,
           is_active: is_active ?? true,
           updated_at: new Date().toISOString(),

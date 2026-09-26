@@ -26,6 +26,7 @@ export interface TaxonomyNode {
   label: string;
   rank: string;
   common_name: string | null;
+  description?: string | null;
   parent_id: string | null;
   sort_order: number;
   is_active: boolean;
@@ -132,7 +133,7 @@ export function TaxonomyTreeManager({
   const openAdd = () => {
     setDrawerMode("add");
     setDrawerTarget(null);
-    setForm({ label: "", common_name: "", sort_order: String(totalAtLevel), is_active: true });
+    setForm({ label: "", common_name: "", description: "", sort_order: String(totalAtLevel), is_active: true });
     setDeleteStage(false);
   };
 
@@ -142,6 +143,7 @@ export function TaxonomyTreeManager({
     setForm({
       label: node.label,
       common_name: node.common_name || "",
+      description: node.description || "",
       sort_order: String(node.sort_order),
       is_active: node.is_active,
     });
@@ -174,6 +176,7 @@ export function TaxonomyTreeManager({
             label: form.label,
             rank,
             common_name: form.common_name,
+            description: form.description,
             parent_id: currentParentId,
             sort_order: form.sort_order,
             is_active: form.is_active,
@@ -189,6 +192,7 @@ export function TaxonomyTreeManager({
             label: form.label,
             rank,
             common_name: form.common_name || null,
+            description: form.description || null,
             parent_id: currentParentId,
             sort_order: parseInt(form.sort_order),
             is_active: form.is_active,
@@ -203,6 +207,7 @@ export function TaxonomyTreeManager({
                     ...n,
                     label: form.label,
                     common_name: form.common_name || null,
+                    description: form.description || null,
                     sort_order: parseInt(form.sort_order),
                     is_active: form.is_active,
                   }
@@ -581,6 +586,18 @@ export function TaxonomyTreeManager({
                   onChange={(e) => setForm({ ...form, common_name: e.target.value })}
                   placeholder="e.g., Vertebrates (Optional)"
                   className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all"
+                />
+              </div>
+              <div>
+                <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                  Description
+                </label>
+                <textarea
+                  value={form.description}
+                  onChange={(e) => setForm({ ...form, description: e.target.value })}
+                  placeholder="e.g., A brief description of this node (Optional)"
+                  rows={3}
+                  className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
                 />
               </div>
               <div className="grid grid-cols-2 gap-3">
