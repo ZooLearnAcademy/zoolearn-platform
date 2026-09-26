@@ -49,37 +49,36 @@ export async function getAllPhylumData(): Promise<Record<string, SpeciesData>> {
 export async function fetchSpeciesData(speciesSlug: string): Promise<SpeciesData | null> {
   try {
     const supabase = await createSupabaseServerClient()
-    const { data: dbNode, error } = await supabase
-      .from("taxonomy_nodes")
-      .select("*")
-      .eq("rank", "Species")
-      .like("id", `%_${speciesSlug.toLowerCase()}`)
+    const { data: dbSpecies, error } = await supabase
+      .from("species")
+      .select("*, phyla(name), classes(class_name)")
+      .eq("slug", speciesSlug.toLowerCase())
       .single()
 
-    if (!error && dbNode && dbNode.profile) {
+    if (!error && dbSpecies) {
       return {
-        id: dbNode.sort_order || 0,
-        slug: speciesSlug.toLowerCase(),
-        name: dbNode.label,
-        scientificName: dbNode.common_name || "",
-        description: dbNode.description || "",
-        image: dbNode.profile.image || "",
-        "3d": dbNode.profile["3d"] || "",
-        introduction: dbNode.profile.introduction || [],
-        features: dbNode.profile.features || {},
+        id: dbSpecies.sort_order || 0,
+        slug: dbSpecies.slug,
+        name: dbSpecies.name,
+        scientificName: dbSpecies.scientific_name || "",
+        description: "",
+        image: dbSpecies.image_url || "",
+        "3d": dbSpecies.model_3d || "",
+        introduction: dbSpecies.introduction || [],
+        features: dbSpecies.features || {},
         classification: {
           Kingdom: "Animalia",
-          Phylum: dbNode.id.split("_")[1] || "",
-          Class: "Unknown",
+          Phylum: dbSpecies.phyla?.name || dbSpecies.phylum_slug || "",
+          Class: dbSpecies.classes?.class_name || dbSpecies.class_slug || "Unknown",
           Order: "Unknown",
           Family: "Unknown",
           Genus: "Unknown",
-          Species: dbNode.label
+          Species: dbSpecies.name
         },
-        sizeStructure: dbNode.profile.sizeStructure || [],
-        ecology: dbNode.profile.ecology || [],
-        economy: dbNode.profile.economy || [],
-        phylum_source: dbNode.id.split("_")[1] || ""
+        sizeStructure: dbSpecies.size_structure || [],
+        ecology: dbSpecies.ecology || [],
+        economy: dbSpecies.economy || [],
+        phylum_source: dbSpecies.phylum_slug || ""
       }
     }
   } catch (err) {
