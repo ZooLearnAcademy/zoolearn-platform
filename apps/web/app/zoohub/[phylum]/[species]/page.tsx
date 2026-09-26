@@ -40,13 +40,17 @@ export default async function SpeciesDetailPage({
   const { prev, next } = await fetchNeighbors(phylum, species)
 
   return (
-    <div className="w-full min-h-screen">
-      {/* ─────────── HERO SECTION ─────────── */}
-      <HeroSection data={data} prev={prev} next={next} />
+    <div className="w-full min-h-screen bg-[#080c14] text-slate-200 font-sans selection:bg-emerald-500/30 selection:text-emerald-200 overflow-x-hidden relative">
+      {/* Background ambient glows */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[50vh] bg-emerald-500/10 rounded-[100%] blur-[120px] pointer-events-none" />
+      
+      <div className="relative z-10">
+        {/* ─────────── HERO SECTION ─────────── */}
+        <HeroSection data={data} prev={prev} next={next} />
 
-      {/* ─────────── CONTENT SECTIONS ─────────── */}
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 py-8 sm:py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 species-content-grid">
+        {/* ─────────── CONTENT SECTIONS ─────────── */}
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 py-12 sm:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 species-content-grid">
           <IntroductionCard data={data} />
           <SizeStructureCard data={data} />
           <GeneralFeaturesCard data={data} />
@@ -54,8 +58,11 @@ export default async function SpeciesDetailPage({
           <EconomicImportanceCard data={data} />
         </div>
 
-        {/* ─────────── BOTTOM NAVIGATION ─────────── */}
-        <BottomNavigation phylum={phylum} prev={prev} next={next} />
+          {/* ─────────── BOTTOM NAVIGATION ─────────── */}
+          <div className="mt-16">
+            <BottomNavigation phylum={phylum} prev={prev} next={next} />
+          </div>
+        </div>
       </div>
 
       {/* ─────────── CSS Animations ─────────── */}

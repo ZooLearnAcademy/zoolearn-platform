@@ -6,27 +6,27 @@ export function EconomicImportanceCard({ data }: { data: SpeciesData }) {
   if (!data.economy?.length) return null
 
   return (
-    <Card className="shadow-sm border-slate-200/80 dark:border-slate-800/80">
-      <CardHeader className="bg-muted/30 border-b pb-5">
+    <div className="rounded-2xl bg-white/[0.02] border border-white/5 shadow-2xl backdrop-blur-xl overflow-hidden">
+      <div className="bg-white/[0.02] border-b border-white/5 px-6 py-5">
         <div className="flex items-center gap-3">
-          <div className="text-amber-600 dark:text-amber-400 p-2 bg-amber-100/50 dark:bg-amber-900/30 rounded-lg">
+          <div className="text-amber-400 p-2 bg-amber-500/10 rounded-lg">
             <CurrencyDollar size={20} weight="duotone" />
           </div>
-          <CardTitle className="text-lg text-foreground tracking-tight">Economic Importance</CardTitle>
+          <h3 className="text-lg font-bold text-slate-200 tracking-tight">Economic Importance</h3>
         </div>
-      </CardHeader>
-      <CardContent className="p-6">
-        <div className="space-y-3">
+      </div>
+      <div className="p-6">
+        <div className="space-y-4">
           {data.economy.map((point, i) => (
-            <div key={i} className="flex items-start gap-3 px-3.5 py-3 rounded-lg bg-muted/30 border hover:bg-muted/50 hover:border-amber-500/50 transition-all duration-300">
-              <CurrencyDollar size={15} weight="fill" className="text-amber-500 shrink-0 mt-0.5" />
-              <p className="text-sm text-muted-foreground leading-relaxed">
+            <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-amber-500/30 hover:shadow-lg transition-all duration-300">
+              <CurrencyDollar size={18} weight="fill" className="text-amber-400 shrink-0 mt-0.5" />
+              <p className="text-[clamp(0.9rem,1.5vw,1.05rem)] font-medium text-slate-300 leading-relaxed group-hover:text-white transition-colors">
                 {point}
               </p>
             </div>
           ))}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   )
 }

@@ -6,29 +6,29 @@ export function EcologyCard({ data }: { data: SpeciesData }) {
   if (!data.ecology?.length) return null
 
   return (
-    <Card className="shadow-sm border-slate-200/80 dark:border-slate-800/80">
-      <CardHeader className="bg-muted/30 border-b pb-5">
+    <div className="rounded-2xl bg-white/[0.02] border border-white/5 shadow-2xl backdrop-blur-xl overflow-hidden">
+      <div className="bg-white/[0.02] border-b border-white/5 px-6 py-5">
         <div className="flex items-center gap-3">
-          <div className="text-emerald-600 dark:text-emerald-400 p-2 bg-emerald-100/50 dark:bg-emerald-900/30 rounded-lg">
+          <div className="text-emerald-400 p-2 bg-emerald-500/10 rounded-lg">
             <Leaf size={20} weight="duotone" />
           </div>
-          <CardTitle className="text-lg text-foreground tracking-tight">Ecology</CardTitle>
+          <h3 className="text-lg font-bold text-slate-200 tracking-tight">Ecology</h3>
         </div>
-      </CardHeader>
-      <CardContent className="p-6">
-        <div className="space-y-3">
+      </div>
+      <div className="p-6">
+        <div className="space-y-4">
           {data.ecology.map((point, i) => (
             <div key={i} className="flex items-start gap-3 group/item">
-              <div className="w-5 h-5 flex items-center justify-center rounded-md bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200/60 dark:border-emerald-500/20 shrink-0 mt-0.5">
-                <Leaf size={11} weight="fill" className="text-emerald-500" />
+              <div className="w-5 h-5 flex items-center justify-center rounded-md bg-emerald-500/10 border border-emerald-500/20 shrink-0 mt-0.5">
+                <Leaf size={11} weight="fill" className="text-emerald-400" />
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed group-hover/item:text-slate-800 transition-colors">
+              <p className="text-[clamp(0.9rem,1.5vw,1rem)] font-medium text-slate-400 leading-relaxed group-hover/item:text-slate-200 transition-colors">
                 {point}
               </p>
             </div>
           ))}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   )
 }
