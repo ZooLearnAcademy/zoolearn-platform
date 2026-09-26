@@ -113,8 +113,8 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    revalidatePath("/taxonomy");
-    revalidatePath("/admin/taxonomy");
+    revalidatePath("/zoohub");
+    revalidatePath("/admin/zoohub");
     return NextResponse.json({ message: "Saved successfully." });
 
   } catch (err: any) {
@@ -173,8 +173,8 @@ export async function DELETE(request: NextRequest) {
       if (error) throw error;
     }
 
-    revalidatePath("/taxonomy");
-    revalidatePath("/admin/taxonomy");
+    revalidatePath("/zoohub");
+    revalidatePath("/admin/zoohub");
     return NextResponse.json({ message: "Deleted successfully." });
 
   } catch (err: any) {
