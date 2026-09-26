@@ -525,6 +525,90 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
             </div>
           </div>
         </Panel>
+
+        {/* Selected Node Details Side Panel */}
+        {activeNode && (() => {
+          const node = nodeMap.get(activeNode);
+          if (!node) return null;
+          return (
+            <Panel
+              position="bottom-right"
+              style={{
+                marginBottom: "20px",
+                marginRight: "20px",
+                width: "320px",
+                background: "rgba(22, 31, 48, 0.85)",
+                backdropFilter: "blur(12px)",
+                border: "1px solid #334155",
+                borderRadius: "16px",
+                padding: "20px",
+                color: "white",
+                boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+                animation: "fade-in 0.3s ease-out",
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <span
+                  style={{
+                    fontSize: "10px",
+                    fontWeight: 800,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.05em",
+                    color: "#94a3b8",
+                    background: "rgba(255,255,255,0.1)",
+                    padding: "4px 8px",
+                    borderRadius: "6px",
+                  }}
+                >
+                  {node.rank}
+                </span>
+                <button
+                  onClick={() => setActiveNode(null)}
+                  style={{
+                    background: "transparent",
+                    border: "none",
+                    color: "#94a3b8",
+                    cursor: "pointer",
+                    padding: "4px",
+                    fontSize: "16px",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
+                >
+                  ×
+                </button>
+              </div>
+
+              <div>
+                <h3 style={{ margin: "4px 0 0 0", fontSize: "20px", fontWeight: 800 }}>
+                  {node.label}
+                </h3>
+                {node.commonName && (
+                  <p style={{ margin: "2px 0 0 0", fontSize: "14px", color: "#cbd5e1", fontStyle: "italic" }}>
+                    &quot;{node.commonName}&quot;
+                  </p>
+                )}
+              </div>
+
+              {node.description ? (
+                <div style={{ marginTop: "8px" }}>
+                  <p style={{ margin: 0, fontSize: "13px", lineHeight: 1.5, color: "#94a3b8" }}>
+                    {node.description}
+                  </p>
+                </div>
+              ) : (
+                <div style={{ marginTop: "8px" }}>
+                  <p style={{ margin: 0, fontSize: "13px", color: "#64748b", fontStyle: "italic" }}>
+                    No description available for this taxon.
+                  </p>
+                </div>
+              )}
+            </Panel>
+          );
+        })()}
       </ReactFlow>
     </div>
   );
