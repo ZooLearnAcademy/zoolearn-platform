@@ -143,103 +143,159 @@ export default async function AdminDashboardPage() {
   ];
 
   return (
-    <div className="p-6 md:p-10 max-w-7xl mx-auto space-y-10">
+  return (
+    <div className="p-6 md:p-10 max-w-[1400px] mx-auto min-h-full space-y-12">
       
-      {/* Header */}
-      <div className="flex items-start justify-between">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-xs text-emerald-400 font-medium uppercase tracking-widest">Live</span>
+      {/* ─── Hero Header ─── */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0c1017] to-[#080b10] border border-white/5 p-8 md:p-12 shadow-2xl">
+        {/* Abstract background glow */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/2" />
+        
+        <div className="relative flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <div className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+              </div>
+              <span className="text-xs font-black text-emerald-400 uppercase tracking-[0.2em]">Live Database Connection</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
+              Admin <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">Control Center</span>
+            </h1>
+            <p className="text-slate-400 text-sm md:text-base max-w-xl leading-relaxed">
+              Welcome to the ZooLearn platform management suite. All data shown here is fetched live from Supabase.
+            </p>
           </div>
-          <h1 className="text-3xl font-black text-white mb-1">Admin Dashboard</h1>
-          <p className="text-slate-400 text-sm">ZooLearn platform control centre — all data is live from Supabase.</p>
-        </div>
-        <div className="hidden md:flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
-          <ShieldCheck size={16} className="text-emerald-400" weight="fill" />
-          <span className="text-emerald-400 text-sm font-semibold">Admin Access</span>
+          
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <div className="px-5 py-3 bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl flex items-center gap-3 w-full sm:w-auto shadow-inner">
+              <div className="p-2 bg-emerald-500/20 rounded-lg">
+                <ShieldCheck size={20} className="text-emerald-400" weight="fill" />
+              </div>
+              <div>
+                <div className="text-xs text-slate-400 font-medium">Session Status</div>
+                <div className="text-sm text-emerald-400 font-bold">Verified Admin</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Stats Grid */}
+      {/* ─── Platform Overview (Stats Grid) ─── */}
       <div>
-        <h2 className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-4">
-          Platform Overview
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {statCards.map((s) => (
+        <div className="flex items-center gap-3 mb-6">
+          <ChartBar size={20} className="text-slate-400" weight="duotone" />
+          <h2 className="text-sm text-slate-300 font-bold uppercase tracking-widest">
+            Platform Overview
+          </h2>
+        </div>
+        
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {statCards.map((s, i) => (
             <div
               key={s.label}
-              className={`border rounded-2xl p-4 ${s.bg} flex flex-col gap-2`}
+              className={`group relative overflow-hidden rounded-3xl p-6 bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/50`}
             >
-              <s.icon size={20} className={s.color} weight="duotone" />
-              <div className="text-2xl font-black text-white">
-                {s.value.toLocaleString()}
+              {/* Subtle gradient hover background */}
+              <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br from-current to-transparent ${s.color}`} />
+              
+              <div className="relative flex flex-col gap-4">
+                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${s.bg}`}>
+                  <s.icon size={24} className={s.color} weight="duotone" />
+                </div>
+                <div>
+                  <div className="text-3xl font-black text-white tracking-tight mb-1">
+                    {s.value.toLocaleString()}
+                  </div>
+                  <div className="text-xs text-slate-400 font-medium tracking-wide uppercase">
+                    {s.label}
+                  </div>
+                </div>
               </div>
-              <div className="text-xs text-slate-400 leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Quick Actions */}
+      {/* ─── Management Sections ─── */}
       <div>
-        <h2 className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-4">
-          Management Sections
-        </h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          {sections.map((s) => (
+        <div className="flex items-center gap-3 mb-6">
+          <Database size={20} className="text-slate-400" weight="duotone" />
+          <h2 className="text-sm text-slate-300 font-bold uppercase tracking-widest">
+            Management Sections
+          </h2>
+        </div>
+        
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          {sections.map((s, i) => (
             <Link
               key={s.href}
               href={s.href}
-              className={`group bg-gradient-to-br ${s.gradient} border ${s.border} rounded-2xl p-6 transition-all duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-black/20`}
+              className="group relative flex flex-col h-full bg-[#0f131a] rounded-[2rem] p-7 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 border border-white/5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] overflow-hidden"
             >
-              <div className="flex items-start justify-between mb-5">
-                <div className={`w-10 h-10 rounded-xl ${s.iconBg} flex items-center justify-center`}>
-                  <s.icon size={22} className={s.iconColor} weight="duotone" />
-                </div>
-                <ArrowRight
-                  size={18}
-                  className="text-slate-600 group-hover:text-white group-hover:translate-x-1 transition-all duration-200"
-                />
+              {/* Animated Border Glow */}
+              <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
+                <div className={`absolute inset-[-1px] rounded-[2rem] bg-gradient-to-br ${s.gradient} -z-10`} />
               </div>
-              <h2 className="text-lg font-bold text-white mb-2">{s.title}</h2>
-              <p className="text-sm text-slate-400 leading-relaxed mb-4">{s.description}</p>
-              <span className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full ${s.badgeColor}`}>
-                {s.badge}
+              
+              <div className="flex items-start justify-between mb-8 relative z-10">
+                <div className={`w-14 h-14 rounded-2xl ${s.iconBg} flex items-center justify-center shadow-inner`}>
+                  <s.icon size={28} className={s.iconColor} weight="duotone" />
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 group-hover:scale-110 transition-all duration-300">
+                  <ArrowRight size={18} className="text-slate-400 group-hover:text-white group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </div>
+              
+              <div className="flex-1 relative z-10">
+                <h2 className="text-xl font-black text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/70 transition-all">
+                  {s.title}
+                </h2>
+                <p className="text-sm text-slate-400 leading-relaxed mb-6 font-medium">
+                  {s.description}
+                </p>
+              </div>
+              
+              <div className="mt-auto relative z-10">
+                <span className={`inline-flex items-center gap-2 text-xs font-bold px-3 py-1.5 rounded-xl ${s.badgeColor} border border-current/10 shadow-sm`}>
+                  <div className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
+                  {s.badge}
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── Quick Links ─── */}
+      <div className="pt-4 pb-8">
+        <h2 className="text-xs text-slate-500 font-bold uppercase tracking-widest mb-4 pl-1">
+          Public Page Previews
+        </h2>
+        <div className="flex flex-wrap gap-4">
+          {[
+            { label: "ZooHub", href: "/zoohub", icon: Globe },
+            { label: "Taxonomy", href: "/taxonomy", icon: Tree },
+            { label: "Scopes", href: "/scopes", icon: Compass },
+            { label: "Public Home", href: "/", icon: Eye },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              className="group flex items-center gap-3 px-5 py-3 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-white/10 transition-all duration-300 shadow-sm"
+            >
+              <link.icon size={18} className="text-slate-400 group-hover:text-white transition-colors" weight="duotone" />
+              <span className="text-sm font-semibold text-slate-300 group-hover:text-white transition-colors">
+                {link.label}
               </span>
             </Link>
           ))}
         </div>
       </div>
 
-      {/* Quick links */}
-      <div>
-        <h2 className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-4">
-          Quick Links — Public Pages
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {[
-            { label: "ZooHub", href: "/zoohub", icon: Globe, desc: `${stats.totalSpecies} species` },
-            { label: "Taxonomy", href: "/taxonomy", icon: Tree, desc: `${stats.taxonomyNodes} nodes` },
-            { label: "Scopes", href: "/scopes", icon: Compass, desc: `${stats.scopeCategories} domains` },
-            { label: "Home", href: "/", icon: Eye, desc: "Public landing" },
-          ].map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              target="_blank"
-              className="group flex items-center gap-3 p-4 bg-white/5 border border-white/8 rounded-xl hover:bg-white/10 hover:border-white/15 transition-all"
-            >
-              <link.icon size={18} className="text-slate-400 group-hover:text-white transition-colors" weight="duotone" />
-              <div>
-                <div className="text-sm font-semibold text-white">{link.label}</div>
-                <div className="text-xs text-slate-500">{link.desc}</div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
