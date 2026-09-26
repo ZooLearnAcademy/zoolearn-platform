@@ -143,7 +143,6 @@ export default async function AdminDashboardPage() {
   ];
 
   return (
-  return (
     <div className="p-6 md:p-10 max-w-[1400px] mx-auto min-h-full space-y-12">
       
       {/* ─── Hero Header ─── */}
