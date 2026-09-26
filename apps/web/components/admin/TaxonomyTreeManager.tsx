@@ -27,6 +27,7 @@ export interface TaxonomyNode {
   rank: string;
   common_name: string | null;
   description?: string | null;
+  profile?: any | null;
   parent_id: string | null;
   sort_order: number;
   is_active: boolean;
@@ -78,6 +79,12 @@ export function TaxonomyTreeManager({
     label: "",
     common_name: "",
     description: "",
+    image_url: "",
+    model_3d: "",
+    introduction: "",
+    size_structure: "",
+    ecology: "",
+    economy: "",
     sort_order: "0",
     is_active: true,
   });
@@ -134,7 +141,19 @@ export function TaxonomyTreeManager({
   const openAdd = () => {
     setDrawerMode("add");
     setDrawerTarget(null);
-    setForm({ label: "", common_name: "", description: "", sort_order: String(totalAtLevel), is_active: true });
+    setForm({
+      label: "",
+      common_name: "",
+      description: "",
+      image_url: "",
+      model_3d: "",
+      introduction: "",
+      size_structure: "",
+      ecology: "",
+      economy: "",
+      sort_order: String(totalAtLevel),
+      is_active: true,
+    });
     setDeleteStage(false);
   };
 
@@ -145,6 +164,12 @@ export function TaxonomyTreeManager({
       label: node.label,
       common_name: node.common_name || "",
       description: node.description || "",
+      image_url: node.profile?.image || "",
+      model_3d: node.profile?.["3d"] || "",
+      introduction: node.profile?.introduction?.join("\n") || "",
+      size_structure: node.profile?.sizeStructure?.join("\n") || "",
+      ecology: node.profile?.ecology?.join("\n") || "",
+      economy: node.profile?.economy?.join("\n") || "",
       sort_order: String(node.sort_order),
       is_active: node.is_active,
     });
@@ -163,6 +188,15 @@ export function TaxonomyTreeManager({
   };
 
   const handleSave = () => {
+    const profileObj = nextRank === "Species" || (drawerMode === "edit" && drawerTarget?.rank === "Species") ? {
+      image: form.image_url,
+      "3d": form.model_3d,
+      introduction: form.introduction.split("\n").filter(Boolean),
+      sizeStructure: form.size_structure.split("\n").filter(Boolean),
+      ecology: form.ecology.split("\n").filter(Boolean),
+      economy: form.economy.split("\n").filter(Boolean),
+    } : null;
+
     startTransition(async () => {
       try {
         const id = drawerMode === "add" ? generateId(form.label, currentParentId) : drawerTarget!.id;
@@ -178,6 +212,7 @@ export function TaxonomyTreeManager({
             rank,
             common_name: form.common_name,
             description: form.description,
+            profile: profileObj,
             parent_id: currentParentId,
             sort_order: form.sort_order,
             is_active: form.is_active,
@@ -194,6 +229,7 @@ export function TaxonomyTreeManager({
             rank,
             common_name: form.common_name || null,
             description: form.description || null,
+            profile: profileObj,
             parent_id: currentParentId,
             sort_order: parseInt(form.sort_order),
             is_active: form.is_active,
@@ -209,6 +245,7 @@ export function TaxonomyTreeManager({
                     label: form.label,
                     common_name: form.common_name || null,
                     description: form.description || null,
+                    profile: profileObj,
                     sort_order: parseInt(form.sort_order),
                     is_active: form.is_active,
                   }
@@ -606,6 +643,85 @@ export function TaxonomyTreeManager({
                   className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
                 />
               </div>
+
+              {(nextRank === "Species" || drawerTarget?.rank === "Species") && (
+                <div className="pt-4 border-t border-white/5 space-y-5">
+                  <h4 className="text-sm font-bold text-emerald-400">Species Profile Details</h4>
+                  
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      Image URL
+                    </label>
+                    <input
+                      type="text"
+                      value={form.image_url}
+                      onChange={(e) => setForm({ ...form, image_url: e.target.value })}
+                      placeholder="e.g., https://example.com/image.jpg"
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      3D Model URL
+                    </label>
+                    <input
+                      type="text"
+                      value={form.model_3d}
+                      onChange={(e) => setForm({ ...form, model_3d: e.target.value })}
+                      placeholder="e.g., https://example.com/model.glb"
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      Introduction (One bullet per line)
+                    </label>
+                    <textarea
+                      value={form.introduction}
+                      onChange={(e) => setForm({ ...form, introduction: e.target.value })}
+                      placeholder="Line 1\nLine 2"
+                      rows={3}
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      Size & Structure (One bullet per line)
+                    </label>
+                    <textarea
+                      value={form.size_structure}
+                      onChange={(e) => setForm({ ...form, size_structure: e.target.value })}
+                      placeholder="Line 1\nLine 2"
+                      rows={3}
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      Ecology (One bullet per line)
+                    </label>
+                    <textarea
+                      value={form.ecology}
+                      onChange={(e) => setForm({ ...form, ecology: e.target.value })}
+                      placeholder="Line 1\nLine 2"
+                      rows={3}
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+                      Economic Importance (One bullet per line)
+                    </label>
+                    <textarea
+                      value={form.economy}
+                      onChange={(e) => setForm({ ...form, economy: e.target.value })}
+                      placeholder="Line 1\nLine 2"
+                      rows={3}
+                      className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all resize-none"
+                    />
+                  </div>
+                </div>
+              )}
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">

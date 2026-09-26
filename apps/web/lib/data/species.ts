@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import { SpeciesData, NeighborSpecies } from "@/types/species"
+import { createSupabaseServerClient } from "../supabase/server-client"
 
 let cachedAnimalData: any = null
 let cachedPhylumData: Record<string, SpeciesData> | null = null
@@ -46,6 +47,45 @@ export async function getAllPhylumData(): Promise<Record<string, SpeciesData>> {
 }
 
 export async function fetchSpeciesData(speciesSlug: string): Promise<SpeciesData | null> {
+  try {
+    const supabase = await createSupabaseServerClient()
+    const { data: dbNode, error } = await supabase
+      .from("taxonomy_nodes")
+      .select("*")
+      .eq("rank", "Species")
+      .like("id", `%_${speciesSlug.toLowerCase()}`)
+      .single()
+
+    if (!error && dbNode && dbNode.profile) {
+      return {
+        id: dbNode.sort_order || 0,
+        slug: speciesSlug.toLowerCase(),
+        name: dbNode.label,
+        scientificName: dbNode.common_name || "",
+        description: dbNode.description || "",
+        image: dbNode.profile.image || "",
+        "3d": dbNode.profile["3d"] || "",
+        introduction: dbNode.profile.introduction || [],
+        features: dbNode.profile.features || {},
+        classification: {
+          Kingdom: "Animalia",
+          Phylum: dbNode.id.split("_")[1] || "",
+          Class: "Unknown",
+          Order: "Unknown",
+          Family: "Unknown",
+          Genus: "Unknown",
+          Species: dbNode.label
+        },
+        sizeStructure: dbNode.profile.sizeStructure || [],
+        ecology: dbNode.profile.ecology || [],
+        economy: dbNode.profile.economy || [],
+        phylum_source: dbNode.id.split("_")[1] || ""
+      }
+    }
+  } catch (err) {
+    console.error("DB lookup for species failed, falling back to JSON:", err)
+  }
+
   try {
     const allData = await getAllPhylumData()
     return allData[speciesSlug.toLowerCase()] ?? null
