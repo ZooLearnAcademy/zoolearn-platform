@@ -20,6 +20,7 @@ export type AnimaliaNode = {
   label: string;
   rank: string;
   commonName?: string;
+  description?: string;
   children?: AnimaliaNode[];
 };
 
@@ -255,7 +256,7 @@ function FlowContent({ treeData }: { treeData: AnimaliaNode }) {
         data: {
           label: node.label,
           subtitle: node.commonName,
-          description: (node as any).description,
+          description: node.description,
           rank: node.rank,
           isLeaf,
           isRoot,

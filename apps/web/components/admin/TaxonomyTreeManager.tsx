@@ -467,6 +467,11 @@ export function TaxonomyTreeManager({
                             &quot;{child.common_name}&quot;
                           </p>
                         )}
+                        {child.description && (
+                          <p className="text-xs text-slate-500/80 mt-1 line-clamp-2">
+                            {child.description}
+                          </p>
+                        )}
                       </div>
                     </div>
 
