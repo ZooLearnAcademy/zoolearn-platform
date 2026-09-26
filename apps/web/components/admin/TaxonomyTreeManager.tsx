@@ -77,6 +77,7 @@ export function TaxonomyTreeManager({
   const [form, setForm] = useState({
     label: "",
     common_name: "",
+    description: "",
     sort_order: "0",
     is_active: true,
   });
